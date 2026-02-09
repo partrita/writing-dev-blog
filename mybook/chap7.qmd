@@ -1,540 +1,100 @@
-# This chapter covers
+# 7장 발행하기
 
-¡ Final considerations before you publish   
-¡ What to look for when reviewing the blog post as a web page   
-¡ Guidelines for populating the metadata
+# 이 장에서 다루는 내용
 
-The finish line is in sight! You’re so close to shipping it. But even if you’re tired of thinking about this article, there are a few additional details to consider as your work is transformed into an actual blog post on the internet.
+- 발행 전 마지막 고려 사항들
+- 웹 페이지로 미리보기 할 때 확인할 점
+- 메타데이터 작성 가이드라인
 
-The little things do matter. For example, you don’t want to end up with your carefully crafted code examples being rendered in colors that make a reader’s brain hurt—or skipping the few minutes it would take to add a thumbnail image that helps your article stand out on social media feeds.
+결승선이 눈앞에 있습니다! 글쓰기는 끝났지만, 블로그 포스트를 세상에 내보내기 전에 챙겨야 할 디테일들이 있습니다. 코드 가독성, 이미지 썸네일, 검색 최적화(SEO) 등 사소해 보이는 것들이 독자의 경험과 글의 도달 범위에 큰 영향을 미칩니다.
 
-This chapter walks through the final details to consider as the blog post is staged and published. If you’re writing for a company blog, a lot of this might be handled by someone else. Even so, it’s good to know what to look for. It’s hard to imagine a blog editor who would not appreciate additional interest and input from a contributor.
+# 7.1 집중과 도전
 
-And if you want to consider publishing on your own someday (why not), you might as well start thinking about these low-level details sooner rather than later.
+이 단계의 도전은 '빠른 의사결정'입니다. 썸네일 이미지나 태그 선정에 너무 많은 시간을 쏟지 마세요. SEO에 과도하게 집착하기보다는 사람이 실제로 어떻게 검색할지를 생각하는 것이 좋습니다.
 
-# 7.1 Focus and challenges
+**주의:** 만약 저명한 기술 매체(Tech publication)에 기고할 계획이라면, 그곳들은 보통 '오리지널 콘텐츠'만 받습니다. 개인 블로그에 먼저 올리면 기회가 사라질 수 있으니 주의하세요.
 
-At this point, you can shift focus from the article itself, which should be nicely vetted by now, to the various logistical details surrounding its publication. This is often a nice mental break, different from most of the writing process, as well as your daily work. But there can be a lot of unknowns, especially when it comes to things such as optimizing for findability.
+# 7.2 핵심 콘텐츠 최종 점검
 
-The best practice for rising to the top of search engine results is continuously evolving, to the point that there’s a whole industry of search engine optimization (SEO) that revolves around trying to game the system. Don’t focus on that. A little fun with Google Trends plus a few minutes of reflecting on how humans really think should do the trick. We’ll share some high-level considerations that will help across search engine platforms and algorithm updates, even as the precise nuances of Google’s rankings continuously shift inside their black box.
+글의 목표를 달성했는지, 타겟 독자에게 필요한 내용을 담았는지 마지막으로 확인하세요.
+-   오타, 누락된 단어, 문법 오류를 점검하세요 (AI나 낭독 활용).
+-   최신 정보를 확인하세요 (예: 언급된 기술의 이름 변경이나 보안 이슈 등).
 
-The main challenge at this phase is making fast decisions and just getting things done. You could easily waste hours having too much fun with AI-generated thumbnail images or browsing articles in the various tags you’re considering for your article. As we’ve mentioned quite a few times by now, there’s limited value in overengineering such things. Find the fastest path to a solution that meets the need, then move on. More blogging opportunities await!
+# 7.3 제자리에서 미리보기 (Preview in place)
 
-# Does publishing here limit your options?
+글이 실제 블로그 템플릿에 들어갔을 때 어떻게 보이는지 확인해야 합니다.
 
-Do you have dreams of seeing your article featured in a tech publication (e.g., The New Stack, InfoQ, or ACM Queue)? Taking this path has a number of advantages (such as extended reach and promotion, which could be especially important to lesser-known authors). It also has a few drawbacks, particularly some lack of control. We’ll explore the pros and cons, plus tips for getting your articles into the editorial review process, in chapter 15.
+### 7.3.1 제목과 헤딩
+-   제목이 너무 길어 잘리거나 어색하게 줄바꿈 되지 않는지 확인하세요.
+-   헤딩은 간결하고 훑어보기 좋아야 합니다.
 
-However, it’s important to consider this now because many such publications only publish original content. If you publish the article elsewhere now, you will need to revise it substantially before a tech publication will consider it. If you really want to see this specific version of this article published somewhere where original content is required, strongly consider delaying your own publication so you don’t limit your options.
+### 7.3.2 코드
+-   코드가 읽기 쉽고 복사하기 편한지 확인하세요.
+-   구문 강조(Syntax highlighting)가 제대로 적용되었는지, 가로 스크롤이 너무 길지 않은지 확인하세요.
+-   이미지보다는 텍스트나 실행 가능한 임베드(Gist, Playground)를 사용하는 것이 좋습니다.
 
-Note that this consideration applies specifically to tech publications that rely on editors and strict editorial review processes to curate original content for their target audience. It does not matter for aggregators (such as dev.to) that let you publish existing content without passing through a traditional editorial process.
+### 7.3.3 핵심 이미지
+-   이미지가 템플릿에 맞게 리사이징 되면서 글씨가 뭉개지지 않는지 확인하세요.
+-   파일 크기를 최적화(압축)하여 로딩 속도를 높이세요.
 
-# 7.2 Read through the core content one final time
+### 7.3.4 헤더 이미지
+-   블로그 상단뿐만 아니라 목록이나 그리드 뷰에서도 이미지가 잘 보이는지 확인하세요.
 
-If you’ve been following along, your blog post should be well planned, written to withstand technical readers’ healthy skepticism, and vetted by humans as well as
+### 7.3.5 동영상
+-   로그인하지 않은 상태에서도 재생되는지(시크릿 모드 활용), 지역 제한은 없는지 확인하세요.
 
-pointed AI prompting and spelling/grammar checkers. If you still have doubts, look back to your original goal for the blog with the clear mind that comes after a little time has passed. After all the review and revision, is there any rational reason to feel that you didn’t achieve this goal? Any reason why your target reader would not get the main learning you want them to walk away with? If you believe there’s a problem, first get another opinion and then determine whether it’s a fatal flaw (unlikely at this point). Really, after all this, your blog post is probably quite ready to go out and meet the world.
+### 7.3.6 표와 리스트
+-   복잡한 표나 리스트가 HTML 변환 후에도 깨지지 않는지 확인하세요.
 
-Want a final sanity check that you’ve caught mistakes like typos, missing words, grammatical errors, and so on?
+# 7.4 메타데이터 관리 (Manage metadata)
 
-¡ Review the findings from a spelling/grammar checking tool again, or maybe even use a different one (e.g., the native Google Docs spell checking with Grammarly disabled).   
-Try a few different AI chatbots with a few different prompts. For example,
+메타데이터는 검색 가능성(Findability), 접근성(Accessibility), 공유 가능성(Shareability)에 중요합니다.
 
-– Point out all grammar errors, spelling errors, and punctuation errors in this article.
+### 7.4.1 키워드 (Your keywords)
+-   타겟 독자가 검색할 만한 키워드 3~5개를 선정하세요. (광범위한 용어 + 구체적인 한정어 조합)
+-   구글 트렌드(Google Trends)를 활용해 검색량을 비교해 보는 것도 좋습니다.
 
-– Point out any verb tense errors or inconsistencies in the article.   
-– Point out any inconsistent terminology usage in this article.
+### 7.4.2 타이틀 태그 (Title tag)
+-   브라우저 탭과 검색 결과에 표시되는 제목입니다.
+-   H1 제목과 비슷하게 유지하되, 너무 길면 자르거나 브랜드명을 추가하는 등 최적화할 수 있습니다.
 
-Read it out loud one more time, slowly and dramatically.
+### 7.4.3 메타 설명 (Meta description)
+-   검색 결과나 소셜 공유 시 보이는 짧은 설명입니다.
+-   독자를 낚을 수 있는 매력적인 요약을 150자 내외로 작성하고 주요 키워드를 포함하세요.
 
-Finally, do a quick internet search for the topic of your article and the key related terms. You might want to tweak your article if you learn that
+### 7.4.4 URL
+-   짧고 명확하며 키워드가 포함된 URL을 사용하세요 (하이픈(-) 사용 권장).
+-   날짜는 URL에 포함하지 않는 것이 업데이트 관리에 유리합니다.
 
-One of the technologies or companies you referenced just changed its name   
-A major security vulnerability was discovered in a library you’re promoting   
-The exact thing you ranted about for 3000 words is now happily resolved
+### 7.4.5 하이퍼링크
+-   "여기(here)" 대신 링크된 내용을 설명하는 텍스트에 링크를 거세요 (접근성 및 SEO에 유리).
+-   모든 링크가 정상적으로 작동하는지 확인하세요.
 
-For example, if you discovered that Zimbabwe just released a new gold-backed currency named Zig (it did!), you might want to rethink a headline such as “Zig: A New Gold Standard for Low Latency Programming.”
+### 7.4.6 이미지 메타데이터
+-   **파일명:** 설명적인 파일명을 사용하세요 (예: `zig-star-history.png`).
+-   **ALT 텍스트:** 시각 장애인이나 이미지가 로드되지 않을 때를 위해 이미지를 묘사하는 텍스트를 반드시 추가하세요.
 
-Now rest assured that you’ve done way more than your due diligence!
+### 7.4.7 분류 체계: 카테고리, 태그, 토픽
+-   독자가 관련 글을 찾을 수 있도록 적절한 카테고리와 태그를 지정하세요.
+-   관련성(Relevance)과 도달 범위(Reach)를 고려하여 인기 있는 태그와 틈새 태그를 적절히 섞어 사용하세요.
 
-# 7.3 Preview in place
+### 7.4.8 대표(썸네일) 이미지
+-   소셜 미디어에 공유될 때 회색 박스 대신 멋진 이미지가 보이도록 `og:image` 태그를 설정하세요.
+-   관련성 있는 이미지나 글의 스크린샷 등을 활용할 수 있습니다.
 
-Sometimes the item that looked perfect in the home improvement store needs a little adjustment once it’s actually in your home. The same can happen with blog posts. Once you get the content into the template, you might find that a heading needs a trim, an image is displayed at a size that makes its labels illegible, and so on.
+# 7.5 이것만은 꼭 (If you do nothing else)
 
-This section covers the surface-level things to consider and review once your blog post is in place. We’ll get into metadata concerns in the following section.
+시간이 없다면 아래 체크리스트만이라도 확인하세요:
 
-NOTE If feasible, try to check how everything looks on mobile devices and the top few browsers you anticipate your readers might use. If that’s not feasible, be sure to check it there as soon as it’s published.
+-   모바일과 데스크톱에서 제목, 코드, 이미지가 잘 보이는지 미리보기 하세요.
+-   키워드 3~5개를 선정하고 적절히 배치하세요.
+-   매력적인 메타 설명을 작성하세요.
+-   이미지에 ALT 텍스트를 추가하세요.
+-   모든 링크가 작동하는지 확인하고, 의미 있는 텍스트에 링크를 거세요.
+-   적절한 태그를 달고, 소셜 공유용 썸네일 이미지를 설정하세요.
 
-# 7.3.1 Title and headings
+# 요약
 
-Does the title that seemed perfect in your doc look awkward in whatever template you’re using? Is it sprawling across two lines of massive text, maybe even three? Is one word dangling, all on its own (as in figure 7.1)? If so, think about trimming it.
-
-Oh What a Nice Heading This Might Have Been
-
-Figure 7.1 The dangling word on the second line just isn’t a good look.
-
-To be fair, your title’s most important job is to catch the eye of your target reader out in the wild, on feeds, lists, and so on. Once people click in, they have probably already read the title. But, first impressions do matter. The first thing readers see on the page shouldn’t look careless or downright ugly.
-
-Also, skim your headings. Headings that extend over multiple lines won’t be as scannable as shorter ones. If all words are absolutely essential, so be it. But if you can find a way to make headings crisper without changing their meaning, then trim away.
-
-TIP Don’t change heading levels to make heading text appear smaller. Stick to the recommended hierarchy (one H1 per document>>H2s>>H3s>>H4s) to avoid problems with accessibility (e.g., via screen readers) as well as search engines.
-
-# 7.3.2 Code
-
-Is your code legible and copy/pasteable (or even better, immediately executable)? You can find a number of visualization tools that create pretty images based on a code snippet, but don’t use them for adding code to the body of your blog post. Let readers touch and grab your code, and let machines read it too. Save the code visualization tools for decorative images (for example, thumbnails for social sharing), and link to the GitHub repo whenever feasible so that readers can see the code in context.
-
-Sometimes, even code that’s in standard blog code embeds looks atrocious. For example, consider the Rust function code in figure 7.2 (using Medium’s dark mode).
-
-![](images/1065dd285df3c0274f01c92614892d584cc896ee87682aad098b7dc6a5c46adb.jpg)  
-Figure 7.2 A highly illegible code excerpt in Medium’s standard “dark mode” code embed
-
-Even in full color, it’s virtually unreadable. Figure 7.3 (best viewed in color) shows how using a different framework makes a huge difference for code legibility.
-
-```sql
-.init_wasm_func_table
-DROP FUNCTION IF EXISTS encrypt;
-CREATE FUNCTION encrypt LANGUAGE wasm AS X'0061736d010000001410b60037f7f017f60
-DROP FUNCTION IF EXISTS decrypt;
-CREATE FUNCTION decrypt LANGUAGE wasm AS X'0061736d0100000013a0a60027f7f017f6003
-CREATE TABLE secrets_secret_id, secret);
-INSERT INTO secrets VALUES (1, encrypt('libSQL is great', 's3cr3tp4ss')); INSERT INTO secrets VALUES (2, encrypt('libSQL is fantastic', 's3cr3tp4ss')); INSERT INTO secrets VALUES (3, encrypt('libSQL is amazing', 's3cr3tp4ss')); 
-```
-
-Figure 7.3 The same code displayed in a different blog framework
-
-# Here are some specific tips:
-
-¡ Prefer options that provide syntax highlighting, and be sure to specify the language. GitHub gists do the job and can easily be embedded into third-party sites (e.g., Medium). Code syntax highlighting libraries (Shiki, Prism, highlight.js, etc.) are another option if you’re publishing on your own blog site.   
-Even better, embed an interactive playground (e.g., Stackblitz or Sandpack) where users can play around with the code within the blog page.   
-¡ Inspect how the code is rendering in the new environment, especially indentation problems and any characters that might have been skipped at the start or end of the copy/paste.   
-¡ Aim for short lines—wrapping at 80–120 characters or so. Maybe that requires configuration, or maybe it requires another code display option altogether (refer back to the first bullet point).
-
-# 7.3.3 Core images
-
-Are the screenshots, diagrams, graphs, and other images in the body of the post shown at an appropriate size in the template? Large images will likely be automatically resized to accommodate the template’s width (figure 7.4). But is that really the ideal size for the reader?
-
-You could let users click to open a full-sized version of any image that’s smaller than it really should be. But it’s even better to crop or redesign the image so that the initial view shows all the appropriate details.
-
-If the blog is heavy on images, consider resizing images to the precise width needed, as well as compressing images. The sweet spot to aim for is the smallest file size that provides the highest image quality. Keeping images under 100KB is a good target.
-
-![](images/76ac5342f445774e6180cb31891d2eb1f1bb7046f45a213b4b0d1af9cc130ca8.jpg)  
-Figure 7.4 This screenshot at this size won’t be terribly helpful to the reader.
-
-TIP You can find free image compressors (e.g., tinyPNG) quite readily across the internet. Command-line tools such as ImageMagick’s “convert” also offer size-reduction features.
-
-# 7.3.4 Header image
-
-Does the template require an image at the top of your blog post? Many personal engineering blog sites opt to skip this and go with a minimalist design. However, many company blogs and blogging platforms require an image, and some individual blog site maintainers prefer to use such images, too.
-
-If you want or need to use a header image, try to preview (or at least approximate) how it’s going to be displayed:
-
-At the top of the blog post itself   
-In other positions (e.g., as a thumbnail image in lists or grids of posts)
-
-An image that looks great at 1200 pixel width might not be ideal for a more condensed tile in a grid of available blog posts. Pay extra close attention to this if your image
-
-includes text or other elements that shouldn’t be arbitrarily cut off. In some cases, you might be able to specify a different image for the header and the grid tile. Other times, you might be forced to have the same image serve dual purposes, so use one that works in both contexts.
-
-# 7.3.5 Videos
-
-We haven’t talked specifically about videos until now, but many blog authors use videos to add quick demos, visually explain concepts, or share a conference talk that’s relevant to the topic at hand. If you’re embedding any videos into your article, check the following when you preview the post:
-
-¡ Is the sizing appropriate? As long as you can adjust the source code of your blog, you don’t need to accept the default size. Fiddle with it until you’re satisfied.   
-Does the video display even if you’re not logged into the video platform? Check this in incognito mode or equivalent. If you find and fix the settings problem now, your readers won’t ever see the ugly “Video unavailable” message shown in figure 7.5.   
-Is the video available in the major regions where you expect your blog post to be shared and read? You can find various tools online to check this, or you could recruit some human beta testers across your network.
-
-![](images/2874be680f6d95634912213c61987a892ccd61f81eb68a33a627dc81e8055030.jpg)  
-Figure 7.5 Check if the video plays for people who are not logged into your video platform account.
-
-# 7.3.6 Tables and lists
-
-As mentioned previously, tables and lists are great tools for breaking up great walls of text. But they don’t always turn out as planned in HTML—not at first, at least. If you have complex tables or multilevel lists, check how they’re rendering. And don’t be surprised if some adjustment is required to achieve the effect you originally envisioned.
-
-# Elective elements to consider if you’re running your own blog
-
-How to set up your own blog site is beyond the scope of this book (though we do have a few quick notes in appendix A). If you are running your own blog site, consider whether you want to add the following elements to each blog post page:
-
-“Table of contents” links that jump directly to each heading and subheading   
-Links to share/discuss the article on relevant forums, aggregators, and social media sites   
-¡ The latest related articles that share the same tags
-
-# (continued)
-
-Links to other popular articles on the site   
-¡ An RSS, Atom feed, or other ways for people to track what you’re publishing   
-¡ A link to your bio, GitHub repo, and social handles
-
-# 7.4 Manage metadata
-
-Next, go below the surface and focus on the metadata. It’s easy to forget what’s not readily apparent (“out of sight, out of mind”). But metadata can make a big difference in terms of findability, accessibility, and shareability. Let’s touch on each of those before we move into the recommendations.
-
-¡ Findability —Humans rely on machines to find information, and machines rely on metadata (as well as your article’s text) to understand and classify your arti-cle. Highlighting key terms in your metadata helps machines connect interested readers with your article.   
-¡ Accessibility —Not everyone experiences your article in the same way. Some of your target readers might be relying on assistive technologies such as screen readers or Braille displays to understand your article. Little things such as ensur-ing that hyperlinked text is meaningful and images are carefully described can make a huge difference. Those same things also help search engines.   
-Shareability —If someone decides to share your article on their social media plat -form of choice, how will it appear in their followers’ feeds? You might take the time to manually upload an image when you’re sharing your own article. But will your readers? Help them out by specifying a default.
-
-Throughout this section, we’re focusing on high-level, broadly applicable principles because
-
-¡ Not everyone uses the same search engines, social media platforms, and so forth.   
-The array of available options is shifting.   
-¡ Many low-level implementation details (e.g., thumbnail image expectations or what to click to do anything anywhere) are also constantly evolving.
-
-TIP A great place for details on how all this metadata affects Google’s search rankings is the Google Search Documentation, available at https://developers .google.com/search/docs. And for details on how they affect accessibility, see All WCAG 2.2 Understanding Docs, available at https://www.w3.org/WAI/ WCAG22/Understanding/.
-
-# 7.4.1
-
-# Your keywords
-
-First off, determine the handful of keywords you want to prioritize while populating your metadata. Put yourself in your readers’ shoes. What might motivate them to seek
-
-an article on the topic you wrote about? And what terms might they search for as they attempt to learn more about it? Likely, there will be at least one big broad search term (e.g., “Java” or “Rust”) and one to three qualifying terms (e.g., “performance,” “concurrency,” “pitfalls”). That mixture should help you balance reach and relevance.
-
-Consider the top three to five terms “your keywords.” You want your article to appear when people search on these terms, so be sure to highlight these terms in the metadata when it’s logical and natural. Include them in your meta description and URL unless you have a good reason not to. Also, consider these keywords top candidates for your tags or topics. (All these terms are explained more in the following sections.) Beyond metadata, consider mentioning these keywords in your headers and subheaders, too.
-
-TIP Want the AI perspective? Prompt it with something like “What are some good SEO keywords for this blog post?” It might suggest a few decent options as well as spark more ideas in your brain.
-
-# USING GOOGLE TRENDS TO HELP DECIDE
-
-Not sure what terms people are actually searching for? Google Trends (https://trends .google.com/) is your friend. Use it to determine
-
-¡ If one term is searched more often than a similar term   
-¡ If interest in one term is rising, while interest in another is flat or dying out   
-¡ What related terms people are searching for (These might be points to address in a follow up blog or hints as to what questions could surface in the comments section.)
-
-Let’s look at a quick example. Assume we’re writing about a Kafka-like tool, and the team is torn between featuring “streaming data” or “event streaming.” We plug both into Google Trends, expand the region to Worldwide, expand the range to Past 5 years, restrict the category to Computers & Electronics, and voilà. There seems to be significantly higher interest in “streaming data” (see figure 7.6).
-
-Further down the page, the list of related queries for “event streaming” shows things like “apple event california streaming” and “apple event live streaming.” This indicates that the “event streaming” results include queries about livestreaming events such as Apple conferences and announcements. And even with that inflation/dilution, there’s still less interest in “event streaming” than in “streaming data.”
-
-All that being said, if the blog post focused on sharing experiences with different event processing patterns (publish–subscribe, event sourcing, Command Query Responsibility Segregation [CQRS]), it might be better to focus on “event streaming” despite the relatively lower search interest.
-
-Here are some tips for using Google Trends:
-
-¡ Know that you’re looking at the popularity of search terms over time. The data is normalized and scaled on a range from 0 to 100, with 100 representing the peak popularity of a term within the specified period and location.
-
-![](images/19024bbbfa6f22958abd872992a3dd32b9b540212a3bae6308615f3793c8839b.jpg)  
-Figure 7.6 Google Trends result for comparing interest in two similar search terms: event streaming and streaming data. There seems to be significantly higher interest in streaming data.
-
-¡ When selecting terms, avoid the one labeled “search term” unless there are no other options available. Anything that’s not a search term is a “topic.” Topics are language agnostic and account for misspellings. You will likely get more accurate results with topics than with search terms. For example, choose “Rust: Programming Language” over “Rust: Search Term” (which could include results for the movie, the metal, the game, etc.).   
-Compare topics to topics and search terms to search terms.   
-¡ Expand the timeframe to at least a couple of years to get a better understanding of how interest is trending and to discover seasonal spikes (e.g., around conferences).   
-¡ Look in the “Related Topics” and “Related Queries” area. If it mentions relevant terms, consider if those are better options. If it mentions crazily irrelevant terms (e.g., “reebok zig”) consider excluding them with a negative search term like “zig −reebok.”
-
-You can use the following search operators:
-
-¡ Quotation marks —Gets data for the precise term within the quotation marks:
-
-– “streaming data platform” will include data for “open source streaming data platform” but not for “streaming platform.”
-
-Plus sign —Gets data for search phrases with one or the other keyword:
-
-– Postgres + PostgreSQL will include data for Postgres as well as for PostgreSQL.
-
-¡ Minus sign—Excludes data containing the keyword indicated after the minus sign:
-
-– Rust −movie will exclude results related to the Rust movie starring Alec Baldwin.
-
-You can learn more about Google Trends in the following resources by Google:
-
-FAQ about Google Trends data: https://mng.bz/OmaO   
-Basics of Google Trends: https://mng.bz/YV9Q   
-15 tips for Getting the Most out of Google Trends: https://mng.bz/GNP8
-
-# Example 7.1
-
-One top keyword for the fake Zig blog would be “Zig,” of course, and maybe “examples” as well. But it should also target “FakeDB” and “Postgres,” and maybe “migrator,” too. After all, if anyone in the world is searching for a Postgres to FakeDB migrator, this is the blog for them!
-
-# 7.4.2 Title tag
-
-The title tag (<title>) sets the title that browsers display as the tab title and bookmark text. For people navigating the web via screen readers, the title tag is what’s read aloud as the person navigates among tabs.
-
-This tag also determines the title shown in social media link previews (unless it’s overridden by platform-specific metadata, which we discuss more later). And it’s usually—though not always—used as the hyperlinked text in search results. Google admits that it sometimes opts to use different text in its results, but what you specify in this tag is your best shot at influencing what’s shown there.
-
-Additionally, the title tag is one of the factors determining how search engines understand and rank your blog post. If your “target keywords” appear across your title tag, URL, or meta description, as well as in your article, your post is more likely to show up when people search for those terms.
-
-Usually, the title is just automatically copied over from your H1 (the title shown at the top of the blog post). Assuming you already put a lot of thought into your article title, that’s probably fine. However, you might want to adjust it if
-
-It’s long. Browsers truncate the title at around 50–60 characters. This shouldn’t be a problem if your H1 is fairly short and features the most eye-catching terms at the start rather than at the end. But if that shortened version isn’t ideal, tighten the title a bit. You might be able to get a few more characters to display by replac-ing “and” with “&” and replacing long em dashes (—) with pipes (|) or colons (:).   
-¡ You want to highlight an additional detail. If you have a short title and some breath -ing room before the 50–60 character cutoff, you could add your own name, site name, or company name at the end. For example, the “How We Built It” pattern blog titled “Ship Shape” (chapter 10) uses “Ship Shape—Canva Engineering
-
-Blog” as the title tag. If you’re a known brand, or want to become one, why not use the extra real estate to highlight that brand? Note that Google is currently showing the site’s brand name at the top of each search result (above the URL), so the extra branding might not be so critical.
-
-Although the title doesn’t need to match the H1, it must be similar. If not, the search engine might suspect that you’re trying to trick it and end up penalizing you by burying your blog post deep down where your target audience will never find it. (Cue the joke that the best place to hide a dead body is page 2 of Google search results.)
-
-# Example 7.2
-
-Assume that the fake Zig blog ended up being titled “We Built a Postgres to FakeDB Migrator with Zig.” That’s only 47 characters, so we could extend it in the title tag as follows: “We Built a Postgres to FakeDB Migrator with Zig | ACME blog.” Now it’s 59 characters. The word “blog” might get cut off, but that’s not critical.
-
-The following title would be risky: “Why and How the ACME Engineering Team Decided to Build a New Data Migrator (Postgres to FakeDB) with Zig.” It could quite likely get cut off at or before the word “Build.” That means all the important terms (Postgres, FakeDB, Zig, migrator) would be skipped.
-
-# 7.4.3 Meta description
-
-The meta description (<meta name $= ^ { \prime \prime }$ description”...) specifies the blurb used in link previews and influences the blurb shown in search results. Google might select different text (as it sometimes does with the title), so there’s no guarantee that what you add is what readers will get.
-
-The effect on search engine rankings is allegedly minimal. But the effect on users deciding what to read is significant. Along with your title, this is your best chance to hook the target reader—your opportunity to tell them what your article is about and why it’s so interesting. Focus on writing a clear and compelling description, including your keywords if appropriate. You have around 150 characters to work with here.
-
-Note that Google typically bolds any user search terms that appear in its description blurb (figure 7.7). If the reader is scrolling through results and notices that your blog post clearly addresses their search terms, they might trust it enough to click through.
-
-![](images/8eaa530b6b79db6279b6a6e71b967e715d0eb80ee78db39748766774da4d296c.jpg)  
-Figure 7.7 A screenshot of an article’s meta description as displayed in Google search results. Note how the user’s search terms are bolded in the description.
-
-Some platforms (like Medium) will automatically create a meta description using the first 140–150 characters from your article. Don’t just accept the default! Craft something carefully, ideally highlighting the technologies you discuss and what interesting angle you take.
-
-Once you have a tight statement to attract the target reader, strongly consider adding it at the very start of the blog post, maybe prominently in bold. That gives the reader a super fast way to see if your blog post is a good match for their interests and to move on immediately if it’s not.
-
-# Example 7.3
-
-Here’s a sample meta description for the fake Zig blog: “ACME built a Postgres to FakeDB data migration tool in Zig. Learn how Zig compared to C, ${ \mathsf { C } } { + } { + }$ & Rust and access the open source tool.”
-
-Here’s what you don’t want to do: “In this article, ACME staff engineer PretendPiotr shares his experiences creating a new data migration tool that enables faster migrations from Postgres to FakeDB. And he built it in Zig.” What’s wrong with it?
-
-Postgres will likely get cut off, and FakeDB and Zig will definitely get cut off.   
-¡	It’s loaded with a lot of words the reader won’t care about.   
-¡	It’s all about PretendPiotr and the article, not about what’s in it for the reader.
-
-# 7.4.4 URL
-
-Most platforms automatically generate a URL (often labeled “permalink” in the UI) based on the title you specify. If you want to modify it, change it right away. If you change it after you publish, you’ll need redirects, and your analytics will become more difficult to track—just think about it upfront and save yourself grief later.
-
-Per Google’s John Mueller (Google Search Advocate), having keywords in a URL is a “very, very lightweight ranking factor” (Mueller mentioned this in Google SEO office-hours: https://mng.bz/0MPW). Even if there’s not much benefit, adding your keywords there doesn’t require much effort, so just do it.
-
-Use lowercase throughout and separate words with hyphens, not underscores. To keep things tight, you might want to use a URL that’s shorter than the title. The URL length won’t affect your search engine ranking at all (Mueller mentioned this in an episode of AskGooglebot: https://www.youtube.com/watch?v=WmEpP9aPq8o), so don’t shorten it in hopes it will help you in that respect.
-
-NOTE Some platforms (looking at you, Medium) add an autogenerated hash to the URL for tracking purposes. Some people have created and shared scripts for removing it, but it’s probably safest to just let it be.
-
-What about dates? Should your URL include the publish date? It’s a personal preference, but the general consensus is that dates don’t add value and they clutter the URL. Many readers want to know when the article was published, so definitely include
-
-a publish date within the article itself. An extra benefit of a dateless URL is that if you update the post, you can just update the body of the blog with an “Updated: whenever” blurb. You won’t have to deal with a clearly outdated dated URL.
-
-# Example 7.4
-
-Assume the fake Zig blog is titled “We Built a Postgres to FakeDB Migrator with Zig.” A clean URL that includes our most important keywords would be “/postgres -fakedb-migrator-zig.”
-
-A bad option would be “/we_built_a_postgres_to_fakedb_migrator_with_zig”—particularly due to the underscores instead of hyphens. Another bad option would be “/database -zigzagging” since our “Zig” keyword might not be recognized as a separate word in that context.
-
-# 7.4.5 Hyperlinks
-
-In chapter 5, we touted how hyperlinks help you provide details to extra curious or less experienced readers without diluting the focus of your article. Now’s the time to nail the execution.
-
-First, think about what text to hyperlink. The answer is never “here” (as in “learn more here”) or the URL itself. Instead, ensure that the hyperlinked text describes the linked item and tells your reader what to expect. Why?
-
-It helps your readers determine if they want to click through.   
-¡ It provides search engines clues about how your content relates to other sites. Note that linking to other sites likely won’t help your own ranking, but it could pass on some good “search engine karma” to those you’re linking to.   
-¡ It’s absolutely critical for those experiencing your site through assistive technology such as screen readers. People using these devices commonly access the links out of context, tabbing to jump from link to link or pulling up a list of links when they’re done with the article. Imagine how frustrating it would be to request a list of links and hear something like “here, click here, here, read more, here,” capped off by a few GitHub URLs tortuously spelled out one character at a time (H-T-T-P-colon...).
-
-Finally, take the time to manually confirm that all links actually lead to the expected pages. It’s a pain. But sending readers off into dead ends won’t foster goodwill and motivate them to share your blog post. Even if you checked the links last week in your doc, check them again in the HTML page:
-
-¡ You might have copied something over incorrectly. If you’re just one character off, your readers get to experience the site’s clever 404 page.   
-¡ The links might have changed, particularly if you’re linking to documentation pages (which seem to move around way more often than any other type of web page in existence).
-
-# Example 7.5
-
-In chapter 5, we proposed revising the fake Zig blog to include a link to the RustEncryption library. The best way to handle that would be to make the bolded text the hyperlink:
-
-“Ultimately, we implemented that encryption layer by linking to RustyEncryption.”
-
-Something like “Ultimately, we implemented that encryption layer by linking to Rusty Encryption, which you can access here” would probably still make sense to people reading the link in context. But the out-of-context “access here” wouldn’t be meaningful if an assistive technology was reading out all the page’s links to a visually impaired reader.
-
-# 7.4.6 Images
-
-Earlier in this chapter, we discussed how images look to human eyes. Now let’s shift focus to how their metadata is used by machines—search engines trying to understand your page as well as screen readers and other assistive devices trying to describe them to humans.
-
-Image metadata is important for
-
-¡ Helping people with visual impairments understand the meaning and purpose of your images   
-Helping search engines better understand the page’s overall content   
-¡ Helping search engines determine if the image should be displayed for relevant image searches   
-¡ Telling readers what they’re missing in case the image fails to load (e.g., due to low bandwidth)
-
-Focus on two elements here: the file name and the ALT text description (a short text blurb that describes the image). For the file name, the recommendation is quite simple. Just use something more descriptive than IMG123.png—for example, original-acme-architecture.png. For the ALT text descriptions, use text that
-
-¡ Describes this specific image (what’s important about it and how does it relate to your blog post?)   
-¡ Avoids filler words (e.g., “This screenshot is an image that shows…”)   
-Doesn’t exceed 125 characters (the cutoff for many screen reading tools)   
-¡ Mentions any relevant keywords (e.g., key technologies in a system diagram)
-
-Note that you don’t need to add an ALT description for purely decorative images.
-
-# Example 7.6
-
-The fake Zig blog ended up with one image, the following Zig GitHub star history:
-
-(continued)   
-![](images/1f0fa728c6235fb58d20f60becf0359f0c86a36399ab9754a7191b5cb5ab3d14.jpg)  
-An image for the fake Zig blog. It needs an ALT text description so readers who can’t see it will understand what it’s communicating.
-
-A good file name might be “zig-star-history.png.” And a good ALT text description might be “The ziglang/zig GitHub star history from 2016 to 2024. Between 2022 & 2024, the stars surged from 10K to 30K.”
-
-# 7.4.7 Taxonomies: Categories, tags, and topics
-
-Many blogs use categories and/or tags to organize information. If the site you’re publishing on uses them, don’t forget to apply them to the article. When a reader completes an article and is hungry for more, they might skim through categories or tags that catch their interest. If articles aren’t properly categorized and tagged, the curious reader won’t have easy access to those related articles.
-
-Note that there are two distinctly different schools of thought when it comes to tagging. One is to tag every key term that’s mentioned. The other is to apply a tag only if someone hoping to learn more about that term would find value in this article’s discussion of it. A fleeting mention of a term would not pass that test, but a respectable reference that’s at least a paragraph might. Follow whatever approach is used throughout the blog site.
-
-In Medium and other platforms, there’s also the concept of a “topic.” Topics have two purposes:
-
-¡ Influence what content is recommended to a reader (readers can declare their topics of interest and algorithms will suggest content within those topics)   
-¡ Allow readers of a given article to drill down into additional articles on that same topic
-
-When you publish an article on Medium, you can specify up to five topics. At the time of writing, you can specify the topics in two different places (Change Topics, More Settings). The Change Topics area displays a number next to each topic but the More Settings area does not. Regardless, that number (seen in figure 7.8) is not terribly valuable.
-
-You might assume that the number Medium shows next to a topic would be the number of followers for that topic. No. It’s actually the number of articles currently tagged with that topic. So what if a topic has 46K articles? There’s a big difference between
-
-![](images/6bee3c3d82c87ab07aec80e4ccb891a99ca7b0567820a528290b6646024ee1d3.jpg)  
-Figure 7.8 What’s this number (46K) telling you about the Database topic? You might assume it means 46K people follow this topic. Wrong. It’s the number of articles tagged with this topic.
-
-a topic with 5K followers and 46K articles and another with 3M followers and 46K articles. To see how many people are following a particular topic, use the Medium “search by topic” functionality. For each topic, you’ll see the number of followers as well as the number of articles. Ahh, much better.
-
-With that knowledge, weigh your options, considering both relevance and reach. Do you want to be a small fish in a big pond (appear in a broader topic with many followers but also many articles) or the big fish in a small pond (appear in a more specialized topic with a smaller, more focused set of followers and also fewer articles to compete with)? With up to five options, you can likely target the most relevant specialized topics as well as a broader topic or two.
-
-# Example 7.7
-
-If the fake Zig post was being published on the company blog, it could fall under the “Engineering” category and might be tagged with Zig, tools, data migration, Postgres, and FakeDB.
-
-If we were publishing it on Medium, here are some related topics.
-
-Potential Medium topics for the fake Zig blog   
-
-<table><tr><td>Topic</td><td>Followers</td><td>Articles</td></tr><tr><td>Zig</td><td>107</td><td>122</td></tr><tr><td>Ziglang</td><td>50</td><td>29</td></tr><tr><td>Postgres</td><td>1.4K</td><td>7.3K</td></tr><tr><td>PostgreSQL</td><td>1.7K</td><td>7.3K</td></tr></table>
-
-# (continued)
-
-Potential Medium topics for the fake Zig blog (continued)   
-
-<table><tr><td>Topic</td><td>Followers</td><td>Articles</td></tr><tr><td>FakeDB</td><td>Too fake for followers</td><td>Too fake for articles</td></tr><tr><td>Programming</td><td>6.9M</td><td>404K</td></tr><tr><td>Software Development</td><td>2.6M</td><td>287K</td></tr><tr><td>Software Engineering</td><td>2.2M</td><td>98K</td></tr><tr><td>C</td><td>977</td><td>6.1K</td></tr><tr><td>Cplusplus</td><td>609</td><td>2.7K</td></tr><tr><td>Rust</td><td>7.2K</td><td>9.3K</td></tr><tr><td>Rust Programming Language</td><td>2.3K</td><td>1.6K</td></tr><tr><td>Database</td><td>5K</td><td>46K</td></tr></table>
-
-We would definitely want to select “Zig”; it’s a major focus, even though few people are currently following it. The people following “Ziglang” are probably also following “Zig,” so we could skip that.
-
-We’d also select “Postgresql” and “FakeDB” since they’re important keywords (we’re targeting Postgres users migrating to FakeDB). It seems “Postgresql” has slightly more followers than “Postgres,” even though they’re two different words for the exact same thing. We might as well select the one with more followers.
-
-What else? Let’s try “Programming,” which could provide exposure to a broad audience who might be curious about Zig even though they don’t follow it yet. 6.9M followers is quite attractive.
-
-That leaves us with one more. “Database” has a lot of stories, but very few followers. It’s also likely quite broad. There’s a low chance that someone who declared themselves interested in “Database” would care about this highly specialized migration tool—or in the lessons learned working with Zig. Maybe “C,” since the blog post talks at length about Zig’s C interoperability? Or “Rust,” since we mention it briefly and it has a healthy amount of followers? Or do we target another big broad one like “Software Engineering?” Decisions, decisions.
-
-There is no right answer. Weigh the options, make an educated guess, and adjust it later if needed.
-
-# 7.4.8 Featured (thumbnail) images
-
-Some articles stand out in a bad way on social media feeds. Instead of an image that’s either compelling, nondescript, or repulsive, they just have a sad gray box, as shown in figure 7.9. Don’t be that article.
-
-![](images/6f701d93f5cfe33a6c2bc4588a1a091cc66942667ccda0501e3bf7961049f5a3.jpg)  
-Figure 7.9 Don’t want this drab image representing your dazzling blog? Then specify an og:image thumbnail in the metadata.
-
-Cynthia Dunlop
-
-\@c_a_dunlop
-
-Oh no, no image here
-
-# B
-
-scylladb.com
-
-CQL: "ALLOW FILTERING" Support
-
-In this post we discuss the enhanced filtering support
-
-coming in ScyllaDB 2.4 and compare it to the...
-
-When you share your own article on your social media platform of choice, you will likely take the time to manually upload an appropriate thumbnail image. But will the people who happen to share it take that extra step? You can just set it in the metadata, and rest assured that your preferred image will display whenever someone shares the article.
-
-To set a default image and avoid the fate of the sad gray box, ensure that your post has og:image metadata set to the desired image. In many cases, if you specify something called the “Featured Image” in WordPress or Medium, it will automatically set the appropriate og:image tag for you. If your blogging platform doesn’t automatically add the og:image tag for you, please do it yourself. In fact, add the complete set of Open Graph metadata while you’re at it.
-
-But what’s Open Graph? It’s a protocol, created by Facebook, that controls what’s shown when your article is shared on social media. Most platforms respect Open Graph. And some platforms have their own paradigms that can override Open Graph settings on their domain (e.g., so you can set an image that uses the dimensions they prefer). For example, “X” still provides documentation on using “Twitter cards” as of this writing. You can learn more about the Open Graph protocol at https://ogp.me/. For Twitter cards and any other platform-specific metadata, search on the appropriate sites.
-
-If you wanted to add a mix of Open Graph and Twitter card data, you might add something like the following <meta> tags in the <head> of your page.
-
-# Listing 7.1 Adding meta tags for social media
-
-```html
-<meta property="og:site_name" content="http://www.mysite.com">
-    <meta property="og:locale" content="en-us">
-        <meta property="og:type" content="article">
-            <meta property="og:url" content="https://www.mysite.com/my/great-article">
-                <meta property="og:title" content="My great title">
-                    <meta property="og:image"
-                    content="http://www.mysite.com/img/great-article-thumbnail.png">
-                    <meta property="twitter:site" content="@my_handle">
-                      <meta property="twitter:title" content="My great title">
-                      <meta property="twitter:card" content="This is the best article ever."
-                      <meta property="twitter:image"
-                      content="http://www.mysite.com/img/great-article-x-thumbsnail.png"> 
-```
-
-Finally, note that the LinkedIn Post Inspector (https://www.linkedin.com/post -inspector) is a great tool for checking how posts will display on LinkedIn (and likely other platforms). Beyond the display preview, it explains how it selected the values for each element and describes how to change the displayed elements by modifying the associated metadata (f﻿i gure 7.10).
-
-<table><tr><td>Property</td><td>Value</td></tr><tr><td>Title</td><td>Enhancements to ScyllaDB&#x27;s Filtering Implementatio n</td></tr><tr><td>Type</td><td>Article    Lorem Ipsum</td></tr><tr><td>Image</td><td>https://www.scylladb.com/wp-content/uploads/80 0x400-blog-allow-filtering.png</td></tr><tr><td>Description</td><td>In this post we discuss the enhanced filtering suppor t coming in ScyllaDB 2.4 and compare it to the reco mmeded alternatives and their performance.</td></tr><tr><td>Author</td><td>Piotr Sarna</td></tr><tr><td>Publish date</td><td>No publication date found</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td>Alternate values we considered Other values from the page that our scraper could have used for the content&#x27;s image:</td></tr><tr><td></td><td>https://www.scylladb.com/wp-content/uploads/mc-lp-piotr -sarna-150x150.png</td></tr><tr><td></td><td>http://i4.ytimg.com/vi/dyWZRjtPIzs/0.jpg</td></tr><tr><td></td><td>https://www.scylladb.com/wp-content/uploads/blog-ad-dat a-performance-book.png</td></tr><tr><td></td><td>https://www.scylladb.com/wp-content/uploads/logo-scylla- horizontal-RGB.svg</td></tr><tr><td></td><td>https://www.scylladb.com/wp-content/uploads/1200x628-f b- Ikdn-scylla-3-0.jpg</td></tr></table>
-
-Figure 7.10 The LinkedIn Post Inspector shows what your post will look like, why, and how to change key elements.
-
-Another option: once your blog post is published or you have a publicly shareable preview, just do a quick test post on your platform of choice.
-
-Not sure what to use for a thumbnail image? Think about what would catch the eye of someone in your target audience. Flame graphs, other cool data visualizations, and images of code are always nice. They don’t have to be fully readable in tiny thumbnail size, just readable enough to make them intriguing. You could use some custom articlethemed artwork created by a human, or attempt to generate an image with an AI tool (we’ll talk more about this in appendix B). If you have a recognizable personal brand, consider featuring your brand logo here.
-
-Or, if you’re just not into graphics and want to immediately draw attention to your words, take a screenshot of the article itself (figure 7.11). If you do this, plan to play around with screenshot sizes to find a nice balance between compactness and readability.
-
-![](images/cb867906956ead4e34430e0a87850153fad93606a94286ed1dcff4fbef08b3b9.jpg)  
-Figure 7.11 An example of using a screenshot of the article as the featured image for social media sharing.
-
-# Phil Eaton \@eatonphil
-
-Here's a new post walking through an implementation of MvcC and major SQL transaction isolation levels, in 400 lines of Go code.
-
-These ideas might sound esoteric, but they impact almost every developer using any database.
-
-May 16, 2024
-
-# Implementing MVCC and major SQL transaction isolation levels
-
-In this post we'll build a database in 4oo lines of code with basic support for five standard SQL transaction levels: Read Uncommitted, Read Committed, Repeatable Read, Snapshot Isolation and Serializable. Well use multi-version concurrency control (MVCC) and optimistic control (OCC) to accomplish this. The goal isn't to be perfect but to explain the basics in a minimal way.
-
-You don't need to know what these terms mean in advance. I did not understand them before doing this project. But if you've ever dealt with SQL databases, transaction isolation levels are likely one of the dark corners you either 1) weren't aware of or 2) wanted not to think about. At least, this is how I felt.
-
-While there are many blog posts that list out isolation levels, I haven't been able to internalize their lessons. So I built a little database to demonstrate the common isolation levels for myself. It turned out to be simpler than I expected, and also made the isolation levels much easier to reason about.
-
-Thank you to Justin Jaffray, Alex Miller, Sujay Jayakar, Peter Veentjer, and Michael Gasch for providing feedback and suggestions.
-
-All code is available on GitHub.
-
-2:54 PM · May 16, 2024 · 37.2K Views
-
-# Example 7.8
-
-For the fake Zig blog, a fun featured image might be the Zig lizard with one hand on a Postgres elephant and the other hand on the FakeDB mascot (whatever that might be— a Chupacabra perhaps). A more serious approach would show a screenshot of the article itself.
-
-# 7.5 If you do nothing else
-
-Honestly, all these little things make a big difference, and there’s not much you can reasonably skip. Before you ship it, run through the checklist in the Summary section to ensure you’re not overlooking some tiny detail that could have an outsized effect on your post’s overall readability, findability, accessibility, and shareability.
-
-# Summary
-
-¡ Before your blog post is published, think about all of the little things (both surface level and metadata) that can make a big difference in how readers discover and experience it.   
-¡ Even if you’re not the one publishing the post, you might want to offer recommendations (e.g., propose a meta description, relevant tags, and so on).   
-¡ Preview the post (ideally on both mobile and desktop) with special attention to
-
-– Whether the title and headings look awkward in the template   
-– Code rendering and copy/paste errors   
-– Image clarity and size   
-– Video sizing and availability (make sure you’re not logged into the video platform)   
-– Complex tables and lists
-
-¡ Think about what three to five keywords are most relevant to your article— usually at least one big popular term plus a few specialized qualifiers (e.g., Async, Rust, performance, profiling).   
-¡ Use those keywords when appropriate, while specifying metadata such as the title tag, URL, meta description, and so on.   
-¡ Craft a compelling meta description that will hook the human reader, ideally with at least a few relevant keywords.   
-¡ Ensure images have ALT text describing what they’re showing.   
-¡ Check that all hyperlinks work.   
-¡ Check that your hyperlinked text describes what’s behind the link (not “here” and not a URL).   
-¡ Think about tags/topics with both reach and relevance in mind.   
-¡ Give your blog a decent thumbnail for social posting.
-
-# Applying blog post patterns
-
-Part 2 took a broad, systematic look at how to write a captivating blog post. But just like different programming languages have different conventions, so do different types of blog posts. A captivating bug hunt article will vary dramatically from an opinion piece roasting a highly hyped technology, or an article that shares how a team implemented an industry-changing algorithm. Part 3 involves in-depth analysis of these and other blog post “patterns” exploring real-world examples, characteristics, and dos and don’ts for each:
-
-Chapter 8 analyzes “Bug Hunt” blog posts that share the thrill of finding and fixing some elusive bug.   
-¡ Chapter 9 analyzes “Rewrote It in X” blog posts that are all about rewriting an app in a new programming language, library, or framework.   
-¡ Chapter 10 analyzes “How We Built It” blog posts that share your most impressive engineering achievements.   
-¡ Chapter 11 analyzes “Lessons Learned” blog posts that share lessons learned from technical challenges.   
-¡ Chapter 12 analyzes “Thoughts on Trends” blog posts that are highly opinionated takes on industry trends.   
-¡ Chapter 13 analyzes “Non-markety Product Perspectives” blog posts where the product is embedded into a genuinely intriguing and educational article.   
-¡ Chapter 14 analyzes “Benchmarks and Test Results” blog posts that share various flavors of benchmarks and tests.
-
-# The “Bug Hunt” pattern
-
+-   사소한 디테일들이 독자의 발견과 경험에 큰 차이를 만듭니다.
+-   발행 전 미리보기를 통해 가독성을 해치는 요소들을 수정하세요.
+-   검색과 공유를 위해 메타데이터(키워드, 타이틀, 설명, URL, ALT 텍스트, 태그, 썸네일)를 꼼꼼히 챙기세요.

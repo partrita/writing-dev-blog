@@ -1,292 +1,77 @@
-# This chapter covers
+# 13장 "상업적이지 않은 제품 관점(Non-markety Product Perspectives)" 패턴
 
-¡	Blog posts where the product is embedded into a genuinely intriguing and educational article   
-¡	Their purpose and audience   
-¡	How various authors approached this type of post   
-¡	Key elements of successful “Non-markety Product Perspectives” posts   
-¡	Dos and don’ts for your own “Non-Markety Product Perspectives” post
+# 이 장에서 다루는 내용
 
-The pattern’s name, “Non-markety Product Perspectives,” is itself a marketing trick to deceive you into thinking this pattern is not about marketing. It actually is about marketing, at least in a way. The “non-markety” part is there to distract you from the “product” keyword, which is a clear indicator that somebody is ultimately trying to sell something.
+- 제품이 흥미롭고 교육적인 아티클 속에 자연스럽게 녹아든 블로그 포스트
+- 목적과 독자층
+- 다양한 저자들의 접근 방식
+- 성공적인 "상업적이지 않은 제품 관점" 포스트의 핵심 요소
+- "상업적이지 않은 제품 관점" 포스트 작성 시 유의사항
 
-Fortunately, this kind of marketing works by educating readers about fascinating technical tidbits, groundbreaking designs, and other impressive achievements that
+이 패턴의 핵심은 마케팅처럼 보이지 않게 마케팅하는 것입니다. 제품을 노골적으로 파는 대신, 제품과 관련된 흥미로운 엔지니어링 문제나 해결책을 다루면서 자연스럽게 제품을 노출시킵니다. 개발자들은 노골적인 마케팅에 거부감을 느끼기 때문에, 엔지니어가 쓴 진정성 있는 기술 글이 오히려 더 효과적인 홍보 수단이 될 수 있습니다.
 
-just so happen to be available in the product that’s casually mentioned a few dozen times in the post. The selling part tends to be noninvasive, sometimes even borderline subliminal. In the best of the bunch, no purchase is necessary for readers to walk away with useful learnings—but now they’re so intrigued that they want to try the product anyway. That’s what makes this pattern so valuable for companies and readers alike.
+# 13.1 목적 (Purpose)
 
-“Non-markety Product Perspectives” engineering blog posts are especially valuable for companies marketing products to developers. An engineer-authored piece that provides an inside look at a product might be the only way to bypass developers’ primitive gag reflex to all things marketing. But these posts can be especially tricky to pull off. As an author, how do you share something valuable related to your product without facing the wrath of your fellow snarky developers, all too eager to accuse you of “marketing fluff”? That’s what we’ll explore in this chapter.
+### 13.1.1 간접 광고 (Product placement)
+제품을 사용하여 기술적 문제를 해결하는 방법을 보여줌으로써 독자가 제품을 사용해 보고 싶게 만듭니다.
 
-![](images/fed340a6dfddab3814c200349ed4b451e0176dfdb8272174ea4eeaa431b1ca8a.jpg)
+### 13.1.2 티저 (Teaser)
+아직 출시되지 않은 기능이나 혁신적인 아이디어를 미리 공개하여 기대감을 조성합니다.
 
-# 13.1 Purpose
+### 13.1.3 채용 (Hiring)
+회사의 기술력과 문화를 보여주어 인재를 유치합니다. 이 글을 읽고 지원한 사람은 이미 회사의 비전에 공감할 가능성이 높습니다.
 
-In the introduction, we mentioned that the “Non-markety Product Perspectives” pattern is mostly driven by marketing. That includes marketing the company as an employer and technology leader, as well as marketing actual usable products.
+# 13.2 독자 (Audience)
 
-# 13.1.1 Product placement
+-   회사나 제품의 기존 사용자 및 팬
+-   해당 기술 분야(예: 임베디드, AI)의 종사자
+-   잠재적 입사 지원자
+-   경쟁사 (동향 파악 및 벤치마킹)
 
-The ultimate goal of this pattern is to encourage readers to try out the product (or at least recognize that your product exists in case they’re ever in the market). It’s achieved not by flashy advertisements, but rather by focusing on a remarkable engineering achievement related to the product. For example,
+# 13.3 "상업적이지 않은 제품 관점" 블로그 포스트 사례
 
-¡ Something used to be annoying for developers, but we know how to fix it (with our product)   
-¡ Here’s how a specific protocol works in detail (with example usage in our product)   
-¡ There’s an important thing to remember when implementing a distributed system (and we did remember it when working on our product)
+### 13.3.1 We Put a Distributed Database in a Browser... (Phil Eaton, Joran Dirk Greef)
+TigerBeetle 데이터베이스의 분산 시스템 시뮬레이션을 웹브라우저 게임으로 구현하여 보여줍니다. 복잡한 알고리즘을 게임을 통해 직관적으로 이해하게 만들며 제품의 기술력을 과시합니다.
 
-Embedding the product into a genuinely intriguing and educational post is a highly effective way of getting the attention of programmers.
+### 13.3.2 32 Bit Real Estate (Kurt Mackey)
+IPv4 주소 시장의 작동 원리를 설명하며 Fly.io가 인프라 회사로서 겪는 IP 주소 확보의 어려움을 이야기합니다. 제품보다는 기술적 주제(IP 주소)에 집중하여 자연스럽게 회사를 노출합니다.
 
-# 13.1.2 Teaser
+### 13.3.3 System Dependencies Are Hard... (Misty De Méo)
+Rust 생태계의 의존성 관리 문제를 지적하고, 이를 해결하기 위해 만든 도구(cargo-dist)를 소개합니다. 문제 해결 과정에 집중하여 독자의 공감을 얻습니다.
 
-Quite a few articles following this pattern describe a product feature that isn’t yet delivered. Sometimes the product isn’t generally available at all, being hidden under a “private beta” label or only observed in an obscure heavily edited demo video from a few months ago. Promising things that aren’t even close to being implemented is a cornerstone of technical marketing, so it’s absolutely acceptable! Releasing a “Non-markety Product Perspectives” blog post is a good way of announcing an innovative idea that will (eventually) get productized and become part of the company’s offering.
+### 13.3.4 Why fsync()... (Denis Rystsov, Alexander Gallego)
+분산 시스템에서 데이터 동기화(`fsync`)의 중요성을 이론적 증명과 예시를 통해 설명하며, Redpanda가 데이터 안전성을 위해 어떤 노력을 하는지 보여줍니다.
 
-# 13.1.3 Hiring
+### 13.3.5 So You Think You Want to Write a Deterministic Hypervisor? (Alex Pshenichkin)
+결정론적 하이퍼바이저를 만드는 기술적 난관들을 설명하며 Antithesis의 제품을 소개합니다. 깊이 있는 기술적 내용을 통해 팀의 전문성을 드러냅니다.
 
-Engineering blogs are generally honeypots for talent. The readers already demonstrated initiative by reading a blog post about the company’s products, processes, or culture. Placing a modest note about open positions at the end rewards those with the curiosity and initiative to reach the final paragraph.
+# 13.4 특징 (Characteristics)
 
-“Non-markety Product Perspectives” articles are especially great for hiring purposes. Looking for candidates who stay up-to-date with technology? The fact that they discovered and devoured your entire blog is a good test. It’s fair to assume that anyone who applies after reading one of these blog posts is already aware of what the company does and has (presumably) bought into the vision. That’s a promising start.
+### 13.4.1 기술적 (Technical)
+마케팅 목적이 있지만 본질은 엔지니어링 블로그여야 합니다. 제품에 관심 없는 사람도 배울 점이 있어야 합니다.
 
-# 13.2 Audience
+### 13.4.2 비하인드 스토리 (Behind the scenes)
+외부에서는 알 수 없는 제품 개발 과정의 뒷이야기, 기술적 결정, 숨겨진 기능 등을 공유하여 독자에게 특별한 정보를 제공합니다.
 
-People who already follow a specific company, or an entire industry branch (e.g., embedded systems, AI, cloud infrastructure) constitute one social group particularly interested in product perspectives. This group can be further divided into
+### 13.4.3 잠재의식적 (Subliminal)
+제품 홍보를 전면에 내세우지 않고, 흥미로운 기술 이야기 속에 자연스럽게 녹여내어 독자가 스스로 제품에 관심을 갖게 유도합니다.
 
-¡ Aficionados of a specific product (e.g., their favorite web development framework)   
-¡ Aficionados of an entire concept (e.g., web development frameworks in general)
+# 13.5 유의사항 (Dos and don'ts)
 
-¡ People considering job opportunities with the company that posted the article
+### 13.5.1 자기소개 하기
+글의 서두나 회사 소개란을 통해 회사와 제품이 무엇을 하는지 투명하게 밝히세요. 독자가 문맥을 이해하는 데 도움이 됩니다.
 
-Another curious category is the competition: developers working for companies in a similar niche, as well as startup founders, developer advocates, and their marketing folks. They’re likely wondering about
+### 13.5.2 팔지 마라 (Don't sell)
+제품이 주인공이 되어서는 안 됩니다. 제품은 기술적 주제를 설명하기 위한 도구일 뿐입니다.
+-   **체크리스트:** 엔지니어링 관점인가? 투명한가? 불필요한 마케팅 용어는 없는가? 독점적인 세부 정보를 제공하는가? 주장에 근거가 있는가?
 
-¡ What their competition is up to these days   
-¡ If the competitor’s good ideas can be creatively reused
+### 13.5.3 균형을 유지하되 비난하지 마라
+제품에 대해 솔직하게 쓰되, 지나친 단점 나열은 피하세요. '버그 찾기' 패턴과는 다릅니다. 제품의 한계나 적합하지 않은 사용 사례를 언급하는 정도의 솔직함이 신뢰를 줍니다.
 
-“Non-markety Product Perspectives” usually offer a peek into the described product’s technical details, but that doesn’t mean they cater only to existing or prospective users. Done well, they’re solid engineering blog posts in and of themselves, leaving readers with learnings and technical tidbits that are valuable beyond the user community. Done really well, they might convert an aficionado of the topic into a potential product aficionado or job applicant.
+# 요약
 
-# 13.3 Examples of “Non-markety Product Perspectives” blog posts
-
-In the wild, “Non-markety Product Perspectives” blog posts live primarily on company blogs, likely just a click away from the product being mentioned. Existing users who might be poking around the site for docs, a new product version, and similar are likely to stumble upon these posts. They’re also commonly the fodder for social media feeds and newsletters—a way for the company to remind the world that they exist without seeming egregiously salesy.
-
-Here are some prime examples of blog posts that apply the “Non-markety Product Perspectives” pattern, along with Piotr’s commentary on each.
-
-# 13.3.1 We Put a Distributed Database in a Browser—And Made a Game of It!
-
-Authors: Phil Eaton, Joran Dirk Greef
-
-Source: TigerBeetle Blog (https://mng.bz/mRr0)
-
-# SUMMARY
-
-The article shows how TigerBeetle’s specific distributed system architecture can be compiled to WebAssembly, running in a browser as a game anyone can play. It begins by introducing TigerBeetle’s deterministic simulator. This design allows the database to be tested in a simulated environment, abstracting away input/output, networking, and also clocks. The web browser game is built on top of the very same code that the distributed database system uses, compiled to WebAssembly with the Zig language toolchain.
-
-The next paragraphs describe three difficulty levels in the game, which also correspond to real-life problems that can impact distributed systems:
-
-¡ Level 1—Uninterrupted replication   
-¡ Level 2—Network and storage failures (but no corruption)   
-Level 3—Network and storage failures including on-disk corruption
-
-Then, the authors share a short history of how the game idea came to life, along with tributes to the contributors. The final paragraph, pointedly named “Law of Demos,” redirects readers to a video just in case the game doesn’t work in their environment.
-
-# COMMENTARY
-
-TigerBeetle squeezed an entire distributed system in a browser as a game, forever raising the bar for what an impressive technical blog post looks like. Just take a look at it, and you’ll see why further commentary is really unnecessary.
-
-But if you happen to be reading this book in some lovely off-the-grid location, or just don’t want to visit the internet right now, here are a few reasons why this is so captivating:
-
-1 The web browser game runs the same code as the distributed system. It’s mind-blowing to realize that although it’s intended for large fast servers, it can also run inside a web browser after being compiled to WebAssembly.   
-2 It shows a complicated distributed replication algorithm in a visual way, making it way more comprehensible than an academic paper on that exact algorithm.   
-3 It’s interactive, allowing readers to try and prove the algorithm wrong by injecting faults into the distributed system: isolating nodes from the network, forcing them to restart, and so on.   
-4 It does the above by letting you
-
-a Smash animated anthropomorphic beetles with a hammer (node failure)   
-b Electrocute them (disk corruption)   
-c Freeze them (network partition)
-
-Do I really need to continue, or can we just roll back to “just take a look at it, and you’ll see why further commentary is really unnecessary” and call it a day?
-
-# 13.3.2 32 Bit Real Estate
-
-Author: Kurt Mackey
-
-Source: Fly.io Blog (https://fly.io/blog/32-bit-real-estate/)
-
-# summary
-
-This article is a primer on how the market of IPv4 addresses works. The introduction presents a problem that’s often ignored: IP addresses can be quite costly for infrastructure companies like Fly.io. Early on, the article explains that the global pool of IP addresses is owned and managed by five public benefit entities: ARIN, RIPE, APNIC, AFRINIC, and LACNIC. They can be leased by individuals and companies, but not bought.
-
-After acknowledging IPv6 as a standard that solves many of the IPv4 shortcomings, the author explains that IPv6’s still stunted adoption means it’s not yet a viable alternative. He continues to provide a peek into the IPv4 address exchange market, which is deceptively similar in principle to how cryptocurrency exchanges work. Then, the article explains that you can take out the equivalent of a mortgage on a block of IPv4 addresses, as well as lease them for fixed terms. IPv4 addresses can also be considered an investment, with appreciating value, at least as long as IPv6 is not widely adopted.
-
-The conclusion sums up that IP addresses are surprisingly expensive and still very important for an infrastructure company. The final sentence wraps it all up with a
-
-playful comparison between the decades-old IPv4 market and scammy cryptocurrency-related markets.
-
-# COMMENTARY
-
-Great title: short, technical, intriguing. The contents are insightful as well. The number of IPv4 users is huge compared to the number of people who understand how it works underneath (a handful of public entities administering the whole address space and a rather ancient BGP [Border Gateway Protocol]).
-
-Although the topic isn’t all that complex from a technical perspective, it’s a really engaging and nice read. For many readers, it will induce the “ah, so that’s how it works” revelation, which makes the blog post memorable. The company’s product is mentioned quite a lot, but in a rather noninvasive way, related to the technical content. Still, you walk away with a general idea of what fly.io is all about and will have that filed in the back of your mind in case you ever need such a product.
-
-# 13.3.3 System Dependencies Are Hard (So We Made Them Easier)
-
-Author: Misty De Méo
-
-Source: Axo Blog (https://blog.axo.dev/2023/10/dependencies)
-
-# SUMMARY
-
-The article is an overview of cargo-dist—a tool developed by Axo, the company behind this engineering blog. It starts with the problem statement that managing dependencies in the Rust ecosystem is harder than expected. The next section explains that cargo-dist can automatically install dependencies for multiple programming environments. The article then shifts to cargo-dist’s ability to figure out link-time dependencies of a package (so that they can be installed automatically along with the rest of the project).
-
-The intricacies of actually installing a package on Apple hardware are covered next—along with a look at how cargo-dist makes the process easier. Next, the author explores the complexities of linking on different platforms, complete with more technical details. The article wraps by simply encouraging readers to try cargo-dist and letting them know about a new release.
-
-# COMMENTARY
-
-The title is intriguing, and the problem stated in the introduction makes total sense. It’s nice to see code snippets and concrete technical examples of how cargo-dist solves a particular problem (here, detecting which packages must be installed along with the original project).
-
-My only complaint is that while the title and introduction appear to be describing a universal tool (which cargo-dist actually is and strives to be), the blog post is very Apple-centric. For a person who doesn’t own any hardware produced by the aforementioned company (we exist), it quickly gets less captivating, and whole paragraphs can be skipped. There’s of course nothing wrong with focusing on a specific environment, but I’d appreciate realizing that earlier than halfway through the article.
-
-Nonetheless, I appreciate that the Apple-specific parts are very detailed, and it’s nice to be able to follow the author’s thought process of overcoming the build-stage problems step by step. The conclusion paragraph is amazing, straight to the point: here’s our product, give it a try.
-
-# 13.3.4 Why fsync(): Losing Unsynced Data on a Single Node Leads to Global Data Loss
-
-Authors: Denis Rystsov, Alexander Gallego
-
-Source: Redpanda Blog (https://mng.bz/5OPq)
-
-# SUMMARY
-
-This article warns readers that unsynchronized data is a serious problem in distributed systems. The introduction briefly presents a list of measures that Redpanda (a faster Apache Kafka) takes to make the product more robust with respect to consistency. Next, it explains the titular fsync and how it contributes to data consistency on disk. That’s followed by a brief look at replication’s purpose in distributed systems.
-
-Once all that’s covered, it’s time for the problem statement: replication does not guarantee data safety if data isn’t synchronized with fsync. The problem description spans beyond a single paragraph. There’s a proof of impossibility as well as a concrete counter-example to support the thesis. The article concludes that the thesis is considered proven, and encourages users to try Redpanda and join its community.
-
-# COMMENTARY
-
-The title is both eye-catching and very explicit, which is a great maneuver. The “Why 'fsync()'” part is intriguing enough for any reader even remotely concerned with data consistency, and the rest is a succinct summary of the whole article.
-
-The level of detail is quite satisfactory for a deeply technical audience. Often, articles about data consistency are either purely theoretical academic papers or hands-on examples. This particular article has both. It provides
-
-A theoretical proof of why replication is not sufficient to guarantee consistency   
-A reproducible example of data loss
-
-It’s especially nice to see a step-by-step guide on how to reach the same results, in case a reader doesn’t take the authors’ word for it. This article uses detailed technical insights to implicitly advertise the product (Redpanda): it shows the steps that were taken to provide better consistency guarantees for its users. This is precisely what the “Non-markety Product Perspectives” pattern can be used for.
-
-# 13.3.5 So You Think You Want to Write a Deterministic Hypervisor?
-
-Author: Alex Pshenichkin
-
-Source: Antithesis Blog (https://mng.bz/6YP5)
-
-# summary
-
-The article is a follow-up to the Antithesis launch post, which announced their main product: a deterministic hypervisor for testing and debugging complex systems. The
-
-first part of the article explains what determinism is and why it’s not trivial to emulate it on modern hardware due to complexities such as
-
-¡ Speculative execution with branch predictions   
-Instruction pipelines   
-Interrupts   
-Processor parallelism
-
-Next comes a sneak peek of the design, revealing that the hypervisor is based on existing software—bhyve, FreeBSD’s stock hypervisor. That’s followed by a deep dive into a few things that had to be adjusted, including time management and deterministic I/O (including disk and network access). Finally, the author announces that more details are coming and encourages readers to apply for a job there if they enjoy solving similar problems.
-
-# COMMENTARY
-
-This article is especially noteworthy when you connect the dots and realize it comes from the founding team of FoundationDB, a database with a very specific and holistic approach to testing distributed systems. At first glance, this blog post is a decent candidate for the “How We Built It” pattern, due to its level of technical details and (partial) product design description. But ultimately, the technical details are used to pique interest in an impressive product that brings distributed system testing to a new level.
-
-Just like its predecessor post (the launch post titled “Is Something Bugging You?”), this post is masterfully written in a way that
-
-Shows that the authors are experts in their field   
-Conceals enough technical details to make readers
-
-– Crave more posts   
-– Want to get in touch and use Antithesis against their software   
-– Want to apply for a job so they can join the aforementioned team of experts
-
-There’s a very delicate balance between showcasing solid engineering and making a post look markety. I think the Antithesis team nails it just right. I also like how they make a pattern out of using a provocative question as a blog post title. That makes it feel immediately interactive.
-
-# 13.4 Characteristics
-
-“Non-markety Product Perspectives” share some characteristics with their more magisterial cousins, “How We Built It” blog posts:
-
-The product plays a leading or support role.   
-¡ They’re providing a peek into implementation details, as well as their processes.   
-The engineering tidbits shared expand the overall industry knowledge base.
-
-However, “Non-markety Product Perspectives” tend to focus on a much narrower niche, usually either how they tackled a highly specialized challenge related to building
-
-the product or a deep dive into a particular use case for the product. A company will typically publish “Non-markety Product Perspectives” posts quite regularly but reserve “How We Built It” posts for special occasions.
-
-# 13.4.1 Technical
-
-This is the most markety pattern of all the ones covered in this book, but it’s nonetheless still an engineering blog pattern. The best litmus test of an effective “Non-markety Product Perspectives” article is whether someone with zero interest in your product learns something they might jot down in a TIL (Today I Learned) file or share with their colleagues. Otherwise, it’s likely just a marketing piece in disguise, something that the online mobs are particularly great at detecting and publicly shaming.
-
-It’s impossible not to bring up TigerBeetle as a good example, again. Readers have an opportunity to learn and understand a distributed system replication technique by playing an online game. Good luck getting more technical and educational than that!
-
-# 13.4.2 Behind the scenes
-
-One nice part of bringing the author’s own product into a blog post is that the author can offer unique behind-the-scenes perspectives that make the post more engaging and distinctive. For example, authors might include unique tidbits such as
-
-¡ An amusing anecdote explaining why the blog post’s main topic is related to the product in the first place   
-¡ A few product implementation details that may not be obvious to the audience— Easter eggs, specialized tricks specific to a programming language, hacky scripts, and so forth   
-¡ A short rant on why something didn’t work when trying to integrate it with the product
-
-Readers leave privy to information that was never before published. And they likely feel a stronger connection to the product after being granted this behind-the-scenes access.
-
-A perfect example of such a technical sneak peek is in Antithesis’ article on their deterministic hypervisor. It provides exclusive details such as a screenshot showing parts of a comment block from their otherwise closed source code.
-
-# 13.4.3 Subliminal
-
-This characteristic is closely related to the product placement purpose referenced at the beginning of this chapter. Ideally, the urge to try out the product is induced on a subliminal level, without explicitly advertising the product in each paragraph. The audience should be subtly nudged toward trying out the product simply because it’s related to an intriguing engineering subject in one way or another.
-
-For example, consider Fly.io and their article on the IPv4 address space. Their introduction has this subliminal effect where you skim through it and don’t really remember the contents after reading the rest of the article. And yet, it sticks in your mind: Fly.io manages IP addresses at an impressive scale, and they have a product you can try.
-
-# 13.5 Dos & don’ts
-
-Beware: Almost any engineer is at risk of being “voluntold” to write one of these posts at almost any time. When that request arrives, don’t panic. If you focus on full transparency, the deep technical details that stem from your unique engineering point of view, and providing a balanced perspective, you’ll be fine. Here are some specifics.
-
-# 13.5.1 Introduce yourself
-
-You don’t really need to introduce yourself as an author, but it is good practice to clearly tell the readers a little bit about the company behind the article: what overall category you ’re in and what’s distinctive about your product. That way, you’re upfront about the fact that the article was written by someone with a vested interest (maybe literally) in this product’s success. Nobody should feel tricked. Readers who wanted a purely technical piece with no product affiliation can turn around now. It also gives readers additional context upfront. Now that they have an inkling of what the com-pany does, technical bits from the article are
-
-easier to imagine in a real-world scenario.
-
-For an example of how this might be done, look at a few different fly.io blog posts. They seem to have a rule to put a short description of what the company does on top of each engineering blog post. The exact wording varies, but it’s always a short summary of what the company is up to at the time of writing.
-
-# 13.5.2 Don’t sell
-
-Avoid making the product the central point of the article. Otherwise, the article will likely be immediately qualified as marketing fluff and ignored by everyone except people who are already excited about the product.
-
-Instead, the product should just be part of the theme. For example,
-
-The product relies on the technology described in the post   
-¡ The product is a proposed solution to a known technical problem   
-The product suffered from a notable technical pitfall
-
-It’s absolutely fine to directly encourage readers to use/register/download/try the product somewhere in the intro or outro. However, the article still needs to be first and foremost an engineering blog post, not product propaganda.
-
-You might wonder if the TigerBeetle post mentioned earlier makes the product the central point of the article. Well, yes and no. While it’s clear that everything in the article is very specific to TigerBeetle and its implementation, the central point is explaining a complicated distributed consistency algorithm via gamification. It’s fair to assume most readers aren’t in desperate need of a fast and correct financial transaction database. Still, they can certainly grasp a new concept from the distributed systems category while venting frustration on animated beetles with hammers and thunderbolts.
-
-e perceived as “selling,” run through this checklist:
-
-¡ Targeted topic —Does this really require an engineering perspective, your personal engineering perspective, in fact? If not, rethink the focus, or try to pawn it off on someone else.   
-¡ Total transparency —In addition to the “what our company does” disclaimer noted in “Introduce yourself,” make sure the reader can immediately determine what they’ll get out of your post and what role your product plays in that. Don’t make them hunt for it and certainly don’t spring the product on them without warning mid-post or even later.   
-¡ No gratuitous material —After you reveal what the reader will get from this post, stick to it. Ruthlessly cut anything that’s not essential for accomplishing that. Are you tempted (or being pressured) to add details about some other cool capability, pop in some impressive but unrelated test results, etc.? Don’t. Save it as an idea for another time (and maybe another author).   
-¡ Distinctive details —A good $8 0 \%$ or so of your article should focus on details that could only come from your unique engineering perspective. Provide quick background if absolutely necessary, but keep the focus on “behind-the-scenes” access to details that aren’t available elsewhere.   
-No arguable statement left unsupported —Hunt down any statements that a reasonable person in your target audience might question or argue with. Ensure that they are all supported by facts: technical details from your own experience, experiments, or trusted industry knowledge. This is covered extensively in section 5.2.1.   
-¡ Watch your language —Excessive adjectives or adverbs, buzzwords, superlatives, and extremes will raise red flags. An extreme example (credit to ChatGPT): “Our revolutionary software offers state-of-the-art features that leverage dynamic algorithms for a seamless, world-class user experience. This represents a paradigm shift in the industry with its transformative capabilities and next-gen technology, ensuring optimal performance and scalability for all users.” If in doubt, look back to the image at the start of this chapter. If the words might come out of that gentleman’s mouth, cut or rethink them!
-
-# 13.5.3 Be balanced but don’t bash
-
-While a “Non-markety Product Perspectives” blog post is not an overt marketing technique, it’s still expected to showcase something in an impressive and intriguing way. It’s important to provide a realistic and honest look at the product. If appropriate, do share what it’s not built for, when it shouldn’t be used, and similar. But avoid placing too much emphasis on the product’s shortcomings, sharing users’ negative experiences with it, and so on.
-
-Negative feedback will look out of place, making the readers wonder why on Earth the company agreed to release a lampoon against their own creation. More importantly, the article will most certainly get a red light at its review stage. There are other forms of
-
-articles in which honest criticism of the product’s weak points is appreciated (see, for example, the “Bug Hunt” pattern). But “Non-markety Product Perspectives” post isn’t the place for it.
-
-# Summary
-
-Embedding the product into a genuinely intriguing and educational post is one of the best ways to introduce a product to programmers.   
-¡ Blog posts in this pattern not only draw attention to working products but also sell the company as a technology leader and attractive employer.   
-¡ Readers include your most dedicated users, potential users, people with no intention of ever using the product, and competitors who want people to use their product instead.   
-¡ These posts should be just as technical as other engineering articles, provide exclusive behind-the-scenes details related to the product, and subliminally educate the reader that the product exists and is backed by a cool engineering team.   
-Top tips:
-
-– Disclose your company’s purpose upfront for transparency and to help the reader better understand the article.   
-– Ensure the product is part of a larger theme that’s intriguing even if a reader has zero interest in that specific product.   
-– Actively avoid and root out “marketing fluff”—use the “Don’t sell” checklist in the chapter for specifics.   
-– Be honest and realistic about the product, but don’t go overboard and leave the reader with a negative impression.
-
-# The “Benchmarks andTest Results” pattern
-
+-   제품을 교육적이고 흥미로운 이야기 속에 자연스럽게 배치하여 개발자들에게 어필하세요.
+-   제품뿐만 아니라 회사의 기술 리더십과 채용 브랜딩에도 도움이 됩니다.
+-   기존 사용자, 잠재 고객, 경쟁사 등 다양한 독자를 고려하세요.
+-   기술적 깊이를 유지하고, 비하인드 스토리를 제공하며, 제품의 존재를 은연중에 알리세요.
+-   회사 소개를 투명하게 하고, 마케팅 용어를 배제하며, 솔직하지만 긍정적인 톤을 유지하세요.

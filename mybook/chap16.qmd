@@ -1,414 +1,102 @@
-# This chapter covers
+# 16장 블로그 포스트에서 컨퍼런스 발표로
 
-¡	The value of converting your post to a conference talk   
-¡	How to identify and compare conference opportunities   
-Tips for the end-to-end process—preparing a proposal, creating your deck, and following up after the conference ends
+# 이 장에서 다루는 내용
 
-As much value as reading (and writing) blog posts offers, it doesn’t corner the market on learning. There’s nothing like a conference—people gathering to share, learn, connect, refresh their t-shirt supply, and commiserate over unidentifiable buffet food. Options range from KubeCon to FOSDEM, PyCon to QCon, and Monktoberfest to Wasm I/O, which makes it hard to claim that there’s not a good fit for your focus and preferences. Moreover, virtual conferences provide global access to similar experiences without travel (or the associated approvals and hassles).
+- 포스트를 컨퍼런스 발표로 전환할 때의 가치
+- 컨퍼런스 기회 식별 및 비교 방법
+- 제안서 작성부터 발표 자료 준비, 사후 관리까지의 팁
 
-As we teased in the previous chapter, a successful blog post provides a great glide path into conference speaking. It helps the conference organizers assess whether you’re a good fit and gives you a distinct edge against other candidates who are simply
+성공적인 블로그 포스트는 컨퍼런스 발표를 위한 완벽한 디딤돌입니다. 이미 주제에 대해 깊이 고민했고 콘텐츠가 정리되어 있기 때문입니다. 발표는 전문가로서의 인지도를 높이고 네트워크를 확장할 수 있는 좋은 기회입니다.
 
-sharing a short abstract full of fuzziness. Plus, you have a head start on thinking about the topic, creating the storyline, and even responding to common questions that could arise.
+# 16.1 발표로 가는 길
 
-This chapter helps you navigate the “blog post to conference talk” path—deciding whether it’s worth it to you, finding and evaluating different opportunities, and finally completing the various phases of the conference lifecycle.
+### 16.1.1 표트르의 이야기
+내향적인 개발자였던 표트르가 상사의 제안(사실상 지시)으로 첫 발표를 하게 된 경험을 공유합니다. 무대 공포증은 발표 시작 직전에 사라지며, 청중은 생각보다 우호적이거나 무관심하다는 깨달음을 얻었습니다.
 
-# 16.1 The path to speaking
+### 16.1.2 왜 발표해야 하는가?
+-   **전문가 인정:** 해당 분야의 전문가로 각인됩니다.
+-   **네트워크 확장:** 동료 발표자 및 청중과 의미 있는 관계를 맺을 수 있습니다.
+-   **직접적인 피드백:** 타겟 청중의 반응을 실시간으로 확인하여 이해도를 높일 수 있습니다.
+-   **무료 전문 영상:** 자신의 발표 영상은 훌륭한 포트폴리오가 됩니다.
 
-Using your blog post as a springboard to conference speaking offers a number of valuable benefits, as long as you can make the time, secure your company’s approval, and get past the stage fright that’s quite common among developers.
+### 16.1.3 왜 하지 않는가?
+-   **승인 문제:** 회사의 허락이나 지원이 필요합니다.
+-   **시간 소요:** 제안서 작성, 자료 준비, 리허설 등에 많은 시간이 듭니다.
 
-Before you immediately dismiss speaking opportunities as “not for you,” consider Piotr’s personal experiences on the matter. For context, remember this quote from chapter 1: “I (Piotr) was once the epitome of the stereotypical introverted programmer. I dreaded speaking in front of what I considered a crowd (more than two people).”
+# 16.2 기회 식별 및 평가
 
-# 16.1.1 Piotr’s path
+유튜브 검색이나 Sessionize 같은 사이트를 통해 기회를 찾으세요.
 
-I wish P99 CONF and other virtual conferences that let you pre-record a talk were a thing in 2018. Instead, my first-ever conference talk was in person: ScyllaDB Summit 2018 in Silicon Valley. At that time, I’d only been working at ScyllaDB for a few months,so I was reasonably sure I wouldn’t be selected as one of the speakers. Boy, was I wrong.
+### 16.2.1 적합성 (Fit)
+주제와 청중이 내 글과 맞는지 확인하세요. 과거 발표들을 살펴보는 것이 도움이 됩니다.
 
-What made matters worse was this unique Gmail feature that sometimes randomly categorizes a perfectly legitimate email from your coworker as spam, even when it comes from the same internal domain. About a month before the conference, I noticed that people were acting like I was a speaker, but I had no clue why. Then at one point, I decided to check the Spam folder. Here I saw a message from my boss, asking if I would mind speaking about the
+### 16.2.2 도달 범위 및 홍보 (Reach and promotion)
+커뮤니티 규모, 홍보 지원 여부, 영상 녹화 및 공개 여부 등을 고려하세요.
 
-most recent (and also the first) feature I added to ScyllaDB.
+### 16.2.3 물류 (Logistics)
+일정, 여행 경비 지원 여부, 온라인/오프라인 여부 등을 확인하세요. 온라인 발표는 사전 녹화가 가능해 부담이 덜할 수 있습니다.
 
-My lack of response was assumed consent, which made me doubly terrified:
+# 16.3 제안서 제출하기
 
-¡ Thanks to Gmail’s filter fiasco, I ignored a message from my superior during my first few months at a new job.   
-¡ I was going to speak publicly at a business conference in the United States (traveling from Poland).
+제목과 초록(Abstract)이 핵심입니다.
 
-# What a great start!
+### 16.3.1 블로그 포스트 재사용/재고
+기존 제목을 그대로 써도 되지만, 컨퍼런스 성격에 맞춰 조정하는 것이 좋습니다. 여러 개의 제안서를 제출하여 선택지를 넓히는 것도 방법입니다.
 
-Nowadays for online conferences, I tend to write down a full transcript of what I’m about to say, which I can then read out loud to rehearse, measuring the talk length and just generally seeing if it sounds alright. The same transcript lands in my speaker notes, so I can refer to the notes whenever I get stuck. Most in-person conferences now display speaker notes in a discreet location (teleprompter style), but ScyllaDB Summit, back in 2018, did not.
+### 16.3.2 제출 팁
+-   과거 발표 스타일을 참고하세요.
+-   간결하면서도 구체적으로 쓰세요.
+-   제안된 주제(Suggested topics)에 맞추세요.
+-   블로그 포스트 링크를 첨부하여 내용을 미리 보여주세요.
+-   바이오(Bio)에 공을 들이고 포트폴리오 링크를 추가하세요.
+-   제품 홍보가 아님을 명확히 하세요.
+-   발표에 대한 열정과 유연성을 보여주세요.
 
-I ended up printing out my notes the old-school way. That resulted in a pile of seven or eight sheets of paper, with my transcript in fine print. And yes, it was just as unusable as it sounds. I realized that quite early, and that recognition elevated my stage fright an extra fraction above what I already considered maximum.
+# 16.4 블로그 포스트를 발표로 변환하기
 
-Then, the talk started. I immediately learned four important things that help me through conference talks to this day:
+### 16.4.1 핵심 메시지부터 시작
+청중이 꼭 기억해야 할 한 가지를 정하고, 이를 중심으로 내용을 가지치기하세요.
 
-¡ The stage fright disappears exactly 2 seconds before I start talking. I just have something else to occupy myself with: speaking. Since my brain is mostly single threaded, there just aren’t any cycles left to worry about speaking in public.   
-¡ Breaks for taking a sip of water appear completely natural from the audience’s perspective, so just use that trick whenever you’re stuck or just need an extra breath.   
-When you get a surprisingly difficult question, you can just say “I don’t know!” or “Interesting, I need to think about this more—let’s take it offline.”   
-Most of my stage fright comes from the incorrect assumption, perhaps from my school days, that my audience knows more than I do about the subject and someone is just waiting for the chance to correct me in an embarrassing way.
+### 16.4.2 슬라이드 흐름 잡기
+슬라이드당 1~2분을 기준으로 전체 흐름을 잡으세요. 블로그 내용을 모두 담으려 하지 말고 핵심만 추리세요.
 
-The average audience, in my experience, consists of three main groups:
+### 16.4.3 개별 슬라이드 개발
+-   텍스트는 최소화하고 시각 자료(다이어그램, 차트 등)를 활용하세요.
+-   코드는 가독성을 위해 자르거나 생략하세요.
+-   블로그 포스트로 연결되는 QR 코드를 포함하세요.
+-   데모는 실패를 대비해 백업 영상이나 슬라이드를 준비하세요.
 
-¡ People who know less than you do about the subject and are there to learn.   
-¡ People who know more than you, but are also decent and polite; even if they ask a difficult question, they are really just seeking clarification.   
-¡ People staring at their phones. And that's the largest group by far.
+### 16.4.4 발표자 노트 준비
+스크립트를 준비하되, 자연스럽게 말할 수 있도록 연습하세요.
 
-None of those groups will actively try to embarrass you. Ergo, that stage fright really is irrational.
+# 16.5 발표 홍보하기
 
-# 16.1.2 Why speak at conferences?
+컨퍼런스 주최 측뿐만 아니라 본인도 소셜 미디어를 통해 적극적으로 알려 전문가 이미지를 구축하세요. 회사 마케팅 팀에도 알리세요.
 
-Next, let’s look at the benefits of getting past that stage fright. We’ll particularly focus on the value for blog post authors.
+# 16.6 리허설
 
-# recognition as an expert on the topic
+시간 준수가 가장 중요합니다. 시간을 체크하며 연습하고, 온라인 발표라면 카메라 위치나 배경 등 환경을 점검하세요. 예상 질문에 대한 답변도 준비해 두세요.
 
-Speaking at a conference guarantees you a spot at the equivalent of the Walk of Fame in your technical niche. You can treat it as applying search engine optimization to yourself. Once you start making the rounds on the speaking circuit, representatives from other conferences, book publishers, even founders looking to build out the team will be able to easily find you and validate your experience
+# 16.7 발표하기 (Delivering)
 
-By association, you’ll get some of the prestige of the keynote speakers. People who showed up for the megakeynote will also likely stick around and sample some of the more focused track sessions. Moreover, you might occasionally find it appropriate to namedrop “Oh yeah, when I spoke at that conference with so-and-so...” Speaking at conferences is also a great way of promoting your next big project (for example, your new book on writing for developers) in that biography slide.
+-   명확하고 적절한 속도로 말하세요.
+-   슬라이드 전환 시 호흡을 가다듬으세요.
+-   청중을 바라보고 미소를 유지하세요.
+-   질문은 다시 한번 언급한 뒤 답변하고, 모르는 것은 솔직히 말하세요.
 
-# network expansion
+# 16.8 사후 관리 (Following up)
 
-The value of speaking at a conference extends beyond your few minutes in the spotlight. An in-person conference usually includes an exclusive speakers’ dinner, or a speakers’ room designed first and foremost for networking (not to mention better
+발표가 끝났다고 끝이 아닙니다.
+-   소셜 미디어에 감사 인사를 남기세요.
+-   요약 글을 쓰거나 관련 자료를 공유하세요.
+-   피드백을 확인하고 반영하세요.
+-   다른 발표자들과 교류하세요.
+-   영상이 공개되면 공유하고, 원본 블로그 포스트에도 영상을 추가하세요.
 
-snacks, internet access, and other “luxuries”). Online conferences have followed suit and often involve a speakers’ lounge or VIP chatroom. Either way, you already have something in common with your fellow speakers and you can just review the agenda to learn (at least some of) their professional interests. That means it’s not so difficult to connect, even if you’re generally averse to trivial small talk. It’s often beneficial to keep in touch with other conference speakers after the conference completes. They might invite you to a panel, you might remember them when your company is expanding, maybe you partner on a side project at some point, who knows?
+# 요약
 
-Being a speaker could also give you a chance to meet that big name keynote speaker referenced in the previous section. Plus, conferences are also a great opportunity to meet with your audience. Technical conferences attract like-minded people and experts in their fields, which makes the potential of valuable networking quite high. When you’re a speaker, attendees are naturally drawn to you following the session. Sometimes even a casual follow-up chat can lead to interesting collaboration later.
-
-# DIRECT FEEDBACK FROM YOUR TARGET AUDIENCE
-
-If you want to write blog posts that your target audience appreciates, this is your chance to get direct feedback from actual human beings in that target audience. When you present your blog post as a talk, you can see what parts people are most excited about, where they have questions, and where they start checking their phones. This not only helps you revise that specific blog post (if desired), but it also sharpens your sense of who these people really are. And that is helpful with every future blog post that you write.
-
-In chapter 5, we urged you to read through your blog post with your target reader in mind and anticipate
-
-What they are most skeptical about   
-Where they want more context, detail, or supporting facts   
-Where they might get lost, distracted, or disoriented
-
-Speaking in front of real-life members of this audience can help you calibrate your assumptions versus reality.
-
-# FREE PROFESSIONAL VIDEO
-
-Having a professionally produced video of yourself speaking can be impressive when you’re applying for jobs, submitting conference or book proposals, completing your annual performance review, or just trying to give your friends and family some idea of what you do at work. It’s a great portfolio piece. And it can be conveniently embedded into your blog post if you want to offer people the option of watching as well as reading.
-
-TIP To be safe, download a local copy of the video. You never know when the organization will decide to stop hosting archived videos.
-
-# 16.1.3 Why not?
-
-Assuming that Piotr’s personal story puts the “stage fright” objection to rest, there are really just two reasons not to try converting one of your blog posts to a conference talk.
-
-The first is the challenge of getting the required approvals. The second is the time required to prepare and deliver the talk.
-
-# APPROVALS
-
-This one is often the dealbreaker. If your company won’t allow you to speak publicly about your topic and won’t fund your travel to in-person conferences, there’s no point in worrying about how much time it will require. As with blog post publication, some companies’ approval processes are much more onerous than others. Before you get too deep into the process, ask your boss and your colleagues if there’s even a chance this might be approved.
-
-# TIME
-
-Even when you have the advantage of starting with a blog post, conferences do involve a number of activities and checkpoints that you should plan for:
-
-¡ Creating and submitting your proposal   
-¡ Any speaker briefings required upon acceptance   
-Creating your deck and speaker notes   
-Submitting your deck for review and updating it based on feedback   
-¡ For virtual conferences, possibly pre-recording or performing advance tech checks   
-Any pre- or postevent discussions or promotions you’re invited to participate in
-
-# 16.2 Identifying and evaluating opportunities
-
-Assuming that you’re interested, how do you proceed? Create a list of interesting opportunities, then prioritize a few top candidates after you dig into some details.
-
-If you already have a list of conferences that you admire or that you hear your peers talking about, add those to your list. Then build out the list further by
-
-¡ Browsing YouTube —Start searching by the keywords related to your blog post $^ +$ “conference” and see what you stumble upon. You could also try searching for the names of some topic experts you admire $^ +$ “conference.”   
-¡ Using “call for speaker” sites —Sessionize is currently the most popular site for con -necting speakers and conferences. You can create a speaker profile with your experience and interests, then use the “discovery” functionality to see what con-ferences might be a good match. PaperCall is another option.
-
-In addition, keep an eye out for local user groups and meetups. These can be a great starting point. Most likely, their organizers will be thrilled to have a volunteer speaker, and they will be quite accommodating of whatever topic, format, and length you have in mind.
-
-There are many factors to consider when comparing different conference speaking opportunities. Let's divide them into a few buckets: fit, reach and promotion, and logistics.
-
-# 16.2.1 Fit
-
-Consider how well this conference’s focus fits your topic and target audience:
-
-What is their stated focus?   
-What are their most popular topics?   
-Who’s their audience (job titles, level of experience, etc.)?   
-Who are the speakers from past conferences?   
-What level of technical depth do they go into?   
-How long are the sessions?   
-¡ What session formats do they offer?
-
-Many conferences narrow, shift, or expand their scope as they evolve year after year. But if you’re not impressed by the conference’s past, be extremely cautious before committing to become part of its future.
-
-When you feel like a conference’s community is “your people,” you’re more likely to make meaningful connections and get valuable feedback on your ideas.
-
-# 16.2.2 Reach and promotion
-
-Consider how this conference will help you become better recognized as an expert on this topic:
-
-How many people are in their community?   
-How do they promote the conference?   
-¡ How do they promote individual sessions?   
-Will they create a professional video to create buzz for your session?   
-¡ Are there opportunities to cross-post related blogs on their site?   
-Are there opportunities to be included in speaker Q&A blogs?   
-Are talks actively promoted after the conference ends?   
-¡ Are sessions recorded? If so, what do the final videos look like? Will they be available to those who did not attend the conference?
-
-If the conference is tracked by a large community, the event promotion alone will elevate your profile. A recording is always nice to have (as outlined in section 16.1.2), but it’s especially important if you want exposure beyond the conference’s community.
-
-# 16.2.3 Logistics
-
-What does the end-to-end experience involve?
-
-For all opportunities,
-
-When are deck drafts due? Final versions?   
-Are there any other deadlines or required preconference activities?   
-¡ Do they provide templates or do you need to create your own?   
-Is any graphics help available if you need it?
-
-For in-person conferences,
-
-How much time and money will be required to travel on those dates?   
-¡ Do they offer a free pass? Cover any travel expenses? Offer hotel discounts?   
-Do you really want to attend the other conference talks and events?   
-¡ Will teleprompters be available for speaker notes?
-
-For virtual conferences,
-
-¡ Can you pre-record? If so, can you do multiple takes? Self-record?   
-Will you end up presenting super early or super late in your local time zone?   
-¡ How do you engage with attendees and other speakers during the live event?
-
-For example, if you’re particularly nervous about public speaking, you might prioritize virtual conferences where you can pre-record. And a conference that’s willing to help you with graphics, slide decks, and similar might be a better starting point than one where you need to do it all yourself.
-
-Or, if your heart is set on attending an in-person conference, you probably want to focus on considerations that help you make a business case for traveling. It should be simpler to get approvals if the conference covers many of the expenses, plus there’s a critical mass of sessions that could benefit your team.
-
-# 16.3 Submitting your proposal
-
-The title and abstract are the heart of your proposal. Your immediate goal is to create something that interests the conference selection committee. But remember that the title and abstract are used even beyond that initial judging:
-
-¡ The conference committee will use them to promote your talk through social media posts, event blog blurbs, and so on.   
-¡ Attendees will review the title and abstract when deciding which talks to attend.   
-¡ Your title and abstract will also be tacked on the resulting video in perpetuity, influencing how it’s understood by search engines and recommended to people searching for related terms.
-
-NOTE We obsessed over the importance of titles in chapter 5. Refer back if you want a refresher.
-
-Your title should intrigue the reader and demonstrate relevance to the conference theme. And your abstract should indicate
-
-Why your specific topic is important to this conference’s target audience   
-How you will cover the topic (with details!)   
-¡ Why your take on the topic is so intriguing (e.g., it’s based on your experience building Project A, or you ran some extensive/extreme testing)   
-What attendees will ultimately learn if they pay attention
-
-If you can make the reader nod, raise their eyebrows, or smile somewhere along the way—that’s a distinct bonus.
-
-# Kent Beck’s abstract formula
-
-Kent Beck proposed the following template for writing abstracts that get accepted:
-
-1 State the problem.   
-2 Explain why the problem is a problem.   
-3 Offer up “one startling sentence” (e.g., “We found that X is destined to fail without Y.”).   
-4 State the implication of the startling sentence.
-
-Feel free to try that approach, or come up with your own.
-
-TIP Not sure how to start squeezing your $1 0 0 0 +$ word blog post into a 100- ish word abstract? Try a generative AI prompt like: “Propose an abstract for a {describe} conference that is based on the following blog post; it should be no longer than {word_limit).” Then, use that as a rough guide for creating a much more compelling version on your own.
-
-# 16.3.1 Reusing/rethinking your blog post
-
-If the title and topic angle in your blog post are perfectly suited to the conference’s focus and personality, you don’t need to change them. It’s fine to have a conference talk use the same title as a blog post (as long as it meets the character limit). Still, you might want to take this opportunity to play with it a little. Did you have some alternative title ideas you really liked but didn’t use? Do you want to expand, narrow, or reframe the scope of the topic based on any feedback you received? A conference talk is the perfect opportunity to freshen it up, so start by having the title and abstract reflect that new direction.
-
-If you see an opportunity to make your title and angle a better fit for the conference, do it! Think about it from the conference organizer’s point of view. If there are two equally intriguing talks—one that’s directly related to the conference theme and one that’s not—which one do you think will be selected? Relevance is a critical evaluation criteria.
-
-TIP You can often submit multiple proposals to a single conference. If you’re debating between a few different approaches to your original topic (or if you want to try speaking on something altogether different), submit the allowed number of ideas and let the organizers decide which one they prefer.
-
-As you begin to write, draw lots of inspiration from the blog post’s introduction. If you followed the advice in chapter 5, the introduction should already
-
-Share what you’re trying to accomplish and why the target audience should care
-
-Expose what angle you’re taking on this topic   
-¡ Indicate why your take on this topic is interesting
-
-Work all that into the abstract! Also, apply the clarity tips from chapter 5 to thoroughly optimize every sentence. There’s no room for lard here; every word should be carefully selected and add value.
-
-# 16.3.2 Submission tips
-
-Here are some additional tips for an effective submission:
-
-¡ Learn from the past. Look at past talk titles and abstracts. What’s the style? You don’t want to submit something playful and snappy when all the past ones are serious and quasi-academic or vice versa.   
-¡ Be brief yet specific. You know this topic inside and out by now. Use that to your advantage and make your short abstract rich with specifics. The submissions will be full of abstracts promising to show “some common pitfalls” and “a number of techniques.” An abstract that indicates clear direction and deep thought will stand out from the pack.   
-Align with a suggested topic. Most “Call for Speakers” pages share what topics they’re hoping to cover. If you can align your talk to one of those topics, make that adjustment. It will likely improve your chances of being accepted.   
-Note your blog post. Use the notes field or other submission platform options to share something like “This talk is based on my blog post: {URL}.” Organizers can then read the blog post to get a better idea of what you plan to cover. This additional detail is incredibly helpful for building confidence in first-time speakers. And if your blog post links to a Hacker News or social media post with lots of engagement, even better. This shows the organizers that the community is interested in this topic.   
-¡ Spend time on your bio. Unless the conference uses double-blind (masked) evaluation, speaker quality matters—especially for first-time speakers. If you’re not well-known, that judgment is made solely based on your bio. Your bio shouldn’t just lazily restate your job title. Share a little more about your background and interests, emulating the style and seriousness of past speakers’ bios. For example, “I started learning Rust for fun in 2017. I’ve now worked full-time with Rust for five years at ACME A and ACME B, writing high-performance and high-availability API servers and internet proxies.”   
-¡ Link to a portfolio. Do yourself a favor: create a simple portfolio web page with links to your blog posts, any existing talks, GitHub and social handles, a bio, and optionally a high-quality photo of yourself (a professional-looking high-res phone photo is fine). Then link to that in your bio. This allows you to succinctly share details, even within the constraints of a character-limited form field. Plus, it makes a nice impression of professionalism, which can help you with the speaker strength criteria. Side note: remember to keep that portfolio page reasonably up-to-date!
-
-¡ Be transparent about the product’s role. If your talk mentions your product, provide enough detail to assure everyone that it’s not a product pitch, especially if your product is not open source. That might be totally clear in the blog post, but ensure it comes across in the abstract as well. Nobody wants a thinly veiled advertisement at a conference session. It makes attendees unhappy, and that makes organizers unhappy. If organizers can’t tell beyond the shadow of a doubt that it won’t be a product pitch, they will likely err on the side of skipping your talk.
-
-¡ Sweat the small stuff. Look at all the details of what’s required: word count, headshot image size, and similar. If you miss the mark on one, the submission might not go through. Even worse—the text you entered into the submission form might be lost. Pro tip: prepare your submission responses in a file outside of the web form, just in case something goes awry.
-
-¡ Note your (authentic) excitement and flexibility. If you have attended and enjoyed the conference as an attendee, feel free to quickly mention why you love it and why you’d be honored to speak at it. Also, if you’re willing to adapt your proposal based on their feedback and needs, make that known as well. Organizers appreciate both flattery and flexibility.
-
-¡ Review the review criteria. See if the conference you’re applying to publishes any review criteria, and keep that in mind as you work on your proposal (your bio as well as your title and abstract). For example, here’s how KubeCon submissions are currently judged:
-
-– Content —The relevance and coherence of the session’s content, the quality of the proposal, and the likelihood of effective delivery by the speaker   
-– Originality —The degree to which the session presents new and innovative ideas or approaches, as well as the originality of its delivery   
-– Relevance —The extent to which the session’s content provides new and exciting insights or information that is relevant to the conference   
-– Speaker(s) —The suitability of the proposed speaker(s) based on their expertise and alignment with the subject matter
-
-Finally, set realistic expectations, and don’t get discouraged if it doesn’t work out. Some conferences have a startling low acceptance rate; for example, KubeCon hovers around $1 1 \% - 1 2 \%$ year over year. If you’re not accepted, it never hurts to ask for feedback on why your submission didn’t make the cut or what you could do differently next time. Conferences might not be at liberty to provide those details; but if you hit one that does, it’s a valuable learning opportunity.
-
-# 16.4 Converting your blog post to a talk
-
-Accepted? Take a few moments to celebrate, then read the speaker guide and start planning how you will convert your blog post into a talk. All the content is already nicely written in your blog—maybe too much content, actually. Your job now is to determine the best way to present it to this conference’s specific audience, at a pace and depth they can process when listening in real time.
-
-TIP Looking for inspiration? TechYaks (https://techyaks.com/) is a ranking-driven list of classic tech talks (think Hacker News). And Brendan O’Leary wrote a nice analysis of what makes some specific tech talks so compelling in his blog post “What makes a great tech talk?” (https://mng.bz/2gqw)
-
-# 16.4.1 Start with the most important takeaway
-
-To start, think about the most important thing you want the attendees to get out of this talk. This is probably quite close to the goal you stated for your blog post (covered in chapters 4 and 5), but it might be somewhat adjusted to accommodate the conference focus or the limited time you have to present.
-
-With that in mind, write down your mission statement, something like “I’m going to be sharing {this} to help you {that}.” This statement has two main purposes:
-
-¡ As you plan the talk, use this to filter out any information that doesn’t play an essential role in achieving that goal. Talks should be even more tightly focused than blog posts. When reading, people can always skip over anything they consider a distraction. At conferences, they’re forced to tolerate it (or they end up checking their phones and never regaining that initial focus).   
-¡ During the talk, before you advance a single slide, share this statement to help orient and filter the audience. If an attendee isn’t interested in what you have to offer, they can skip over to another talk before it’s too late.
-
-# 16.4.2 Map out the slide flow
-
-Start mapping out the slide flow to estimate what you can actually cover in the allotted time. The rule of thumb is 1 to 2 minutes per slide. That will vary a bit based on the content of your slides, but don’t expect to cover 50 slides in a 20-minute presentation.
-
-NOTE If your conference specifically requests something different, definitely follow their guidance. For example, some conferences expect “Lightning Talk” speakers to use exactly 20 slides and spend 15 seconds per slide.
-
-You don’t need to fill out the body of the slides yet. Just add titles and see where you land. If you end up with an egregious excess, revise accordingly. Some topics might need to be merged or, more likely, the scope might need to be scaled down. Can’t immediately justify why a specific point is required to support the main takeaway? Cut it. Remember that you have the luxury of sending attendees to your blog post for addi-tional details, so you don’t have to cover every nuance here. It’s much better to have attendees walk away with a good grasp of one big idea that they will remember than leave overwhelmed by an onslaught of information overload. If they’re curious, they will seek out the additional details later.
-
-TIP For help translating words to slides, use a generative AI prompt like: “I want to convert this blog post to a 20-minute talk for a Zig conference. Could you please draft 18–22 slides to cover the core material that a Zig-curious audience would be interested in?”
-
-# 16.4.3 Develop individual slides
-
-Once you’ve settled on the flow, optimize the slide titles. They should be short and clear, helping the attendees determine what to focus on when you’re speaking to each slide. Use a different title for each slide to avoid confusion and force yourself into more precision. And as we covered in chapter 5, focus on headings that make sense from the audience’s point of view. One approach is to match what’s probably running through their heads (“Why did we take this approach?”, “Was it worth it?”, etc.)
-
-For the actual slide body, aim to have as little text as possible, and then cut some more. You want the audience to be listening to you, not reading tons of text. You don’t want the temptation of reciting the slide text. Stick with a tight set of pithy bullets and leave your details for the speaker notes.
-
-Don’t even think about shrinking the conference template’s recommended font to squeeze more words onto a slide. Attendees have a low tolerance for text they can’t read and an even lower tolerance for code they can’t read. If your code excerpt doesn’t all fit on one slide in the recommended font, consider splitting it up or redacting any nonessential parts, adding ellipses to indicate the cut. Nobody will be running code from your slide anyway.
-
-Not every slide needs to look like a piece of art, but do aim to have at least a few slides that are visually compelling. Slides that stand out tend to be captured by attendees, provoking paparazzi moments at in-person conferences or screen captures at virtual ones. You can add visual interest to your slides with system diagrams, flame graphs, other charts and dashboards, test results—whatever makes sense for your topic. You likely already created a few for your blog post. Even a stark controversial statement, set off on its own, could achieve the desired effect.
-
-Serving up a few attractive and intriguing slides will help attendees share your talk on social media, which in turn helps you get more recognition for your talk. Also, don’t overlook the power of a QR code; people are irresistibly drawn to photograph them. Be sure to add context to that slide so the motivation for scanning is readily apparent later on.
-
-TIP Want ideas on what visuals you could add? Follow up the previous AI prompt with “What visuals would you recommend for this presentation?”
-
-Some additional tips for completing your deck:
-
-¡ Share background. Offering up the backstory around your topic is a natural way to start the talk. Plus, it helps the audience connect with you at a more human level than if you simply started with impersonal lecturing.   
-¡ Fun is fine. If there’s a natural opportunity to include a fun example or story, do it. It’s another way to connect with the audience, and it helps make your talk more memorable. For example, some speakers use fun visual themes (monsters,sports, etc.) to tie their ideas together in a memorable flow.   
-¡ Use section slides as signposts. Section slides give you an opportunity to state the key takeaway from the previous section, take a deep breath, and then transition into
-
-the next section. If anyone’s mind started wandering during the previous part, this can help get them back on track.
-
-¡ Feature your blog post. Toward the end of your deck, prepare a full slide featuring your blog post. Include a screenshot of your blog post plus a QR code that links to it. For an extra incentive, mention that your blog post will include the video and slide deck for this talk.   
-¡ Cover connecting. Prepare a slide that shares how to contact you with questions or follow you to learn about your next talks and blog posts. Even better, give them a specific reason to connect with you, like “I’d be happy to share the resources I found most helpful for learning about {topic}, just contact me on{platform_of_choice}.”   
-¡ Prepare backup slides. If you worry that your talk might run short, it’s helpful to have some backup slides that you can pull up for a quick extension. You could also include a few slides that would help you address questions that are likely to arise during the Q&A.
-
-If you plan to demo something as part of your talk—perhaps to show what your engineering feat looks like from the user perspective—plan for everything to go wrong, then be pleasantly surprised if it does not. Planning for the worst typically means having a backup video saved locally. But, you could also prepare slides that let you speak to the main points you would have covered. Or, you might opt to skip it altogether and use the extra time to go deeper into other slides. Just have a backup plan and be ready to execute it at a moment’s notice. You never know when you might find yourself in the middle of a Windows 98 “Blue Screen of Death” demo moment.
-
-# 16.4.4 Prepare speaker notes
-
-Many speakers feel more comfortable presenting with speaker notes available—sometimes with key points beyond what’s in the slides, sometimes with a complete word-forword script. This is purely an individual decision; do what you’re most comfortable with.
-
-If you decide to script it, plan to rehearse it so extensively that it sounds natural (more on this later). Many speakers use bold text and other annotations to remind themselves what words to emphasize, when to pause, and similar. While relying on a script is fine, droning on and on in a monotone voice is not. Make a concerted effort to make it sound natural and ensure that the script reading doesn’t dampen your innate enthusiasm for the topic.
-
-The act of writing the script and rehearsing from it can be worthwhile even if you never look at that script once during the actual presentation. If preparing a script helps you perfect the timing and figure out how to approach each slide, it’s time well spent.
-
-TIP If you’re scripting your talk word-for-word, a rule of thumb is that conference talks run at a pace of 100 to 160 words per minute.
-
-# 16.5 Promoting the talk
-
-The conference organizer will likely promote your talk, and you should, too. Sharing that you’re speaking about {whatever} at Conference A isn’t just about helping conference attendees shape their schedules. It’s also a somewhat subtle way to announce “Hey, I was selected as one of the experts to help people learn more about {whatever}.” This builds your reputation as an expert on that topic, even among people who have zero intention of attending that conference.
-
-Promoting your own talk doesn’t have to be narcissistic and spammy. To make it palatable, try emphasizing the conference itself, fellow speakers, other interesting talks, and so on. For example, you might try social posts like
-
-¡ “Looking forward to speaking at #CoolCONF, {why_it’s_so_cool}”   
-¡ “Can’t wait for this year’s #CoolCONF, where I’ll be presenting alongside experts like …” ,   
-¡ “Excited to talk about {topic} at #CoolCONF—and hope to catch the sessions…”
-
-If the conference organizer offers to feature you in interviews, videos, or their blog, strongly consider participating. They want to use their professional resources to elevate your profile industry wide and drive attendance to your session. Don’t pass up this opportunity unless you have a great reason.
-
-Also, let your company’s marketing team know that you’ll be speaking. They probably have additional means of promoting the session and would be thrilled to help spread the word that one of their engineers was selected as a conference speaker.
-
-TIP Be sure to use all the official hashtags and/or handles so the conference organizers can find and reshare your social posts and comments.
-
-# 16.6 Rehearsing
-
-At a minimum, prepare to run through your talk a few times (at least!) to nail the timing. Speakers hitting their mark is absolutely critical. If someone ends up way too short, attendees feel shortchanged and wonder if they should have attended a different session. If someone runs over, it starts a chain reaction across the rest of the schedule (which is why organizers usually cut people off at the end of the allotted time, even if they’re not done). Aim to fill the majority of the slot and leave the suggested time for Q&A. Don’t deliver a 20-minute presentation in a 40-minute slot. And never, ever go over. The organizers will likely remember that if you ever apply to speak there again.
-
-To be safe, create some checkpoints along the way. For example, you might note that
-
-You should be at slide 11 by the 12-minute mark.   
-¡ You need to start the final section by the 16-minute mark.   
-By the 20-minute mark, you should start wrapping it up.
-
-You could also note which slides you would linger on longer if there’s extra time and what specific points you can safely gloss over when you need to pick up the pace.
-
-When rehearsing for an in-person conference, stand up, pretend you’re at the podium, and walk around. And if it’s a virtual conference, play around with your setup so you know exactly where your speaker notes and camera need to be positioned so you end up looking at the camera. Order a wired microphone, an external camera, and some adjustable lighting if needed. Finally, tidy up your background. Not all production software offers the luxury of blurred or virtual backgrounds. You don’t want to be frantically cleaning your background right when you should be psyching yourself up to deliver the talk.
-
-If you’re extra nervous, you could also
-
-Rehearse in front of humans   
-¡ Check out the room (or recording software) in advance   
-¡ Try to anticipate questions that people might ask (your snarkiest teammates can likely assist here) and think about your responses
-
-TIP Want some guesses at what questions could arise? Follow up the previous generative AI prompts with something like: “What questions might attendees (programmers who are curious about Zig) ask—please specify things that are not covered in the original blog post.”
-
-Also, if you have any questions or concerns, just ask the organizer. They want you to be comfortable and prepared, and would probably love to help set your mind at ease.
-
-# 16.7 Delivering
-
-If you want to perfect your public speaking technique, there’s an abundance of resources available: classes, videos, books, blogs, and so on. We’re not going to try to capture all that in a small section in a book focused on writing blog posts. But we do encourage you to pursue it to whatever degree you wish.
-
-You don’t need to be a professional-grade speaker to deliver an effective talk at a tech conference though. Here are some quick tips:
-
-¡ Remember that your ultimate goal is to share your experiences and ideas with your peers, and you don’t need to be the world’s #1 presenter to achieve that objective.   
-¡ Speak clearly and at a reasonable pace, remembering that not everyone is a native English speaker.   
-Double (even triple) check that notifications and system updates are off.   
-Use slide transitions as an opportunity to pause, breathe, and reset as needed.   
-If you want a random break, feel free to take a strategic sip of water.   
-¡ Look at the audience, perhaps focusing on someone you know or a few people who seem to be really paying attention and nodding along.   
-Smile—at least at the beginning and end.
-
-When it comes time for the Q&A:
-
-¡ For the sake of attendees who could not hear the question, as well as video viewers who can only hear the mic feed, restate each question before answering (this also buys you a little more time to think).   
-¡ If you don’t know the answer, say so—maybe another attendee happens to know, or maybe you want to research it and respond to them later.   
-¡ If you don’t want to start debating some point that an attendee raises, respond with something like “Interesting, I hadn’t thought of that,” and move on.
-
-Finally, remember that even the most experienced presenters get nervous. As Gunnar Morling recently shared on X:
-
-Someone asked me whether I’d still be nervous before giving a conference talk: Yes, I am. And I think it is actually a good thing. The day you’re not nervous even just a little bit, you may have stopped caring about doing the best job you can, and the audience will notice that.
-
-# 16.8 Following up
-
-You didn’t forget about your blog post the moment it was published (if you read chapter 15, at least). Likewise, don’t let your talk ingloriously fade away after the conference wraps. Continue squeezing value out of this experience by
-
-Thanking everyone via social —Right after the conference wraps, share something on social. A quick thank you to the organizers, presenters, and community will work if you’re simply exhausted at this point.   
-¡ Writing a wrap-up blog or threaded post —As soon as you’re up for it, share more about what you enjoyed about the conference: a few takeaways related to the overall theme or your topic of interest, a rundown of your favorite talks, or any other angle that strikes you.   
-¡ Following up on requests —If you promised anyone anything, links to other resources, an answer that required additional research, whatever: pay your debts before you forget.   
-¡ Reviewing any reviews —Some conferences collect feedback on each speaker; if yours did, scan it for any tips on things you might do differently next time.   
-¡ Connecting with other speakers —Speaking at a conference provides the perfect sneaky excuse to connect with experts you might not dare to approach otherwise.   
-¡ Searching social media for mentions—Try to hunt down any social media references. If you notice that someone posted about your talk, engage with the post and be sure to thank the person for attending and sharing.   
-¡ Tracking down on-demand videos —Figure out when videos will be released and if they’re accessible to non-attendees (and thus ripe for sharing).   
-¡ Sharing your video —Once the videos are available, don’t hesitate to draft a social post saying nice things about the conference and sharing your contribution to it (the video). You might also want to link to the blog post that it’s based on as well.
-
-¡ Updating the blog post —Now that you (hopefully) have a nice video on the blog topic, update the blog post with a link to that video (or a direct video embed). Consider embedding the slide deck as well. Also consider updating the blog post in response to any feedback or questions you received during the talk, in the reviews, or as you waited in the beverage line after you survived your talk.
-
-Conference talks from over a decade ago are still watched and discussed today, thanks to YouTube and social media. If you strategically plant a few references to it, there’s a much greater chance that your talk will continue educating people beyond the actual event.
-
-# Summary
-
-¡ Speaking at conferences can lead to a personal brand boost, networking opportunities, and direct audience feedback—plus an impressive video of yourself presenting.   
-¡ When evaluating conference opportunities, consider factors such as topic fit, conference reach/promotion, logistics, and audience demographics.   
-¡ Proposals should have an intriguing title, detailed abstract showcasing your unique perspective/experience, and a strong speaker bio.   
-¡ When converting your blog post to a talk, customize it for that audience and for listening versus reading, and be sure to add a few compelling visuals that people might share.   
-To prepare, draft speaker notes, anticipate potential audience questions, and practice, practice, practice.   
-¡ Work with the conference to promote your talk; tap social media, use conference hashtags, and see if your own company will also spread the word.   
-Engage with the audience, speak clearly and at a reasonable pace, repeat any audience questions before answering them, and try to remember to smile.   
-¡ Follow up by thanking organizers, writing recap posts, connecting with other speakers, sharing videos, and updating your original blog post to reference the talk.
-
-
+-   컨퍼런스 발표는 퍼스널 브랜딩과 네트워킹에 큰 도움이 됩니다.
+-   적절한 컨퍼런스를 선정하고 매력적인 제안서를 작성하세요.
+-   블로그 내용을 발표 형식(듣기/보기)에 맞게 재구성하고 시각화하세요.
+-   철저한 리허설로 시간과 환경을 통제하세요.
+-   발표 전후로 적극적인 홍보와 소통을 이어가세요.

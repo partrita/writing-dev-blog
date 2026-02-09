@@ -1,249 +1,78 @@
-# This chapter covers
+# 11장 "배운 점들(Lessons Learned)" 패턴
 
-Blog posts that share lessons learned from technical challenges   
-¡	Their purpose and audience   
-¡	How various authors approached this type of post   
-¡	Key elements of successful “Lessons Learned” posts   
-¡	Dos and don’ts for your own “Lessons Learned” post
+# 이 장에서 다루는 내용
 
-Attention, aspiring technical influencers: this is the chapter for you! The “Lessons Learned” pattern is all about sharing your personal experiences and process of drawing conclusions from your trials and errors. It is the perfect starter engineering blog post because the only real requirement is having encountered a technical problem of any sort.
+- 기술적 도전에서 얻은 교훈을 공유하는 블로그 포스트
+- 목적과 독자층
+- 다양한 저자들의 접근 방식
+- 성공적인 "배운 점들" 포스트의 핵심 요소
+- "배운 점들" 포스트 작성 시 유의사항
 
-Technical audiences love to learn. And one of the few things they love even more than learning itself is learning from other people’s mistakes instead of their own. “Lessons Learned” posts often contain condensed knowledge about how somebody else dealt with a problem. This is something many readers hold dear because it’s a lightweight version of having a mentor who can walk you through a problem.
+"배운 점들" 패턴은 자신의 시행착오와 그로부터 얻은 결론을 공유하는 것입니다. 기술적 문제를 겪어본 사람이라면 누구나 쓸 수 있는 진입 장벽이 낮은 패턴입니다. 독자들은 타인의 실수를 통해 간접 경험을 하고 배우는 것을 좋아합니다.
 
-Start with a humble “Lessons Learned” post, and you’ll be serially applying the “Thoughts on Trends” pattern (chapter 12) like a professional industry luminary in no time! (Conditions apply: “no time” is a euphemism for “sometimes a considerable amount of time, if ever.”)
+# 11.1 목적 (Purpose)
 
-![](images/775dfdbe36f7a8ba760732f614b20d0a85749f62e1fba671e2fec44627693d3e.jpg)
+### 11.1.1 자기 성찰 (Self-reflection)
+경험을 기록하는 것은 자신을 위한 훌륭한 학습 도구입니다. 기억이 생생할 때 기록해 두면 나중에 객관적으로 돌아볼 수 있고, 생각을 정리하는 데 도움이 됩니다.
 
-# 11.1 Purpose
+### 11.1.2 스토리텔링
+자신의 고통스러운 경험을 다른 사람들에게 도움이 되는 이야기로 풀어내는 과정은 카타르시스를 줍니다. 약간의 각색을 더해 이야기를 더 흥미롭게 만들 수도 있습니다.
 
-People have been recording their personal experiences for ages. “Lessons Learned” blog posts serve a similar purpose as the good old diary, letter, or folktale. For the author, the process of recording, pondering, and structuring past experiences can be enlightening and cathartic. And their audience can simply sit back, grab some popcorn, and learn from others’ struggles.
+### 11.1.3 시작하기 좋음 (Kickstart)
+특별한 성과가 없어도 문제 해결 경험만 있다면 쓸 수 있어, 블로그 글쓰기를 시작하기에 가장 좋은 패턴입니다.
 
-# 11.1.1 Self-reflection
+# 11.2 독자 (Audience)
 
-One of the best ways to learn from your actions (especially mistakes) is to write down your experiences early, while all the details are still fresh in your memory. There are several benefits to doing that:
+-   당신의 경험담을 듣고 싶어 하는 사람들 (초보자부터 전문가까지)
+-   비슷한 문제에 직면할 수 있는 동료 전문가들
 
-¡ Because your actions are recorded, you can review them in retrospect a bit more objectively after some time has passed. At that point, you’re likely to notice patterns and details you initially overlooked—so you can continue learning from that initial mistake.   
-¡ Memory gets skewed over time, so writing down all details and reflections early tends to make them more realistic than how they’re remembered after a few days or weeks. It’s even better to cross-check both the on-paper version and the in-brain one!   
-¡ Writing down your experiences includes more than producing a stream of text; it also might involve creating diagrams, side notes, arrows pointing from one paragraph to another and forming a complex graph of thought patterns, underlining important bits, and so on. All of this helps organize the experience and prepare it for scrutiny.
+# 11.3 "배운 점들" 블로그 포스트 사례
 
-Once you complete those notes, it’s probably easy to convert them into a nice educational blog post, images included! Some of the best articles on lessons learned include hand-drawn diagrams; that’s not a coincidence but rather a natural consequence of how they came into existence.
+주로 데이터베이스 관련 장애나 시스템 운영 경험담이 많습니다.
 
-# 11.1.2 Storytelling
+### 11.3.1 25% or 6 to 4: The 11/6/23 Authentication Outage (Mark Smith)
+Discord의 인증 시스템 장애 사후 분석입니다. 분 단위의 타임라인과 관측 도구 스크린샷을 통해 긴박한 상황을 생생하게 전달합니다.
 
-Writing about the lessons life has taught you is a unique grandfatherly experience. Sharing your experiences in a way that helps others avoid your mistakes simply feels good— and for a good reason. As with articles in the “Bug Hunt” pattern, you’re helping your readers save time and maintain their mental well-being if they ever find themselves in similar distress. Also, the fact that you’re now sharing this story gives you a great excuse to subtly color it—leaving all the technical details intact of course, but perhaps sharing perspectives, commentary, and anecdotes that make it more enjoyable and engaging.
+### 11.3.2 Herding Elephants: Lessons Learned from Sharding Postgres at Notion (Garrett Fidalgo)
+Notion의 데이터베이스 샤딩 과정을 다룹니다. 성공적인 결과를 먼저 알리고, 기술적 결정 과정과 교훈을 스토리텔링 형식으로 풀어냅니다.
 
-# 11.1.3 Kickstart
+### 11.3.3 Something You Probably Want to Know About if You’re Using SQLite in Golang (Piotr Jastrzębski)
+Go 언어에서 SQLite를 사용할 때 발생할 수 있는 특정 문제(디스크 공간 점유)를 코드 예제와 함께 설명합니다.
 
-As noted in the introduction, “Lessons Learned” is the perfect pattern to follow as you begin your journey as a writer. Virtually anyone with some interesting lessons in their portfolio (so any programmer) meets the prerequisites for a “Lessons Learned” blog post. This pattern has a much lower barrier to entry than “How We Built It,” which requires something to be built first, and “Thoughts on Trends,” which requires a certain level of recognized expertise. In most cases, there’s simply no excuse not to write at least one article following the “Lessons Learned” pattern in your lifetime, so you may just as well check that box early!
+### 11.3.4 Lessons Learned Scaling PostgreSQL Database to 1.2bn Records/Month (Gajus Kuizinas)
+Postgres를 대규모로 운영하며 얻은 다양한 노하우를 백과사전식으로 정리한 글입니다.
 
-# 11.2 Audience
+### 11.3.5 Lessons from Stripe (Mark McGranaghan)
+Stripe에서 근무하며 얻은 비기술적 교훈(낙관주의, 야망, 채용 등)을 공유합니다. 기술 블로그 독자들에게도 유용한 커리어 조언이 될 수 있습니다.
 
-There are two main classes of audience for “Lessons Learned” posts:
+# 11.4 특징 (Characteristics)
 
-¡ The technical equivalent of a circle of children sitting around you and listening to your wise, personal story from the old times, full of wonder and delight—that is, anybody interested in knowing your experience on the subject.
+### 11.4.1 일기장 같음 (Diary-like)
+"우리는 어떻게 만들었는가" 패턴보다 덜 공식적이고 더 개인적이며 성찰적입니다. 저자의 좌절과 고민을 솔직하게 드러냅니다.
 
-¡ Professionals from related fields (e.g., programmers working on similar projects and DevOps folks using the same database) who likely need exactly this kind of lesson—so they can file it away for some time in the future or to cross-check against their own experience with a similar problem.
+### 11.4.2 각인 효과 (Imprintable)
+교훈을 이야기(일화, 미스터리, 긴박한 디버깅 등) 속에 녹여내어 독자의 기억에 오래 남게 합니다. 이는 실제로 비슷한 문제를 예방하거나 해결하는 데 도움을 줍니다.
 
-This pattern is quite general and likely to be read by a whole spectrum of readers. It’s usually light, engaging, and occasionally humorous, which makes it a perfect read between compilations.
+### 11.4.3 성찰과 반추 (Reflections and ruminations)
+사건 직후보다는 어느 정도 시간이 지난 뒤에 작성되는 경향이 있어, 더 깊이 있고 일반화된 교훈을 도출합니다.
 
-# 11.3 Examples of “Lessons Learned” blog posts
+# 11.5 유의사항 (Dos and don'ts)
 
-Databases play an important role in the programming world, being a scapegoat for all too many production failures worldwide. Catastrophic events are commonly related to databases in one way or another: being unable to connect to one, overloading the database, getting malformed data from it, and so forth. Thus, it shouldn’t be a surprise that so many compelling “Lessons Learned” pattern examples are database-centric!
+### 11.5.1 겸손하라 (Be humble)
+자랑하는 자리가 아닙니다. 실수와 잘못된 결정을 솔직하게 인정하고 분석하는 데서 교육적 가치가 나옵니다.
 
-Here are some prime examples of blog posts that apply the “Lessons Learned” pattern, along with Piotr’s commentary on each.
+### 11.5.2 잊지 마라 (Don't forget)
+사건 발생 직후 기록을 시작하되, 충분한 성찰의 시간을 가진 뒤에 글을 완성하세요. 적절한 마감 기한을 정해두는 것이 좋습니다.
 
-# 11.3.1 $2 5 \%$ or 6 to 4: The 11/6/23 Authentication Outage
+### 11.5.3 완전한 일기 모드는 금물
+개인적인 이야기지만 독자를 위해 써야 합니다. 과도한 약어 사용이나 설명 없는 문맥 생략을 피하고, 독자가 적용할 수 있는 구체적인 교훈을 제시하세요.
 
-Author: Mark Smith
+### 11.5.4 상호작용 유도
+비슷한 경험을 가진 독자들과 소통할 수 있도록 연락처를 남기거나 피드백을 환영한다는 문구를 추가하세요.
 
-Source: Discord Blog (https://discord.com/blog/authentication-outage)
+# 요약
 
-# SUMMARY
-
-This blog post is a post-mortem analysis of an authentication system outage at Discord. It begins with a disclaimer that it was an outage, not a bug. While service availability was affected, no security breach occurred. Next, the article presents an overview of Discord’s authentication layer architecture.
-
-The main part of the article is a detailed log of how the degradation was
-
-1 Discovered   
-2 Investigated   
-3 Diagnosed   
-4 Fixed
-
-The log entries are annotated with the exact minute they occurred. They are also intertwined with screenshots from observability tools to visualize the investigation progress. The post concludes with lessons learned and potential plans for implementing prevention mechanisms to ensure similar situations are properly handled next time they happen.
-
-# COMMENTARY
-
-On the title front, it’s interesting to note that this blog post’s canonical link is shorter than its actual title, without using any link shorteners. To be extra picky, “Authentication Outage” is a nice title with a simple, yet powerful message. Once most people see those words associated with the discord.com URL, they’re in. Also, I didn’t originally
-
-get all the out-of-context digits in the title. I later learned that it’s actually a reference to a song by the rock band Chicago.
-
-Nitpicks aside, this is a rock-solid technical article. The introduction lets readers peek into the architectural decisions of a massive production-grade messaging system, providing educational value from the start. The absolute best part is the detailed log with timestamps. It really keeps the tension building, like watching one of those thriller movies where every few minutes you see that “HOUR 5. STILL NO SIGN OF THE ABDUCTEE” interlude. It’s enjoyable to track the team’s progress in real time, experiencing how fast decisions need to be made to restore the service’s availability. The stakes are quite high, with Discord and its ever-growing user base. The lessons learned and future plans look well-thought-out and structured.
-
-This article is in many ways similar to the “Bug Hunt” pattern. There’s an introduction, a mystery, an investigation, and (in a way) a fix. It’s not a complete fit, though. The outage wasn’t caused by a software bug. Rather, it stemmed from a series of infrastructure decisions that in hindsight might be called “negligence” but in practice were borderline impossible to predict. Also, the fix was not a single breakthrough, but rather a series of actions taken to alleviate the problem—and partially just waiting for the system to recover. And while every second counted with a Discord availability problem, bugs in “Bug Hunt” blog posts are usually not investigated under such intense time pressure. Thus, this article fits better into the slightly broader “Lessons Learned” category.
-
-# 11.3.2 Herding Elephants: Lessons Learned from Sharding Postgres at Notion
-
-Author: Garrett Fidalgo
-
-Source: Notion Blog (https://www.notion.so/blog/sharding-postgres-at-notion)
-
-# SUMMARY
-
-This article describes Notion’s process of migrating from a single monolith database to a sharded setup. It starts by announcing the success early, establishing that the whole process went smoothly and that Notion’s users are happy with the result. Stepping back a bit, the article then explains what sharding is and how Notion decided to apply it. The author covers
-
-¡ Which data to split into smaller sets   
-How to categorize the data (in database nomenclature, “what’s the partition key”)   
-¡ How many logical shards and physical databases should be created
-
-He also describes their strategy to avoid prolonged downtime by using techniques such as double writes, backfilling, and integrity checks. The article wraps up with a paragraph that lists lessons learned during the process.
-
-# COMMENTARY
-
-Another title longer than the blog post’s URL! This title is rather compelling though. It’s a nice example of balancing catchiness and details by using two elements:
-
-¡ A main title that’s short and intriguing   
-¡ A subtitle that explains what the article is actually about
-
-The body of the article covers many of the things technical readers enjoy in a blog post: lots of technical details, easy-to-grasp pictures, and interludes explaining the decisions in more detail.
-
-Another interesting point to note: despite its “Lessons Learned” title, it’s actually a solid example of the “How We Built It” pattern. Still, we wanted to put its summary and commentary here for two reasons. First, it’s futile to try and classify every single blog post into one of the handful of patterns we chose to cover in this book. Many fantastic blog posts do not fit into any of them, and some share elements of multiple patterns. Second, the concluding paragraph is actually a nice, compressed example of a mini “Lessons Learned” blog post. In fact, it could also serve as a very good first working draft for a full-fledged “Lessons Learned” article.
-
-# 11.3.3 Something You Probably Want to Know About if You’re Using SQLite in Golang
-
-Author: Piotr Jastrzębski
-
-Source: Turso Blog (https://mng.bz/XVMM)
-
-# SUMMARY
-
-The article describes a pitfall related to using the SQLite database in a program written in Go. The introduction explains why this problem is often hard to recognize— because it doesn’t manifest itself by any error, but rather in excessive storage overhead. The next section introduces SQLite’s storage layer details, including the write-ahead logging mode. Then the problem is teased out through code samples, intertwined with checking how much storage the database occupies while running the code. The problem: when the database runs in write-ahead logging (WAL) mode, something prevents a checkpoint operation from clearing excessive disk space. The article concludes with a clear explanation of the problem (ultimately, failure to close rows in WAL mode), a rule of thumb to remember when working with SQLite and Go, and a bonus side note mentioning that this problem also affects another SQLite operation: vacuum.
-
-# COMMENTARY
-
-The title is a bit lengthy, but it’s also a perfect teaser. It’s hard to resist the temptation of seeing what the problem is here, even if you don’t use SQLite or Go at all. The code samples followed by checking how much storage is used while the code executes is a nice touch—it makes the blog post feel interactive and easy for readers to reproduce on their own. This article is actually part of a larger anthology on pitfalls related to Go and SQLite, and it’s preceded by another post explaining how to avoid deadlocking your code when using both.
-
-What I especially appreciate here is the recursive nature of why this blog post fits well into the “Lessons Learned” pattern. As the author explains in the very first sentence, this particular lesson was learned because of a discussion sparked by another blog post that also happened to fit into the same pattern. It makes the first blog post twice as educational!
-
-# 11.3.4 Lessons Learned Scaling PostgreSQL Database to 1.2bn Records/Month
-
-Author: Gajus Kuizinas
-
-Source: Gajus Kuizinas’ Blog (https://mng.bz/yoXE)
-
-# SUMMARY
-
-This article describes the author’s experience using the Postgres database for multiple purposes at large scale. The introduction explains the rationale behind using Postgres instead of a more complicated technology stack, as well as the expected use cases for the database. The next section goes over the multiple cloud providers used to host the database, sharing the experience with each and reaching the conclusion that a selfhosted database cluster is the way to go. That’s followed by a section devoted to materialized views and the author’s multiple attempts to apply them. Next comes a section on using the database as a message queue, then an aggregation of useful tips and tweaks to make working with Postgres easier. Finally, the author advertises a new open source Postgres client (Slonik) that’s also designed to improve the experience with Postgres. The article concludes with extensive acknowledgments.
-
-# COMMENTARY
-
-This article is very, very, very, very long. Fortunately, it’s also nicely split into small, distinguishable paragraphs. Moreover, it follows a structure of introducing the problem, presenting a few solutions to it, and concluding the section with takeaways. That makes it easy for readers to consume the blog post in multiple reading sessions. The takeaways are educational and practical. Most users are likely to learn at least one more thing about Postgres’ internals and good practices. Overall, it’s a great compendium of condensed practical Postgres knowledge, and the list of good practices at the end looks especially useful.
-
-There’s one nitpick though. Code samples are always appreciated, but these SQL queries require at least two full-finger scrolls, which is a little traumatizing. The fact that the samples lack syntax coloring aggravates the feeling (that’s usually the blog platform’s fault though), but my main concern is the complexity of the queries. On the one hand, it’s great to be transparent and share real-life queries. However, in this particular case, the details are likely too overwhelming for an average reader.
-
-# 11.3.5 Lessons from Stripe
-
-Author: Mark McGranaghan
-
-Source: Mark McGranaghan’s Blog (https://markmcgranaghan.com/lessons-from -stripe)
-
-# SUMMARY
-
-This article is a short overview of the author’s experience while working at Stripe. It covers three main areas: optimism, ambition, and recruiting. Learnings from each of the areas above are covered in dedicated paragraphs. The article concludes with a short recommendation of Stripe as a workplace.
-
-# commentary
-
-This is a perfect example of how a nontechnical blog post can cover lessons learned for a purely technical audience. By now you’re probably dead tired from an endless stream of database-related blog post reviews, so here’s the long-awaited break. This article is really short but also densely packed with practical information. Who can benefit from reading this article? People who
-
-Might apply to Stripe   
-Have a job offer from Stripe in hand   
-Wonder if their own toxic work environment is actually that bad   
-¡ Want to improve their employees’ lives
-
-The article covers lots of nontechnical areas important for people working technical jobs. The lessons learned are well-structured (three simple paragraphs with intriguing headlines: Optimism, Ambition, Recruiting) and full of interesting details. Great post!
-
-# 11.4 Characteristics
-
-“Lessons Learned” blog posts are highly focused on turning the authors’ personal experiences into educational lessons for readers. Given that, it’s not surprising that introspection, reflection, and storytelling are common characteristics.
-
-# 11.4.1 Diary-like
-
-Some articles in the “Lessons Learned” pattern almost feel like they should be prefaced by “Dear Diary.” The author is freely sharing inner frustrations, and the reader is looking over their shoulder, ready to learn vicariously through the author’s experiences. Accordingly, these articles don’t tend to adopt the pluralis maiestatis airs used in “How We Built It” pattern articles. They’re a bit more informal, raw, and introspective. For example:
-
-¡ Kuizinas’ article begins with “This isn’t my first rodeo with large datasets” and shortly thereafter links out to a comedy video.   
-¡ From start to finish, the McGranaghan article is quite open about what working at Stripe was really like and how the company’s priorities affected him personally.   
-¡ Jastrzebski starts off with a casual account of how his publication of a separate article sparked conversations that led to the discovery of a nasty bug that’s “close to [his] heart.”   
-Fidalgo begins by hinting that there’s much more to one of Notion’s officially announced “five minutes of scheduled maintenance” than meets the eye, then launches into “Let me tell you the story of how we sharded and what we learned along the way.”   
-¡ Smith’s is probably the most guarded of the bunch; the first few paragraphs seem highly reviewed by legal/corporate communications departments. But as soon as the article shifts to the technical details, the language loosens up and the real story begins.
-
-Much like diary entries and “Bug Hunt” articles, “Lessons Learned” articles are commonly organized chronologically. Many feature real-life timestamps (see the Discord piece) or key milestones (the Notion blog’s callouts of “Decision 1,” “Decision 2,” and so on) that allow readers to step into the author’s shoes and follow the drama as it unfolds.
-
-# 11.4.2 Imprintable
-
-Lessons become memorable through their story. Readers are more likely to remember a particular pitfall or interesting technical detail if it’s nicely wrapped in
-
-¡ A playful anecdote   
-¡ A mysterious detective story   
-A suspenseful debug session on a live system
-
-Having such stories imprinted in your mind can actually avert problems. It’s quite possible that someone, in a data center somewhere, has already uttered the words “No, we’re not continuing the upgrade—remember that blog post about what happened to Discord.” Even if the blog post does not prevent a problem, it can still help solve one. Once it dawns on you or a teammate that the problem you’re currently suffering through was discussed in a post they once read, that post gets shared, you apply the relevant tidbits, and you’re hopefully much closer to alleviating your own headache. The lesson becomes more memorable through the story, but the story also becomes more memorable through the lesson.
-
-# 11.4.3 Reflections and ruminations
-
-Generally, “Lessons Learned” posts are not written in the heat of the moment but rather after a fair amount of time has elapsed, allowing for analysis and reflection. For example,
-
-The Notion article seems to have been written a full six months after the downtime (which was itself months after the project, and lessons learned, actually began).   
-The Discord blog was published a week after the incident. That might not seem long compared to the Notion example, but remember that Notion was ruminating over a months-long project ,while Discord was digesting a 50-minute outage.   
-¡ Both the Kuizinas and McGranaghan articles seem to be drawing lessons learned based on multiple years of experience.
-
-In many cases, this extra time for reflection provides the objectivity and clarity needed to deduce more, and broader, lessons learned than you might find in a “Bug Hunt” article. For example, the database lessons learned by Discord and Notion can be broadly applied across many different database technologies and deployment scenarios. That’s a stark contrast to most bug hunt lessons learned, which tend to be discrete solutions bound to a specific technology and setup.
-
-However, this is a trend, not a rule. For example, Jastrzębski’s lesson learned didn’t require lengthy reflection. It seems like a “Eureka moment,” and it’s quite specific, related to unexpected behavior that’s endemic to Go plus SQLite. Like life lessons, some tech lessons hit you fast, while others require more distance and deliberation.
-
-# 11.5 Dos & don’ts
-
-Articles on lessons learned come in many styles, from a short note about a single lesson to a compendium of lessons learned by the author throughout the years. The broad
-
-range of what’s possible here might make it easier or harder for you, depending on whether you love or hate structure. Virtually anything with a bit of personal perspective and another bit of educational value is likely to work.
-
-# 11.5.1 Be humble
-
-“Lessons Learned” is not a good pattern for boasting. For that, go with “How We Built It” or maybe a heroic “Bug Hunt.” “Lessons Learned” posts are more about an honest examination of conscience, rethinking one’s actions in retrospect, and analyzing what went right and what went terribly wrong. Of course, be sure to highlight all the good decisions. However, remember that most of the educational benefit comes from dissecting the bad ones, especially bad decisions that seemed right at the time.
-
-Exposing all your failures and wrong turns is expected here. Readers are here to learn, not to judge (except those notorious ones, lurking across the internet for new articles to disparage in the comment sections).
-
-# 11.5.2 Don’t forget
-
-Timing is a delicate dance when writing posts in this pattern. On the one hand, you want to start recording the details while everything is still fresh in your mind. But on the other hand, sometimes you need a little time and distance before you can recognize the full implications of what you just experienced.
-
-If you just survived a learning experience, start recording copious notes immediately, even if you’re still not sure what it all means yet. Then, let it simmer until ready, which is not the same as indefinitely. Don’t expect that an epiphany will strike you when you least expect it. Set a reasonable deadline and force yourself to distill some meaning from your past tribulations before you’re too deep into new ones.
-
-# 11.5.3 Don’t turn on full diary mode
-
-Even though these posts share personal experiences, it’s important to maintain the balance and avoid going “full personal diary mode.” Ultimately blog posts are written for the readers. Although sharing your personal experience is welcome, the following are less so:
-
-¡ Using acronyms without unrolling them at least once—your readers might not be used to them, and if they open another browser tab to check yet another cryptic acronym, they might never return to your post.   
-¡ Mental shortcuts, omitting details that you already know, but your readers most likely don’t!   
-¡ Mentioning that you learned something, but without actually explaining how the readers can apply the lessons learned. Ultimately, the readers want to know your personal perspective, but also learn something themselves.
-
-# 11.5.4 Encourage interaction
-
-There’s a good chance that some readers of your “Lessons Learned” article have already experienced a similar problem before they click through to read how you
-
-approached it. Now that they’re here reading your article, why not take advantage of the opportunity to engage with like-minded individuals? Leaving your contact information (or just the usual litany of social media links) as part of the conclusion, along with a note like “Don’t hesitate to reach out if you found this blog post useful” can build connections across the community.
-
-NOTE For tips on initiating and engaging in a community discussion, see chapter 15.
-
-# Summary
-
-The “Lessons Learned” pattern is a timeless classic for capturing and sharing what you learned from frustration, fumbling, and failure.   
-¡ Although the primary goal is educating the reader, writing such posts can also be edifying and cathartic for the writer.   
-¡ Anyone who has ever faced a technical problem is qualified to write a blog post in this pattern, and the different shapes and forms it could take vary as widely as the technical problems programmers learn from.   
-¡ Top tips:
-
-– Be open about all your failures and missteps; this is not the place to brag.   
-– Start recording details right away, and start writing the blog post once you’ve had time to reflect on your experience and distill it into clear lessons learned.   
-– Although these posts have a “Dear Diary” feel, remember that they are indeed going to be read by someone, which means that an appropriate level of explanation and context is required.   
-– Encouraging your readers to contact you is a nice way to connect with peers who have similar interests and experiences.
-
-# The “Thoughts on Trends” pattern
-
+-   "배운 점들" 패턴은 실패와 좌절에서 얻은 지혜를 공유하는 고전적인 방식입니다.
+-   저자에게는 치유와 성장의 기회가 되고, 독자에게는 귀중한 간접 경험이 됩니다.
+-   기술적 문제를 겪은 누구나 쓸 수 있으며, 다양한 형태가 가능합니다.
+-   실패를 솔직하게 드러내고, 기록 후 충분히 회고하며, 독자를 배려한 설명과 소통을 잊지 마세요.

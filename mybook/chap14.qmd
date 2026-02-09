@@ -1,325 +1,97 @@
-# This chapter covers
+# 14장 "벤치마크 및 테스트 결과(Benchmarks and Test Results)" 패턴
 
-¡	Blog posts that share various flavors of benchmarks and tests   
-¡	Their purpose and audience   
-¡	How various authors approached this type of post   
-¡	Key elements of successful “Benchmarks and Test Results” posts   
-¡	Dos and don’ts for your own “Benchmarks and Test Results” post
+# 이 장에서 다루는 내용
 
-Skepticism about benchmarks is so trendy right now that “All benchmarks are wrong” could become an entire pattern chapter in this book. This herd skepticism against benchmarks is actually a positive trend. Why not pay closer attention to whether benchmarks and test results shared in engineering blogs truly make sense? On the flip side, writers beware. If you’re writing one of these blog posts, it’s more important than ever to do your homework and ensure that the published benchmarks are truthful, reproducible, and not too synthetic.
+- 다양한 형태의 벤치마크와 테스트 결과를 공유하는 블로그 포스트
+- 목적과 독자층
+- 다양한 저자들의 접근 방식
+- 성공적인 "벤치마크 및 테스트 결과" 포스트의 핵심 요소
+- "벤치마크 및 테스트 결과" 포스트 작성 시 유의사항
 
-“Benchmarks and Test Results” articles tend to fall into at least three distinct categories:
+엔지니어들은 숫자를 좋아하지만 동시에 벤치마크 결과에 대해 매우 회의적입니다. 따라서 이 패턴의 글을 쓸 때는 정직성, 재현 가능성, 그리고 현실성을 확보하는 것이 무엇보다 중요합니다.
 
-Tests that compare the company’s product against its competition   
-¡ Tests that compare something (such as cloud infrastructure or hardware) using the company’s product   
-¡ Measuring something independent of the company’s products (e.g., an open source project or a new graphics processing unit)
+벤치마크 글은 크게 세 가지 유형으로 나뉩니다:
+1.  **자사 제품 vs 경쟁사 제품:** 가장 논란이 되기 쉽지만 효과적인 홍보 수단.
+2.  **자사 제품을 활용한 제3의 기술 테스트:** 신형 하드웨어나 클라우드 인프라 등을 테스트하며 자사 제품을 자연스럽게 노출.
+3.  **독립적인 테스트:** 자사 제품과 무관한 기술들을 비교. 가장 신뢰받는 유형.
 
-The tests comparing the author’s company’s product versus its competition are most likely to face a low level of trust and stir up online debate. They are still ubiquitous, though; showing measured numbers is one of the few effective ways to promote a project to engineers.
+# 14.1 목적 (Purpose)
 
-The second variety (using the author’s company’s product to test/compare something else) brings valuable third-party conclusions about something shiny, like a new generation of processors or new energy-efficient cloud machines. At the same time, it’s a noble way of featuring the company’s product—showing it as a real-life “user” of the tested technology.
+### 14.1.1 벤치마케팅 (Benchmarketing)
+경쟁사 대비 자사 제품의 우월함을 숫자로 증명하여 홍보합니다. 독자들의 의심을 사기 쉬우므로 철저한 검증이 필요합니다.
 
-Tests that don’t involve the author’s company’s product at all are often admired and sought after since they are less likely to be biased (assuming that the author is not affiliated with any of the compared technologies). They’re also significantly rarer. Tests consume considerable time and resources, which makes them a quite demanding independent weekend project. And the author’s company is unlikely to sponsor the project if it doesn’t benefit that company in some way.
+### 14.1.2 미묘한 벤치마케팅 (Subtle benchmarketing)
+자사 제품을 '도구'로 사용하여 다른 흥미로운 기술(예: 신규 CPU)을 테스트합니다. 실용적이고 거부감이 적은 마케팅 방식입니다.
 
-![](images/fd428e5d1a1dac9ca31c70bf888ca88e3f32b620784276d8a3287fcf112f6978.jpg)
+### 14.1.3 커뮤니티 봉사 (Community service)
+순수한 호기심이나 공익을 위해 기술들을 비교 분석합니다. 가장 객관적이고 신뢰받는 콘텐츠입니다.
 
-# 14.1 Purpose
+# 14.2 독자 (Audience)
 
-Each flavor of the “Benchmarks and Test Results” pattern serves a slightly different purpose:
+-   **유형 1:** 해당 회사 기술에 관심 있는 사람, 도입을 검토 중인 사람.
+-   **유형 2:** 테스트 대상 기술(예: 하드웨어)에 관심 있는 사람 + 회사 기술에 관심 있는 사람.
+-   **유형 3:** 모든 기술 애호가. (가장 넓은 독자층)
 
-¡ Benchmarketing —Tests that compare the company’s product against its competition   
-¡ Subtle benchmarketing —Using the author’s company’s product to test/compare something else   
-Community service—Measuring something independent of the company’s products (e.g., an open source project or a new graphics processing unit)
+# 14.3 "벤치마크 및 테스트 결과" 블로그 포스트 사례
 
-# 14.1.1 Benchmarketing
+### 14.3.1 AWS Graviton2: Arm Brings Better Price-Performance... (Michał Chojnowski)
+AWS의 ARM 기반 인스턴스(Graviton2)가 x86 대비 가성비가 좋음을 ScyllaDB를 이용해 증명합니다. 테스트 환경과 과정을 상세히 공개하여 신뢰를 높였습니다.
 
-When companies compare their own products with alternatives and share the results publicly, it’s typically to highlight where their product performs better. Of course, most technical readers bring a healthy dose of skepticism to such reports. They immediately assume that the benchmarks and test results are highly biased in the vendor’s favor. Still, developers gravitate to numbers, so they’ll likely read the article anyway.
+### 14.3.2 The Relative Performance of C and Rust (Bryan Cantrill)
+C와 Rust 프로그램의 성능을 비교 분석하며, Rust의 BTree 자료구조가 캐시 효율성 면에서 유리함을 밝혀냅니다. 독립적인 테스트로서 높은 가치를 지닙니다.
 
-# 14.1.2 Subtle benchmarketing
+### 14.3.3 Redpanda vs. Kafka: A Performance Comparison (Tristan Stevens)
+자사 제품(Redpanda)이 경쟁사(Kafka)보다 성능이 뛰어남을 보여줍니다. 경쟁사에게 유리한 조건을 주는 등 공정성을 기하려 노력했으나, 논란을 피할 수는 없었습니다.
 
-Interweaving the product into a benchmark focused on something else is a subtler form of marketing that targets developers. Using the company’s product to test and compare different things has two main benefits:
+### 14.3.4 The Effect of Switching to TCMalloc on RocksDB Memory Use (Dmitry Vorobev)
+메모리 할당자를 TCMalloc으로 교체했을 때의 메모리 절감 효과를 다룹니다. 테스트 세부 사항보다는 기술적 원리 설명에 집중하여 교육적 가치를 높였습니다.
 
-¡ Tests are typically more practical and realistic. It’s more interesting to see how a real product behaves when using technology X versus technology Y than to see how it performs using synthetic programs written only for testing purposes.   
-¡ It’s a more socially acceptable way of marketing through numbers. Between the lines, the message can still be “Our product is fast regardless, but it’s way faster when it runs on technology Z.”
+### 14.3.5 How Much Does Rust’s Bounds Checking Actually Cost? (Alana Marzoev)
+Rust의 경계 검사(Bounds Checking) 비용을 측정합니다. 특정 사용 사례에 대한 결과임에도 일반적인 결론을 도출하려 한 점은 아쉽지만, 측정 방법론은 유용합니다.
 
-Benchmarks and test results are sometimes a side effect of genuine curiosity and experimentation. The company already decided to evaluate new hardware or a new software library—then they decided to share the results with the community. The benchmarks born from this process generally make for more authentic benchmarking blog posts, compared with “us versus them” posts.
+# 14.4 특징 (Characteristics)
 
-# 14.1.3 Community service
+### 14.4.1 숫자와 시각화 (Numeric and visual)
+명확한 차트와 표가 필수적입니다.
+-   **스토리텔링:** 차트를 통해 성능 문제 발생이나 개선 효과를 시각적으로 보여줍니다.
+-   **데이터 밀도:** 공간 낭비 없이 정보를 꽉 채웁니다.
+-   **거짓말 요인(Lie Factor) 제거:** 시각적 크기 변화가 실제 데이터 변화와 일치해야 합니다.
 
-Benchmarks and tests powered by the pure will to share are highly appreciated. Independent benchmarks might be created as weekend projects because the author is curious about which technology is more efficient. They can also be incidental, with the author noticing a strange result while implementing something and then subsequently deciding to measure it and write a blog post about it. Either way, those articles are perceived as the most objective and trustworthy because the author is not invested in any side of the comparison.
+### 14.4.2 유죄 추정의 원칙 (Guilty until proven innocent)
+독자들은 기본적으로 조작을 의심합니다.
+-   공정한 비교 조건 명시
+-   상세한 환경 설정 공개
+-   재현 방법 제공
+-   제3자의 검증 언급
 
-# 14.2 Audience
+### 14.4.3 준 학술적 (Quasi academic)
+논문과 유사한 구조(초록, 배경, 방법, 결과, 고찰)를 가지며, 한계점을 명시하는 등 객관적이고 공식적인 어조를 사용합니다.
 
-Let’s dissect the target audience by the pattern flavor. Benchmarks and tests performed by the company for the company are likely read only by 1) people who are generally interested in the company’s technology, or 2) those evaluating it for a future use case.
+# 14.5 유의사항 (Dos and don'ts)
 
-Beyond those groups, these posts are unlikely to sneak past the ad-blocking software automatically burned into most readers’ brains.
+### 14.5.1 브렌든 그렉의 "Systems Performance" 읽기
+벤치마킹의 바이블입니다. 올바른 벤치마킹 방법론을 익히세요.
 
-When the company uses its own products to test and benchmark another technology ,the audience expands. Of course, it still lures in people interested in the company one way or the other. But it also appeals to readers who care about the tested technology.
+### 14.5.2 재현 방법 공개하기
+신뢰를 얻으려면 독자가 직접 테스트해 볼 수 있도록 소스 코드와 스크립트를 제공해야 합니다.
 
-When a software company evaluates a brand-new chip dedicated to AI inference, for example, the target audience spans well beyond just people intrigued by what software the company produces. Anyone intrigued by the numbers for the tested technology might also be curious enough to read.
+### 14.5.3 과장하지 말기
+차트 축을 조작하거나 결과를 부풀리지 마세요. 온라인 커뮤니티의 검증을 통과하지 못하면 신뢰를 잃습니다.
 
-The last flavor, independent tests, brings in “everyone.” A technical audience appreciates transparent research and gladly reads an independent benchmarking blog post, even if it isn’t directly in their field of interest. Independent tests are often driven by dedication and curiosity, which automatically makes them more engaging than all the other benchmark flavors. The author found the topic compelling enough to spend time on, and readers are more likely to assume it’s worth their attention as well.
+### 14.5.4 방치하지 말기
+오류 지적이나 새로운 환경 변화에 대응하여 글을 지속적으로 업데이트(Update)하세요. 비판에 대응하고 내용을 수정하는 모습을 보여주세요.
 
-# 14.3 Examples of “Benchmarks and Test Results” blog posts
+### 14.5.5 요점만 명확하게 (Boil it down, spell it out)
+복잡한 테스트 과정을 다 보여주려 하지 말고 핵심 결과에 집중하세요.
+-   **전면 배치:** 결론을 먼저 말하세요.
+-   **비교 용이성:** 결과를 나란히 배치하고 차이를 명확히 보여주세요.
+-   **"더 나은 것" 표시:** 높아야 좋은지 낮아야 좋은지 명확히 하세요.
+-   **정보 과부하 방지:** 대표적인 시나리오에 집중하고 나머지는 요약하거나 링크로 제공하세요.
 
-In the wild, “Benchmarks and Test Results” blog posts are relatively rare compared to other types of blog posts. The amount of work required to plan and conduct a test and then write up the results in some insightful manner is a significant barrier to entry. But despite (or maybe because of) their rarity, they get a lot of attention. As mentioned at the beginning of this chapter, these posts face a herd skepticism that tends to spark spicy discussion, and that makes them quite prominent in social media feeds and virtual communities.
+# 요약
 
-Here are some prime examples of blog posts that apply the “Benchmarks and Test Results” pattern, along with Piotr’s commentary on each.
-
-# 14.3.1 AWS Graviton2: Arm Brings Better Price-Performance than Intel
-
-Author: Michał Chojnowski
-
-Source: ScyllaDB Blog (https://mng.bz/75P4)
-
-# SUMMARY
-
-This article shows the performance benefits of running a database on cloud instances with Amazon’s Graviton2 ARM-based processors instead of instances running on $\mathbf { x } 8 6$ processors. The first paragraph teases the results, announcing a $1 5 \% { - } 2 5 \%$ price performance improvement. The next paragraph shows the detailed specifications of the compared machines: their processors, number of cores, memory, network, storage, and on-demand price per hour (at the time of writing). Then we get disk input/output results for both setups (measured in iops [I/O operations per second] as well as
-
-throughput [labeled as “bandwidth” in the article]). That’s followed by a description of the test setup and a list of six benchmark phases. Test results are then presented and visualized as charts and tables. The conclusion: Graviton servers already deliver comparable performance and also cost less per hour.
-
-# COMMENTARY
-
-This article is doubly upfront: first it clearly states that Graviton2 won the benchmark comparison, and then it provides a summary including the numbers. For some blog post patterns, it makes absolutely no sense to start with a summary (see the “Bug Hunt” pattern in chapter 8). But it’s a great technique for “Benchmarks and Test Results” posts. It properly sets the expectations and gives readers the freedom to trustfully skim over the charts and tables if desired.
-
-This benchmark is meticulously specified, from the exact database setup and cloud machines to describing every step involved. It makes the results reproducible—ergo more trustworthy. I also appreciate the tips scattered throughout the article. For instance, when discussing available AWS instances, the author explains that SSD-based variants aren’t ideal for low-latency persistent database systems. I consider this article a textbook example (duh, it’s literally an example in a book) of the comparison flavor of the “Benchmarks and Test Results” pattern.
-
-# 14.3.2 The Relative Performance of C and Rust
-
-Author: Bryan Cantrill
-
-Source: Bryan Cantrill’s Blog (https://mng.bz/q0Zz)
-
-# summary
-
-The article describes the author’s performance comparison between C and Rust. The comparison was carried out by rewriting an application from the former to the latter, and putting both versions under scrutiny with benchmarks and profiling.
-
-The introduction mentions that the blog originates from online discussions following another of the author’s blog posts, “Rust After the Honeymoon” (described in chapter 12 as a “Thoughts on Trends” pattern example). The article follows with a specification of the testing environment, the hardware, tools used for measurements, and input. Next, a selected subset of performance counters is analyzed for both programs, noting that the Rust one experiences substantially fewer cache misses. The most likely culprit seems to be a different data structure (BTree in Rust, intrusive AVL tree in C). The following paragraphs thoroughly analyze that, including further benchmarks, charts, and swapping data structures in the Rust implementation to measure the differences.
-
-The conclusion confirms t hat t he p erformance d ifference i s c aused b y a d ifferent choice of data structures. It also emphasizes that this is still an advantage of Rust, which allows developers to easily use powerful abstractions without a performance penalty. For C, a substantial engineering effort would be required to rewrite the program to use BTrees.
-
-This article is a great example of an independent test since the author is not professionally engaged in either Rust or C language committees at the time of writing.
-
-# COMMENTARY
-
-Let’s start with some minor negatives to make the book more entertaining! I noticed two:
-
-¡ I was a little confused about what was rewritten to Rust and tested. The name of the program (statemap) was mentioned once or twice, but it lacked an introduction, like
-
-– What does this program do in the first place?   
-– Where can I find its source code?
-
-NOTE I ultimately found the Rust source code on GitHub: https://github.com/ TritonDataCenter/statemap
-
-¡ Dead links! They may have been put to death during Joyent’s acquisition by Samsung Electronics, judging by the fact they were hosted at the joyent.com domain. Dead links happen naturally in blog posts, so it’s not a big deal, especially for a post from distant 2018. I’m only bringing it up because it’s good practice to just let the author know, via a comment or an email, which we did!
-
-Nitpicking aside, this is a really nice read. The article is another example of the author’s signature casual and entertaining writing style that’s also seen in “Rust After the Honeymoon.” The article also shares a fair amount of interesting charts, with small performance puzzles (like unexpected spikes), which are analyzed and resolved in the article. The test environment is well specified, and the article also contains lots of useful shell snippets for running the experiments locally—in case the readers feel like reproducing the results.
-
-An additional perk is that the author of this article is also one of the original authors of the profiling tool used (DTrace), which makes all the shell invocations more trustworthy. An update added at the end to provide more charts with another C compiler is a nice touch—showing that the author truly cares about, and responds to, readers’ feedback.
-
-# 14.3.3 Redpanda vs. Kafka: A Performance Comparison
-
-Author: Tristan Stevens
-
-Source: Redpanda Blog (https://mng.bz/w54g)
-
-# SUMMARY
-
-This article describes a series of tests and benchmarks indicating that Redpanda (an Apache Kafka alternative) is substantially faster and less resource-hungry than Apache Kafka. The first paragraph refers to earlier blog posts on Redpanda architecture and philosophy. The benchmarking environment is then explained, listing the hardware specification, as well as tested workload characteristics:
-
-¡ Read/write request ratio   
-Throughput   
-¡ Configuration specific to the Kafka protocol, such as the number of
-
-– Topics   
-– Partitions   
-– Producers   
-– Consumers
-
-It’s disclaimed that tests are run on machines with modern NVMe drives, for which Redpanda is optimized. Then there are descriptions and visualizations of the results for a few configurations, unanimously showing Redpanda’s lower and stabler latency in each case. The case in favor of Redpanda’s performance is then further supported by throwing more resources at the Apache Kafka cluster for a “rigged” comparison. The final paragraph summarizes the results and encourages readers to try out the product.
-
-# COMMENTARY
-
-This article is a clear example of the “tests performed against the company’s product and its competition” flavor of the pattern. It’s very enthusiastic about the product, and nothing less is expected. The testing environment is clearly explained and reproducible, which makes the benchmark results more trustworthy. It also applies the nice technique (quite commonly used in the “ours versus somebody else’s” benchmarks subpattern) of giving the competition an unfair advantage—and then winning anyway. Here, Redpanda tries to even the score by running the Apache Kafka cluster with more resources.
-
-Throughout the article, charts are clear and readable. I always appreciate the “lower is better” type notes that save readers a few seconds of trying to figure out whether the outcome is positive or negative.
-
-The results in “ours versus theirs” benchmarks are hardly ever surprising because it’s doubtful the article would have been published if the alternative was faster. Still, it’s enjoyable to read how many orders of magnitude a product performs better. Running and publishing benchmarks against your competition’s product has an interesting effect, though: it can trigger a blog war! This article was quite thoroughly criticized by another one, coming from the Apache Kafka trenches. Here’s a reference for the curious:
-
-Title: Kafka vs Redpanda Performance—Do the claims add up?
-
-Author: Jack Vanlightly
-
-Source: Jack Vanlightly’s Blog (https://mng.bz/JNPQ)
-
-That article addresses Redpanda’s claims and shows where the author believes to have found inconsistencies. Interestingly, that article also incited a reaction—the Redpanda “Why fsync” blog post described in chapter 13.
-
-# 14.3.4 The Effect of Switching to TCMalloc on RocksDB Memory Use
-
-Author: Dmitry Vorobev
-
-Source: Cloudflare Blog (https://mng.bz/PN65)
-
-# summary
-
-This article compares application memory usage before and after switching to a new allocator implementation: TCMalloc. The introduction briefly explains that the
-
-elevated memory usage was noticed after migrating to a new storage solution, and the root cause was quickly narrowed down to the allocator. The next section is a thorough explanation of how the default C library allocator works, what memory arenas are, and why they contribute to high memory fragmentation. Next, a different allocator design is presented: TCMalloc, Google’s customized allocator implementation. One TCMalloc feature that’s especially important for the author’s workload is effective memory reuse through caching. The author concludes that switching to TCMalloc reduced the memory usage 2.5-fold. The conclusion also emphasizes that choosing the right allocator for a given workload is critical for efficient memory utilization.
-
-# COMMENTARY
-
-A keen eye might have noticed that the summary doesn’t really cover the tests: their environment, steps, or assumptions. That’s because they’re not really in the article either! But this lack of details doesn’t make the article bad. On the contrary, it’s very educational in its introduction to both the default allocator implementation and TCMalloc. The results are there, visualized clearly with charts, and the conclusion is rational.
-
-For the “Benchmarks and Test Results” pattern, it’s good practice to make the tests reproducible by being transparent about all details. This article shifts the focus toward explaining the architectural and technical reasons why the results were in favor of TCMalloc, which makes up for fewer details about the testing setup. Presumably, the benchmarks would be difficult to reproduce without access to the project’s source code. That code isn’t open, so it’s entirely reasonable to skip this. The technical part serves as a good introduction to memory allocation theory, teaching readers about the general idea as well as two specific implementations.
-
-# 14.3.5 How Much Does Rust’s Bounds Checking Actually Cost?
-
-Author: Alana Marzoev
-
-Source: Readyset Blog (https://blog.readyset.io/bounds-checks/)
-
-# SUMMARY
-
-This article describes how the author measured the overhead of Rust’s bounds checks: a feature designed to make programs safer by default, at the cost of additional CPU instructions. The introduction presents the motivation for enabling bounds checks by default, listing a few known security breaches in open source programs caused by lack of bounds checks. Next, the author presents a technique for counting bounds checks during program execution with the help of Linux’s stock debugger (gdb). Then we see what happens when running the analysis for a few versions of Readyset’s product:
-
-¡ An unchanged program, which provides the baseline for the test results   
-¡ A program recompiled with fewer bounds checks, achieved by replacing selected function calls with substitutes that don’t perform checks   
-¡ A program recompiled with a modified Rust compiler that doesn’t emit bounds checks
-
-All executions end up returning results within a margin of error. The conclusion drawn in the article is that bounds checking overhead is negligible in Rust. The exact cause of this observation remains unresolved, with a guess that perhaps branch prediction mechanisms in modern CPUs alleviate the cost of additional checks.
-
-# COMMENTARY
-
-On the one hand, this article is full of practical tips that I find interesting and directly useful in everyday hacking. For example,
-
-¡ Using gdb to count how many times a specific function is called, and comparing the results before and after a program is modified   
-¡ Pointers to intriguing bits in Rust’s standard library implementation and the official Rust compiler
-
-What doesn’t pass scrutiny are the drawn conclusions. The title (“How Much Does Rust’s Bounds Checking Actually Cost”) and section titles (e.g., “How Much Do the Bounds Checks Cost?”) suggest that bounds checks are studied in the general case. Results achieved in the article showed that all executions fall within the same error margin. That doesn’t really prove that bounds checks are negligible but that bounds checks are negligible for Readyset’s program. That’s an interesting conclusion on its own, showing that in the case of Readyset, opportunities for optimization lie elsewhere. Bounds checks do, in fact, have a cost—it just shows for different workloads. For instance, a quick internet search points to Alex Kladov’s experiment, proving that bounds checks effectively prevent the compiler from auto-vectorization. In certain cases, it makes the CPU overhead as large as $1 0 0 \%$ (https://github.com/matklad/ bounds-check-cost).
-
-NOTE Auto-vectorization optimizes code by automatically converting sequential operations into parallel SIMD (single instruction, multiple data) instructions, available in modern processor architectures. It’s not uncommon to see a $4 \mathbf { x }$ or 8x speedup of auto-vectorized compute-intensive loops.
-
-Let's also prove a point that blog post readers (including me) can't resist criticizing spotted inconsistencies—and take a short detour to point out a technical problem in someone else's blog post! Another nitpick for the benchmarking environment is how the third scenario was tested. Using a modified Rust compiler, itself recompiled to not generate certain bounds checks, makes the third result rather unreliable. Compilers are extremely sensitive to changes, and the stock Rust compiler is probably a heavily optimized binary, specialized for its operating system, CPU architecture, and so on. Recompiling a compiler locally and then compiling the test program with it is unlikely to produce results comparable to programs compiled with the stock compiler. In this particular case, it's not really a problem because all achieved results were within the same margin of error. However if the results did in fact differ, it would be difficult to draw any conclusions from the difference.
-
-At the same time, I really appreciate how the author showed what to change in the compiler implementation to stop generating bounds checks. It's also valuable that the
-
-article educates readers that recompiling the stock Rust compiler is not that hard, and its source code is actually quite comprehensible. Final score: a very educational blog post, but its benchmark results are not generally relevant to the topic (they are relevant to a specific use case).
-
-# 14.4 Characteristics
-
-The “Benchmarks and Test Results” pattern is a distant relative of “Bug Hunt” and “Non-markety Product Perspectives” patterns. The core element of repeated experiments and measurements can also be found in bug-hunting blog posts. However, the main difference is that benchmarking articles tend to be very open about the end result, often even hinting at it in their titles. Many instances of this pattern also share a characteristic with “Non-markety Product Perspectives” articles: the product is usually an important actor, although not always the main character.
-
-# 14.4.1 Numeric and visual
-
-Benchmarks and test results are best expressed with numbers and charts—specifically, ones focused on metrics the target readers care about. Readers click these articles to discover and compare new numbers, and they won’t leave happy unless all the charts are perfectly clear and comprehensible. Some articles might seem visually overwhelming at first, but readers are used to skimming over a few charts to continue reading. Benchmarking blog posts are also abundant in all kinds of tables, especially ones that compare one set of numbers with another.
-
-The best benchmark and test blog posts use visualizations that
-
-¡ Tell a clear story —For example, the visualization might provide a series of data points that show a performance problem emerging over time, or brag about extremely low and consistent latency after a fix. Such takeaways are easier to process visually than in text, plus tying them to data points makes them more convincing and interesting. Some charts even add a callout in the graphic to highlight the story (for example, the header image in the Redpanda blog post).   
-¡ Achieve a data density that justifies the amount of space the graphic occupies on the page — For example, a simple data point that could be replaced by a single sentence does not meet this requirement. But a flame graph certainly does.   
-Minimize the “Lie Factor”—The Lie Factor, a term coined by Edward R. Tufte, measures how accurately a change in the size of the chart’s visual elements (like bar heights or bubble sizes) matches the magnitude of change in the underlying data. It’s calculated by dividing the size of the effect shown in the graphic by the size of the effect in the actual data. The result should be close to 1; if not, the graph is overstating or understating something.
-
-# 14.4.2 Guilty until proven innocent
-
-It’s as dystopian as it sounds: in the world of engineering blog posts, the author is presumed guilty of rigging the benchmark results. The burden is on the author to
-
-meticulously prove that the benchmarks are legit. That defensive approach often manifests itself in the article by
-
-¡ Explicitly stating why the results of the comparison are fair (e.g., they were run under identical conditions)   
-¡ Sharing all the relevant environment details: the chosen hardware, software configuration, operating system, etc.   
-¡ Showing the exact steps to reproduce the same results, or sharing a repository where the benchmark source code is kept   
-¡ Prominently mentioning anyone beyond the author’s company who participated in the original testing process or validated the results
-
-# 14.4.3 Quasi academic
-
-“Benchmarks and Test Results” blog posts generally tend to adopt a more academic style than most blog posts. Although they aren’t structured like a peer-reviewed research paper, many include all the key elements you would typically find in one:
-
-¡ Abstract —A short upfront summary of what was tested, how, and what was found   
-¡ Background —Why the author decided to perform this study   
-¡ Methods —How the author performed this study   
-¡ Results — What the author discovered by conducting the study   
-¡ Discussion —The author’s interpretation of the results
-
-For example, the benchmark blog posts by Redpanda and ScyllaDB don’t use these exact terms, but they do ultimately check all of the boxes. Those two examples also follow the academic tradition of pointing out any notable limitations that could affect the conclusions drawn from the experiment. The Redpanda post noted that they wished they could have compared Redpanda and Kafka on equal resources. And the ScyllaDB example noted that they wished they could have tested against the latest (newly released) x86-based instances. The fact that the Rust bounds checking article did not actually highlight the study’s notable limitations was the main criticism we had of that otherwise intriguing article.
-
-The writing style of these articles is also more formal than most blog post patterns— more akin to the “How We Built It” pattern’s style than any others, but often even more formal than that. The sentences tend to be austere with minimal trace of the author’s personality or emotions (“We did this, we found that”). This makes complete sense considering that it’s the (fallible, biased, emotional, etc.) human behind the benchmark who will be presumed guilty until proven innocent. The less humanity seeps into the blog post, the more objective it all sounds.
-
-This impersonal tone is most common in the “product comparison” benchmarks, which are also the ones that face the greatest skepticism and scrutiny. As you can see from examples such as Alana Marzoev’s and Bryan Cantrill’s articles, more community-service-oriented “Benchmarks and Test Results” articles might be infused with more personality and character.
-
-# 14.5 Dos & don’ts
-
-Having a rock solid test is fundamental for writing a great “Benchmarks and Test Results” blog post. If you lack that, stop right there and rethink your approach (perhaps you have fodder for a “Lessons Learned” blog post instead). But a great test doesn’t just automatically translate to a great test results blog. Here are some tips for making both the test and the resulting blog post worth the considerable effort that the project likely required.
-
-# 14.5.1 Read Brendan Gregg’s “Systems Performance”
-
-Do yourself a favor and read (or maybe even re-read) Brendan Gregg’s renowned book, Systems Performance, or at least the “Benchmarking” chapter. It covers important topics such as
-
-¡ Tests being reproducible   
-¡ Caring about correctness—fast, but incorrect results are not useful   
-¡ Avoiding “apples versus oranges” comparisons   
-Ensuring all caches, if they exist, are warmed (unless somebody wants to benchmark the cache warmup process specifically)
-
-The book is a comprehensive study of doing benchmarks the right way!
-
-# 14.5.2 Show how to reproduce the results
-
-If benchmarks and tests can’t be reproduced, then they won’t be trusted. All benchmarks and tests should be served with a detailed list of steps for reproducing them unless the tested software or hardware is prohibitively expensive or, for whatever reason, not generally available. Ideally, complement the article with an open source repository that includes all the source code and scripts for running the benchmark. Readers are way more likely to trust the results if they come with a recipe for how to validate them.
-
-# 14.5.3 Don’t exaggerate
-
-Results that are creatively rigged to exaggerate the difference never pass the scrutiny of the online crowd, so it’s really in your own best interest to prepare accurate charts. Actively consider and avoid the Lie Factor (referenced in 14.4.1), which means that charts like the one in figure 14.1 are not welcome:
-
-Exaggerated results are likely to incite (and likely deserve) low blows in online discussions. And once a reader thinks that one finding looks scammy, they will probably dismiss the entire blog post (and underlying project) as being deceitful. It’s just not worth it; don’t exaggerate.
-
-# 14.5.4 Don’t neglect
-
-“Benchmarks and Test Results” posts are natural targets for questioning, challenging, and cross-examining. Assume that errors, negligence, omissions, and other logical flaws will be discovered and then noted online. Plan for this and make it a priority to update your article whenever necessary.
-
-![](images/cc454b8b6c6823737cd17c48cff8dd2aae93c9fa3f108330ede059f9e13c2412.jpg)  
-Figure 14.1 A misleading representation of test results. Note that although our shiny stuff seems to have double the throughput at first glance, there’s actually just a 2 MBps difference.
-
-Updates can be appended to the article as a new paragraph, titled something like “Update: Feb 29th 2024.” This is the perfect place to reference an online dispute (ide-ally with a hyperlink to the related discussion). That could include agreeing with criti-cism and fixing parts of the article. Or, it’s equally fine to publicly debunk accusations. Updates might also involve rerunning all the benchmarks and tests in a new envi-ronment (for instance, because promising new hardware just became available). Don’t limit yourself to one update; multiple ones are perfectly fine. At some point, when the number of updates reaches critical mass (say, when the number of update paragraphs is approaching the number of regular ones), it’s time for a follow-up blog post. And once you publish that follow-up, be sure to update the original blog post to link to it. People
-
-might still stumble on the earlier one, so it’s a nice gesture to go all Amazon-esque and politely inform them that “there is a newer edition of this item.”
-
-# 14.5.5 Boil it down, spell it out
-
-Behind every great benchmark is a complex test that was probably quite frustrating to run. But don’t inflict an equal amount of pain and suffering on your readers by making the resulting blog post difficult to read and decipher.
-
-Readers have clicked into your post curious to learn about what you did, why you did it that way, and what you discovered. Don’t make them inspect 25 beautiful graphs, scroll back and forth across multiple sections for comparison, or run their own mental analysis of your results in order to figure out what’s best and why.
-
-Specifically,
-
-¡ Call out the key takeaways upfront. This isn’t a bug hunt blog post, where it’s actu -ally fun for readers to place themselves in the scene and try to solve the mystery as they follow along. Spoilers are not only acceptable here; they’re desired and
-
-appreciated. If the reader doesn’t care about the results, they certainly won’t care about all the low-level details of how you arrived at them.
-
-¡ Show side-by-side when you want readers to compare. If your ultimate goal is to show that A is faster than B, don’t put your results from A in one section, your results from B in the next section, and leave the comparison as “an exercise for the reader.” Stack them in charts and tables when feasible. Show raw numbers, but also go beyond raw numbers. Do the math for them and calculate the percent difference between the two values.   
-¡ Make “better” unmistakable at a glance. Sometimes higher is better (e.g., with throughput). Other times, lower is the desired outcome (e.g., with latency). Put yourself in place of the average impatient and often distracted reader. Use colors, labels, and captions to make it obvious what outcome is considered better in each scenario.   
-¡ Avoid information overload. It’s great that you ran 25 different scenarios; thorough testing is certainly appreciated. But do you think the reader really wants to read all about each and every one of them? Since you have so many options to choose from, select a representative sample to focus on here. Explain why you selected these ones and assure the reader that you’re not cherry-picking results to support a bias. Supplement that with an overview of the “also ran” test results so the entire scope of the testing project is accounted for. Finally, share a link to the complete results in case anyone (perhaps someone working on the technology involved in that test) is really hungry for that extra level of detail.
-
-# Summary
-
-¡ There are at least three distinct types of “Benchmarks and Test Results” articles: 1) tests that compare the company’s product to its competition; 2) comparisons of something (such as cloud infrastructure or hardware) that are performed using the company’s product; and 3) measuring something that’s unrelated to any of the company’s products (e.g., an open source project or a new graphics processing unit).   
-¡ The purpose of these posts ranges from overt “benchmarketing” to pure educational value.   
-¡ Readers vary based on the test type: generally, the less prominently the company’s product is featured, the broader the potential audience.   
-¡ Engineers are irresistibly attracted to numbers, so these posts get a lot of attention.   
-¡ Posts in this pattern face a harsh level of scrutiny, so both the testing and the reporting must be meticulous and bulletproof.
-
-¡ Top tips
-
-– Study up on benchmarking best practices.   
-– Show readers how to reproduce the results.
-
-– Don’t exaggerate, especially if you have a horse in the race.   
-– Keep evolving the article as you battle critics, learn more, and run more tests.   
-– Make it simple for your reader to identify and interpret the most important takeaways.
-
-# Promotion, adaptation, and expansion
-
-A n effective blog post can continue paying dividends long after its initial publication. Part 4 shares options for squeezing more value from your work: from ways to keep your posts in front of your target readers to tips for extending into conference speaking and book writing opportunities:
-
-¡ Chapter 15 presents options for squeezing more value from your blog post.   
-¡ Chapter 16 shares strategies for presenting conference talks based on your blog post.   
-¡ Chapter 17 provides an honest look at what to consider if you’re intrigued with becoming a book author.
-
-
+-   벤치마크 글은 경쟁사 비교, 제3 기술 테스트, 독립적 테스트 등 다양한 유형이 있습니다.
+-   엔지니어들은 숫자를 좋아하지만 의심이 많으므로 철저한 검증과 투명성이 필요합니다.
+-   올바른 벤치마킹 방법론을 준수하고 재현 가능성을 보장하세요.
+-   과장을 피하고, 비판에 열린 태도로 업데이트를 지속하세요.
+-   독자가 핵심 결과를 쉽게 파악할 수 있도록 시각화와 요약에 신경 쓰세요.

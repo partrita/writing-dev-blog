@@ -1,726 +1,104 @@
-# This chapter covers
+# 4장 작업 초안 만들기
 
-¡	Starting with your goal top of mind   
-¡	Preparing to write   
-¡	Cranking out a draft, fast   
-¡	Getting past blockers   
-¡	Tapping AI for fast feedback on what’s missing   
-¡	Determining whether your draft is ready to move forward
+# 이 장에서 다루는 내용
 
-Once you have a compelling topic idea and understand what’s required for a blog post to stand out, it’s time to start writing! In this chapter, you will learn how to crank out a working draft, step-by-step. Consider this working draft your MVP (minimum viable product). As with any MVP, you want to focus on getting the core components in place so your work can be reviewed and improved. In this case, that means you need to capture your thoughts in writing as rapidly as reasonable, given your experience and goals. From there, you can step back, take a look, and address any major omissions or oversights. Once all the basics are in place, you can shift focus to criticizing and optimizing what you’ve captured. That’s covered in chapter 5.
+- 목표를 염두에 두고 시작하기
+- 글쓰기 준비 과정
+- 빠르게 초안 작성하기 (MVP 마인드셋)
+- 막히는 부분 해결하기
+- AI를 활용하여 누락된 부분 확인하기
+- 초안이 다음 단계로 넘어갈 준비가 되었는지 판단하기
 
-Throughout this part of the book, we’ll provide concrete examples by planning, writing, and optimizing a fake blog post. The topic is using the Zig language to implement a shiny new database migration tool.
+주제를 선정하고 좋은 글의 요건을 이해했다면, 이제는 실제로 글을 쓸 차례입니다. 이 장에서는 '작업 초안(working draft)'을 빠르고 효율적으로 작성하는 방법을 다룹니다. 이 초안은 완벽할 필요가 없으며, 검토하고 개선할 수 있는 최소한의 요건을 갖춘 MVP(최소 기능 제품)라고 생각하면 됩니다.
 
-# 4.1 Focus and challenges
+# 4.1 집중과 도전
 
-Whether you’re writing or programming, you can only make so much headway with what’s in your head. Conceptually, it’s all crystal clear and flawless. But then, the reality often falls short of your lofty vision. You need to get your ideas on screen, into an editor, before you can start properly checking and troubleshooting them. And translating ideas into words/code tends to surface unforeseen challenges as well as spark new (often better) ideas.
+글쓰기의 가장 큰 걸림돌은 완벽주의입니다. 머릿속에 있는 아이디어를 화면으로 옮기는 초기 단계에서는 유려한 문장이나 완벽한 문법에 집착하지 마세요. 중요한 것은 핵심적인 기술적 내용을 포함한 원고를 완성하는 것입니다. 켄트 벡(Kent Beck)의 말처럼 "일단 작동하게 하고, 올바르게 만들고, 빠르게 만들어라(Make it work, make it right, make it fast)"는 원칙은 글쓰기에도 적용됩니다.
 
-With writing, the most common problem is being unable to start even a single sentence because nothing sounds right. Conversely, it’s just as easy to go down the rabbit hole and write three pages of interesting but absolutely unrelated notes. Translating ideas into code has equivalent problems. Sometimes you get stuck at the design stage. Other times, you spend a few hours making the code way more generic and universal than it ever needs to be or wasting way too much time on trivial details such as variable names (i.e., “bikeshedding”).
+비평은 나중으로 미루고, 지금은 **창조와 추가**에 집중하세요.
 
-In any case, the initial attempt is rarely a flash of genius immediately manifesting itself as a masterpiece. But once you have something concrete, even if it’s messy, you can take the steps required to transform mess into masterpiece (well, the tech blog or code equivalent, at least).
+# 4.2 필수 준비 (Essential prep)
 
-That’s why it’s so important to quickly complete a working draft—with rough attempts at all the critical elements, particularly the intriguing technical tidbits. There is absolutely zero pressure to make it great at this point. Just make it exist by extracting the ideas from your head. Create a document with the raw materials you can shape into a compelling technical blog post, and complete it fast so you can shift gears to making it good enough for publication. Then, get it done.
+본격적으로 쓰기 전, 약 30분 정도의 준비 과정은 나중에 큰 시간을 절약해 줍니다.
 
-NOTE The programming equivalent of this approach is Kent Beck’s famous “Make it work, make it right, make it fast.” Different stages require different mindsets and different strategies. You can’t do it all, all at once (not well, at least).
+### 시작 전 확인 사항: 안전한가?
+기밀 사항, 미발표 프로젝트, 특허 관련 아이디어 등 민감한 주제를 다루고 있지 않은지 확인하세요. 문제가 될 소지가 있다면 미리 허가를 받거나 주제를 변경해야 합니다.
 
-You might need to unlearn some things to achieve this. For example, you shouldn’t delay your progress by obsessing over things such as
+### 4.2.1 다른 사람들은 어떻게 썼나 확인하기
+유사한 주제의 다른 글들을 빠르게 훑어보고 다음을 파악하세요:
+1.  그들은 어떻게 접근했는가?
+2.  나의 접근 방식은 어떻게 다른가?
+3.  나중에 참조할 만한 가치가 있는가?
 
-¡ A clever title and catchy introduction   
-¡ Eloquent sentences   
-¡ Grammar nitpicks   
-Pretty diagrams
+### 4.2.2 사이트 성향 파악하기
+글을 기고할 사이트의 기존 게시물들을 살펴보고 길이, 스타일, 그래픽 사용 등을 파악하세요. 편집 가이드라인이 있다면 미리 확인하는 것이 좋습니다.
 
-If those things come to you naturally, great. If not, just move along anyway. Why? Well, that’s because
+### 4.2.3 목표 정의하기
+글을 쓰기 전 다음 두 가지 질문에 대한 답을 한 문장으로 정리해 보세요.
+1.  **이 블로그 포스트의 목표는 무엇인가?** (독자가 무엇을 얻어가길 바라는가?)
+2.  **왜 이 주제에 대한 나의 관점이 흥미로운가?** (나만의 차별점은 무엇인가?)
 
-¡ There are more important things to focus on at this point. If your draft isn’t yet providing a distinctive perspective and drawing on your specialized expertise, who cares how nicely your sentences flow? You have other problems to address first.   
-¡ Hyperfocusing on superficial details now will delay the completion of a draft, and you need that draft done before you can start identifying and addressing major problems (such as insufficient technical depth).   
-It’s just too early, and you might be overengineering things that you don’t ultimately need. It would be like spending days on performance optimization before you even ran a unit test, or months on perfecting some capability that users don’t actually want.
+# 4.3 선택적 워밍업
 
-This phase of the writing process is all about creation and addition. The only time criticism is allowed here is to expose major problems and determine what else you should add to resolve them. Once you think your draft contains everything it needs, we’ll get it fit for publication. At that point, you will have full permission to unleash your inner critic.
+글쓰기가 막막하다면 다음 방법들을 시도해 보세요.
 
-NOTE We’re deliberately using the term “working draft” versus “first draft.” There’s only going to be one draft, which you incrementally evolve based on the time and effort you wish to spend.
+-   **개요 작성 (Outlining):** 다루고 싶은 핵심 포인트들을 순서대로 나열하여 뼈대를 잡습니다.
+-   **마인드맵 (Mindmapping):** 생각의 연결 고리를 시각적으로 그려보며 아이디어를 확장하고 정리합니다.
+-   **모델 아티클 활용:** 마음에 드는 다른 글의 구조를 역설계하여 내 주제에 맞게 변형합니다.
+-   **노트 복사/붙여넣기:** 이메일, 이슈 트래커, 코드 커밋 메시지 등 기존에 써둔 메모들을 긁어모아 시작점으로 삼습니다.
 
-# 4.2 Essential prep
+# 4.4 글쓰기 시간 (Writing time)
 
-Hopefully, you’re so eager to start writing that the thought of preparation annoys you. But we promise: if you spend a little upfront time on this prep (plan for 30 minutes or less), it will pay off in a ton of time saved later, as well as a better draft and, ultimately, a better blog post.
+이제 실제로 글을 쓸 시간입니다. 목표는 머릿속의 생각을 텍스트로 변환하는 것입니다.
 
-For example, if you define your goal upfront,
+### 4.4.1 페이지에 단어 채우기
+전통적인 타이핑 방식 외에도 다음과 같은 방법을 고려해 보세요:
+-   **고무 오리 받아쓰기:** 가상의 청자(고무 오리)에게 말하듯 이야기하고 음성 인식 도구로 받아적습니다.
+-   **동료와 대화하기:** 동료에게 내용을 설명하고 그 대화를 녹음하거나 요약합니다.
+-   *(비추천)* **모국어로 쓰고 번역하기:** 기술 용어 번역의 어색함과 번역의 번거로움 때문에 가급적 처음부터 영어(혹은 타겟 언어)로 쓰는 것이 좋습니다.
 
-Your initial draft will be better.   
-It helps you determine what to cut to improve focus.   
-It helps you get more valuable review feedback.   
-¡ You’ll have some clear criteria for determining when it’s good enough to ship.
+**긴 텍스트 벽 허물기:** 문단이 너무 길어지면 적절한 곳에서 엔터를 쳐서 나누고, 페이지당 적어도 몇 개의 헤딩을 추가하여 가독성을 높이세요.
 
-# Before you start, ensure that it’s safe to proceed
+### 4.4.2 방해 요소 제거하기
+-   **편집하고 싶은 충동 참기:** 맞춤법 검사기를 끄거나 타이머를 설정하여 쓰기에만 집중하세요.
+-   **순서 무시하기:** 서론이 안 써지면 본론부터 쓰세요. 막히는 부분은 건너뛰고 나중에 채워 넣으세요.
+-   **플레이스홀더 사용:** 코드 예제, 이미지, 링크 등을 나중에 넣을 곳에 `TODO` 같은 표시를 남겨두고 계속 써 내려가세요.
+-   **휴식 취하기:** 정말 막힐 때는 잠시 자리를 비우고 머리를 식히세요.
 
-Before you even begin to develop that great blog post idea, take a few moments to consider if there are any good reasons to hold back. If you’re contemplating writing about a topic that might not be well-received by your team, your boss, or anyone else in your organization (or partner ecosystem), feel out the situation. Even if you plan to publish the article on your personal site instead of on the company’s engineering blog, be sure to explore any potential resistance before proceeding. This could save you from the pain of spending time on something that’s just not feasible, at least not right now.
+# 4.5 예시: Zig 데이터 마이그레이터 블로그 포스트 초안
 
-# (continued)
+(책에서는 가상의 인물 PretendPiotr가 쓴 Zig 언어를 사용한 데이터 마이그레이션 도구에 대한 초안 예시를 보여줍니다. 이 초안은 완벽하지 않지만 핵심 내용을 담고 있으며 다음 단계로 넘어가기에 충분합니다.)
 
-What are some examples of potentially delicate situations?
+# 4.6 빈틈 채우기 (Filling in gaps)
 
-You’re working in a stealth startup or on an unannounced project and you plan to reference it, maybe even vaguely, in some shape or form.   
-You’re thinking about sharing even a hint of closed source code in a highly com-  
-You’re disclosing an idea that might be submitted for a patent, but your company isn’t ready for the “one-year-after-disclosure” clock to start ticking yet.   
-You’re considering writing about how you discovered a security vulnerability that’s not yet safely patched.
+초안이 완성되었다면, 본격적인 최적화(5장)에 들어가기 전 마지막으로 큰 구멍이 없는지 확인해야 합니다.
 
-Ask questions first, write later. There are many points in your life when it’s fine to ask for forgiveness, not permission. This probably isn’t one of them.
+### 4.6.1 의도한 내용을 다루었는가?
+준비 단계에서 설정한 목표와 차별점이 글에 잘 반영되었는지 확인하세요. 생성형 AI에게 "이 글의 목표와 타겟 독자가 누구라고 생각하는가?"라고 물어보고 내 의도와 일치하는지 확인해 볼 수 있습니다.
 
-If you’re certain that you’re allowed to discuss a topic but still don’t want the post associated with your real name and bio, feel free to write under a pseudonym. This shroud of anonymity provides a safe mode for inexperienced writers who are particularly shy about sharing their thoughts in published posts. It allows people to have their content evaluated solely on its own merit—without any bias based on the author’s personal identity. And it can provide the freedom required to write the scathing roasts that could be career limiting in certain circles. Regardless of the motivation, be sure to enable Whois domain privacy protection to ensure that details such as the email and address associated with your domain aren’t readily accessible. And thanks to Scott Hanselman for this tip!
+### 4.6.2 무엇을 더 다루어야 하는가?
+독자가 기대할 만한 내용(성능 지표, 구체적인 예시, 마이그레이션의 어려움 등)이 빠지지 않았는지 점검하세요. AI에게 "이 글에 논리적 비약이나 누락된 내용이 있는가?"라고 물어보는 것도 좋은 방법입니다.
 
-# 4.2.1 Getting a feel for how others approach the topic
+### 4.6.3 실행 가능성을 막는 요인은 무엇인가?
+-   나만의 전문성과 경험이 잘 드러나는가?
+-   독자의 이해를 돕기 위한 충분한 기술적 세부 사항이 포함되었는가?
 
-First, set aside a few minutes to search for similar articles on your topic. Don’t be alarmed if you see other people writing about the same general topic. That’s good—it’s a sign that you’re going to be adding to a conversation that already has an audience. You don’t have to read every word ever written on the topic; you’re already an expert on your experiences with the topic, and that’s what you’ll be focusing on, right? If not ,go back and reread chapters 2 and 3!
+이 질문들에 대해 확신이 든다면, 이제 초안을 다듬고 리뷰를 받을 준비가 된 것입니다.
 
-Quickly scan the articles that strike you as similar or interesting companions, then jot down some notes for each:
+# 4.7 이것만은 꼭 (If you do nothing else)
 
-1 How does the article approach the topic?   
-2 How does your approach differ?   
-3 Do you want to read it in full (later!) and potentially reference it in your own blog post?
+시간이 없다면 최소한 이것만은 하세요:
 
-If there’s a lot to cover, generative AI can help you summarize articles for speedy triage. For example, you could use a prompt such as “Summarize this article in 100 words or less. Please state what you believe to be its target audience and its goal.” Then, you can use the results of that first-level review to prioritize which ones you want to scan with your human eyeballs and brain.
+1.  글의 목적, 독자, 차별점을 생각하세요.
+2.  빠르게 엉망인 상태라도 초안을 작성하고, 헤딩을 추가하고 문단을 나누세요.
+3.  AI를 활용해 논리적 허점이나 부족한 점을 확인하세요.
+4.  내 경험이 잘 드러나고 기술적 깊이가 충분한지 확인하고 필요한 내용을 보강하세요.
 
-# Example 4.1
+# 요약
 
-We want this book to provide concrete examples. That’s why the real Piotr (Sarna) is taking on an alter ego, PretendPiotr, to author a fake blog post about a fake Zig-based data migration tool. Here’s an idea of how PretendPiotr might respond to the above questions for one of the (also fake) articles he might have stumbled upon in his research: “Our ${ \complement + + }$ project is now supported for your architecture—with Zig.”
-
-# Question 1: How does the article approach the topic?
-
-PretendPiotr: The article starts with a short introduction to the ${ \complement + + }$ project that was previously supported only for the most popular environment: x86-64 CPU running Linux. Then, it shows how Zig’s novel approach to cross-compilation allows the project to be successfully compiled for more processor architectures and operating systems—without changing anything in the source code.
-
-# Question 2: How does your approach differ?
-
-PretendPiotr: Both blog posts are going to praise Zig, but with a couple of notable differences:
-
-My blog post will describe implementing a project in Zig from scratch. The other one uses Zig’s compiler to give an existing project cross-compilation superpowers.   
-¡	My blog post is also going to have a healthy dose of skepticism—not pure praise.
-
-# Question 3: Do you want to read it in full (later!) and potentially reference it in your own blog post?
-
-PretendPiotr: I already read it, twice. Most modern blog posts hardly take more than five minutes to read and less than a minute to skim through the keywords. I’ll reference this in my article—in the section that glorifies Zig’s design decision to make cross-compilation one of the core features of the language.
-
-# 4.2.2 Getting a feel for what the site publishes
-
-If you plan to publish this article somewhere other than your personal web site (for example, on your company’s engineering blog, or on a community-hosted blog), try to find at least a handful of other engineering blog posts published there. Are they generally the same length and approach that you were envisioning for your own?
-
-NOTE See appendix A for a rundown of some popular sites for publishing engineering blog posts.
-
-If there’s a specific human editor you can contact, ask that person if there are any hard and fast guidelines you need to follow with respect to word count, graphics, style, and similar. Also, see if they’re at liberty to share what other engineering blog posts were highly successful.
-
-If you do ask about previous successes, be sure to define what you mean by successful. We’ll cover metrics much more in chapter 15. For now, just be aware that there are
-
-many different ways to measure blog post success, so be clear what you’re asking about. You might want to know which engineering blog posts had the most views, best social engagement, or kept people reading the longest. At the same time, the blog editor might be measuring success by a metric such as “conversions”: how many people who read your blog post signed up for the free trial. Make sure you’re on the same page before you get a list of “top performers.”
-
-Also, now’s the perfect time to learn about any strict editorial guidelines preventing you from doing what you want to do. For example, if your company is a core supporter of the SomeLanguge Foundation, don’t expect to publish your “SomeLanguge is Dead” opinion piece on their corporate engineering blog.
-
-NOTE If you’re planning to write on a delicate topic, please (re)read our “Before you start” note at the beginning of this chapter.
-
-If you stumble upon some condition or restriction that doesn’t sit well with you, see if exceptions can be made. If not, consider whether it’s worth adapting your approach— or perhaps time to seek out other publication options.
-
-# 4.2.3 Defining your goal
-
-Writing involves you, your topic, and your reader. That means there are three relationships to consider:
-
-You’ve definitely got the you + your topic relationship covered. But there are two other relationships to think about here: your reader $^ +$ your topic and you $^ +$ your reader (see figure 4.1)
-
-![](images/315d5c8c6bc61633106bbbc7df74057eaa03efa6f6491c49fd413d2eea306f9e.jpg)  
-Figure 4.1 It’s not all about you $^ +$ your topic: writing also involves you $^ +$ your reader and your reader $^ +$ your topic.
-
-# THINK THROuGH THESE QUEsTIONS
-
-Before you start writing, spend a few minutes thinking about
-
-1 Who do you want to read this?   
-2 What do they know about what you’re planning to write?   
-3 Why do they care about what you’re planning to write?
-
-4 Why should they care about your perspective on it?   
-5 What do you want them to do differently or think about differently after reading your blog post?
-
-# Example 4.2
-
-Here’s how PretendPiotr thought about these questions for the fake Zig blog post.
-
-# Question 1: Who do you want to read this?
-
-The audience includes a few social groups:
-
-Users of the two databases in question (the one migrated from and the one migrated to)—They might be interested in using my new tool for migration.   
-Developers interested in learning and promoting Zig—It’s emerging as a possible alternative to C, and lots of people are interested in getting to know it.   
-The “Hacker News crowd”—Readers who hungrily throw themselves at anything that uses the latest buzzwords. At the time of writing this book, Zig was one of those magic words.
-
-# Question 2: What do they know about what you’re planning to write?
-
-Let’s split it up for each social group described above.
-
-Users looking to move data to the new database should know the fundamentals of working with both databases by this point, and likely know about some existing ways to migrate data from one database to another.
-
-The people who are here for Zig presumably know that Zig is a cool language for new projects. What they don’t know is
-
-¡	Which Zig features were particularly useful for implementing a database migration tool   
-¡	If any Zig-specific quirks were annoying to work with   
-Whether the project can be considered production ready, even though Zig is a relatively young language with a dynamically evolving standard
-
-The Hacker News crowd likely knows absolutely nothing about the topic, but they are eager to post their vitriol-filled insights in the comment section the second this article lands on the front page.
-
-# Question 3: Why do they care about what you’re planning to write?
-
-The database users might be looking for a tool that solves some pain points in the existing state-of-the-art solutions, making data migration easier. Even if they don’t use this tool, they might be inspired to look for similar ones, or try and create one themselves. The Zig folks are interested in new use cases for Zig and genuinely want to help its adoption to new domains. They probably want to learn more about why I selected it for this use case and how it turned out, from both a performance perspective and a developer experience perspective. And the last (and certainly least [valuable]) category just wants to post passive-aggressive comments.
-
-# (continued)
-
-Question 4: Why should they care about your perspective on it?
-
-Well, as the tool author and a database developer (as in, a developer who is skilled in using databases), I’m an expert in the matter. I can write about how it solves a real problem that database users have (data migration) and open problems make for interesting reading.
-
-Zig evangelists are interested in every single user’s opinion on the language—and having a pulse, I qualify as such. Zig is still evolving, and its standard is very young, so any user perspective can help shape the language specification. A newcomer’s opinion is important for people who are shaping a new industry standard. And since I’m experienced in C, ${ \complement + + }$ , and Rust but new to Zig, I think my perspective on some of the interesting design decisions made by the Zig designers is worth diving into.
-
-Finally, I think we’ve already established that the comment section raiders just want a new comment section to infest.
-
-Question 5: What do you want them to do differently or think about differently after reading your blog post?
-
-I want database users to use my migration tool. I don’t really want to change anything in the Zig folks. But if my struggles make them realize that more users might have problems with some language quirk, maybe they’re open to making changes in the specification, and that could make my next Zig project easier to write. Since the last few subsections were all about making fun of the orange site’s comment section veterans, let’s give them a break here. And jokes aside, the comment section is also quite a great place to discuss the matter online with the post author or get constructive criticism once in a (very long) while!
-
-# WRITE TWO CRITICAL SENTENCES
-
-Now that you’re done thinking through all that, write down the two most important sentences that will never make it into your blog post:
-
-1 What’s the goal of this blog post?   
-2 Why is your perspective on this topic interesting?
-
-Don’t skip this! Seriously, write down your responses before you move on.
-
-The first sentence is something you’ll return to quite a few times—for instance, when deciding what more you need to add, what you should cut, and when requesting a review. It should draw heavily from your responses to questions one and five from the previous list (Who do you want to read this? and What do you want them to do differently or think about differently after reading your blog post?)
-
-The second sentence will help you highlight the angle that sets your blog post apart from all the others that fellow humans (and possibly machines) write about that same topic. This one should be inspired by your responses to questions three and four from the previous list (Why do they care about what you’re planning to write? and Why should they care about your perspective on it?). In addition, it should hint at the “distinctive educational
-
-core” attribute referenced in chapter 3. What deep technical details will you be sharing that aren’t easily found elsewhere?
-
-# Example 4.3
-
-Here are PretendPiotr’s responses for the fake blog post.
-
-Question 1: What’s the goal of this blog post?
-
-There are actually two goals: 1) convince database users to try out the migration tool, and 2) show that it’s possible to create something useful with Zig.
-
-Question 2: Why is your perspective on this topic interesting?
-
-I’m the migration tool author and I’ve used it for real database migrations—plus I’m an experienced C, ${ \complement + + }$ , and Rust programmer working on my first Zig project.
-
-NOTE Does your blog topic align with any of the blog post patterns discussed in this book? If so, now’s a great time to review the related dos and don’ts.
-
-# 4.3 Optional warmup
-
-If you don’t yet feel ready to begin capturing sentences, there are a few ways to start making progress anyway: outlining, mindmapping, working from the model of another article, and copy/pasting your notes. We’ll start with outlining, since many people find it helpful to jot down a very rough and informal skeleton to structure their thoughts before writing. But we’ll present a few other options, too.
-
-Some people find that mindmapping (visually mapping out how your thoughts are connected) helps them generate and organize ideas. Others find inspiration in trying to imitate the general structure of a model article—something with a similar “story framework” that might be on a totally different topic. And then there’s always the ultimate low-effort solution to conquering the curse of the blinking cursor: copy/paste fragments from your emails, issue reports, code commits, and other random notes.
-
-There’s no “right approach” here. You might find zero value in the approach that your teammate swears by. And you might find that different approaches are more or less valuable in different scenarios, depending on where your head is at. Sometimes, you might have a burning idea that you know exactly how to approach—so just start writing. But there will be other times when you’re simply overwhelmed by all the ideas tangled up in your head. When that happens, remember that a rudimentary outline or mindmap could be a useful tool to unblock yourself.
-
-# 4.3.1 Outlining
-
-Outlining doesn’t have to involve formal-looking Roman numeral hierarchies with multiple levels of indents—though if that helps you, you’re welcome to do it that way. An outline is really just a list of the points you want to write about, organized in the
-
-order you plan to cover them. The goal is to help you structure your ideas, and you can use any format you wish to accomplish that.
-
-Outline creation is simply a matter of
-
-¡ Creating a skeleton   
-¡ Hanging ideas on the skeleton
-
-You can block out the high-level framework first and then fill in all the details later. Or you can do a detailed mind dump on one section before moving onto the next. And each section of your outline can be as brief or as detailed as you like. Nobody is judging you here. It’s totally fine to end up with a multi-layer hierarchy of points for some sections and minimal details in others.
-
-Add your outline to the file that will become your working draft. Then you can later flesh out the various sections without hopping back and forth among tabs. Plus, you instantly become the proud owner of a nonempty “My Great Blog Post” file, so you can honestly say that you’ve started on it. Consider your outline complete whenever it captures and organizes the main ideas floating around your head. If you think of some other detail later (before you start writing), add it to the appropriate part of the outline so you don’t forget about it.
-
-# Example 4.4
-
-Here’s an example outline for the Zig data migrator blog post:
-
-Zig helped us migrate our data efficiently
-
-```yaml
-- The problem statement
-  - Migration costs
-  - Developer experience with migrations
-  - Proposed solution
-- We built it with Zig
-  - The good parts:
-    C interoperability—priceless for Postgres extensions
-    Smooth debugging—all C tools work
-    Cross-compilation is s-m-o-o-t-h
-  - The not-so-good parts:
-    Complicated C macros make the Zig translator choke
-    No destructors
-    The ecosystem is extremely young
-  - The verdict
-- Summary 
-```
-
-# 4.3.2 Mindmapping
-
-As shown in figure 4.2, mindmapping visually represents how your thoughts are connected. It’s especially helpful for taming chaos. Like outlining, it’s partly brainstorming
-
-and partly organizing. Unlike outlining, there’s no sense of logical flow from a beginning to an end. Despite all the lines in the diagram, it’s a nonlinear approach. You start with your main topic and then let it all flow from there.
-
-![](images/ca3c5b2043ff40656598347606290c8958b791efad079a0a708764e7438908e2.jpg)  
-Figure 4.2 Mindmaps might seem awkward, but some people find them helpful.
-
-Top to bottom, right to left, or every which way—it doesn’t matter. Just place the main topic somewhere on a screen or actual page, keep branching out from there, and see what you end up with. There’s no right or wrong way to do it.
-
-After you complete a mindmap, you might decide to create an outline to give it a more formal structure and linear flow. Or go straight to writing. This is all about whatever feels right—for you, at the given moment, for this particular blog post.
-
-If you’ve never done it before, mindmapping will likely feel awkward and unnatural at first. Almost everyone has written some type of outline in their life. Mindmapping is a lot less common. You might have been exposed to it via whiteboard exercises in painful group brainstorming sessions, but don’t let that scare you away from trying it in this context. Also, mindmaps might feel a bit artsy compared to the clear logic of outlines. If so, think about it this way: you’re mapping out the equivalent of a rough system architecture diagram for your blog post.
-
-You can choose from a number of mindmapping tools that offer templates, magic alignment, and other nifty features. If you expect you’ll be doing a lot of mindmapping, consider whether such a tool would help you. But don’t feel compelled to use a special tool. Good old pen and paper can work just as well for mapping out your ideas for a blog
-
-post. And you might very likely find that the ideas flow faster when you’re not wrestling with an unfamiliar UI.
-
-# Example 4.5
-
-Here’s an example mindmap for the Zig data migrator blog post:
-
-![](images/825a60824d110ede05b0d3022a55a6b832452b142749df05410f2e9814b782d6.jpg)  
-The beginning of a mindmap for our Zig data migrator blog post
-
-Note that our mindmap was already getting large, so we conveniently left the Zig branch undeveloped.
-
-# 4.3.3 Working from a model article
-
-“Working from a model article” is a nicer way to say “stealing someone else’s good ideas.” But you’re not stealing their technical insights, just the way they’ve opted to
-
-organize their blog post. The topic of the model article doesn’t have to be at all related to what you plan to write about. In fact, it’s probably best if it’s not related. That makes it even easier to avoid blurring the line between inspiration and imitation.
-
-The key ingredient for getting started here is finding that model article. If you’re inspired by multiple articles, even better—you can take the best ideas from each and blend them all into something superior to any individual instance. Take a look at how the model articles are structuring their ideas, abstract it a bit, and reverse engineer an outline.
-
-# Example 4.6
-
-Here’s how PretendPiotr took a “We wrote it in Rust” blog post and reverse-engineered it into something he could use for his Zig data migrator blog post:
-
-“The Title”
-
-The problem statement
-
-– Problem 1
-
-– Problem 2
-
-– Proposed solution
-
-We built it with $LANGUAGE
-
-– The good parts:
-
-Good part A
-
-Good part B
-
-Good part C
-
-– The not-so-good parts:
-
-Bad part A
-
-Bad part B
-
-Bad part C
-
-– The verdict
-
-Summary
-
-# 4.3.4 Copying/pasting your notes
-
-From a logistical standpoint, it’s helpful to have your various notes all in one place. And if that place happens to be in some fenced-off sandbox area of your draft, you’ve also broken through the blank page barrier. Congrats!
-
-Feel free to copy anything that sparks ideas or includes details you want to cover. For example,
-
-¡ The Slack thread that triggered this topic idea   
-¡ GitHub issues or pull request comments related to your topic   
-¡ Your notes on your teammates’ comments and questions about the topic   
-A summary of test results and links to the files with more details   
-A social media discussion about the controversy you’re about to comment on
-
-# Example 4.7
-
-Here are some tidbits that PretendPiotr might copy in for the fake Zig data migrator blog post:
-
-A link to Loris Cro’s blog post, “Cross-compile a $\complement / \complement ^ { + + }$ Project with Zig” (https:// mng.bz/vJYq)   
-This screenshot from the Reddit post, “How does zig magically cross compile without target shared libraries” (https://mng.bz/4pzg)
-
-36 How does zig magically cross compile without target shared libraries   
-I was rather amazed that I could cross-compile the zig-sokol examples https://github.com/foooh/sokol-zig for a Windows target on a Linux host (WSL Ubuntu). I simply settarget x86_64-windows and copied the executable into Windows and got a nice spinning cube displayed.
-
-The examples need to call down to the target OS's windowing and graphics libraries, as you can see here https://github.com/floooh/sokolzig/blob/e872e6d26fa57480268715989fd9706076c1ac00/build.zig#L43
-
-Han pi v  ablei he ra present on the host system? What is even happening here https://github.com/floooh/sokolzig/blob/e872e6d26fa57480268715989fd9706076c1ac00/src/sokol/c/sokol_app.h#L1700 when <windows.h> is not even present at compile time?
-
-This screenshot from an internal Slack conversation
-
-![](images/8d81042b06a851169ea82a9b76e60bccc1d3073bc973ee2acce7e7343ae317fa.jpg)
-
-sarna 1:21 PM
-
-zig cross-compilation is i-n-s-a-n-e, you just build withtargetaarch64-li and it works
-
-# 4.4 Writing time
-
-At this point, you’re as ready as you’ll ever be. Dive in and just do it!
-
-Your mission here is simply to get sentences into an editor: to translate what’s in your head into words that you (and others) can review and optimize. As we mentioned earlier in this chapter, you don’t need to make it great; you just need to make it exist.
-
-# 4.4.1 Getting words on the page
-
-In fact, you don’t even need to write it in the traditional sense of opening a doc and typing out sentences. Yes, some people draft blog posts by grabbing a beverage of
-
-choice, sitting down at their desk, and writing an article from start to finish. But that’s not always how it happens in reality. Let’s look at a few circuitous ways to get words on a page, some of which are better than others:
-
-Rubber duck dictation   
-¡ Chatting with a human   
-Writing in your native language
-
-# RUBBER DUCK DICTATION
-
-The same rubber duck that led you to that aha moment when debugging is also an amazing writing assistant. Dust off the duck, turn on a voice transcription program, and narrate your blog post idea to your captivated (and captive) audience.
-
-If you’re a good verbal explainer, this is a great way to capture ideas in a way that sounds friendly and conversational. But if you’re the stereotypical engineer who hates to talk, this option (and the next one) might not be ideal. In that case, stick with the traditional “sit down and type” path.
-
-# CHATTING WITH A HUMAN
-
-This is the same idea as rubber ducking, except that you narrate your blog post idea to a real live human instead of a bathtub toy. The advantage: actual feedback. You can tell when your audience seems intrigued, surprised, amused, or just bored to death. And if your human happens to be a trusted colleague, they might question some of your assertions, request clarifications, point out omissions, and offer other feedback that’s beyond your rubber duck’s innate abilities.
-
-Having this early feedback is great for learning how your readers might react and discovering what questions and objections you should probably address. However, the downside of getting this valuable feedback is that your transcription will likely be choppy and require a bit of reorganization. Not a problem, just prepare yourself. If you’re not sure how to get it back into a logical flow, try creating a new high-level outline, then copy/paste the bits into the appropriate order.
-
-# WRITING IN YOUR NATIVE LANGUAGE
-
-We’re listing this as an option only because we want to address it. It’s a bad option.
-
-Even if your inner monologue runs in your native language, try to capture your ideas in English.
-
-Why? First, the translation will be tedious. Translations for text with technical terms are invariably awkward, and good engineering blog posts should include a healthy amount of technical terms. Moreover, once an awkward translation is imprinted in your brain, it’s usually much harder to come up with the natural-sounding equivalent than if you just started with English in the first place. And a final reason: the more you practice writing in English, the more (and the faster) you’ll improve. Just write. Remember, there’s no need for perfect sentences at this early phase, not even from native English speakers.
-
-By all means, keep your favorite translation app nearby and use it for specific words and sentences when you’re stuck. And when it comes time for review, look for a friendly
-
-native English speaker who can help you spot and improve the sentences that just don’t sound right. Also, rest assured that the grammar checkers and AI tools of the world are actually quite good at spotting and even explaining many common grammatical mistakes and awkward phrasings. Consider them a rudimentary (yet totally free and nonjudgmental) first line of defense.
-
-The bottom line: try to write it in English, but don’t spend too much time worrying about grammar or phrasing at this point. We’ll get to that later in the process (and in later chapters).
-
-# TACKLING GREAT WALLS OF TEXT
-
-Once you have words on a page, spend less than five minutes applying these quick fixes that will help you (and your reviewers) parse what you wrote:
-
-¡ Scan the doc for paragraphs that are longer than about 2 inches or 5 centimeters. If you can quickly spot some logical breaking point, go ahead and hit the Return/Enter key.   
-¡ Zoom out to the page view. If any page has one or zero headings, determine where it might make sense to squeeze in more, then add them.
-
-Don’t force it and don’t overthink it, especially at this point. We’ll look more carefully at both headings and paragraph length in the next chapter. For now, just break it up into manageable chunks so that you will have an easier time seeing what’s on the screen. Note that you might need to perform some minor tune-ups later to ensure there’s a natural flow in and out of the added headings.
-
-# 4.4.2 Eliminating blockers
-
-Writing can be hard. The words will not always (not ever?) just flow perfectly. But don’t let that stop you. Your goal here is to keep moving toward completion. If you context switch or take a break every time you get stuck, the writing process will drag out much longer than it needs to. Here are tips for making progress, even when you’re blocked or just generally frustrated.
-
-# RESIST THE URGE TO EDIT
-
-Now’s not the time for editing. Once you get something written, you can always go back and fix it later. And you might end up cutting that part anyway, so don’t waste time prematurely overengineering it. That would be the equivalent of painstakingly optimizing code that ultimately gets cut because it was solving the wrong problem.
-
-Here are some practical tips for resisting the urge to edit:
-
-¡ Set some arbitrary (yet highly specific) goal such as “I want to draft these few paragraphs in the next 20 minutes,” then set a timer (pomodoro, phone, etc.) and try to beat the clock.   
-¡ Disable spell check and grammar check for now if you can’t ignore it.   
-Become self-conscious about your tendencies to fiddle with the text and try to stop.
-
-¡ If you catch yourself spending too much time deliberating over particular words or sentences, mark anything that you want to fix later with a color highlight or a comment and move on.
-
-# GO oUT oF ORDER
-
-There’s no rule that you have to start writing with the introduction. Introductions are often intimidating, even to experienced writers. And sometimes the draft ends up taking a somewhat different direction than you anticipated. In that case, the introduction you wrote for your original plan would have to be reworked anyway.
-
-We’ll talk a bit about introductions in chapter 5. For now, here are two recommendations:
-
-¡ Don’t worry about creating some clever hook. Write what comes to mind.   
-If you’re not sure how to start, just skip it for now and return to it later.
-
-This same strategy applies beyond introductions. You hereby have permission to start anywhere and skip any section that you’re struggling with. Do you feel like you can knock off a certain section quite effortlessly? Start there. Maybe there’s a test result, concept, or other idea that you’re not sure how to explain yet? Skip it.
-
-# DROP PLACEHOLDERS WHEN YOU'RE STUCK
-
-To keep your momentum going, you might want to skip more than problematic sections. You could also skip
-
-¡ Code examples   
-¡ Graphics   
-¡ References you want to work in   
-Details you’re hoping a team member will add   
-¡ Specific words or phrases that aren’t coming to mind right now   
-Whatever else happens to slow you down
-
-When you skip something, be sure to drop some sort of prominent “TODO” placeholder in the doc as a reminder. This way, there’s no need to worry about forgetting it later.
-
-# GIVE YOURSELF A BREAK
-
-“Give yourself a break” can be interpreted in two ways. We mean both here.
-
-First, we mean “stop being so hard on yourself.” Remember that you’re currently writing the rough draft of a blog post, something that nobody except you will probably ever see in its current state. Even the final version of that blog post does not need to be perfect. No matter how much you labor over it, it won’t be fast-tracked to the Smithsonian for display in a glass case. You need to deliver intriguing technical insights to your intended audience in a way that keeps them interested and engaged. You don’t need to provide the definitive answer to everything related to your topic. Share what you know at this point, and don’t be afraid to admit what you’re still curious about. You might end
-
-up sparking a discussion in the comment section and/or giving someone else an idea for their next blog post!
-
-Second, we mean “step away from writing for a bit.” If you’re truly hopelessly stuck and frustrated, work on something else, take a walk, sit in a sauna—whatever helps clear your mind!
-
-# 4.5 PretendPiotr’s first attempt at the example blog post
-
-Here’s PretendPiotr’s first attempt at the example blog post, written with delivery speed in mind and cranked out in under 30 minutes. It’s not perfect, nor does it need to be. It exists, and it can get PretendPiotr to the next phase. Also, it provides some nice fodder for our discussions.
-
-NOTE This is the first working draft, exactly as it flowed. We wanted to show something authentic, so it wasn’t proofread or copy-edited like the rest of the book text. In the blog, “we” $=$ PretendPiotr speaking on behalf of his fictional team.
-
-# 4.5.1 Zig helped us migrate our data efficiently
-
-By PretendPiotr
-
-# MIGRATING DATA INTO FAKEDB
-
-We've been happily using FakeDB for all of our services way before it was cool  some of our early pipelines even ran pre-release versions in production, because we trusted FakeDB's development team so much. Thankfully, the risk of being early adopters paid off, as FakeDB is now the de-facto standard for highly concurrent workloads. There's just one problem though, and it stems from the fact we sometimes need to move data from our legacy Postgres clusters: migrating all data back to FakeDB is S-L-O-W.
-
-# MIGRATION COSTS
-
-We don't store massive amounts of data in our legacy Postgres clusters, far from it. The latest migration needed to move ${ \sim } 1 0 0 \mathrm { G i B }$ out, and that's an amount you can "migrate" from one machine to another via USB stick. If only things were that simple though... Postgres has a well-defined type system, and so does FakeDB. Most of the Postgres data types are perfectly translatable to FakeDB equivalents, but some are not, and as luck would have it, our legacy workloads mostly use the ones that don't translate cleanly. As a result, instead of just blindly moving data from one machine to another, we need to carefully transform it from one format to another, and the existing tools are far from ideal in that matter. The only tool we found for the job, based on Apache Spark, would take us 21 days to finish, if everything goes smoothly, so probably more like 24-25, with a couple of quite expensive cloud machines running full speed. Sounds like a heavy overkill for an amount of data that fits on a 2018 smartphone!
-
-# DEVELOPER EXPERIENCE
-
-Costs aside, the existing tool is a pain to use. It took us two days to force it to run in order to make the estimates. The journey included downgrading to an ancient version
-
-of CMake in order to compile some helper binary written in $\mathrm { C } + +$ , which ended up not being used later anyway. The author also decided to helpfully name the tool man, as in Migration Automation eNgine, which is an obvious clash with Linux’s existing man tool, which stands for manual. Apparently, the author either used some arcane Linux distribution that didn’t come with man preinstalled, or decided his tool is more important and justifies stealing the name, but the fact is, compiling and installing the tool without care is likely to ruin your operating system. In other words, we did not enjoy it. At all.
-
-# PROPOSED SOLUTION
-
-It took us the aforementioned two days to establish that the existing migration machinery is far from ideal. Thus, it took us approximately two seconds to reach the obvious conclusion: let’s write a tool that actually works and is fun to work with!
-
-# WE BuILT It WITH ZIG
-
-If you read this post’s introduction, you already know we’re into bleeding edge tech. Zig is an emerging C language competitor, with broad open source community support, dynamically developed – a perfect candidate to write our migration tool in. A fair part of our tool is a Postgres extension, all written in Zig. The rest exports the data we need via HTTP, which, granted, isn’t perfectly optimal, but also makes the process easier to debug, load balance, and so on. Since FakeDB is capable of receiving HTTP traffic, that’s all we need to perform our migrations.
-
-# The GOOD PARTs
-
-Zig advertises its C interoperability as a core feature, and it really works. It actually feels magical to “import” a C header straight into a Zig program, and use it as if it were a module written natively in Zig. The compiler transpiles (compiles to another language) the header into Zig and exposes it in a developer-friendly way. We were able to use Postgres’ official C headers for implementing our extension in Zig. Amazing!
-
-Debugging Zig is also a treat, if you’re already used to debugging C. Everything still works – gdb, perf, you name it. On top of that, Zig has a more elaborate system for asserting preconditions and invariants, which makes the debugging process a little bit smoother than C used to be. Zig is not Rust, and it happily lets you dereference null pointers (although its type system tries to prevent obvious cases of that), and use previously freed memory, so we had a dubious pleasure of long debugging sessions – just us, gdb, and the ninth cup of coffee – but it was comforting to see all the existing tools just work.
-
-One of the mind-blowing things about Zig is that cross compilation (ergo compiling the code to target CPU architecture and operating system different than the setup the compiler runs on) is also a core feature of the language. And it’s s-m-o-o-t-h. Most of our cloud fleet runs on Arm processors, and our engineers tend to work on x86-64 machines, so it was extremely ergonomic to be able to “just” compile everything locally for a different architecture, and see it work out of the box. Kudos to the author of “Our $\mathrm { C } + +$ project is now supported for your architecture – with Zig,” who inspired me to try Zig and its cross-compilation superpowers!
-
-# THE NOT-SO-GOOD PARTS
-
-Zig is interoperable with C alright, but it’s patience has limits. By patience we mean the type system, which is a little more strict than C. Zig also (thankfully) doesn’t have C’s preprocessor macros that let you do literally anything with program text. Importing the postgres.h header was actually a little bit more complicated than “just” declaring an import, because Zig initially failed to transpile the code, due to layers of layers of layers of layers of complicated C macros. Fortunately, the way it works in Zig is that the generated code is available to the developer, so we were able to fix a few places ourselves.
-
-Another thing we didn’t enjoy that much was the lack of destructors. That’s one thing we feel $\mathrm { C } + +$ and Rust got right: when something goes out of scope, its destructor is implicitly called. Zig doesn’t prefer anything implicit, which is fine, but it just doesn’t work well in this particular case. Our code leaked memory in a few places precisely because we forgot to spray a few defer calls in all the right places. Note that Zig also enforces all heap allocations to be explicit, which is a fantastic design decision. And it would work great, except we still needed to interoperate with Postgres’ code and use its own allocators, and those are not (yet?) hacked in Zig.
-
-One more hopefully temporary downside is that the ecosystem is really young. Compared to Rust or $\mathrm { C } + +$ it simply lacks libraries and tools that would be very helpful for programmers. It does come with HTTP support in its standard library, and that’s great, but we also wanted to add a thin custom encryption layer, forced down our throats with all the SOC2 requirements, and that we just needed to implement by linking to a Rust implementation.
-
-# The verdict
-
-The choice of Zig was $1 0 0 \%$ worth it! Our tool, named FancyMigratorName, works, is open sourced, and already has a microscopic community around it. We were able to successfully migrate our legacy cluster in 4h, which is a major win over the previous 24 days estimation. Next week we felt a little too optimistic about the tool and almost lost users’ data from another legacy cluster, but that’s a story for a separate blog post, stay tuned!
-
-# SUMMARY
-
-Out of our frustration with the existing tooling, we developed an open source migration tool to move data from Postgres to a FakeDB cluster. We chose Zig to implement it, and the road, though bumpy, was fun and successful! Try our tool, FancyMigratorName, at https://example.com/fancymigratorname, and share your experience with us!
-
-# 4.6 Filling in gaps
-
-Now make some attempt to fill in any missing pieces (e.g., write some tentative introduction and add in rudimentary graphics) and pat yourself on the back. Your working draft is almost done. Wait, almost?
-
-It's time for some healthy paranoia. As a warm-up for the next chapter, you can put your critiquing hat on for a bit here, but only to determine what else you should add before you fully shift gears into the review/revision mindset. Before you move on, consider these three questions:
-
-¡ Did you actually cover what you intended to cover?   
-¡ What else should you cover?   
-¡ What’s preventing it from being viable?
-
-Let’s cover each in turn.
-
-# 4.6.1 Did you actually cover what you intended to cover?
-
-The reality of what you wrote doesn’t always match your intentions. That’s often a good thing: you probably had new and better ideas pop into your mind as you were heads down writing and intentionally pivoted accordingly. Nice work! But honestly, sometimes ideas just get lost in the shuffle, so be sure to check for that before moving on.
-
-First, return to your prep work. Review the two sentences you wrote earlier in this chapter (your goal and differentiator), as well as any outlines, mindmaps, or other notes you made. Do you feel like you thoroughly covered what you wanted to cover? Did you inadvertently skip some key points? Get it all in there now.
-
-NOTE For example, when drafting the fake blog post shown in section 4.5, PretendPiotr almost forgot about his plans to mention the article “Our $\mathrm { C } + +$ project is now supported for your architecture—with Zig.” It happens.
-
-Next, let’s have some fun. Do the inverse with AI, your speedy, free, always available reviewer. If you’re comfortable doing so, feed your blog post to your favorite generative AI tool and see how the AI take on your article matches what you were hoping to get across. Use prompts such as
-
-What do you believe is the goal of this article and why?   
-Summarize this article in one paragraph   
-Who do you believe is the audience for this article?
-
-How well do those assessments match your intentions? If it all seems reasonably close, rest assured that you’re getting your ideas across. But if there’s a significant mismatch, try to figure out why. Maybe the AI is just hallucinating. Or maybe it’s picking up on the fact that a certain idea needs additional detail and elaboration. If you believe it’s warranted, extend and clarify your draft to get your point across.
-
-# EXAMPLE GENERATIVE AI FEEDBACK AND PIOTR'S RESPONSE
-
-Here’s the feedback that ChatGPT provided for the current state of the example blog post, along with Piotr’s comments.
-
-![](images/6aa5fd50b424130006ff076076eb9fcb7393a65f43ab587d9aa6981ae222453c.jpg)
-
-Prompt: What do you believe is the goal of this article and why?
-
-![](images/142a2f1e66f9ad3e78011d1c5aad445c5da4afff0bbb2b8c1997f2d3487ce525.jpg)
-
-Response: The goal of this article appears to be multifaceted:
-
-1 Informing the Audience: The article aims to inform the audience about the challenges faced by the author’s team in migrating data from legacy Postgres clusters to FakeDB. It discusses the limitations and inefficiencies of existing migration tools and outlines the specific issues encountered during their migration process.
-
-2 Advocacy for Zig: The article serves as a platform to advocate for the use of Zig programming language in solving real-world problems, particularly in the context of data migration. It highlights the benefits and features of Zig, such as its interoperability with C, debugging capabilities, and support for cross-compilation.   
-3 Promotion of FancyMigratorName: The article promotes the author’s newly developed migration tool, FancyMigratorName, which is built using Zig. It presents the tool as a solution to the challenges described earlier, emphasizing its efficiency and success in reducing migration time from 24 days to 4 hours.   
-4 Community Engagement: By inviting readers to try out the FancyMigratorName tool and share their experiences, the article aims to engage the community and potentially grow the user base for the tool. It also hints at the formation of a “microscopic community” around the tool, indicating potential for further collaboration and development.
-
-# Piotr’s response
-
-It did correctly grasp that I was advocating for Zig and promoting the migration tool. It looks like the blog post’s goal is getting across and no changes are necessary in that area. However, it’s also interesting to note that the response is riddled with meaningless “points” and borderline tautologies. For instance, the omniscient AI claims that one of the goals of this blog post is “informing the audience.” That’s true, but that’s the goal of every single blog post, so the statement is trivially true.
-
-![](images/15dfeeaf09bf675c4a1d64943d089597c9ecb16866c356140cf9f8e908da67c7.jpg)
-
-Prompt: Summarize this article in one paragraph.
-
-![](images/578944532a5436f62ac8e04573be6df66e9d9d127c41219189d896c8635c3233.jpg)
-
-Response: The article recounts the challenges faced by a team when migrating data from legacy Postgres clusters to FakeDB, highlighting the inefficiencies and frustrations with existing migration tools. In response, the team develops FancyMigrator-Name, an open source migration tool built using Zig, a programming language known for its C interoperability and debugging capabilities. While Zig presents some challenges, such as strict type systems and a young ecosystem, the team finds it ultimately worth the effort, as FancyMigratorName significantly reduces migration time from an estimated 24 days to just 4 hours. The article encourages readers to try the tool and share feedback, serving as both a solution to a common problem and an example of the effectiveness of Zig in practical application.
-
-# Piotr's response
-
-The AI response here is overeager with assumptions. Zig is indeed "a programming language known for its C interoperability," but not really for "debugging capabilities" (and it wasn't intentional to point out debugging capabilities as an advantage of Zig, rather as a side effect of its compatibility with C). The AI response also qualified a "strict type system" as a challenge, while the reality described in the article was more complex. The strict type system was shown as an advantage over C; it was the macros in legacy C code that clashed with Zig's code translation.
-
-Perhaps the blog post can be rephrased to make sure that I send the right message: that the strict type system of Zig is great, and it's the legacy C complicated macros that are the root cause of the problems. Though, when I reread the blog post, it was clear to
-
-me. If this was a real article, I would probably ask a colleague to take a look at it before I considered changing anything.
-
-From the author perspective, it is reassuring that the AI review understood the general idea of the article. However, it got some things obviously wrong, which is a bit disturbing. And at times it felt like a subtly broken echo chamber. Even though these particular AI responses didn’t do much to help improve this particular article, I think it’s still a worthwhile exercise for quickly confirming whether you’re on the right track, without bugging any actual humans (yet).
-
-# 4.6.2 What else should you cover?
-
-At this point, you should be pretty certain that what was in your head is represented on the page. But maybe your readers might expect more. For example, readers might feel suspicious (or at least somewhat unfulfilled) when
-
-¡ You’re discussing performance, but do not include any specific performance metrics— numbers, benchmarks, flame graphs, and so forth.   
-¡ You’re discussing performance and showed benchmarks but don’t mention whether tests were run on a powerful server or your old laptop (or you fail to explain why you used something other than a realistic production environment).   
-¡ You’re discussing an architectural shift, but do not address the migration challenges or the tradeoffs of the new approach.   
-¡ You’re discussing an internal tool you built, but don’t share details on how it affected your real-world processes.   
-¡ You’re discussing a new approach to a problem but do not cover the challenges with the original one.   
-¡ You’re discussing a practice with known security risks, but never once mention security.
-
-These omissions would likely surface if you had multiple peers carefully read your draft and provide feedback. In reality, getting decent feedback from just one person is challenging. Getting great feedback from multiple people on a reasonable timeline—don’t count on it.
-
-NOTE We’ll talk all about navigating the review process in chapter 6.
-
-Peer review by at least one colleague is undeniably valuable, and we’ll talk about how to make it faster and more focused in due time. But for this initial review aimed solely at uncovering major gaps and omissions, there’s a quick workaround: generative AI.
-
-Driven by large language models (LLMs), generative AI is an expert at knowing what words are typically associated with the words you are using. Since it has likely read millions of tech blog posts and related technical articles, it should have a fundamental understanding of what your human readers might be anticipating.
-
-Feed your blog post to your favorite AI tool (again, only if you’re comfortable doing so) and see what it thinks is missing. Use prompts such as
-
-Does this engineering blog post have any logical gaps?   
-¡ What are some problems with this engineering blog post?   
-¡ Are there any paragraphs in this engineering blog post that require additional detail?
-
-Don’t expect all the feedback to be spot on. Quite likely, it will recommend a lot of things that are either so trivial that you wouldn’t bother or so obvious that you already ruled them out (for example, suggesting that your blog post about a shiny new capability should include details about some still-mythical real-world use case). But if you can expose just one valid concern with a 15-second prompt $^ +$ copy/paste exercise, it’s worth a few moments of your time.
-
-# EXAMPLE GENERATIVE AI FEEDBACK AND PIOTR'S RESPONSE
-
-Here’s the feedback that ChatGPT provided for the current state of the example blog post, along with Piotr’s comments.
-
-P Prompt: Does this engineering blog post have any logical gaps?
-
-Response: While the engineering blog post provides a comprehensive overview of the challenges faced in migrating data from a legacy Postgres cluster to FakeDB and introduces a new solution developed in Zig, there are a few logical gaps worth noting.
-
-Firstly, the article doesn’t delve into specific technical details regarding how Fancy-MigratorName solves the challenges mentioned. It briefly mentions using Zig’s C interoperability and HTTP support but lacks in-depth explanations or examples of how these features were utilized in the tool’s development.
-
-Secondly, there’s a lack of discussion about potential risks or drawbacks associated with using Zig for this task. While the article acknowledges some challenges encountered during development, such as dealing with complex C macros and the lack of certain language features, it doesn’t thoroughly explore the implications of these limitations or how they were mitigated.
-
-Lastly, the article could benefit from providing more context or comparison with alternative solutions. While it critiques existing migration tools and praises Zig for its advantages, it doesn’t provide a nuanced comparison with other programming languages or frameworks that could potentially be used for similar tasks. This would help readers better understand why Zig was chosen over other options and the tradeoffs involved.
-
-# Piotr's Response
-
-The "no technical details" gap is spot on! The article mentioned the migration speedup from days to hours, but it gave absolutely no proof or description of the reasons why The blog post should be extended with a paragraph, or a whole section, of details about why the existing solutions were slow, and what made the new implementation fast.
-
-The "Zig risks" gap is a little vague and questionably untrue. The drawbacks of Zig were explained very clearly and the "risks associated with using Zig" can be derived from that.
-
-The “more context” gap can just be folded into “no technical details,” and is not very helpful on its own. The part about no “nuanced comparison” of Zig and other languages is technically true, but it’s off-topic. The article compared Zig to Rust and $\mathrm { C } + +$ a few times, but a nuanced comparison of any of those languages is enough material for a book, not a paragraph in a blog post.
-
-![](images/8ad639218ba7df508f95222b38d8c2a9ca5d8c0928d1eb5d14dbdbc49d167164.jpg)
-
-Prompt: What are some problems with this engineering blog post?
-
-![](images/9294dab544b045ed281132ee018ebac2303538d865117549a2a2e0e4e31c07a5.jpg)
-
-Response: While the engineering blog post effectively communicates the team’s experience in developing FancyMigratorName using Zig, there are several potential problems or areas for improvement:
-
-1 Lack of Objectivity: The blog post appears overly enthusiastic about Zig and the FancyMigratorName tool, which may come across as biased or promotional rather than offering a balanced perspective on the challenges and limitations of the chosen approach.   
-2 Insufficient Technical Detail: While the blog post provides a high-level overview of the team’s experience, it lacks detailed technical insights into how FancyMigrator-Name was developed, such as specific code examples, architecture diagrams, or performance benchmarks, which could limit its usefulness to developers seeking practical guidance.   
-3 Lack of Clarity: The article jumps between discussing the challenges of migrating data from a legacy Postgres cluster to FakeDB, the shortcomings of existing migration tools, the benefits of Zig for this task, and the development process of the new migration tool. This lack of focus can make it difficult for readers to follow the main points and understand the overarching narrative.   
-4 Lack of External Validation: While the blog post mentions the successful migration achieved with FancyMigratorName, it does not provide external validation or testimonials from other users or organizations who have used the tool, which could enhance its credibility and reliability.
-
-By addressing these issues and providing a more balanced, detailed, and informative account of the team’s experience, the engineering blog post could offer greater value to readers and stakeholders interested in data migration and software development using Zig.
-
-# Piotr’s response:
-
-Let’s dissect each accusation separately.
-
-¡ Lack of Objectivity —True, but full objectivity was never a goal. The article was intended to be enthusiastic about both Zig and the developed migrator tool. I realize that the unbridled enthusiasm for FakeDB could get the blog post some attention in the Hacker News comments, particularly among the FakeDB lovers/ haters. However, I don’t think that’s a bad thing since it aligns with the goal of catching the attention of the Hacker News crowd.   
-¡ Insufficient Technical Detail —Makes sense. This is the same problem mentioned in the “logical gaps” feedback and discussed in the previous section. If this was
-
-a real blog post, I would certainly take this into account and revise the article accordingly.
-
-¡ Lack of Clarity —Personally, I think the various threads fit together just fine. But, I’m the author, and the author is always biased by being the expert on the topic. To be safe, I would probably discuss this accusation with a human reviewer.   
-¡ Lack of External Validation —Lack of testimonials for a brand-new niche open source project is expected. I feel that adding a “testimonial” would make the article look like yet another marketing piece (which is probably what ChatGPT was trained on and how it came up with this suggestion).
-
-P Prompt: Are there any paragraphs in this engineering blog post that require additional detail?
-
-![](images/b1198b8ecf0241e22472be99ce5a2e77d7e6b13408dea3eff0c6f886a9935e02.jpg)
-
-Response: Yes, there are a few paragraphs in the engineering blog post that could benefit from additional detail to provide a more comprehensive understanding of the team’s experience and the development process:
-
-1 Proposed Solution: While the paragraph mentions the decision to write a new migration tool using Zig, it could provide more insight into why Zig was chosen over other programming languages or frameworks. Additionally, it would be helpful to include some details on the specific features or capabilities of Zig that made it well-suited for the task, beyond just its C interoperability and cross-compilation features.   
-2 The Good Parts: While the paragraph highlights the benefits of using Zig, such as its C interoperability and debugging capabilities, it could be enhanced with concrete examples or anecdotes illustrating how these features facilitated the development of FancyMigratorName. Additionally, providing specific instances of how Zig’s cross-compilation feature was leveraged to target different architectures would add depth to the discussion.   
-3 The Not-So-Good Parts: This paragraph briefly touches on some drawbacks of Zig, such as its stricter type system and lack of destructors, but could benefit from further elaboration on how these limitations were addressed or mitigated during the development process. Additionally, providing examples of specific challenges encountered and how they were overcome would offer valuable insights for readers considering using Zig for similar projects.   
-4 The Verdict: While the paragraph concludes with a positive assessment of the decision to use Zig and the success of FancyMigratorName, it could be strengthened by including metrics or data to quantify the improvements achieved, such as the percentage reduction in migration time or the number of successful migrations performed using the tool. Additionally, discussing any lessons learned or areas for future improvement would add depth to the conclusion.
-
-By providing additional detail in these paragraphs, the engineering blog post could offer readers a more nuanced understanding of the team’s experience and the factors that contributed to the development and success of FancyMigratorName.
-
-# Piotr’s response
-
-Proposed Solution —Not very helpful. The description of Zig’s advantages isn’t “just” C interoperability and cross-compilation features—these are the two major reasons why Zig was chosen, along with the fact it’s bleeding edge technology, which was also mentioned.   
-¡ The Good Parts —Anecdotes are a nice (though generic) suggestion. Their only disadvantage is that they bloat the blog post. If the post is already long enough, it might be better to omit anecdotes that don’t really make the article more educational or entertaining. Also, anecdotes should come naturally. If they’re forced or forged, they would look artificial and redundant.   
-¡ The Not-So-Good Parts —It makes sense to point out the lack of details about how the problems with Zig were overcome. The blog post did mention that I handled the issues with incorrectly translated C macros by editing the code manually. I didn’t add more details because they would bore the reader. Plus, they’re not very human-readable, which is usually an issue with machine-translated code. A good compromise here would be to add a hyperlink to the fixes in order to please any readers who are (over)eager to learn all the details.   
-¡ The Verdict —It’s true that the verdict did not mention a percentage of migration time reduced, but the article did mention four hours vs. 24 days. I think readers get the gist without requiring the exact math. The suggestion to explicitly include lessons learned and areas of future improvement is a very solid piece of advice. If this was a real blog post, I would extend the article to include both.
-
-# 4.6.3 What’s preventing it from being viable?
-
-Last but certainly not least, think hard about these fundamental questions and extend the draft to address them before you proceed:
-
-Does it highlight your specialized experiences and expertise? Remember what you wrote in the second critical sentence in the prep phase (Why your perspective on this topic is interesting?). Now’s the time to check that you’ve captured that in your draft. If generative AI or some other engineer with totally different experiences might have written something strikingly similar, strongly consider adding more differentiating elements and more details that draw from your unique experiences (e.g., more context, examples, commentary, and so on).   
-¡ Does it advance your reader’s understanding of the topic and include sufficient technical details? Think back to your intended audience, what they already know about your topic, why they care about your topic—you did think about all that earlier in section 4.2.3, right? Put yourself in your readers’ shoes and be honest: is there enough detail to keep them interested and teach them something new? If not, think about what you can add to change that. For example, in some cases, you could add code snippets from one of those online playgrounds that let your readers execute the code and see what it does and why. Or think about the interesting
-
-implications of key points or findings you presented and then add that additional commentary to the draft. If you’re truly stuck here, look for a colleague who can add more compelling details and make them a co-author.
-
-Don’t expect generative AI to help you at all with this evaluation. Look at it critically and trust your gut instinct. If you really have deep-seated doubts, ask a trusted colleague or peer for a quick look. If you take this path, use an angle like “Hey, I wrote this thing to [your_goal]. Do you think [your_target_audience] would find it interesting?”
-
-NOTE If you determine that the draft needs more depth and differentiators, you might want to skip ahead to the “Facts” discussion in chapter 5, which provides strategies and some specific examples.
-
-Consider this the final gate for shifting from creation and addition into review and publication. The hard part is done. Now you can heckle yourself, revise the blog post accordingly, and get it out.
-
-# 4.7 If you do nothing else
-
-In each of these “nailing the writing process” chapters, we’re including an “If you do nothing else” section at the end. It highlights the absolute least that you should do in the given phase and is intended as a quick reference for more experienced blog post authors who are impatient and want to get straight to it. And it’s also helpful for blog writing emergencies–like when you’ve been voluntold to write that super high-visibility “incident postmortem” blog post, and it needs to go from vague idea to published within a matter of minutes. Or for when everyone is talking about that new cryptocurrency, which takes an approach so unique they will surely replace the Bitcoin $^ +$ Ethereum duopoly next week (they promise!), and you want to strike while the discussion is still raging.
-
-Here’s the absolute least that you should do to create a decent working draft:
-
-Think about why you’re writing this, what audience it’s for, and how it’s distinctive.   
-¡ Get a hot mess of a draft down fast, add some headings, and break up massive paragraphs.   
-¡ Identify and address logical gaps or underdeveloped points—consider using generative AI to help.   
-¡ Extend it as needed to ensure it draws on your experiences, adds to the conversation, and is detailed enough to achieve your goal.
-
-# Summary
-
-¡ Prepare for writing by thinking about your goal, your audience, and what interesting perspective you have to offer.   
-¡ Tap outlining, mindmapping, and other preparation practices to get the ideas flowing, or skip them and just dive right in.
-
-¡ If you happen to be more of a talker than a writer, capture your words by talking to a colleague (or your trusty rubber duckie).   
-Focus on getting your ideas in writing rapidly, without delaying to deliberate over low-level details.   
-¡ Skip things when you get stuck and leave placeholders so you don’t forget.   
-¡ It doesn’t need to be pretty—you just need to get the raw ingredients down so you can move forward.   
-¡ You can use generative AI for fast feedback on whether your point is getting across and if you’re guilty of any major oversights   
-¡ Before you exert any energy optimizing the draft, make sure that it’s sharing unique experiences and expertise that advance readers’ understanding.
-
-# 5Optimizing your draft
-
+-   준비(목표, 독자, 차별점 설정)는 글쓰기를 수월하게 합니다.
+-   개요나 마인드맵으로 아이디어를 정리하거나 바로 쓰기를 시작하세요.
+-   편집하지 말고 빠르게 써 내려가세요. 막히는 부분은 나중에 채우세요.
+-   초안은 예쁠 필요가 없습니다. 내용이 존재하는 것이 중요합니다.
+-   AI를 활용해 빠른 피드백을 받아보세요.
+-   최적화 전에 독창적인 경험과 충분한 깊이가 있는지 확인하세요.

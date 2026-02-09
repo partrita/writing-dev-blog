@@ -1,308 +1,93 @@
-# This chapter covers
+# 9장 "X로 다시 썼다(Rewrote It in X)" 패턴
 
-Blog posts that are all about rewriting an app in a new (and trendy!) programming language, library, or framework   
-¡	Their purpose and audience   
-¡	How various authors approached this type of post   
-Key elements of successful ”We Rewrote It in X” posts   
-¡	Dos and don’ts for your own ”We Rewrote It in X” post
+# 이 장에서 다루는 내용
 
-To clarify, X stands for a wildcard to be replaced with a programming language or framework of your choice, not rebranded Twitter. With that important legal disambiguation out of the way, let’s proceed with the pattern description.
+- 애플리케이션을 새로운(트렌디한) 프로그래밍 언어, 라이브러리, 프레임워크로 다시 작성한 경험을 다루는 블로그 포스트
+- 목적과 독자층
+- 다양한 저자들의 접근 방식
+- 성공적인 "X로 다시 썼다" 포스트의 핵심 요소
+- "X로 다시 썼다" 포스트 작성 시 유의사항
 
-“We Rewrote It in X” has long been prevalent in the technical blog space. Lately, it became exceedingly trendy during a wave of Rust rewrites (to the point that a new acronym, RIIR [rewrite it in Rust], was coined). By the time this book is published, we might be in the middle of or long past a rush of “We Rewrote It in Zig” blog posts, or even a language that wasn’t designed at the time of writing.
+"X로 다시 썼다(We Rewrote It in X)"는 기술 블로그의 인기 있는 패턴입니다. 특히 최근 Rust로의 재작성(RIIR) 열풍처럼, 새로운 기술로 기존 시스템을 교체한 경험담은 많은 관심을 받습니다. 이 패턴은 언어 전도(evangelism)뿐만 아니라, 재작성의 이유(문제점), 기술적 세부 사항, 그리고 예상치 못한 새로운 문제들을 다루기에 좋습니다.
 
-Aside from language evangelism, articles about porting a project to another language, library, or framework are often juicy with problem statements (why the rewrite was needed in the first place), technical details, and new unexpected problems that arose only after the rewrite was already past the point of no return.
+# 9.1 목적 (Purpose)
 
-![](images/b78bfffc0a05e15b542c349ea5e4a6644464210e7ba9e3f64bd1a716717d1ade.jpg)
+### 9.1.1 전도 (Evangelism)
+새로운 언어나 프레임워크가 실제 프로젝트에서 유용함을 보여줌으로써 채택을 장려합니다. 이는 해당 기술 생태계의 활성화에 기여합니다.
 
-# 9.1 Purpose
+### 9.1.2 프로젝트 홍보 (Project promotion)
+재작성을 통해 제품이 더 빨라지고, 안정적이며, 유지보수하기 쉬워졌음을 알림으로써 간접적으로 제품을 홍보합니다.
 
-There are a few reasons to write a blog post in this pattern (beyond simply having some “Rewrote It in X” masterpiece associated with your name):
+### 9.1.3 커뮤니티 발전
+오픈 소스 언어나 프레임워크를 사용한 경험을 공유하는 것은 해당 커뮤니티에 대한 기여이자 감사의 표시입니다.
 
-Encourage your peers to consider adopting the new language or framework   
-¡ Discuss the improvements you were able to make to your own projects   
-Strengthen the community supporting the selected open source language   
-Vent your own rewrite frustrations in a way that helps others avoid them
+### 9.1.4 넋두리 (Ranting)
+재작성 과정이 항상 순탄한 것은 아닙니다. 실패했거나 험난했던 과정을 공유하며 불만(rant)을 털어놓는 동시에, 다른 사람들이 같은 실수를 피하도록 돕는 교훈적인 이야기가 될 수 있습니다.
 
-# 9.1.1 Evangelism
+# 9.2 독자 (Audience)
 
-One key purpose of this pattern is to advocate for the selected language or framework. New programming languages are spawned daily (or so it seems), but only a select
+-   새로운 언어(X)의 전도사 및 애호가
+-   기존 언어의 사용자 (피드백을 원함)
+-   최신 기술 트렌드에 관심 있는 사람
+-   해당 소프트웨어의 사용자 및 경쟁사
+-   온라인 비평가들
 
-few ever achieve the level of sustained interest and adoption that makes them a valid choice for real-world projects. Thus, it’s in the best interest of language inventors, maintainers, and excited early adopters to promote real-world use cases and show that the language actually improves the existing developer experience.
+다양한 독자를 위해 새로운 언어에 대한 소개 섹션을 포함하는 것이 좋습니다.
 
-The language might be focusing on a particular niche that benefits from a specialized approach. For example,
+# 9.3 "X로 다시 썼다" 블로그 포스트 사례
 
-¡ Internet of Things (IoT)   
-Artificial intelligence (e.g., see the Mojo language)   
-¡ Querying a graph database
+### 9.3.1 Why I Rewrote My Rust Keyboard Firmware in Zig (Kevin Lynagh)
+Rust로 작성된 키보드 펌웨어를 Zig로 재작성한 경험을 다룹니다. Rust의 복잡한 코드가 Zig에서 얼마나 깔끔해지는지 비교하며 Zig의 장점을 부각합니다.
 
-It also might be a brave attempt to overtake a general-purpose language such as $\mathrm { C } + +$ or Python (good luck).
+### 9.3.2 How Turborepo is Porting from Go to Rust (Nicholas Yang, Anthony Shew)
+Go에서 Rust로의 포팅 과정을 다루며, 전체 재작성 대신 점진적인 포팅을 선택한 이유와 그 과정에서 겪은 기술적 문제들을 공유합니다.
 
-Whatever the target use case, a programming language is only considered alive if real-world projects actually use it—preferably open source ones, so that a broader community can see and verify the code. And what better way to kickstart more projects in language X than to publish an article that describes a cool use case and shares how this new approach resolved the technical problems plaguing previous implementations. This is honest authentic evangelism, not marketing propaganda.
+### 9.3.3 Why Discord Is Switching From Go to Rust (Jesse Howarth)
+Discord의 유명한 포스트로, Go의 가비지 컬렉션으로 인한 레이턴시 문제를 해결하기 위해 Rust로 전환한 사례를 성능 지표와 함께 명확하게 보여줍니다.
 
-# 9.1.2 Project promotion
+### 9.3.4 From Zero to 10 Million Lines of Kotlin (Omer Strulovich)
+Meta가 Java 코드를 Kotlin으로 대규모 마이그레이션한 과정을 상세히 보고합니다. 자동화 도구와 커스텀 스크립트를 활용한 전략적 접근이 돋보입니다.
 
-The previous section focused on the “X” part of the pattern name; this one focuses on the “it” component. Obviously, something got rewritten to another language, and a substantial part of the article will cover how “it” is now better. Common improvements cited when discussing a rewrite include
+### 9.3.5 Why We at $FAMOUS_COMPANY Switched to $HYPED_TECHNOLOGY (Saagar Jha)
+이 패턴의 전형적인 클리셰를 풍자한 패러디 글입니다. 자신의 글이 이 풍자 글과 너무 닮지 않았는지 점검해 보는 용도로 유용합니다.
 
-Performance boost   
-¡ Availability on more platforms (e.g., operating systems, CPU architectures)   
-¡ Easier maintenance, with the optimistic anticipation of fewer bugs in the future   
-¡ Better test coverage   
-¡ Better user experience (e.g., it’s now much easier to install and start using the project)   
-¡ Better developer experience (e.g., it’s now much easier to contribute to the project; tooling is improved)
+# 9.4 특징 (Characteristics)
 
-The improvements are usually attributed to the new programming language’s characteristics. It might be faster by nature because it compiles to native assembly instead of running on a virtual machine. For example, think of migrating from Java to $\mathrm { C } + +$ . Other times, it might have facilitated a more efficient implementation. For example, think of migrating to Rust and its safe concurrency primitives (as opposed to the previous tricky C implementation, unchanged from 1989 for fear of breaking some intricate, long-forgotten assumptions).
+### 9.4.1 언어 초심자를 위한 배려
+새로운 언어(X)에 익숙하지 않은 독자를 위해 해당 언어의 특징, 장단점, 핵심 개념을 소개하는 섹션을 포함하는 것이 일반적입니다.
 
-At first glance, it looks like the article is just praising the language. However, in reality, it’s the speed of the product that improved, and it’s the product that’s now less prone to
+### 9.4.2 실용성 (Practical)
+재작성을 고려하는 다른 개발자들을 위해 사용한 도구, 검증 방법, 코드 변환 예시 등 실질적인 팁을 제공합니다.
 
-bugs. That’s an indirect invitation to start using the product in question because it just became better.
+### 9.4.3 정형화된 구조
+대부분 다음과 같은 흐름을 따릅니다:
+1.  **제목:** "X로 다시 썼다" 형태.
+2.  **배경:** 프로젝트 소개 및 중요성.
+3.  **동기:** 왜 기존 기술을 버려야 했는지.
+4.  **대안 비교:** 왜 하필 X를 선택했는지.
+5.  **언어 소개:** X에 대한 간략한 소개.
+6.  **마이그레이션 과정:** 구체적인 도전과 해결책.
+7.  **결과:** 얻은 이점(성능 등)과 교훈.
+8.  **채용 홍보:** 함께 일할 사람 모집.
 
-# 9.1.3 Community development
+# 9.5 유의사항 (Dos and don'ts)
 
-Language implementations are often open source. And when the language is open source, writing a blog post on how it made your life easier is a nice “thank you” note to the community behind it. Based on your freely given testimonials, you also encourage other people involved in language evangelism (described in section 9.1.1) to write their own blog posts on the subject. Perhaps they will even refer to your blog post as one of their sources.
+### 9.5.1 재작성 동기를 명확히 설명하라
+단순히 유행을 따르는 것이 아니라, 기술적인 이유(성능, 유지보수성 등)로 재작성이 필요했음을 납득시켜야 합니다.
 
-This is especially important and visible with rising technology, and the everlasting example of Zig applies here as well. Its community is still relatively small at the time of writing this book and revolves around a few large projects that adopted it early, such as Bun (the JavaScript runtime) and TigerBeetle (the database). At this early stage of community development, it’s clearly beneficial to write interesting articles about writing or rewriting applications in the new language. Bun and TigerBeetle did it, and now they are considered the default examples of large, production-ready Zig projects. Win-win!
+### 9.5.2 프로젝트 배경을 제공하라
+독자가 문맥을 이해할 수 있도록 프로젝트의 목표와 기술적 요구사항을 설명하세요. 모든 언어가 모든 상황에 적합한 것은 아닙니다.
 
-TIP See if the team or foundation behind the project you support is open to guest blogging opportunities. This helps you reach interested readers and helps the other team/foundation get attention.
+### 9.5.3 어려움을 숨기지 마라
+장점만 나열하면 홍보물로 오해받기 쉽습니다. 과정에서 겪은 어려움, 언어의 단점, 해결해야 했던 문제들을 솔직하게 공유하여 신뢰를 얻으세요. 이는 언어 메인테이너들에게도 유용한 피드백이 됩니다.
 
-# 9.1.4 Ranting
+### 9.5.4 참고한 리소스를 공유하라
+재작성 과정에서 도움을 받은 도구, 문서, 다른 블로그 포스트 등을 공유하여 독자들에게 실질적인 도움을 주고, 커뮤니티에 감사를 표하세요.
 
-Rewriting a project to another language is hardly ever a smooth process. Moreover, there’s no guarantee that the story has a happy ending! Some blog posts following this pattern are actually quite grudgy and end up being a “lessons learned” type of story.
+# 요약
 
-One therapeutic effect of writing a rant about a failed (or bumpy) rewrite is venting the accumulated anger. But that alone should not justify publishing your experiences. As with virtually every technical article, you should offer some educational value. In the case of a rant, that could be a warning to others (and your future self): “Be careful next time you rush to rewrite something instead of trying to improve the status quo first.” The article might also add value by sharing how to avoid the mistakes and pitfalls you stumbled into, ideally making someone else’s rewrite process considerably smoother.
-
-# 9.2 Audience
-
-This pattern usually includes the programming language’s name in the title, and that naturally attracts this language’s enthusiasts. The following groups are likely interested:
-
-¡ Evangelists of programming language X, including authors, maintainers, and other enthusiasts   
-¡ Evangelists of the programming language you rewrote it from; they likely consider these posts a form of an exit interview (sharing candid feedback, areas to improve, etc.).
-
-¡ People interested in learning about the latest and greatest programming languages.   
-¡ People interested in writing their own programming language.   
-¡ Users of the now-rewritten software who want to learn about what improved.   
-¡ Competitors of the now-rewritten software who are here to check if they should consider a rewrite as well.   
-Professional internet critics specialized in unsolicited advice.
-
-Given this varied audience, articles describing a rewrite process should consider dedicating an entire section, or at least a paragraph, to introducing the new language. We cover this more in section 9.4.1.
-
-# 9.3 Examples of “We Rewrote It in X” blog posts
-
-In the wild, you can find “We Rewrote It in X” blog posts (or slight variations thereof) pretty much anywhere. The most common place to spot one of these posts is on the corporate engineering blog for a Big Tech company or unicorn who has outgrown their original tech stack on a particular project. The burden of evolving a legacy tech stack for an application that the world depends on makes for a great story (and also shows potential engineering recruits that they remain on the forefront of innovation, right?). But you can also find similar posts written by startups, as well as individual contributors working on weekend projects. Many of these take the angle of “We Wrote It in X” since the authors had the luxury of reading so many of their peers’ recent “We Rewrote It in X” blog posts before selecting the initial technology for a new project.
-
-Here are some example blog posts that will give you a good feel for this pattern, along with Piotr’s commentary on each.
-
-# 9.3.1 Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery, and Fun
-
-Author: Kevin Lynagh
-
-Source: Kevin Lynagh’s Blog (https://kevinlynagh.com/rust-zig/)
-
-# SUMMARY
-
-The author describes his experience rewriting his own keyboard firmware from Rust to Zig. The introduction briefly mentions that Rust was originally selected as the language for the keyboard firmware and then shifts to how the author was eventually convinced to try Zig. The main part of the blog post shows concrete code snippets that are problematic and/or ugly in Rust. The bad examples are later followed by their Zig counterparts, which are clearly cleaner and more readable. At the end, the author expresses excitement about the future of Zig. However, he also notes that Zig’s ecosystem is not yet as mature as Rust’s, so early adopters should brace themselves for a few compiler bugs and sparse documentation.
-
-# COMMENTARY
-
-This article is a pleasure to read for so many reasons. The author needed to rewrite firmware for keyboards he produces himself, which is a fascinating technical topic on
-
-its own. The article contains backlinks to his other writings on creating his own hardware, which makes the whole blog a rabbit hole (in a purely positive sense).
-
-The code snippets are informational and easy to read, even if you’re not fluent in Zig. The Rust code snippets are substantially harder to parse, but that’s deliberate and done masterfully. After all, the whole point of the article was to show that the rewrite resulted in much clearer code.
-
-The author concludes that in his case, there’s simply no upside to choosing Rust over Zig, which makes the rewrite a complete success. The author’s satisfaction and optimism come across throughout the post, making it an enjoyable read. And the fact that he wraps up by crediting a few people who are well-known in the Rust and Zig worlds adds credibility to the whole article—and is simply a nice gesture. This is a great example to follow!
-
-# 9.3.2 How Turborepo is Porting from Go to Rust
-
-Authors: Nicholas Yang, Anthony Shew
-
-Source: Vercel Blog (https://mng.bz/znNg)
-
-# SUMMARY
-
-This blog post describes how the Turborepo project was ported from Go to Rust. It starts by disambiguating porting versus a full rewrite, briefly discussing the advantages and disadvantages of both approaches. It follows with a few examples of problems caused by the porting process and how the team decided to overcome them. The authors conclude that porting was the right decision, one that benefited the team. Finally, the blog post ends with a short promotion of the Turborepo product.
-
-# COMMENTARY
-
-Reading this blog post was quite an ambivalent experience for me. The first few paragraphs were sparse on technical details, which is something I generally look for. Instead, I began to suspect I was reading a marketing whitepaper, sneakily presented as a technical post.
-
-Thankfully, more technical details appeared over time, and the described road bumps were quite educational. I didn’t find that any of the solutions were particularly creative or surprising though. From a purely technical point of view, the solutions looked more like workarounds. That’s perfectly fine, of course. Practical solutions should be applied during an incremental port to another language. They are just not particularly captivating for readers like me (i.e., those who delude themselves into thinking they’re so smart that only the hardest programming problems could possibly be of interest).
-
-On the bright side, I did appreciate the educational value of the post—for example, learning that compiling a program written in Go and statically linked with the musl C library can cause nonobvious runtime issues.
-
-# 9.3.3 Why Discord Is Switching From Go to Rust
-
-Author: Jesse Howarth
-
-Source: Discord Blog (https://mng.bz/0M8W)
-
-# SUMMARY
-
-The article starts off by describing Discord’s latency problems with one of their services implemented in Go. Next, it explains how rewriting the whole service to Rust helped alleviate all spikes, as well as improve the general performance. The rewrite was done iteratively, with the first version already fixing the latency spike problem, and the next iterations further improving the service’s performance. The article concludes with a fun fact about the symbiosis between Discord and Rust: the language powers lots of Discord’s services, and the Discord platform is also the Rust maintainers’ main means of communication.
-
-# COMMENTARY
-
-This blog post is a solid example of the “We Rewrote It in X” pattern. It starts with a clear problem statement, showing why the previously chosen language no longer met the requirements of the scale Discord was then operating at. The technical bits are interesting, and in some cases intriguing. For example, it was interesting that they decided to replace a HashMap with a BTreeMap, while customarily it’s done the other way around. In my humble opinion, one missing bit is code snippets showing some of the details. But they might have had their hands tied due to legal issues associated with sharing closed source code. It was a nice touch to share the metrics from before and after the rewrite, showing a clear improvement.
-
-# 9.3.4 From Zero to 10 Million Lines of Kotlin
-
-Author: Omer Strulovich
-
-Source: Engineering at Meta Blog (https://mng.bz/KDJE)
-
-# SUMMARY
-
-This article is a detailed report on how Meta coordinated a huge rewrite of their application code from Java to Kotlin. It starts with an extensive rationale of why the rewrite was needed in the first place and then presents the two approaches they considered: iterative migration or full rewrite. After justifying the full rewrite option, the author explains multiple intricacies with the existing tools dedicated specifically to migrating from Java to Kotlin. The blog post also discusses the approach of using the official migration tools combined with a few custom practical scripts and a testing phase. That combo allowed Meta engineers to translate millions of lines of production code from Java to Kotlin. The article concludes with an optimistic vision of the future of Kotlin at Meta.
-
-# COMMENTARY
-
-Even though this report is relatively long, it’s dense with technical details, practical advice, and measurable results. All of those traits are welcome in an engineering blog post. The code samples are short and helpful. This article is also full of links to open source projects, documentation of external tools, and related blog posts. That’s a good sign. However, in this particular case, the sheer number of hyperlinks could be a bit overwhelming if you opt to act on them. You will end up with an overload of open tabs if you start drilling down to line up articles for later reading.
-
-This blog takes an interesting angle: it states from the start that although rewriting Java to Kotlin is largely automatic, their massive migration incurred enough caveats and subtle problems to justify developing a custom pipeline of scripts and tests. The numbers are also impressive and optimistic—if Meta managed to rewrite millions of lines of production Java code to Kotlin, your pet project is safe to port as well.
-
-# 9.3.5 Why We at $FAMOUS_COMPANY Switched to $HYPED_TECHNOLOGY
-
-Author: Saagar Jha
-
-Source: Saagar Jha’s Blog (https://mng.bz/9ox0)
-
-# SUMMARY & COMMENTARY
-
-This particular blog post is satirical, and hilarious at that, but also fits the pattern extremely well. It actually fits the pattern too well, because its sole purpose is to mock all the overly promotional blog posts boasting about switching to the newest hyped technology. Anyone attempting to write about their rewrite process should read this one before they start writing:
-
-¡ It’s structured well, moving from the rationale, through the rewrite details, to the final conclusion.   
-¡ It contains a balanced amount of graphs and fun facts.   
-¡ It turns you into a self-conscious writer. If you reread your blog post and it looks deceptively similar to this one, consider rewording (unless you don’t mind seeing the link to this parody post endlessly spammed in your post’s comment section).
-
-Don’t feel discouraged by this article though. What allowed it to be funny in the first place was the surge of “We Rewrote It” blog posts trending on the front page of Hacker News for months. That’s a clear indication that readers still enjoy them!
-
-# 9.4 Characteristics
-
-The main class of “We Rewrote It in X” blog posts tend to follow a pretty standard template—so much so that it inspired Saagar Jha to author the parody blog referenced in the previous section (and us to add a chapter section [9.4.3] calling out the common pieces and flow). But there are a few corner cases to note:
-
-¡ Some teams choose to zoom in on the decision to abandon the original language, with titles like “Why We Sunsetted/Retired X.”   
-There’s a growing trend of posts sharing the inside scoop on why they decided to take the contrarian path and not rewrite their app in the trendiest new language.   
-¡ One subtle variation is “We Wrote It in X,” where teams who made their language selection quite recently share which of the current trendy languages they selected, why, and how it worked out (basically, the same pattern minus the migration part).
-
-Blog posts in the standard “We Rewrote It in X” pattern tend to have the following characteristics.
-
-# 9.4.1 Suitable for language newbies
-
-Articles about rewrites are often motivated by specific features or guiding principles of the new language. It’s common practice (and a good idea) to dedicate a section, or at least a single paragraph, to introducing the language in case any readers are not yet familiar with it.
-
-This section might include details such as
-
-¡ A short overview of the language’s mission, core concepts, and intended use cases   
-¡ The advantages over the previously used language   
-¡ The most interesting (or important) known disadvantages   
-¡ Examples in the form of code snippets (interactive ones that users can run and edit are particularly engaging and educational)
-
-For the segment of readers who are new to the language, this dedicated intro section will help them onboard themselves. It also benefits the language experts in your audience. By clearly marking this introductory material as such, you’re alerting these readers that it’s safe to just skim over this part.
-
-# 9.4.2 Practical
-
-There’s a whole category of readers who are desperately looking for context before they start their own major rewrite. For their sake, posts in this pattern tend to include a reasonable helping of helpful details, such as
-
-Tools used for automating the rewrite   
-Tools used for verifying the rewrite was correct   
-¡ Custom scripts for fixing incorrectly rewritten code (e.g., with these tools)   
-¡ Code samples in the old language, idiomatically rewritten to the new one
-
-For example, here are some of the practical elements featured in our example “We Rewrote It in X” blogs:
-
-Lynagh—Code examples in both old and new languages, links to related posts, (e.g., https://mng.bz/j0MV), and direct links to Zig (new language) documentation   
-¡ Yang and Shew —A link to a known issue related to migration (https://github .com/golang/go/issues/13492) and graphs visualizing the migration procedure   
-¡ Howarth—A link to Go (old language) documentation explaining a failed attempt to fix the issues prior to the rewrite (https://pkg.go.dev/runtime/ debug#SetGCPercent)   
-¡ Strulovich —A reference to a presentation about issues with Kotlin (new language) (https://mng.bz/aV0Y), a reference to their own fix of a related open source tool (https://github.com/pygments/pygments/pull/1699), and a reference to their own open source helper tools (https://github.com/facebook/ ktfmt; https://github.com/fbsamples/kotlin_ast_tools)
-
-NOTE This one is the single most practical “We Rewrote It” blog post I’ve ever seen. Congrats!
-
-Assuming that the rewrite is considered a success and the authors want to encourage their peers to follow suit, it makes sense that they provide readers a useful toolkit to start with.
-
-# 9.4.3 Tremendously templated structure
-
-Although there’s unfortunately no easy-to-follow recipe for pulling off a successful rewrite, there is one for writing a blog post about it. Given the continued popularity of these posts on sites like Hacker News, the standard formula works, so why reinvent the wheel?
-
-The standard “We Rewrote It in X” blog post contains the following elements, usually in the precise order listed:
-
-¡ Templated title —The title always includes the new language name and usually uses some form of “rewrote,” “moved,” “switched,” or “migrated.” The minimalist “We Rewrote It in X” is used quite a bit. Some opt to define the “we” and call out the original language (especially if it is remarkably old and/or impressively complex). This gives you something like “Why ACME moved from COBOL to Zig.”   
-¡ What are we doing here —A little background on the project. For example, how long it’s been around, how it’s evolved, who it serves, what’s most important (e.g., ability to iterate fast, achieving crazy low latencies, or something else entirely).   
-¡ Why it’s time to move on —This is often a proactive response to positive problems such as catastrophic success (e.g., “Our original Typescript server served us well for a few years, but now our service is so popular that we needed to rewrite it in Rust”). Sometimes it’s because the original language turned out to be a poor fit for the project and the team couldn’t bear it any longer. And it’s occasionally because someone on the team wanted an excuse to play with a shiny new language, but that’s not usually written.   
-¡ Also ran —Covers what other options were considered and why they didn’t make the cut. It’s usually fairly brief, keeping the article’s focus on the dearly departed old language and the fascinating new one.   
-¡ Meet the new language —This is the section where we learn why they chose the new language and all the greatness that it has to offer. As noted above, this is often targeted to people new to that particular language and can be conveniently skipped by those who are already sold on it.   
-¡ Migration nuts and bolts —Here’s where you get most of the practical elements referenced in the previous section: all the challenges faced and the tools and strategies used to move past them.   
-¡ The verdict —Did the gain outweigh the pain? This is the place where authors reflect on the overall process and maybe showcase some specific effects, quantitative (benchmarks) or qualitative (happier and more agile teams).
-
-¡ Join us —A not-so-subtle reminder that the team is on the forefront of innova -tion and that they would love for interested readers to join them (insert link to careers page).
-
-The “We Rewrote It in X” pattern is by far the most predictable of all the patterns covered in this book. And it’s also why Saagar Jha’s parody is such a brilliant and hilarious read.
-
-# 9.5 Dos and don’ts
-
-Writing your own “We Rewrote It in X” blog post is a great opportunity to validate whether the rewrite is justified, show a few tricks you’re particularly proud of, and add a tribute or two to the new language’s authors and maintainers.
-
-These blog posts are typically written and published after the rewrite is deemed done, ideally with some reportable results demonstrating that it was indeed worth it. You could feasibly start writing at any point during or after the rewrite process. If you start writing about it early, you could even turn it into a whole series of blog posts. For example, you could write “Why We’re Rewriting It in X” once you’ve made the decision, “How We’re Rewriting It in X” as you’re in the middle of the rewrite, and “Our X Rewrite: Results and the Verdict” after it’s completed. Of course, if your team’s rewrite turns out to be an utter disaster, you might regret having told the world about it. On the bright side, the resulting “Our Failed X Rewrite: Lessons Learned” blog post could make for a gripping read!
-
-Here are some tips to keep in mind while writing your own “We Rewrote It in X” blog post.
-
-# 9.5.1 Start by explaining your rewrite motivation
-
-Pointless rewrites from one language to another are a plague. The internet is already full of half-baked rewrites of popular open source projects, long abandoned and forgotten. Rewriting a project “just because” usually doesn’t warrant a blog post about the experience—unless the rewrite yielded some surprising and absolutely stunning benefits that the author never anticipated.
-
-Be aware that there’s a good chance your average reader is a programmer who’s sick of telling junior colleagues that even though the new language is really shiny and groundbreaking, they shouldn’t just go ahead and rewrite everything in it. By explaining your motivation thoroughly, including specific technical reasons, you calm that average reader down and perhaps earn his readership for a few minutes. You might win him over on the value of migration, or you might provide him additional ammunition for his anti-rewrite campaign.
-
-If you’re considering writing a “We Rewrote It in X” blog post, try to write (at least) one convincing paragraph justifying the rewrite. If you have trouble with this task, you might want to reconsider writing on this topic. If you’re able to write something interesting, fantastic! That’s an indication that the rewrite has merit, and should make for an interesting read. Bonus: now you’ve already got your blog post started.
-
-A few sample questions to ask yourself:
-
-Why did you (or someone else) select the original language?   
-Why did you decide to ditch it?   
-What alternatives did you consider?
-
-Your answers to the above questions can help you populate the explanation paragraph (or an even lengthier justification section).
-
-# 9.5.2 Provide background on your project
-
-Sounds obvious, right? But it’s often overlooked in practice. Authors of “We Rewrote It in X” blog posts sometimes get so caught up in the marvels of the new language that they end up delivering a paean of the language’s features instead of a down-to-earth analysis of how it helped their project. Remember that if someone clicks your “We Rewrote It in X” post, it’s because they want to learn why and how your specific team (the “we” part of the title) made this shift. If they wanted to read a generic profusion of praise for a language, they could simply get that through AI (e.g., “Tell me why X is so great.”).
-
-NOTE If you really want to focus on sharing your praise for a language, that’s fine. Just don’t mislead readers who expect a “We Rewrote It in X” post. Write it up as a “Thoughts on Trends” pattern type of post instead (covered in chapter 12). And make sure it’s not as generic as something from generative AI.
-
-Across patterns, sharing project context is a key element for making blog posts appealing and distinctive. Readers with similar experiences to yours are naturally curious about how you approached common challenges—and, of course, evaluating who did it better. At the same time, readers working in different worlds want to keep tabs on what’s happening across the wide wide world of engineering, beyond their day-to-day duties. Providing context about what you’re working on and why helps stir up emotion—be it empathy, envy, arrogance, or something else—and that will help get your blog post read.
-
-Project context is particularly important for the “We Rewrote It in X” pattern because the decision of what language to select depends so heavily upon the project’s technical requirements. For example, while Rust is a reasonable choice for implementing a highly efficient database, it’s likely to be counterproductive for frontend development. A very good way of introducing that project perspective is to dedicate the first section of the blog to describing your case and explaining what motivated your specific rewrite.
-
-# 9.5.3 Don’t gloss over the rough parts
-
-Technical blog post readers are generally not a trusting lot. If all they see is advantages and excitement, they are likely to immediately dismiss your blog post as a marketing piece (or a thinly veiled engineering recruitment attempt, at best). Interesting technical details might help, but that assumes that your readers actually reach those details. More likely, they will have already left the blog post and switched to another browser tab.
-
-Statistically, it’s highly unlikely that every aspect of a real-world production rewrite was completely smooth. Really, you encountered zero challenges—with the language itself, or its tooling, dependency management, state of its documentation, and similar?Balancing pros and cons is important to make the blog look credible (as well as to help your readers learn, of course).
-
-Be fully transparent about the things that went wrong (unless your dear superiors object, of course—again, it’s better to ask permission than forgiveness in these matters). In particular, list all the caveats and footguns you experienced when rewriting software from language A to B, as well as how you dealt with them. Some of your readers, even those who have already weathered other types of rewrites, might not be aware that a naive rewrite from A to B can cause subtle problems such as inefficient memory management or undefined behavior in their applications. If your blog post makes them realize that they need to step back and check all the millions of lines of code they’ve already rewritten to look for a new class of errors, you helped reduce the total number of software bugs in this world. Thanks!
-
-Moreover, constructive criticism of a new and/or rising language is generally welcome in technical blog posts. If you draw attention to practical problems with the language, you get them on the community radar, increasing the chance that the language’s maintainers might recognize and fix them.
-
-# 9.5.4 Share the resources you used
-
-A rundown of any and all resources you found helpful during the rewrite (or conversely, the ones you found embarrassingly unhelpful) could be priceless to others who are considering a similar rewrite. “We Rewrote It in X” articles are expected to be both entertaining (reading about somebody else’s failures) and educational (learning from somebody else’s mistakes). A list of the resources that you tried to tap, annotated with your candid commentary on each, could help you accomplish both. Or take the high road and just focus on highlighting the resources that were most valuable—whatever you’re comfortable with.
-
-A simple bulleted list with a sentence or two commentary on why you found each item helpful (or not) would help readers navigate the vast sea of resources. It could also save them hours of scanning through search-engine-optimized results to unearth the handful of hidden gems that truly add value.
-
-In addition to helping your readers, a positive endorsement here is a nice way to share your appreciation for the people behind the resources you relied on. Whether they developed a really cool tool or wrote a detailed article that saved you from some nasty mistake, they deserve a bit of public praise and positive feedback.
-
-# Summary
-
-¡ The “We Rewrote It in X” pattern became (in)famous lately during a surge of Rust rewrites.   
-¡ Blog posts in this pattern promote both the rewritten project and its new language, library, or framework.
-
-¡ Readers interested in adopting the new language are a primary audience, and the new language’s authors and maintainers are likely to read for constructive criticism.
-
-¡ “We Rewrote It in X” blog posts are typically suitable for those new to the new language and full of practical tips, code snippets, and tools; they’re also rather formulaic in structure.
-
-¡ Top tips:
-
-– Provide a good rationale for the rewrite: what’s wrong with the old language, why the new language solves the problems, and which alternatives were considered and discarded.   
-– Explain your project’s goals and technical requirements upfront.   
-– Don’t gloss over the road bumps or headaches, or else the post will be dismissed as too promotional.   
-– Pay it forward by sharing what resources helped you and why.
-
-# The “How We Built It” pattern
-
+-   "X로 다시 썼다" 패턴은 새로운 기술의 도입 사례를 공유하는 인기 있는 방식입니다.
+-   재작성된 프로젝트와 새로운 기술 모두를 홍보하는 효과가 있습니다.
+-   초심자를 위한 언어 소개와 실용적인 팁을 포함하는 것이 좋습니다.
+-   구조가 정형화되어 있어 작성이 비교적 수월하지만, 내용의 진정성이 중요합니다.
+-   명확한 동기 부여, 솔직한 어려움 공유, 참고 자료 제공이 성공의 열쇠입니다.

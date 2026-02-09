@@ -1,324 +1,84 @@
-# This chapter covers
+# 10장 "우리는 어떻게 만들었는가(How We Built It)" 패턴
 
-Blog posts that share your most impressive engineering achievements   
-¡	Their purpose and audience   
-¡	How various authors approached this type of post   
-¡	Key elements of successful “How We Built It” posts   
-¡	Dos and don’ts for your own “How We Built It” post
+# 이 장에서 다루는 내용
 
-Engineers are natural builders, a curious and constantly tinkering bunch. When we’re not scratching that itch by building something ourselves, it’s always fun to see what others are building—for pragmatic learning, inspiration, and really just pure discovery.
+- 가장 인상적인 엔지니어링 성과를 공유하는 블로그 포스트
+- 목적과 독자층
+- 다양한 저자들의 접근 방식
+- 성공적인 "우리는 어떻게 만들었는가" 포스트의 핵심 요소
+- "우리는 어떻게 만들었는가" 포스트 작성 시 유의사항
 
-First and foremost, engineers writing about how they built things creates a valuable knowledge base for the community, brick by brick (pun intended). Such blog posts might be triggered by a range of experiments and achievements:
+엔지니어는 무언가를 만드는 것을 좋아합니다. "우리는 어떻게 만들었는가" 패턴은 "어떻게 우리가 상상했던 것보다 더 잘 만들었는가"에 대한 이야기입니다. 최신 기술 도입, 대규모 시스템 아키텍처, 획기적인 알고리즘 구현 등 자랑할 만한 성과를 다룹니다.
 
-¡ Using a rising technology as one of the early adopters. For example,
+# 10.1 목적 (Purpose)
 
-– A new database specialized for a niche (e.g., adopting the TigerBeetle database for your brand-new banking system)   
-– A new framework for creating web pages (e.g., Rust’s Leptos)   
-– A new programming language (e.g., writing your software in Zig)
+### 10.1.1 개척자 (Pioneering)
+기술적 혁신이나 새로운 접근 방식을 가장 먼저 상세히 기술하여 해당 분야의 리더로 자리매김하고 프로젝트의 인지도를 높입니다.
 
-¡ Successfully using the same technology (e.g., Postgres) for decades   
-Using a novel system architecture (e.g., one trying to serve billions of users)   
-¡ Improving an existing architecture to cut cloud costs by millions of dollars per year   
-Implementing an algorithm previously known only from academic papers   
-¡ Inventing a new algorithm (or improving an existing one) and implementing it
+### 10.1.2 근육 자랑 (Flexing muscles)
+자신들의 기술력이 얼마나 뛰어난지, 왜 자신들의 솔루션이 최선인지를 은근히(혹은 대놓고) 과시하며 기술적 우위를 증명합니다.
 
-These blog posts are sometimes published in a multipart series because the building process, just like the situation on actual construction sites, can take years. They are sometimes cryptic on details (to avoid helping the competition too much) but at the same time informative enough to give readers a general idea of how a successful system can be built.
+### 10.1.3 무료 피어 리뷰 (Free peer review)
+구축 과정을 공개함으로써 커뮤니티로부터 건설적인 비판과 개선 제안을 받을 수 있습니다.
 
-![](images/175468790ef9cbceba3a2f7610c888fa5157215ff2f638508e3d0affb7e4473e.jpg)
+# 10.2 독자 (Audience)
 
-# 10.1 Purpose
+-   유사한 프로젝트를 진행하는 개발자
+-   최신 기술에 관심 있는 기술 애호가
+-   경쟁사 동향을 파악하려는 스타트업 창업자 및 투자자
+-   연구자 및 학생
+-   제품 사용자
 
-The “How We Built It” pattern is often (at its essence) an abbreviation for “How We Built It Better Than Anybody Ever Imagined Possible.” That brings us to the first purpose on the list.
+# 10.3 "우리는 어떻게 만들었는가" 블로그 포스트 사례
 
-# 10.1.1 Pioneering
+주로 대규모 기업에서 인상적인 스케일의 프로젝트를 다룰 때 많이 사용되지만, 개인의 독특한 프로젝트에도 적용될 수 있습니다.
 
-Writing a detailed article on a technical innovation is a great tool for establishing leadership. If you describe a particular idea first, you earn a long-lasting legacy as the pioneer. That gives your project (or the whole company) extra visibility. Now, whenever somebody mentions that new algorithm, they’re going to associate it with you.
+### 10.3.1 How Prime Video Updates its App for More Than 8,000 Device Types (Alexandru Ene)
+8,000개 이상의 기기 유형을 지원하기 위해 WebAssembly를 도입하여 아키텍처를 개선한 사례를 다룹니다. 압도적인 규모와 구체적인 기술적 세부 사항이 돋보입니다.
 
-Note that the innovation doesn’t have to be a mathematical breakthrough worthy of the Millennium Prize. On the contrary, it can be a small improvement to a decadesold algorithm that works great for your particular use case. It can also be an unusual setup for an existing technology (e.g., running your entire storage infrastructure on a fleet of used corporate laptops with discounted USB sticks). Any unusual decision, be it architectural or algorithmic, can be the one that earns you recognition as an inventor or early adopter.
+### 10.3.2 Twitter’s Recommendation Algorithm (The Twitter Team)
+트위터의 추천 알고리즘을 단계별로 설명하고 관련 논문과 오픈 소스 코드를 링크하여 투명하게 공개했습니다. 기술 대기업의 내부를 엿볼 수 있는 기회를 제공합니다.
 
-# 10.1.2 Flexing muscles
+### 10.3.3 How We Built Notification Rate Limiter... (Akshit Verma, Ayush Gupta)
+수억 명의 사용자를 위한 알림 속도 제한 시스템 구축 과정을 다룹니다. 데이터베이스 스키마 등 구체적인 구현 내용을 공유하여 독자가 직접 시도해 볼 수 있게 합니다.
 
-Publicly sharing how a product was built is a not-so-subtle way of highlighting how much better it is than any of its alternatives. That usually sends the following messages:
+### 10.3.4 How We Built Scalable Spatial Data and Spatial Indexing in CockroachDB (Sumeer Bhola)
+공간 인덱싱 기능 구현을 위해 공간 분할 방식을 선택한 이유와 구현 세부 사항을 설명합니다. 특정 데이터베이스 기능에 대한 깊이 있는 입문서 역할을 합니다.
 
-¡ Proof that the authors believe their solution is incomparably better than any existing solutions. It can be a literal mathematical proof or just an architectural design backed by tests, model checkers, and benchmarks.   
-¡ A healthy amount of confidence that even though the authors are hereby sharing the recipe for success, they’re still pioneers and experts in the matter (which makes their product a default choice).
+### 10.3.5 Ship Shape (Kerry Halupka, Rowan Katekar)
+Canva가 브라우저 내에서 실시간 모양 인식 기능을 머신러닝으로 구현한 과정을 시각적으로 매력적으로 설명합니다.
 
-Describing a novel way of solving a problem is also simply a nice gesture. Readers tend to appreciate the authors’ transparency, as opposed to keeping interesting ideas as corporate secrets. To sum up, writing an article on an interesting way of building something makes you look smart and confident—what’s not to like?
+# 10.4 특징 (Characteristics)
 
-# 10.1.3 Free peer review
+### 10.4.1 항상 재현 가능한 것은 아님
+대규모 리소스나 비공개 기술 스택에 의존하는 경우가 많아 독자가 똑같이 따라 하기는 어려울 수 있습니다. 하지만 그 과정에서 얻은 지식은 여전히 가치가 있습니다.
 
-One thing is certain after publishing a “How We Built It” blog post: it will ignite a spirited comment section discussion on why another approach is actually much better. After filtering out the snarky comments (and ones that just blindly recommend using Postgres without even reading the article first), what’s left is hopefully a fair dose of constructive criticism.
+### 10.4.2 지식 베이스 역할
+프로젝트 과정에서 얻은 일반적인 지식(언어 팁, 도구 활용법 등)을 공유하여 업계 전체의 지식 수준을 높입니다.
 
-A few examples of valuable comments are
+### 10.4.3 존엄한 복수형 (Pluralis maiestatis)
+개인보다는 팀이나 회사를 대표하여 "우리(We)"라는 표현을 사용하며, 다소 공식적인 어조를 띠는 경향이 있습니다.
 
-¡ Pointing out a known security problem with one of the libraries used for the project, as well as which dependencies should be upgraded to avoid problems   
-¡ Suggesting that the team switch from one of the services they’re relying on to a compatible one that’s more modern and cost-efficient   
-¡ Recommending a tool for improving the project’s test coverage   
-¡ Pointing out a bug in the academic paper that the implementation was based on (yes, it really happens; see Avinash’s case: https://mng.bz/gAEn
+### 10.4.4 예상 질문 선제 방어 (inb4)
+논란이 될 만한 결정이나 의문에 대해 미리 이유를 설명하고("왜 X 대신 Y를 썼나요?"), 이전의 실패 사례 등을 공개하여 불필요한 논쟁을 줄입니다.
 
-Suggesting how to improve the project’s performance just by tweaking the database configuration
+# 10.5 유의사항 (Dos and don'ts)
 
-Not many people are fans of unsolicited advice, but publishing a “How We Built It” article is often seen as a broadcasted review request.
+### 10.5.1 범위 합의하기
+회사를 대표하는 글이므로 공개 가능한 범위(법적, 전술적)에 대해 미리 합의해야 합니다.
 
-# 10.2 Audience
+### 10.5.2 그래픽을 일급 시민으로 대우하기
+복잡한 아키텍처나 알고리즘을 설명할 때 다이어그램과 시각 자료를 적극적으로 활용하여 이해를 도와야 합니다.
 
-“How We Built It” blog posts may appeal to a mixed lot:
+### 10.5.3 서두르지 않기
+오랜 기간 공들인 프로젝트인 만큼, 글 작성에도 충분한 시간을 들여 꼼꼼하게 검토하고 완성도를 높여야 합니다.
 
-¡ Developers of similar projects, who might be interested in implementation details, design decisions, and architecture. They may come looking for inspiration to creatively “borrow” the intriguing bits back into their projects.   
-¡ General tech enthusiasts, who enjoy learning about the latest tools, frameworks, and techniques used in real-world projects. They may not be professionals in this particular field, but they’re eager to expand their knowledge far and wide.   
-Startup founders and investors, who are interested in learning from other teams’ approaches as they feel out potential new opportunities. They can use these blog posts to assess whether there’s room for yet another approach (theirs!) in this niche and to inform their own teams about what the competition is up to (refer back to the first bullet point).   
-¡ STEM students, Ph.D. candidates, and post-docs, who are all still in the habit of reading scientific papers and exploring new algorithms.   
-¡ Users of the product, driven by curiosity to deeply understand why the thing they use works the way it does.
+### 10.5.4 (비)건설적인 비판에 대비하기
+공개 후 발생할 수 있는 논쟁에 대비하여 예상 질문에 대한 답변을 준비하고, 댓글 섹션을 모니터링할 준비를 하세요.
 
-# 10.3 Examples of “How We Built It” blog posts
+# 요약
 
-Most popular blog posts about building new things come from large companies. Yes, the mere mention of a recognizable logo does help reach a broader audience. But it’s more than that. Projects from large companies naturally involve an impressive scale that piques the curiosity of every engineer. It’s inherently more interesting to learn how Amazon coordinates updates for over 8,000 device types than to read a post about somebody successfully coordinating updates for his two Raspberry Pis.
-
-Of course, that’s not a hard rule. There are lots of intriguing “How I Built It at Home” blog posts out there, as well as impressive “How We Built It Even Though We’re Just a Humble Bootstrapped Startup” posts, so don’t let that discourage you. We just wanted to explain in advance why this examples section is dominated by stories showcasing impressive scale!
-
-Here are some prime examples of blog posts that apply the “How We Built It” pattern, along with Piotr’s commentary on each.
-
-# 10.3.1 How Prime Video Updates its App for More Than 8,000 Device Types
-
-Author: Alexandru Ene
-
-Source: Amazon Science Blog (https://mng.bz/eVWZ)
-
-# SUMMARY
-
-The article explains how Amazon updates its entertainment system for all the devices it supports. There are over 8,000 distinct types of devices, ranging from gaming consoles to USB streaming sticks. Each device has its own hardware and architecture, which creates quite a technical challenge.
-
-The introduction praises WebAssembly and mentions that this technology enabled a substantial performance boost. The body of the article kicks off by explaining the system’s specific architecture, split into a performance-oriented part and a lightweight easy-to-update-often part. Then there’s an explanation of the new architecture, which is partially based on WebAssembly. The author sheds light on how the switch to the new code was performed without breaking backward compatibility. Finally, the article wraps by detailing the impressive performance and space utilization improvement—and also adding a short “thank you” note to the Rust and WebAssembly communities.
-
-# COMMENTARY
-
-The first brilliant move by the author is already in the title—mentioning “over 8,000 device types” introduces an impressive level of awe. The article is full of interesting insights, including architecture graphs and references to used tools (e.g., egui and a Rust GUI library). I also really appreciate the anecdote explaining how they needed to implement some of the bugs from their previous architecture because existing users relied on those edge cases—reminds me of https://xkcd.com/1172/. It’s written in a conversational tone, and yet it’s full of technical and educational details. Overall, a very enjoyable read.
-
-# 10.3.2 Twitter’s Recommendation Algorithm
-
-Author: The Twitter Team
-
-Source: X Engineering Blog (https://mng.bz/pxA0)
-
-# SUMMARY
-
-This blog post explains the technical and architectural details of Twitter’s algorithm for selecting which Tweets to show users. The recommendation algorithm is split into stages:
-
-1 Candidate sourcing   
-2 Ranking   
-3 Heuristics and filters
-
-Each stage is explained with a dedicated section including links to Twitter’s own academic papers presenting research on recommendation algorithms. Also, for full transparency, Twitter open sourced its algorithm’s implementation; the article mentions this and shares the link to the open source code repository. And the customary “We’re hiring—apply for a job” invitation is tacked on after the conclusion.
-
-# COMMENTARY
-
-Casually mentioning that you’re a tech giant in charge of one of the largest social networks worldwide is a great hook for a catchy title. This particular title is also short and intriguing, which sets a high bar for the contents.
-
-The contents don’t disappoint. On the contrary, they exceed expectations for a few reasons:
-
-The hyperlinks lead either to academic papers or open source repositories. I was sufficiently impressed after seeing that the first hyperlink was a scientific paper (Real Graph), and then the second one led to a paper as well (GraphJet), then the third (SimClusters)…   
-The article is heavy on technical details, but those are often hidden under the aforementioned links to academic papers. The main flow is quite simple to understand, even for people not experienced in social networks, graphs, or machine learning.   
-¡ Images and text are perfectly balanced to give readers’ eyes a well-deserved break after every few paragraphs.   
-¡ The article contains lots of meaningful numbers, which also emphasizes the scale at which Twitter operates. For example, “The pipeline above runs approximately 5 billion times per day and completes in under 1.5 seconds on average.”
-
-The cherry on top is open-sourcing the entire algorithm, which breaks a pattern that tech giants often follow when “publishing” their ideas. The pattern is to do only one of the following:
-
-¡ Release a huge amount of open source code   
-¡ Thoroughly explain the architecture and design decisions
-
-As a result, the “great idea” is unusable because
-
-¡ Nobody can really understand the code without enough context and documentation, or   
-¡ (When the code isn’t released) People are left trying to implement it based on a bunch of scientific papers, which often conveniently leave the hardest implementation details as an “exercise for the reader.”
-
-In this article, Twitter both explained and released the code. That’s admirable.
-
-# 10.3.3 How We Built Notification Rate Limiter for Eight Billion Notifications Per Day for 400 Million Monthly Active Users
-
-Authors: Akshit Verma and Ayush Gupta
-
-Source: ShareChat Blog (https://mng.bz/Om5O)
-
-# summary
-
-The article describes how to implement a system for handling user notifications in a mobile app at a large scale (for hundreds of millions of users). After describing why a rate limiter is required, the authors delineate the challenges to overcome when building such a system. Two choices for overcoming these challenges are presented: one for the rate limiter algorithm and one for the underlying database. Then, they explain the reasoning behind why they selected their approach (a combination of both fixed
-
-window rate limiting and event-based paradigms). The next section, “Design & Implementation,” covers the chosen database schema and implementation details. The article concludes with a rationale for why the solution is considered fast and scalable. There’s also a glossary at the end, explaining a few niche terms.
-
-# COMMENTARY
-
-The title of this one is four lines long, so it’s quite a hog compared to the succinct title in the Twitter example. On the other hand, it shows interesting numbers (two of them), which is a nice touch.
-
-The article itself features lots of specific technical details such as concrete database schemas. That encourages users to try and implement similar systems themselves. It’s nice to see in a blog post.
-
-Initially, I was also grateful that the authors provided a glossary at the end. But ultimately, the unexplained acronyms and niche words are my number one problem with the article. The first few terms I needed to look up were DAU (presumably Daily Active Users), OKR (presumably Objectives and Key Results), and FCM (presumably Firebase Cloud Messaging). I was especially amused by the fact that I found FCM in the glossary, but it was mentioned only to explain yet another niche term. Another minor problem is the images; they’re a bit too detailed for the template’s display size, which makes them difficult to read. Fortunately, you can just click them to open a full-sized image, which is a viable workaround. Overall, it’s still a solid example of a “How We Built It” blog post, especially because users can immediately try out the database schemas in their own setups.
-
-# 10.3.4 How We Built Scalable Spatial Data and Spatial Indexing in CockroachDB
-
-Author: Sumeer Bhola
-
-Source: CockroachLabs Blog (https://www.cockroachlabs.com/blog/how-we-built -spatial-indexing/)
-
-# SUMMARY
-
-The blog post describes CockroachDB’s implementation of spatial indexing, a feature customarily used for geographical searches (e.g., “Am I in Pruszków right now?”, or “Is this restaurant nearby?”). It explains two of the most popular techniques for spatial indexing, namely dividing the objects (e.g., geographical locations) into smaller areas, or dividing the space itself. The article further explains that the latter approach (dividing the space) better fits CockroachDB’s architecture, and that’s why it was chosen. The article dives into the index’s implementation details and how the database had to change to accommodate it (for example, a new distributed query processor was developed). The article concludes with a detailed list of roadmap items related to the feature.
-
-# COMMENTARY
-
-First things first: the title. It’s not very exciting, but it is self-explanatory. It wouldn’t jump out at the average reader, but it is well-suited for the target audience:
-
-Anyone looking for a database with spatial indexing support
-
-¡ Anyone interested in implementing their own spatial indexing   
-CockroachDB users who are eager to learn about new database features
-
-The article is a helpful spatial indexing primer. It introduces the idea, explains the most popular approaches, and shares implementation details with respect to CockroachDB. It educates readers without gratuitous promotion of CockroachDB. You can walk away with a good grasp of spatial indexing implementation, even if you don’t really care about using CockroachDB.
-
-The visualizations are key for explaining the algorithms. Spatial indexing algorithms work with two-dimensional data, and that’s much harder to imagine and visualize in your brain than the one-dimensional arrays that programmers’ brains are accustomed to (my brain, at least). The visualization based on a real-life map of Paris and its suburbs is an especially nice touch, showing how this technology can be put into practice.
-
-The roadmap items are a little confusing for a spatial indexing newbie (again, me), but I felt fully excused to ignore them and take pride in the fact I’m now loosely aware of what practical geographical algorithms look like.
-
-# 10.3.5 Ship Shape
-
-Authors: Kerry Halupka, Rowan Katekar
-
-Source: Canva Engineering Blog (https://mng.bz/GNJ8)
-
-# summary
-
-The article describes how Canva implemented a real-time shape recognition feature that works entirely in the browser. The authors explain the previous implementation (computer vision heuristics), followed by its limitations and rationale for a new approach: applying a machine learning model. The idea is explained in detail, including the algorithms they used and their parameters. The article concludes by stating that the feature is a great success, followed by acknowledgments.
-
-# commentary
-
-Brilliant. I’m tempted to stop the commentary right there, but let me dive into more detailed praise. The title is brilliant because it’s two syllables long and very intriguing. I’d say it was specifically optimized for landing on the front page of Hacker News, knowing full well that only a very composed individual could resist the urge to click the title and figure out what it means.
-
-The next brilliant thing is the images, which isn’t a surprise given that Canva’s flagship product is an online graphic design tool. The images are engaging and really help readers grasp the presented ideas, even without reading the paragraphs explaining them.
-
-The technical details go very deep for somebody not experienced with machine learning (e.g., me) and the article includes hyperlinks to algorithm descriptions for those who want to go even deeper. I don’t think those details are required to understand the main flow, though. I felt that I understood the model based on the images and text in the main article (but maybe that was just a comfy illusion and I was deluding myself).
-
-Either way, reading the article left me feeling a little smarter regarding machine learning. The numbers are quite impressive, too: the model fits into 250 kilobytes, with the accompanying implementation of 300 lines of code and running under 10 milliseconds on a laptop.
-
-# 10.4 Characteristics
-
-“How We Built It” articles featuring the most impressive feats (e.g., unique industry-shaping approaches, novel approaches to commonly experienced challenges, or solutions accommodating extreme needs and scale) tend to feature the following characteristics:
-
-They offer practical tidbits although the achievement is likely still not easily reproducible.   
-Nevertheless, they create an interesting and valuable industry knowledge base.   
-¡ They’re more formal than the average blog post, adopting the majestic plural (also known as “royal we”).   
-¡ Expecting (at least) their fifteen minutes of fame, they anticipate and answer the most likely questions and objections.
-
-Let’s cover each in turn.
-
-# 10.4.1 Not always reproducible
-
-“How We Built It” articles are often full of practical tidbits like code snippets, the tools used, and diagrams. However, that doesn’t mean the reader will be able to achieve the same result even after a thorough study of the article. In fact, those most willing to share are often those most confident it won’t help the competition in any substantial way.
-
-The extended subcategories of this pattern include:
-
-How We Built It Because We Are a Huge Company with Lots of Resources   
-How We Built It Because We Needed to Scale for Millions of Users   
-¡ How We Built It on Top of Our Closed Source Tech Stack   
-How We Built It After Years of Confidential Research
-
-The contents of all those articles can still be immensely educational though, which leads to the next section.
-
-# 10.4.2 Serve as a knowledge base
-
-A long journey precedes the point where it’s feasible to publish a “How We Built It” blog post. Along the way, the author(s) discovered useful resources, tried different approaches, and evaluated related projects and tools. That’s all deeply practical knowledge, often applicable to projects that are barely, if at all, related to the titular “built” project. A nonexhaustive list of interesting things one can find in a “How We Built It” blog post includes
-
-¡ References to academic papers   
-¡ Practical tips about a programming language (e.g., “how to efficiently manage short-lived memory in Zig”)   
-¡ Practical tips about a specific tool (e.g., “how not to lose your mind trying to manage Kubernetes via its command-line interface”)   
-Approaches to planning and executing a long-term project
-
-The important bit is that the knowledge is often general, in the “good to know” category. That makes the “How We Built It” articles worth reading even for people not directly involved with the described technology.
-
-# 10.4.3 Pluralis maiestatis
-
-“How We Built It” blog posts tend to have a slightly more formal tone than other patterns like the Bug Hunt. As the name of the pattern suggests, the use of majestic plural is prevalent. Instead of informal jokes and digressions, these posts are commonly characterized by a pristine storyline and an extensive list of acknowledgments at the end.
-
-Of course, those rules are not set in stone, but they come naturally because the author (or, more often, authors) usually represent the whole company, or at least a team of relentless programmers and researchers who made the venture possible. The blog post examples discussed in this chapter are actually the following:
-
-How we, the Amazon Web Services team, built…   
-How we, the Twitter folks, built…   
-¡ How we, at ShareChat, built…   
-¡ How we, the CockroachDB team, built…   
-How we, Canva engineers, built…
-
-Since speaking on behalf of a whole company is a weighty responsibility, it makes sense that the authors adopt a somewhat formal tone to rise to the occasion.
-
-# 10.4.4 inb4
-
-“How We Built It” articles often include baked-in responses to the questions that the curious and critical masses are likely to ask, suggesting that the authors anticipate their blog post will be popular enough to spark heated online discussions. They are usually correct. Even if they’re not, the preemptive responses create a FAQ section that makes the article more interactive.
-
-When the authors assume that their articles will be relentlessly reviewed by lots of professional and unprofessional online critics, they provide the following upfront:
-
-¡ Extensive explanations of why a decision was made, especially if it wasn’t an obvious (e.g., “industry standard”) choice.   
-¡ A list of previous attempts, along with short notes on why they failed.   
-¡ Bold challenges to things once considered “common knowledge” or “good practice.” Noting that times and technology have changed, the author shares reasons
-
-and options for moving beyond the accepted ways (which are now diplomatically deemed “legacy.”)
-
-¡ A short note backlinking to the online discussion as it unfolds. This isn’t published right away, but it’s often popped into the article the second it gains traction and ends up on a front page somewhere.
-
-All of these make the articles look fresh and more personal. Lots of readers question the nonobvious choices made by blog post authors. When the nonobvious choice is followed by a rationale starting with “You might wonder why we decided…,” the readers are likely to appreciate it and give the authors extra credit for their clairvoyance.
-
-# 10.5 Dos and don’ts
-
-If you’re the one designated to drive the “How We Built It” post for your team’s latest achievements, congratulations! Consider it an honor. But be sure to set your expectations appropriately. This isn’t something you can (or should) knock off in a day, given the planning, graphics, approvals, and whatnot that will be required. By all means, get started right away. But also be patient. This is likely to be a work you feature on your CV/resume. Take the time needed to fully think through everything from the initial scope to the comment section response.
-
-# 10.5.1 Agree on the scope early
-
-Blog posts describing how things were built are often written on behalf of the company, assuming that whatever’s written in the article is also officially endorsed. To avoid misunderstandings, it’s good practice to discuss the scope of the article first:
-
-¡ What’s alright to reveal   
-¡ What’s legally not alright to reveal   
-What’s tactically not alright to reveal
-
-Educating others is truly a worthwhile goal. But in reality, you can’t risk publishing blog post content that’s not acceptable to whoever the titular “we” actually refers to.
-
-# 10.5.2 Make graphics a first-class citizen
-
-When writing an article on how things were built, it’s important to avoid the author’s skew: decisions, design, and all kinds of details are much less obvious for people who didn’t write the code. In that case, it’s a good idea to outsource part of the explanation process to the readers’ occipital lobes. In other words, make sure your blog post abounds in colorful images and graphs.
-
-Diagrams make it easy to visualize the architecture of a complex system or a nonintuitive algorithm, which the article is most likely about. (If it isn’t, it doesn’t bode well; it seems the most popular “How We Built It” blog posts are about something grand, groundbreaking, unintuitive, or otherwise impressive). At the same time, those same readers would prefer to have the details laid out as simply as possible. Images, graphs, diagrams, and even screenshots are a good compromise for being educational versus too complicated to understand.
-
-# 10.5.3 Don’t rush it
-
-“How We Built It” articles tend to describe a long-term project that took an uncanny amount of effort to complete. Unless there’s pressure to publish as soon as possible, don’t. Blog posts of this kind deserve at least a fraction of the meticulousness the project received. With the hardest part (coding, deploying, designing, formally proving correctness, you name it) completed, it might be tempting to brag about the results immediately. However, a sloppy blog post including mistakes such as
-
-Incorrect links to references   
-Logical fallacies   
-Code samples with old bugs, even if already fixed in the linked repository   
-Typos (yes, really!)
-
-may diminish the grand moment of showing the world the achievement. People will notice, and they will also bring it up online, which brings us to the next subsection.
-
-# 10.5.4 Prepare for (un)constructive criticism
-
-As mentioned in section 10.4, anticipating future questions and undermining attempts is especially important in this pattern. On top of that, it’s advised to brace for a heated online flamewar. The following things can help:
-
-¡ Show the blog post’s beta version to a limited trusted audience (e.g., all colleagues) and ask for a brutal and nitpicky review.   
-¡ Prepare a list of questions that might come up but are at the same time petty enough to omit from the article. Then, prepare answers to those questions upfront.   
-¡ Carefully plan the blog publication time and ensure that everyone is ready for a discussion the minute it lands on a front page.   
-¡ Periodically monitor the likely front pages (Hacker News, lobste.rs, subreddits, etc.) so you don’t miss the opportunity to officially insult other people online as the blog post’s author. And jokes aside, the discussion is likely to last only for a couple of minutes and then move on to the next hot thing. It’s a shame to miss it; sometimes, it’s actually informative!
-
-# Summary
-
-¡ Writing a “How We Built It” blog post is a great opportunity to share your greatest engineering feats with the world.   
-¡ Readers always love insight into how some well-known company achieved something impressive at scale, but a blog post about a smaller startup victory or weekend project can also trend as long as it’s intriguing.   
-¡ Such blog posts tend to have a more formal air than most (especially if written on behalf of a team), anticipate lively online discussions, and share with extreme
-
-care (avoiding anything that might compromise a precarious competitive advantage).
-
-¡ Top tips:
-
-– Get early consensus on what (if anything) is acceptable to share.   
-– Use visuals to help the reader efficiently grasp the algorithms, system architecture, or other achievements—at a high level, at least.   
-– Know that the planning, review, and approval process might take longer than for other types of blog posts due to the importance of the topic and the number of stakeholders involved.   
-– Prepare for a heated online flamewar: preemptively answer questions in the blog if applicable and/or rally the troops to respond after it’s published.
-
-# The “Lessons
-
-# Learned” pattern
-
+-   가장 인상적인 엔지니어링 성과를 세상에 알릴 기회입니다.
+-   대기업의 스케일뿐만 아니라 작은 스타트업의 승리나 개인 프로젝트도 흥미롭다면 좋은 소재가 됩니다.
+-   팀을 대표하는 공식적이고 신중한 태도가 필요합니다.
+-   공개 범위 합의, 시각 자료 활용, 충분한 검토 시간, 논쟁 대비가 중요합니다.

@@ -1,319 +1,81 @@
-# This chapter covers
+# 12장 "트렌드에 대한 생각(Thoughts on Trends)" 패턴
 
-¡	Blog posts that are highly opinionated takes on industry trends   
-¡	Their purpose and audience   
-¡	How various authors approached this type of post   
-¡	Key elements of successful “Thoughts on Trends” posts   
-Dos and don’ts for your own “Thoughts on Trends” post
+# 이 장에서 다루는 내용
 
-“Thoughts on Trends” articles are highly opinionated, far more than any other pattern, because the author’s opinion is the core feature of the article. This pattern works best if you’ve already established a position as an expert, either in a niche or technology in general.
+- 업계 트렌드에 대한 매우 독창적인(opinionated) 의견을 담은 블로그 포스트
+- 목적과 독자층
+- 다양한 저자들의 접근 방식
+- 성공적인 "트렌드에 대한 생각" 포스트의 핵심 요소
+- "트렌드에 대한 생각" 포스트 작성 시 유의사항
 
-Note that the term “an expert” is not limited to industry luminaries and popular social media figures. For example, given an article about new trends in web development, an expert author could be
+이 패턴은 저자의 강력한 의견이 핵심입니다. 주로 특정 분야나 기술에 대한 전문가로 입지를 다진 사람들이 사용하지만, 누구나 전문성을 갖춘다면 시도해 볼 수 있습니다. 논란을 일으키거나 미래를 예측하거나 현재의 유행을 분석하는 글들이 여기에 속합니다.
 
-¡ A web developer with a few years of experience   
-¡	A contributor to a popular web development framework   
-¡ The author of a few blog posts about web development   
-The host of a podcast about web development   
-¡ A conference speaker who has delivered a few talks about web development
+# 12.1 목적 (Purpose)
 
-Across patterns, articles that go viral are likely to be authored by a known technologist, although exceptions certainly do occur. But in the “Thoughts on Trends” pattern, that bias is particularly pronounced.
+### 12.1.1 지속적인 콘텐츠 제공 (Continuous delivery)
+기술 업계는 항상 새로운 트렌드(새 언어, 하드웨어, 레이고프, 보안 이슈 등)가 넘쳐나므로 글감 소재가 끊이지 않습니다. 이는 블로그에 꾸준히 독자를 유입시키는 좋은 방법입니다.
 
-Don’t let that discourage you, though! In this chapter, we look closely at how established experts approach this challenge so you can pull off this pattern like a master whenever you’re ready.
+### 12.1.2 회고 (Retrospection)
+트렌드에 대한 예측을 내놓으면 나중에(몇 년 후) 그 예측이 맞았는지 틀렸는지 회고하는 후속 글을 쓸 수 있는 기회가 생깁니다.
 
-![](images/307f4e11e758515344a3d2566a21840086429066aa0de847979346eb8454acbb.jpg)
+### 12.1.3 미래 형성 (Shaping the future)
+영향력 있는 글은 기술의 채택을 가속화하거나, 반대로 문제점을 지적하여 개선을 유도하는 등 업계의 방향에 영향을 미칠 수 있습니다.
 
-# 12.1 Purpose
+# 12.2 독자 (Audience)
 
-Blog posts in this pattern can serve a variety of purposes, from reflecting on the past, to shaping the future and sharing thoughts on whatever everyone is obsessing about today. This pattern is commonly (but not exclusively) applied by experienced writers who maintain a personal engineering blog.
+저자의 팬, 뉴스레터 구독자뿐만 아니라 해당 트렌드에 관심 있는 모든 사람이 잠재적 독자입니다. 트렌드는 대중적이므로 도달 범위가 넓습니다.
 
-# 12.1.1 Continuous delivery
+# 12.3 "트렌드에 대한 생각" 블로그 포스트 사례
 
-Something is always trending. Here are some examples:
+### 12.3.1 I Want Off Mr. Golang’s Wild Ride (Amos Wenger)
+Go 언어의 문제점을 조목조목 비판(Roast)하는 글입니다. 유머와 구체적인 예시, 그리고 Rust와의 비교를 통해 Go의 단순함이 오히려 독이 될 수 있음을 설득력 있게 주장합니다.
 
-A new language   
-¡ A new programming paradigm   
-¡ A new type of hardware (e.g., the AWS Inferentia chip dedicated to AI workloads)   
-A new leather jacket in the NVIDIA CEO’s wardrobe   
-A series of layoffs   
-¡ A new zero-day vulnerability in a library that everybody relies on
+### 12.3.2 How to Think About WebAssembly (Amid the Hype) (Matt Butcher)
+WebAssembly(Wasm)의 본질과 미래에 대한 철학적인 에세이입니다. 혼란스러운 개념들을 정리하고 Wasm의 진정한 잠재력(웹 밖에서의 활용)을 제시합니다.
 
-That’s great news for engineering blog writers—a never-ending supply of trends continuously gives authors the opportunity to publish an opinion on something new and shiny. It’s also great news for blog maintainers. Posts on trending topics tend to attract many new readers to a blog, and at least some percentage of these new readers are likely to explore previously published posts, as well as the one currently in the spotlight.
+### 12.3.3 Rust After the Honeymoon (Bryan Cantrill)
+Rust를 실제 프로덕션(임베디드 시스템)에서 사용해 본 후의 찬사(Paean)입니다. 맹목적인 찬양보다는 구체적인 기능과 경험을 바탕으로 Rust의 가치를 입증합니다.
 
-# 12.1.2 Retrospection
+### 12.3.4 Software Architecture is Overrated... (Gergely Orosz)
+과도한 아키텍처 패턴 집착을 비판하고 단순한 설계의 중요성을 역설합니다. 많은 개발자의 공감을 얻으며 '신사적인 비판'의 좋은 예를 보여줍니다.
 
-Publishing opinions on current trends also creates an opportunity for the author to revisit the article in 2, 3, or maybe even 10 years to comment on the accuracy of that original take. This is especially intriguing if the author also played clairvoyant and expressed their opinions on how the future would unfold. If the prediction actually turned out to be correct, a follow-up article is downright crucial! But even if it wasn’t, a healthy dose of self-criticism gives the article an authentic vibe. Publishing blog posts on trends is a clear twofer—write one, get the second one (almost) for free after an appropriate amount of time has elapsed.
+### 12.3.5 How io_uring and eBPF Will Revolutionize Programming in Linux (Glauber Costa)
+리눅스의 새로운 I/O 기술인 io_uring과 eBPF가 가져올 혁명을 예고합니다. 깊이 있는 기술적 설명과 벤치마크를 통해 주장을 뒷받침합니다.
 
-# 12.1.3 Shaping the future
+# 12.4 특징 (Characteristics)
 
-Some “Thoughts on Trends” blog posts are powerful enough to influence the future they are commenting on. For instance, an honest, non-markety endorsement of a new language published on a popular engineering newsletter can be the driving factor in that language’s adoption. Conversely, if a new language gets mercilessly roasted, it might encourage the maintainers to work twice as hard to fix the obvious mistakes and deliver something of better quality. Or, it could discourage the authors and push them toward orphaning the project. Either way, the article makes a difference.
+### 12.4.1 의견 중심 및 설득력 (Opinionated and persuasive)
+단순한 정보 전달이 아니라 강력한 주장을 펼칩니다. 예상되는 반론을 미리 차단하고 풍부한 근거를 제시하여 독자를 설득합니다.
 
-# 12.2 Audience
+### 12.4.2 도발적 (Provocative)
+논쟁적인 주제를 다루거나(Roast), 대중적인 것에 반기를 들거나, 혹은 열렬히 찬양(Paean)함으로써 독자의 감정을 자극하고 토론을 유발합니다.
 
-“Thoughts on Trends” articles are often posted by experienced authors running popular engineering blogs and/or newsletters. The first obvious group of interested readers are subscribers to the aforementioned. The most succinct description of this pattern’s target audience is just everyone, though. Trends are by definition popular, and those posts are addressed to anyone interested in them.
+### 12.4.3 독특한 개성 (Idiosyncratic)
+저자의 고유한 문체, 유머, 화법이 뚜렷하게 드러납니다. 독자들은 저자의 스타일을 알아보고 팬이 됩니다.
 
-# 12.3 Examples of “Thoughts on Trends” blog posts
+# 12.5 유의사항 (Dos and don'ts)
 
-The examples selected here are a natural consequence of the fact that opinionated takes tend to come from well-known industry experts. Every featured author is a serial writer, with multiple successful blog posts in their portfolio. The chances of your “Thoughts on Trends” article becoming popular rise exponentially based on how well-recognized you are.
+### 12.5.1 유명해져라 (혹은 전문성을 쌓아라)
+독자가 당신의 의견을 듣고 싶어 하게 만들어야 합니다. 꾸준한 글쓰기로 인지도를 쌓는 것이 중요합니다.
 
-Here are some prime examples of blog posts that apply the “Thoughts on Trends” pattern, along with Piotr’s commentary on each.
+### 12.5.2 설득의 3요소 고려하기
+-   **에토스(Ethos):** 저자의 신뢰성. 자신의 경험과 전문성을 은연중에 드러내세요.
+-   **파토스(Pathos):** 독자의 감정(좌절, 호기심 등)에 호소하세요. 스토리텔링이 유효합니다.
+-   **로고스(Logos):** 논리적 근거. 사실, 코드, 데이터로 주장을 뒷받침하세요.
 
-NOTE If you haven’t been following and reading all the mentioned authors, it’s time to catch up! All of them have a track record of fantastic technical blog posts.
+### 12.5.3 대담해져라 (Be bold)
+미온적인 태도보다는 확실한 입장을 취하세요. 찬사든 비판이든 끝까지 밀고 나가세요.
 
-# 12.3.1 I Want Off Mr. Golang’s Wild Ride
+### 12.5.4 비판(Roast)을 즐기되 근거를 갖춰라
+비판은 재미있지만 근거가 없으면 비난에 불과합니다. 확실한 증거로 뒷받침된 비판만이 살아남습니다.
 
-Author: Amos Wenger
+### 12.5.5 찬사(Paean)도 근거가 필요하다
+칭찬만 늘어놓으면 홍보 글로 오해받습니다. 왜 좋은지 구체적인 결과와 경험으로 증명하세요.
 
-Source: fasterthanlime Blog (https://mng.bz/QVoe)
+# 요약
 
-# SUMMARY
-
-This article is a self-proclaimed rant on a variety of problems with the Go language. The introduction candidly admits that this article will be a rant and announces the upcoming list of problems. The main sections cover
-
-Why Go language constructs are not simple, even though that alleged simplicity is explicitly mentioned in the language design and core concepts   
-¡ How the dependency-solving system tends to pull lots of redundant data, bloating even tiny projects beyond proportion   
-¡ How Go failed to solve a seemingly simple issue with its standard library functions for time management
-
-Wenger often contrasts the Go code with Rust to show how “the Go way” is worse than its alternatives. The final section concludes that even a single issue has multiple severe root causes in the Go ecosystem, which doesn’t bode well for Go’s future. It also refers to another web page describing Go idiosyncrasies and calls out that a tricky “footgun” in the API is casually mentioned as a footnote in the documentation instead of being properly checked at compile time.
-
-After that conclusion, there’s a bonus update from April 2022 (two years after the original publication). Here, the author emphasizes that they still haven’t changed their mind and also raises a few more interesting points.
-
-# commentary
-
-Rants done right, like this one, are extremely enjoyable to read. It’s written in a light tone, even though you can practically feel the years of frustration that the author expertly enchanted into the words. I hereby classify this article as a roast. I really appreciate the clickable table of contents, especially since this article is quite long.
-
-The length is expected though, judging by the author’s other popular articles. One microscopic nitpick is that the table of contents is rather coarse grained, with two gigasections (Simple is a lie; Lots of little things) covering most of the article.
-
-The blog post features an abundance of interesting code examples and graphics, as well as lots of pseudo-interactive conversations with the cool bear, the author’s alter ego. As usual, it makes the article way more engaging and easy to read even though it doesn’t fit into the average attention span of 5–10 minutes reading time.
-
-The April 2022 update is a splendid cherry on top:
-
-¡ It makes the whole article more current.   
-¡ It emphasizes the verdict reached in the original contents.   
-It adds a few links to related articles and docs.
-
-I had high expectations since the bar was set quite high by the author’s previous articles, and I wasn’t disappointed one bit. Yet another great read from this author.
-
-# 12.3.2 How to Think About WebAssembly (Amid the Hype)
-
-Author: Matt Butcher
-
-Source: Fermyon Blog (https://www.fermyon.com/blog/how-to-think-about-wasm)
-
-# SUMMARY
-
-This blog post is an essay on what WebAssembly (a.k.a. Wasm) is, used to be, and was originally designed to be, plus how it’s evolving. The introduction lists a few perspectives on what WebAssembly actually is, followed by its technical definition (a standardized bytecode format). The next section describes WebAssembly’s origins as a more efficient alternative to JavaScript. It’s followed by the proposition that WebAssembly can be useful beyond web browsers due to the following features:
-
-¡ Security   
-¡ Robustness   
-¡ Compactness   
-Interoperability   
-Fast loading times
-
-The main new application of WebAssembly is revealed to be virtualization and standardized plugins. Next, the author places WebAssembly on a timeline of programming languages and explains what’s needed to make WebAssembly truly universal: a new specification of a system interface, WASI (WebAssembly System Interface).
-
-# COMMENTARY
-
-Anyone even remotely familiar with the author’s other posts (highly recommended!) would expect this blog post to be a truly philosophical essay. It is! At the same time, its casual style makes it really pleasant to read (unlike most philosophical posts). As a huge fan of succinct titles, I would have preferred the one from the article’s URL (“How to think about Wasm”), but that’s the only nitpick that comes to mind.
-
-The introduction is overloaded with contrasting definitions of WebAssembly (including hyperlinks to each). But that’s not a flaw—it’s a brilliant trick to emphasize that lots of people are confused about what WebAssembly actually is. After the intentionally induced confusion, Butcher presents a purely technical and concise definition: “Web-Assembly is a bytecode format that any WebAssembly-capable runtime can execute.”
-
-The initial confusion contrasted with later disambiguation makes the reading process dynamic and enjoyable. The author has a quite unique style; I wholeheartedly recommend reading his other pieces to compare and learn.
-
-# 12.3.3 Rust After the Honeymoon
-
-Author: Bryan Cantrill
-
-Source: Bryan Cantrill’s Blog (https://mng.bz/vJvq)
-
-# SUMMARY
-
-The blog post revisits the themes from the author’s previous post on Rust, published two years earlier. The introduction refers to the original article and explains that the author’s feelings toward Rust remain positive. Cantrill highlights Rust language features such as
-
-¡ Good support for embedded systems programming, allowing easily opting out from the standard library   
-Built-in developer-friendly formatting options   
-¡ Support for debugging formats (available in the ecosystem as independent libraries)   
-Data-bearing enums, a compact way of expressing data types   
-¡ Unsafe Rust, which offers a way to bypass strict compiler checks for specific use cases   
-Error handling
-
-The conclusion admits that Rust isn’t perfect, but emphasizes that Rust is an amazing language despite its minor imperfections.
-
-# COMMENTARY
-
-This article is packed with interesting technical insights. It’s also very well structured, with paragraph headings forming a list of features the author likes in Rust for easy scannability. The title is perfectly balanced between clickbaity and technical:
-
-¡ It’s intentionally ambiguous. It’s teasingly unclear whether the author still likes Rust. The “after the honeymoon” term is a great way to catch the eyes of curious readers.   
-¡ Rust! It’s Bryan Cantrill’s thoughts on Rust. Anyone even the slightest bit interested in Rust won’t pass up Bryan Cantrill’s perspective on it.
-
-Cantrill includes an ample amount of code examples to demonstrate what he loves about Rust, and encourages readers to catch up with its predecessor post, “Falling in love with Rust” (another compelling title). The author, his achievements, and the blog
-
-post’s domain are all recognizable in the niche of performance-oriented programming, which gives this article even more authority and traction.
-
-Another distinctive element is that the article was a rather early perspective on Rust, and from an intriguing angle on top of that. Specifically, it explores Rust through the lens of embedded systems, where efficiency matters more than usual due to limited available resources. Overall, a great example of a “Thoughts on Trends” article!
-
-# 12.3.4 Software Architecture is Overrated, Clear and Simple Design is Underrated
-
-Author: Gergely Orosz
-
-Source: The Pragmatic Engineer Blog (https://mng.bz/n0V8)
-
-# SUMMARY
-
-The article reflects on standard software architectural patterns and compares them with an opposite approach: simple design. The introduction covers the author’s experience building large distributed systems, along with an observation that none of those successful projects were based on any kind of standard pattern. There were also no people titled “architects” on the teams who delivered the projects.
-
-The next section explains the alternative approach, applied by large companies as well as startups. That approach is based on defining a business problem, brainstorming a solution, and iterating through feedback loops. The author then notes that this system does not specifically match any of the patterns popular in the technical literature; yet, it’s extremely efficient. Next, the author emphasizes the importance of simple design and simple code. Architectural patterns are considered “good to know,” but not an ultimate goal of any developer. The final section is a collection of advice for designing systems; it covers approaches such as
-
-¡ Discussing it with colleagues over a whiteboard   
-¡ Using a shared online document for brainstorming   
-¡ Creating multiple designs and contrasting them   
-¡ Reviewing other people’s ideas
-
-# COMMENTARY
-
-This is a 2019 article by Gergely Orosz, the engineer and engineering manager who went on to launch The Pragmatic Engineer newsletter (a long-term #1 newsletter on Substack) and write the bestselling book, The Software Engineer’s Guidebook. Given that, his name and brand attract attention regardless of topic, but this is one topic that particularly resonates with me as a startup engineer. I also like that this blog post is a gentle, professional roast, but a roast nonetheless.
-
-Overusing architectural patterns is a true concern. Lots of readers (me included!) sympathize with anyone who dares say they aren’t actually essential for a good commercial project. A considerable percentage of programmers have had the dubious pleasure of working on an overmanaged project, sticking to an architectural design that doesn’t make much sense but was already approved by someone more senior in the corporation. On the other hand, some programmers have only worked at startups and
-
-are intimately familiar with the simple design culture. This blog appeals to their egos as well, validating their experiences and beliefs. Readers are likely to be both happier and smarter after reading this.
-
-# 12.3.5 How io_uring and eBPF Will Revolutionize Programming in Linux
-
-Author: Glauber Costa
-
-Source: The New Stack (https://mng.bz/o0xj)
-
-This article was originally published on The New Stack, then later reposted (with their permission) on the ScyllaDB blog.
-
-# SUMMARY
-
-The article dissects two relatively new technologies related to the Linux kernel: io_uring and eBPF. It begins with a detailed history of input/output system call API design in Linux—from blocking system calls to first attempts at an asynchronous API. It’s followed by an equally detailed technical description of a new interface: io_uring. The new interface is explained both from a design perspective and by concrete code samples.
-
-Next comes a series of benchmarks, showing io_uring’s superiority compared to the legacy APIs. The first series of benchmarks is performed with a specialized tool. After that, the author shares real-life examples of improvements measured by running a ScyllaDB database.
-
-The following section is devoted to eBPF, a mechanism originating from a network packet filtering system, but now getting more universal. The conclusion reassures the audience that both technologies are likely to revolutionize the paradigms of programming in Linux.
-
-# COMMENTARY
-
-I have a soft spot for blog posts related to io_uring, for a few reasons:
-
-¡ It’s brilliant technology, which sounds like an obvious good idea once you compare it with its predecessors, but it wasn’t obvious at all before Jens Axboe figured it out.   
-¡ It has the right level of low-level programming, which my brain can still follow, but is also sufficiently expert-friendly to make me feel proud that I can understand what happens under the hood.   
-¡ It truly is revolutionary, allowing more programmers to write efficient systems easily.   
-¡ Its name is a homophone of “I owe urine,” which never stops being hilarious.
-
-Personal preferences aside, this article is a goldmine of technical details and can be used as a primer for io_uring out-of-the-box. The eBPF section is substantially lighter but still very informative.
-
-The article was released when io_uring was still a relatively young project and rapidly gaining traction. Perfect timing for a “Thoughts on Trends” blog post, especially by one of the luminaries in the field of Linux kernel and I/O, and especially with such
-
-abundant technical details about “the new thing.” People were already talking about io_uring before this article was written, but only in very general terms. This article was one of the first that actually provided practical information on how to use it, as well as first-hand experience from applying it to a project heavily reliant on I/O performance (ScyllaDB).
-
-# 12.4 Characteristics
-
-Like the opinion columns you might find in a newspaper, “Thoughts on Trends” articles are written to announce and justify some bold assertion that a fair proportion of readers are likely to disagree with. Sparking a discussion is a primary goal. However, like other compelling engineering blog posts, these posts are highly technical. Even if each argument is not directly supported with a code sample, they are nevertheless rooted in deep experience with the technology that’s the target of the author’s advocacy, roasting, or spicy speculation.
-
-NOTE For tips on initiating and engaging in a community discussion, see Chapter 15.
-
-# 12.4.1 Opinionated and persuasive
-
-Articles following this pattern are generally either an opinion or an assorted collection of opinions. The authors might not have any vested interest in you adopting their views, but they are doggedly committed to making a solid case that could sway many minds. Table 12.1 shows our best guess at the core opinion the authors are trying to communicate in the example blog posts.
-
-Table 12.1 The opinion in each example blog post   
-
-<table><tr><td>Title</td><td>Opinion (our best guess)</td></tr><tr><td>I Want Off Mr. Golang&#x27;s Wild Ride</td><td>Go&#x27;s alleged simplicity is actually its curse.</td></tr><tr><td>Rust After the Honeymoon</td><td>The more I worked with Rust in production, the deeper my appreciation grew.</td></tr><tr><td>How to Think About WebAssembly (Amid the Hype)</td><td>WebAssembly&#x27;s most interesting opportunities are beyond the web, but we need WASI to tap its potential.</td></tr><tr><td>Software Architecture is Overrated, Clear and Simple Design is Underrated</td><td>We should move past the industry&#x27;s unreasonable obsession with architectural patterns.</td></tr><tr><td>How io_uring and eBPF Will Revolutionize Programming in Linux</td><td>If you work with Linux, you better learn about these oddly named technologies.</td></tr></table>
-
-In this pattern, opinions aren’t simply stated. They’re elaborated, supported, even defended against imaginary counterarguments to create a bulletproof argument. For example,
-
-¡ Matt Butcher applies his broad and deep industry perspective to become the respected voice of reason on the “what is Wasm” debate. But despite the profound
-
-knowledge density infused into each highly readable sentence, it’s never about sharing how much he knows. It’s all spun toward anticipating and answering what’s running through the readers’ minds as the carefully constructed argument unfolds.
-
-Amos Wenger pulls you inside their mind for a condensed version of all the trials and tribulations that led them to regret using Go. And Wenger brings the receipts! Beyond extensive Rust vs. Go code comparisons and some painful package dependency details, they also highlight specific issues filed and share screenshots of debates with the Go core team. It’s hard to imagine how anyone might come up with a “Yeah, but” response after digesting all of this.
-
-# 12.4.2 Provocative
-
-Opinions stated in “Thoughts on Trends” articles often touch on controversial subjects (e.g., Async Rust Sucks) or take controversial stances on topics that might not ordinarily raise any eyebrows (e.g., Database Isolation Is Broken and You Should Care). Writing a strong opinion about the former means inheriting an already-polarized audience. And writing a pointed takedown of something that many hold dear might create a newly polarized audience. Even if the vast majority of readers might not care that much, there’s likely a loud minority at both extremes ready for a fight, either against you or against those who declare war versus your position.
-
-Roasts are provocative by definition, but paeans (expressions of high praise) set people off, too. Nothing triggers heated online discussions more than posting a positive comment about something that another person passionately hates!
-
-Note that provocative elements of paeans might surface as jabs at what they’re replacing. For example, in Bryan Cantrill’s article about why he personally loves working with Rust, there is no shortage of zingers targeted at replaced (and adjacent) technologies. For example,
-
-¡ “But the nothing that C provides reflects history more than minimalism; it is not an elegant nothing, but rather an ill-considered nothing that leaves those who build embedded systems building effectively everything themselves—and in a language that does little to help them write correct software.”   
-¡ “Lest I sound like I am heaping too much praise on DWARF, let me be clear that DWARF is historically acutely painful to deal with. The specification (to the degree that one can call it that) is an elaborate mess, and the format itself seems to go out of its way to inflict pain on those who would consume it.”   
-¡ “After nearly three decades working in C, I thought I appreciated its level of unsafety, but the truth is I had just become numb to it; to implement in Rust is to eat the fruit from the tree of knowledge of unsafe programs—and to go back to unsafe code is to realize that you were naked all along!”
-
-# 12.4.3 Idiosyncratic
-
-Opinions aside, one feature that makes “Thoughts on Trends” articles stand out is the unique style of the author leaking through the lines. For instance, I’m relatively sure I
-
-can recognize Matt Butcher’s philosophical hand in written text without looking at the byline. Same for Bryan Cantrill’s racing mind.
-
-This is a natural consequence of this pattern being a popular tool for experienced writers. By now, they’ve already developed a distinctive writing voice. And since stating opinions is also quite personal, the style is especially visible in this pattern. In some cases recognizing the style is as obvious as seeing a “Cool bear’s hot tip” interlude and connecting the dots. In the others, it’s the specific sense of humor, or lack thereof.
-
-# 12.5 Dos & don’ts
-
-By the time you’re writing your own “Thoughts on Trends” blog, you’ve probably mastered the blog-writing basics. But a “Thoughts on Trends” post is a different beast than, say, a “Lessons Learned” article—and not everyone is comfortable sharing their opinions so overtly. Before you step onto your soapbox, read a variety of opinionated takes and think about what approach suits your personality as well as your angle on the topic. As long as you see an authentic path forward, start thinking about the following tips for pulling it off.
-
-# 12.5.1 Be famous
-
-Being recognized as an expert on a topic is by far the strongest first step to creating a “Thoughts on Trends” article that gets attention. Although that recommendation might sound ridiculous at first, each engineering blog post you write brings you closer to recognizability. With a track record of a few blog posts related to your niche, you’re already in a decent position to try and post your ruminations on current trends.
-
-Keep in mind, though: “Thoughts on Trends” articles require a distinctly different approach than the other patterns you might have become accustomed to writing. They’re the only ones that bring persuasion into play. And that leads to the next tip.
-
-# 12.5.2 Consider the elements of persuasion
-
-Ready to persuade an audience? Consider the following three core means of persuasion (rooted in Aristotle): ethos, pathos, and logos.
-
-# Ethos
-
-Ethos emphasizes your credibility: why people should care what you have to say about this topic. Of course, the more famous you are, the easier this is. If you’re not (yet) known by everyone in your target audience, think about how you can convey your authority. You clearly don’t want to come off as pompous or narcissistic. But look for subtle ways to sneak in details that prove you have solid experience related to the topic at hand. For example, if you wanted to highlight your vast expertise with C, you might drop in a phrase like “Back when I was wrestling with C,” and hyperlink it to a related blog or project.
-
-# PATHOS
-
-Pathos appeals to people’s emotions, such as their frustrations, fears, excitement, or curiosity. For this one, try to put yourself in your reader’s shoes. Why are they
-
-reading this article? Maybe they’re worried that the proposed rewrite in X will be a massive distraction with no clear benefit. Maybe they’ve heard the hype about ShinyNewThing and are eager to build a case for adopting it. Or perhaps they’re insanely frustrated with something and are looking for solace in their peers’ misery. Then, think about what you can share to resonate with those emotions. Storytelling, sharing what was running through your own head at critical junctures, a little humor and self-deprecation as appropriate—all this can help you connect with the reader at an emotional level.
-
-# Logos
-
-Logos involves making logical and rational arguments, and it’s likely the element that comes most naturally to the stereotypical engineer. Persuading readers in this way involves ensuring that your arguments make logical sense and are supported by an appropriate level of “facts,” which might include your first-hand experiences, code examples, test results, details on industry trends and shifts, and so forth. To cover this angle, think about all the statements a snarky reader might argue with, and ensure that each and every one is supported by irrefutable facts. Also, try to explain the high-level flow of your argument to yourself, your teammate, or your trusted rubber duckie and see if it makes sense at that level.
-
-NOTE Chapter 5 went into much more detail on ways to achieve all these strategies.
-
-# 12.5.3 Be bold
-
-“Thoughts on Trends” blog posts are the perfect outlet for strong, controversial opinions. In fact, if you can’t imagine reasonable people arguing with your main point, you might want to rethink it. Readers especially appreciate comments coming from far ends of the judgment spectrum, be it overly positive or overly negative. The example blog posts could be classified as shown in table 12.2.
-
-Table 12.2 Classifying the example blog posts   
-
-<table><tr><td>Title</td><td>Type</td></tr><tr><td>I Want Off Mr. Golang&#x27;s Wild Ride</td><td>Roast</td></tr><tr><td>Rust After the Honeymoon</td><td>Paean</td></tr><tr><td>How to Think About WebAssembly (Amid the Hype)</td><td>Paean with a grain of roast</td></tr><tr><td>Software Architecture is Overrated, Clear and Simple Design is Underrated</td><td>Gentlemen&#x27;s roast</td></tr><tr><td>How io_uring and eBPF Will Revolutionize Programming in Linux</td><td>Paean</td></tr></table>
-
-Determine what approach you want to take, and run with it—from a provocative start to a tight, powerful finish. Both the introduction and the conclusion should express arguable opinions using concise, powerful sentences (covered in detail in chapter 5).
-
-# 12.5.4 Roast
-
-If you decide to share a negative opinion on a topic, make it a show. Roasting is an especially entertaining form of criticism. Pulling it off requires the right amount of mocking and exaggeration, while still keeping it humorous rather than aggressive.
-
-# 12.5.5 Don’t just roast
-
-Pointing out the downsides is easy, but a good “Roast on Trends” article needs to be extra careful to back up all the accusations with hard evidence. Mockery is acceptable but it can’t be based on baseless claims. Ultimately, treat the roast format as a convenient container for packaging up your technical insights—a means to an end, not a goal in and of itself. The core of the article still needs to contain all the relevant technical details, as any respectable engineering blog post should. Without solid arguments, the roast will itself end up roasted in the comment section.
-
-# 12.5.6 Don’t just praise
-
-For completeness, the same rule applies to the positive opinions of paeans. Praise should be backed by credible results. Otherwise, your article could be dismissed as a paid promotion or just an attempt to get on the hype train.
-
-# Summary
-
-¡ “Thoughts on Trends” posts provide established experts an outlet for sharing predictions, praise, or problems related to a topic they’re highly familiar with.   
-¡ These posts might reflect on the past, shape the future, or comment on whatever is catching everyone’s attention today.   
-¡ Readers include both fans of the author and those passionate about the topic being discussed.   
-¡ These posts are bold, provocative, and individualistic, while still rooted in deep technical experience.   
-¡ Top tips:
-
-– Establish expertise on this topic first.   
-– Consider what elements of persuasion you want to use, and how.   
-– Announce a strong, potentially provocative, stance and stick to it.   
-– Roasts are especially fun to write and read, but praise and prognostication are also valid approaches.   
-– Keep it balanced, especially if you roast or praise, or else you will be roasted for bias, unfounded attacks, and/or overly enthusiastic promotion.
-
-# The “Non-markety Product Perspectives” pattern
-
+-   전문가로서 트렌드에 대한 예측, 찬사, 비판을 공유하는 장입니다.
+-   과거 회고, 미래 예측, 현재 분석 등 다양한 시각을 제공합니다.
+-   대담하고 도발적이며 저자의 개성이 뚜렷해야 합니다.
+-   전문성을 바탕으로 설득의 3요소(에토스, 파토스, 로고스)를 활용하세요.
+-   근거 없는 비판이나 맹목적인 찬양은 피하고 균형 잡힌 시각(혹은 확실한 근거가 있는 편향)을 유지하세요.
