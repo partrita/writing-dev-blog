@@ -1,0 +1,383 @@
+# 2장 무엇을 쓸 것인가
+ 
+# 이 장에서 다루는 내용
+ 
+- 주제의 잠재력을 확인하는 간단한 리트머스 테스트   
+- 글쓰기를 시작하는 데 도움이 되는 풍부한 주제 아이디어 목록   
+- 주제 아이디어를 지속적으로 발굴하는 방법
+ 
+가장 읽히는 엔지니어링 블로그 포스트를 만드는 데 있어 가장 중요한 작업은 유망한 주제를 선정하는 것입니다. 귀에 쏙 들어오는 제목, 유려한 문장, 탄탄한 코드 예시, 심지어 멋진 인터랙티브 요소들까지—이 모든 것들은 여러분과 독자 모두에게 적합한 주제를 다루지 않는다면 아무런 의미가 없습니다. 반대로 말하면, 여러분의 독자들이 진정으로 관심을 갖는 주제에 대해 인상적인 수준의 기술적 통찰력을 제공한다면, 약간의 불완전함(예: 거친 문장 몇 개)은 기꺼이 용서받을 것입니다.
+ 
+이러한 완벽한 주제들을 어떻게 찾아낼까요? 그것들은 아마 여러분의 일상 업무 곳곳에 숨어 있을 것입니다. 여러분은 그저 그것들을 주제로 인식하기 시작하면 됩니다.
+ 
+이 장에서는 일반적인 엔지니어가 아닌, 여러분—특히 여러분 자신—이 설득력 있는 블로그 포스트로 발전시킬 수 있는 건강한 아이디어 목록을 구축하는 방법에 집중합니다. 먼저 어떤 유형의 주제 아이디어가 가장 큰 잠재력을 가지고 있는지 판단하기 위한 기억하기 쉬운 리트머스 테스트를 제공하는 것으로 시작합니다. 이 장의 핵심 내용은 일상적인 업무와 더 넓은 업계의 논의 전반에서 어떻게 영감을 얻을 수 있는지 다양한 방법을 공유하며 아이디어를 이끌어내는 데 맞춰져 있습니다. 마지막으로, 신선한 아이디어를 계속해서 포착할 수 있는 방법에 대해 논의하며 마무리하겠습니다.
+ 
+# 2.1 아이디어 우선순위 정하기: 3P 테스트
+ 
+이미 시중에는 엔지니어링 블로그 포스트가 넘쳐납니다. 그리고 생성형 인공지능(AI)이 생각 없이 내놓는 무한한 아이디어 공급까지 가세하면서, 그 소음 위로 솟아오르기가 더욱 힘들어지고 있습니다.
+ 
+독자들이 자신의 한정된 시간을 투자하여 여러분의 블로그를 읽을 가능성을 높이려면, 독특하게 여러분의 것이면서 독자들에게 깊은 의미가 있는 무언가를 공유해야 합니다. 저희는 여러분의 잠재적인 주제를 '3P 리트머스 테스트'라고 부르는 필터에 통과시켜 볼 것을 권장합니다. 그 주제가 여러분이 다음과 같이 느끼는 것과 관련이 있나요?
+ 
+- 자랑스러운가(PROUD)?   
+- 고통스러운가(PAINED)?   
+- 열정적인가(PASSIONATE)?
+ 
+만약 어떤 주제가 이 P들 중 적어도 하나(가급적이면 그 이상)를 만족시키지 못한다면, 여러분이 시간을 들여 쓸 가치도, 독자들이 시간을 들여 읽을 가치도 없을지 모릅니다.
+ 
+이 P들을 조금 더 자세히 살펴보겠습니다:
+ 
+- **자랑스러운 것(Proud of)**—동료 엔지니어들에게 자랑하고 싶은 성과는 무엇인가요? 독자나 동료 기여자들에게 정말 깊은 인상을 줄 만한 것은 무엇인가요?   
+- **고통스러운 것(Pained by)**—지속적으로 머리를 아프게 하고 앞으로 나아가는 것을 방해하는 과제는 무엇인가요?   
+- **열정적인 것(Passionate about)**—그 외에 여러분의 가슴을 뛰게 만드는 것은 무엇인가요?
+ 
+이것들은 설득력 있는 엔지니어링 블로그 포스트를 이끄는 원동력입니다. 동료들이 얻고자 하는 독특한 기술적 통찰력을 제공하며, 독자들을 매료시키는 설득력 있는 관점을 만들어냅니다.
+ 
+여러분의 주제가 이 3P 테스트를 통과했다고 해서 여러분의 블로그 포스트가 즉각적인 명성을 얻을 것이라고 보장할 수는 없습니다. 하지만 여러분이 개인적으로 자랑스럽거나, 고통스럽거나, 열정적이지 않은 무언가에 대해 억지로 블로그 포스트를 쓰려 한다면, 좋은 결과를 얻지 못할 것임은 거의 보장할 수 있습니다.
+
+# 주제 아이디어를 테스트하는 아주 쉬운 방법
+ 
+주제 아이디어에 대한 반응을 테스트하는 아주 쉬운 방법을 알고 싶으신가요? 소셜 미디어 포스트로 먼저 던져보세요. 만약 그 포스트가 인기를 끈다면, 관련 블로그 포스트도 좋은 반응을 얻을 수 있다는 신호입니다. 처음에 별 반응이 없더라도 (아직은) 실망하지 마세요. 포기하기 전에 몇 번 더 다른 방식으로 시도해 보세요. 소셜 미디어는 변덕스러우니까요.
+ 
+다음은 의외로 많은 관심을 끌었던 익살스러운 포스트의 예시입니다 (네, 저희는 이것을 블로그 포스트로 만들었습니다):
+ 
+![](images/f6f2582b234b5dcd5c8843165387f0dcc411a3047b15891d6c38d105d31fbcf5.jpg)
+ 
+Piotr Sarna
+ 
+\@sarna_dev
+ 
+..
+ 
+SQLite는 멀티테넌시(multitenancy)를 한 차원 높여줍니다. 10만 개의 데이터베이스를 호스팅하는 \@tursodatabase 의 libsql-server를 테스트하고 루프에서 모두 쿼리해 보았습니다. RAM은 1.6GiB를 사용했습니다.
+ 
+Raspberry Pi 하나로 우리 동네 모든 사람의 데이터베이스를 호스팅할 수 있겠네요 (그러고도 \@The Pi Hole을 위한 메모리가 남을 정도입니다).
+ 
+![](images/0d5dbd66f613c89c431eb943e8a36affb2adaf96721a04938ee63ea32fe5458c.jpg)  
+2023년 12월 15일 오전 6:51 · 조회수 22.15만 회
+ 
+소셜 미디어 포스트가 어떻게 주제에 대한 관심을 테스트할 수 있는지 보여주는 예시
+ 
+![](images/b1269b8b2474e87e155874d1ffddb473c353ae0cad5e35790a15cfc45cee27b0.jpg)
+ 
+![](images/97fa38b3b1b6bc566a6da653f3a66fce7ff861e4cdda025c962d869c5ee4a7f9.jpg)
+ 
+![](images/f0e753fa85d07f474e79ec9c03b018d2bacc96c270287291225877835b1d0a93.jpg)
+ 
+![](images/e79052d9599899ea8b20cc50251289b717b61c63ae9a0af01dc12a1c642da87f.jpg)
+ 
+![](images/4f9fa8e1b6125ec1058e74f05551a9383bb0e6758b47037d8ac97229a1e9e408.jpg)
+ 
+# 2.2 도처에 널린 주제들
+ 
+엔지니어로 일하고 있다면, 여러분의 머릿속에는 이미 엄청난 양의 블로그 포스트 콘텐츠가 들어 있을 것입니다 (아직 그렇게 인식하지 못하고 있을 뿐이죠). 이 섹션을 읽으면서 떠오르는 생각들을 메모하고, 도처에 널려 있는 블로그 포스트 주제들을 발견하기 시작하시길 바랍니다.
+ 
+저희는 여러분이 매일 하는 업무에서 얻을 수 있는 주제 트리거들에 주로 집중합니다. 여러분이 만든 멋진 결과물뿐만 아니라 처참한 실패, 버그 추적, 어려운 설계 결정, 중대한 아키텍처 전환, 그리고 기타 흥미로운 일들까지 포함됩니다. 또한 더 넓은 업계의 논쟁거리나 과제에서 얻는 트리거들도 살펴봅니다. 이러한 주제들은 주로 동료 엔지니어들이 읽게 될 것입니다. 마지막으로, 단순히 “우리가 무언가를 출시했습니다—정말 좋습니다”라는 식의 블로그 포스트를 훨씬 넘어서는, 사용자들을 타겟으로 한 블로그 포스트 아이디어들도 몇 가지 제안하겠습니다. 주제 아이디어의 미리보기는 그림 2.1을 참조하세요.
+ 
+이것은 광범위하지만 결코 모든 것을 포함하는 목록은 아닙니다. 이를 시작점으로 삼아 여러분의 상상력을 마음껏 발휘해 보세요 (3P 중 적어도 하나만 충족한다면 말이죠!).
+ 
+# 2.2.1 여러분이 구현한 멋진 기능
+ 
+상당히 당연한 영감의 원천임에도 불구하고, 종종 무시되곤 합니다. 최근에 무언가 멋진 것을 구현했다면 그것에 대해 쓰세요! '멋진 것'의 정의는 의도적으로 매우 넓게 잡았습니다. 밀레니엄 상 위원회에서 즉시 연락이 올 정도로 엄청난 기술적 돌파구일 수도 있습니다. 또는 커뮤니티나 고객들이 오랫동안 고대해 온 유용한 기능일 수도 있습니다. 혹은 동료들의 삶을 더 편하게 만들어준 도구일 수도 있습니다. 무엇이든 여러분이 구현한 것이라면, 블로그 포스트로 설명하기에 안성맞춤인 가시적인 결과가 있는 셈입니다.
+ 
+예를 들어, 여러분 회사의 가장 인기 있는 제품이 단단함(end-to-end) 암호화 메신저 앱이라고 가정해 봅시다. 암호화 부분은 2019년에 64명의 신입 사원들로 구성된 팀이 고성장 단계에서 만든 것이라, 당시 유일하게 지원되는 알고리즘이 ROT13이었다고 합시다. 어차피 의심스러운 보안성을 아무도 눈치채지 못할 것이라고 다들 생각했겠죠. 구현이 단순하니 바위처럼 견고할 것 아니겠습니까? 몇 년 후 여러분이 팀에 합류하여 핵심 암호화 모듈을 평범한 유치원생도 뚫지 못할 알고리즘으로 다시 구현했습니다. 이 내용은 분명 블로그 포스트로 쓸 가치가 있습니다! 다만, "이전 구현" 섹션에서는 매우 외교적으로 표현하거나 전략적으로 세부 사항을 언급하지 않는 것이 좋겠네요.
+ 
+이 주제 아이디어는 10장에서 다루는 “어떻게 만들었는가(How We Built It)” 패턴으로 이어집니다. 또한 13장에서 다루는 “마케팅 냄새 없는 제품 관점(Non-markety Product Perspectives)” 패턴으로도 이어질 수 있습니다.
+ 
+# 2.2.2 보안 사고 사후 분석 (Post-mortem)
+ 
+사람들은 다른 사람의 문제를 읽는 것을 매우 좋아합니다. 개인 정보 유출이나 데이터 손실로 이어진 보안 사고의 원인이 된 버그를 발견하셨나요? 그런 상황을 분석하는 블로그 포스트는 독자의 뇌간에서 팝콘을 가져와 다른 사람의 심각한 고통을 즐기면서 내 삶은 그렇게 힘들지 않다는 사실에 안도하는 원시적 반사를 즉각적으로 자극합니다. 무자비한 인간 본성은 제쳐두더라도, 보안 사고는 기술적인 관점에서 종종 매우 흥미롭습니다. 자연스럽게 몰입감을 주며 교육적인 가치도 제공합니다. 다른 개발자들은 자신의 코드를 다시 돌아보고, 만약 운이 없었다면 자신의 프로젝트도 같은 운명을 맞이했을지 생각해 보게 될 것입니다.
+ 
+예를 들어, 한 사용자가 정상적으로 로그인했는데 우연히 다른 사용자의 데이터를 보게 되었다고 상상해 보세요. 그리고 이를 발견한 사람이 선량한 시민이라서, 악의적인 용도로 사용하지 않고 바로 security@your-fancy-company-name.ai로 제보했다고 가정해 봅시다. 이 사고는 회사의 평판에 타격을 주겠지만, 세부 사항을 공개하지 않는다면 그 대가는 더 가혹할 것입니다.
+ 
+사용자들은 조만간 알게 될 것입니다. 만약 경영진이 이를 정면으로 돌파하기로 결정했다면, 그들은 더 많은 세부 사항을 밝히는 주목도 높은 아티클을 써줄 누군가를 간절히 찾고 있을 것입니다. 여러분이 흥미로운 기술적 세부 사항에 접근할 수 있다면 그 적임자가 될 수 있습니다:
+ 
+- 사고가 왜 발생했는가?   
+- 어떻게 발견했는가?   
+- 어떻게 수정했는가?   
+- 다시는 발생하지 않도록 어떻게 조치했는가?   
+- 다른 프로젝트에도 영향을 줄 수 있는가?
+ 
+구체적인 내용은 무엇이든 흥미로운 읽을거리가 될 것입니다. 이 주제 아이디어는 11장에서 다루는 “배운 점(Lessons Learned)” 패턴으로 이어집니다.
+ 
+# 2.2.3 인프라가 트래픽 폭주를 견뎌낸 방법 (혹은 견디지 못한 방법)
+ 
+상황에 따라 두 가지 방향 중 하나로 흐를 수 있습니다. 만약 일이 꼬였다면, 꽤나 설득력 있는 “교훈을 얻었습니다” 유형의 블로그 포스트를 써서 다른 사람들이 여러분이 겪은 고통을 피하도록 도울 수 있을 것입니다. 시스템이 왜 다운되었는지, 얼마나 오래 지속되었는지, 무엇을 배웠는지, 어떻게 재발을 방지하고 있는지(희망 사항!), 그리고 피해를 입은 모든 사용자에게 얼마나 미안한지에 대한 설명이 좋은 예가 될 것입니다. 반대로 모든 것이 잘 풀렸다면, 블랙 프라이데이의 트래픽 폭주를 드라마 없이 완벽하게 예측하여 지표상에는 이상 징후조차 없었다는 뻔뻔한 자랑이 될 수도 있습니다.
+ 
+두 가지 모두 각자의 방식으로 훌륭한 글쓰기 소재입니다. 트래픽 폭주는 흔하며, 그와 관련된 인프라 부작용 또한 흔합니다. 나쁜 소식처럼 들리겠지만, 작가의 관점에서는 좋습니다—기술 블로그 포스트를 위한 더 많은 영감이 있다는 뜻이니까요.
+ 
+이 주제 아이디어는 11장에서 다루는 “배운 점(Lessons Learned)” 패턴으로 이어집니다.
+ 
+# 2.2.4 버그 추적기 (Bug hunting)
+ 
+찾기 힘든 버그를 꼬박 5일 동안 찾아다니는 것은 프로그래밍에서 가장 분통 터지는 일입니다. 하지만 근본 원인을 정확히 찾아낸 직후에 찾아오는 잊지 못할 평온함과 더할 나위 없는 행복감을 느끼기 위한 필수 조건이기도 하죠. 게다가 버그 추적 모험은 블로그 포스트, 혹은 전체 시리즈를 위한 완벽한 줄거리가 됩니다.
+ 
+이러한 아티클은 컴퓨터 과학계의 추리 소설과 같습니다. 어떤 이들은 스릴을 위해 읽고, 어떤 이들은 교육적인 측면을 위해 읽습니다. 어쨌든 한 가지는 확실합니다:
+ 
+이런 종류의 이야기는 종종 뉴스 수집 서비스의 메인 페이지를 장식합니다.
+ 
+이 트리거는 보안 사고 사후 분석과 관련이 있지만 훨씬 더 광범위합니다.
+ 
+해당 버그는 특정 CPU 아키텍처에서만 발생하는 갑작스러운 성능 저하일 수도 있고, 원인을 파헤치려 하면 사라지는 신비로운 버그(일명 하이젠버그, heisenbug)일 수도 있으며, 심지어 테스트에서의 아주 그럴듯한 거짓 음성(false negative)일 수도 있습니다. 이 주제 아이디어는 8장에서 다루는 “버그 추적(Bug Hunt)” 패턴으로 이어집니다.
+ 
+# 2.2.5 오픈 소스 기여
+ 
+프로그래머들은 종종 자신의 오픈 소스 기여를 매우 자랑스럽게 생각합니다—그리고 그럴 만하죠! 그것은 여러분이 수많은 비밀 유지 협약에 묶이지 않은 무언가를 구현할 수 있다는 것을 세상에 보여줍니다. 또한 다른 개발자들이 사용하고 고마워하는 소프트웨어에 대한 공개적인 기여이기도 합니다.
+ 
+오픈 소스의 묘미는 코드가 공개되어 있다는 것입니다. 따라서 블로그 포스트에서 자세히 설명하고, 스니펫을 제공하고, 심지어 개인 프로젝트에서 어떻게 사용하는지 설명해도 괜찮습니다. 이러한 블로그 포스트를 쓰는 것은 해당 프로젝트 커뮤니티의 열렬한 독자들을 확보할 수 있을 뿐만 아니라, 프로젝트에 더 많은 관심을 끌어오기도 합니다. 그야말로 윈-윈이죠!
+ 
+심지어 버그 수정처럼 간단한 일에 대해서도 쓸 수 있습니다. 다음에 오픈 소스 프로젝트에서 예상치 못한 버그를 발견하고 (온라인에서 불평만 하는 대신) 직접 팔을 걷어붙여 수정을 제안하기로 했다면, 어떻게 그리고 왜 수정했는지 공유해 주세요. 여러분은 훌륭한 시민이며, 모든 오픈 소스 프로젝트의 모든 메인테이너는 여러분이 “권리 의식에 찌들어 공짜로 일해주길 바라는” 태도 대신 “직접 고쳤습니다!”라는 길을 선택해 준 것에 감사할 것입니다. (믿기 힘들겠지만, 전자와 같은 태도는 때로 메인테이너들을 좌절하게 합니다.)
+ 
+이 주제 아이디어는 10장에서 다루는 “어떻게 만들었는가(How We Built It)” 패턴으로 이어집니다.
+ 
+# 2.2.6 흥미로운 주말 프로젝트
+ 
+여가 시간에 만든 멋진 도구 나 가젯은 완벽한 블로그 포스트 소재입니다. 주말 프로젝트는 개발자들이 재미로 하는 일이기 때문에, 그 소식을 듣는 것만으로도 독자들에게 긍정적인 반응을 이끌어냅니다. 아마 많은 독자들에게 자신도 한동안 흥미로운 사이드 프로젝트를 하지 않았다는 사실을 떠올리게 할 것입니다. 그들은 여러분의 글을 영감의 원천으로 여기고 고마워할 것입니다.
+ 
+목표를 어떻게 달성했는지 설명하는 과정은 프로젝트를 구현하는 것만큼이나 즐거울 수 있습니다. 솔직히 말해서, 우리 모두는 나중에 자랑하고 싶어서 사이드 프로젝트를 시작하기도 하잖아요? 블로그 포스트는 그런 자랑을 하기에 완벽한 창구입니다.
+ 
+여기에 실용적이고 직업적인 반전도 있습니다. 혹시 질 낮은 오래된 엔터프라이즈 Java 코드를 이리저리 옮기며 “테스트 통과” 비율만 높이느라 뇌가 굳어가고 있다고 걱정되시나요? 시냅스가 여전히 잘 작동하는지 확인하기 위해 Raspberry Pi를 본격적인 DIY 홈 보안 시스템으로 변신시키며 주말을 보내셨나요? 마이크로컨트롤러 업계의 누군가가 여러분의 블로그 포스트를 읽고 여러분의 진정한 열정에 훨씬 더 잘 맞는 멋진 직무를 제안할지도 모릅니다.
+ 
+이 주제 아이디어는 10장에서 다루는 “어떻게 만들었는가(How We Built It)” 패턴으로 이어집니다.
+
+# 2.2.7 An interesting design decision and tradeoff you made
+
+Some design decisions are straightforward. If updating your dependencies makes your project both safer and faster, it’s a no-brainer. Those kinds of moves can sometimes
+
+justify a blog post, but more often, they are only briefly mentioned as part of a larger restructuring. Building your whole article around the idea that “we updated the Java version from one that reached end-of-life five years ago to a slightly fresher one that’s still supported” is more likely to trigger a duh reaction in your readers—but you’re looking for a wow, or at least a huh reaction. Fortunately, many design decisions require genuine tradeoffs, and those are way more interesting for both the writer and the reader.
+
+For example, latency-minded engineers want to see every last bit of performance squeezed out of a project, even at the expense of developer experience. But many others aren’t willing to make that sacrifice; they’d be fully willing to take a hit on performance if it means the product will be super easy for them to use. Sometimes, the tradeoff might seem formidable but be perfectly justified in specific cases. That’s great—nonobvious decisions lead to more interesting articles.
+
+More specifically, put yourself in the shoes of someone designing a database. On the one hand, you could let users store unstructured data (looking at you, document stores). That decision would make for a great developer experience, enabling developers to get up to speed fast and change the shape of their data often. Or, you could take a totally different approach and implement strict rules governing how the data is structured. With efficient indexes created in all the right places, the database can perform tenfold faster than the unstructured one previously described. But the tradeoff is the pain inflicted on users: now they’re stuck worrying about whether their database schemas are in the right shape.
+
+# 2.2.7 흥미로운 설계 결정과 트레이드오프
+ 
+모든 접근 방식에는 장단점이 있습니다. 왜 다른 옵션 대신 이 옵션을 선택했나요? 사용자가 얻는 것은 무엇이고 잃는 것은 무엇이며, 잃은 것을 어떻게 보완할 수 있을까요? 이 모든 것들은 흥미로운 블로그 포스트를 위한 훌륭한 소재이며, 어쩌면 두 개의 포스트로 나눌 수도 있습니다. 동료 엔지니어들을 위한 기술적인 포스트 하나와 사용자를 위한 더 실용적인 포스트 하나로 말이죠.
+ 
+이 주제 아이디어는 몇 가지 다른 패턴으로 이어질 수 있습니다: “어떻게 만들었는가(How We Built It)” 패턴(10장), “X로 다시 짰습니다(We Rewrote It in X)” 패턴(9장), 그리고/또는 “마케팅 냄새 없는 제품 관점(Non-markety Product Perspectives)” 패턴(13장)입니다.
+ 
+# 2.2.8 아키텍처 전환 과정
+ 
+거대 클라우드 제공업체에서 자체 서버(on-premises)로 옮기고 계신가요? 아니면 몰려드는 신규 사용자들을 감당하기 위해 새로운 서버리스 데이터베이스로 마이그레이션 중인가요? 여러분의 경험을 공유해 보세요. 전 세계의 동료들 또한 이에 대해 고민하고 있을 가능성이 큽니다.
+ 
+대규모 아키텍처 결정을 내리지 못하게 하는 가장 큰 방해 요인은 그것이 '대규모'이고 '아키텍처'와 관련되어 있다는 점입니다. 즉, 모든 것이 잘못될 수 있다는 뜻이죠. 그리고 그 책임이 누구에게 돌아갈지 우리 모두는 알고 있습니다. 힌트: 인프라 비용 절감으로 CEO에게 칭송받을 상상을 하며 여러분의 결정을 열렬히 승인했던 다섯 명의 매니저 중 누구도 아닙니다.
+ 
+이러한 결정에 직면한 엔지니어들은 위험 대비 이익 비율을 가늠하기 위해 인터넷에서 비슷한 사례를 필사적으로 검색합니다. 이 트리거는 “인프라가 트래픽 폭주를 견뎌낸 방법 (혹은 견디지 못한 방법)”의 자연스러운 후속 조치이기도 합니다. 만약 견디지 못했다면 전환이 필요할 것이고, 여러분의 첫 번째 모험을 흥미롭게 읽은 사람들은 그것이 여러분의 아키텍처와 인프라에 어떤 영향을 주었는지 매우 궁금해할 것입니다.
+ 
+이 주제 아이디어는 9장에서 다루는 “X로 다시 짰습니다(We Rewrote It in X)” 블로그 패턴의 변형으로 이어집니다. 또한 11장의 “배운 점(Lessons Learned)” 패턴이나 13장의 “마케팅 냄새 없는 제품 관점(Non-markety Product Perspectives)” 패턴으로도 이어질 수 있습니다.
+ 
+# 2.2.9 좌절과 피로
+ 
+새로운 프로그래밍 언어가 등장합니다. 커뮤니티가 성장하고, 인체공학적(ergonomic)이며, 프로그래머의 삶을 더 낫게 만드는 신선한 아이디어를 제시합니다. 몇몇 스타트업은 이를 차세대 표준으로 믿고 배팅하기로 결정하고, 여러분은 그중 한 곳에 합류합니다. 하지만 곧 꿈같은 시기가 지나고 나면, 여러분은 단지 시간을 되돌려 영원히 C언어에 머물고 싶다는 것을 깨닫게 됩니다. 그냥 원시 포인터(raw pointers)를 쓰고 모든 것을 값으로 전달하고 싶어지죠. 세그멘테이션 오류(segmentation faults)를 찾아 헤매던 시절이 진심으로 그리워집니다—그렇게 나쁘진 않았잖아요, 그렇죠?
+ 
+이것은 흔한 스토리라인이며, R과 Python부터 Rust와 Zig에 이르기까지 인기 있는 모든 언어에 적용됩니다. 하지만 그렇다고 해서 읽을 가치가 없는 것은 아닙니다! 사실, 이 이야기에 대한 여러분만의 시각은 훨씬 더 매력적일 수 있습니다. 여러분이 좌절감을 느낀다면, 독자들도 공감할 가능성이 큽니다. 거기서부터 두 가지 일이 일어날 수 있습니다:
+ 
+- 독자들은 위안을 얻을 것입니다—고통은 나누면 반이 되니까요.   
+- 누군가는 여러분이 모르고 있던 방식으로 이미 그 문제가 해결되었다는 점을 짚어줄 것입니다. 보너스: 이는 나중에 여러분이 틀렸음을 인정하고, 그 눈부신 신기술이 정말 대단하다는 후속 블로그 포스트를 쓸 수 있는 아주 좋은 기회가 됩니다.
+ 
+어떤 기술을 가차 없이 비판하는 실망한 개발자의 블로그 포스트는 종종 토론을 자극하고, 때로는 그 기술의 열성적인 신봉자들과 성난 반대자들 사이의 키보드 워(flame wars)를 유발하기도 합니다.
+ 
+세상에 똑같은 주제에 대한 또 다른 논평이 필요하다는 사실이 믿기지 않으시나요? 그렇다면 “async Rust sucks(비동기 Rust는 형편없다)”를 검색해 보세요. 다음과 같은 온갖 종류의 아티클을 발견하게 될 것입니다:
+ 
+- “나만 그런가요, 아니면 Rust 비동기는 정말 어려운 건가요?”   
+- “비동기 Rust는 나쁜 언어입니다”   
+- “비동기 Rust가 작동하지 않는 이유”   
+- “비동기 Rust를 쓰기 전에 두 번 생각하세요”
+ 
+이 아티클 중 어느 것도 특별히 독보적으로 보이지는 않습니다. 하지만 새로운 글이 올라올 때마다 각종 뉴스 수집 사이트와 포럼에서 새로운 관심을 끌어모읍니다. 논쟁적인 주제에 대해 여러분의 좌절과 피로를 흥미로운 새로운 관점으로 녹여낼 수 있다면 주저하지 마세요. 감정이 격해진 순간에 바로 초안을 써 내려갈 수 있다면 금상첨화입니다!
+ 
+이 주제 아이디어는 11장에서 다루는 “배운 점(Lessons Learned)” 패턴이나 12장의 “트렌드에 대한 생각(Thoughts on Trends)” 패턴으로 이어질 수 있습니다. 또한 9장에서 다룬 “X로 다시 짰습니다(We Rewrote It in X)” 패턴의 후속 포스트가 될 수도 있습니다.
+ 
+# 2.2.10 논쟁적인 주제에 대해 소신 밝히기
+ 
+이 트리거는 여러분의 입장이 주류 의견과 일치하지 않을 때 특히 효과적입니다. 최근 가장 인기 있는 15개의 아티클이 비동기 Rust 프로그래밍의 온갖 종류의 문제점을 꼼꼼하게 묘사했다면, 똑같은 이야기를 반복하는 또 다른 글이 돋보일 가능성은 희박합니다. 하지만 “비동기 Rust는 사실 형편없지 않습니다”라는 제목은 시선을 끌며, 커뮤니티에 대해서도 매우 정중한 표현입니다.
+ 
+기술적인 문제는 흑백으로 나뉘는 경우가 드물며, 모두가 기술을 다르게 사용하고 경험합니다. 만약 여러분이 대중적인 의견에 동의하지 않고 그럴만한 타당한 이유가 있다고 느낀다면, 블로그 포스트에 써보세요! 여기서 “타당한 이유”란 무엇일까요? 예를 들어, 인터넷의 모든 사람이 특정 프레임워크를 싫어하는 것 같지만, 여러분은 실제로 그것을 사용해 본 구체적인 경험이 있고 (게다가 즐겁게 작업했다면) 충분한 이유가 됩니다. 예의를 갖추기 위해, 다른 사람의 견해나 고통을 깎아내리기보다는 여러분 자신의 경험을 자세히 설명하는 데 집중하세요. 논쟁적인 주제에 대해 글을 쓰는 것은 여러분과 비슷한 생각을 가진 다른 지지자들을 알게 되는 좋은 기회이기도 합니다—그들이 여러분의 글을 읽고 연락을 줄지 모르니까요.
+ 
+이 주제 아이디어는 12장에서 다루는 “트렌드에 대한 생각(Thoughts on Trends)” 패턴으로 이어집니다. 또한 11장의 “배운 점(Lessons Learned)” 패턴으로도 활용될 수 있습니다.
+ 
+# 2.2.11 달콤한 숫자들 (벤치마크)
+ 
+최근에 기여한 코드가 사용자 요청 속도를 10배 높였고, 이를 검증할 수 있는 반복 가능한 벤치마크 결과가 있다면 반드시 공유하세요! 사실상 모든 수치화된 개선 사항은 눈길을 사로잡는 블로그 포스트가 될 수 있습니다. 속도 지표 외에도 다음과 같은 주제에 대해 쓸 수 있습니다:
+ 
+- 이미지 크기 최적화를 통해 단일 컴퓨터에 수천 개의 가상화 환경을 더 구겨 넣기   
+- 회사 클라우드 비용을 획기적으로 절감하기   
+- 웹 페이지를 새로 고칠 때마다 로드되는 데이터 양을 메가바이트에서 바이트 단위로 줄이기
+ 
+기술 독자들은 숫자를 매우 좋아합니다. 하지만 이 독자들은 동시에 벤치마크 결과의 꼬투리를 잡아 그것이 사전에 의도되었거나, 가짜이거나, 주관적이거나, 혹은 “당신의 노트북에서나 돌아가는 것이니 의미 없다”라고 증명하려 드는 것도 좋아합니다. 숫자가 어디서 나왔든, 그것이 인상적이라면 (그리고 알록달록한 그래프로 더 인상적으로 보인다면) 충분히 블로그 포스트로 쓸 가치가 있습니다.
+ 
+이 주제 아이디어는 14장에서 다루는 “벤치마크 및 테스트 결과(Benchmarks and Test Results)” 패턴으로 이어집니다.
+ 
+# 2.2.12 무언가를 예상치 못한 방식으로 사용하는 방법 제안
+ 
+벌써 흥미롭지 않나요? 이건 단지 막연한 블로그 포스트 영감일 뿐인데도 말이죠. 핵심은 “예상치 못한”이라는 부분이며, 이는 즉시 블로그 포스트로의 관심을 끌어모읍니다. 많은 독자는 여러분의 콘텐츠가 교육적이고 가치 있으므로 읽을 가치가 있다고 생각할 것입니다. 어떤 이들은 단지 그것이 사실은 '예상치 못한 것'이 아니었음을 증명하기 위해 여러분의 블로그를 방문할 것입니다. 그들은 이미 15년 전에 그 생각을 했고, 그때 이미 나쁜 아이디어로 분류해 대문짝만하게 써두었으니까요. 이제 여러분의 블로그 포스트는 그들이 기다려온 기회를 제공합니다: 자신들의 통찰력을 세상과 공유할 수 있는 완벽한 댓글창 말이죠!
+ 
+무엇이 예상치 못한 사용법이 될 수 있을까요?
+ 
+- 숨겨진 메시지를 전달하기 위해 이미지 안에 데이터를 인코딩하기. 이를 스테가노그래피(steganography)라고 부르는데, 똑똑해 보이는 단어와 예상치 못한 사용법의 조합은 거부할 수 없는 블로그 포스트 아이디어가 됩니다. 주의해서 사용하세요!   
+- 1990년대 비디오 게임을 WebAssembly로 컴파일하여 브라우저에서 플레이할 수 있게 만들기. 향수를 불러일으킨다면 추가 점수가 붙습니다.   
+- Raspberry Pi를 수제 커튼 개폐기로 변신시켜 햇빛과 1달러짜리 DC 모터의 기분 좋은 소음과 함께 잠에서 깨어나기. (저렴한 DC 모터 소리가 감미롭지 않다면 기술 업계 이외의 커리어를 고려해 보세요.)
+ 
+이 주제 아이디어는 10장에서 다루는 “어떻게 만들었는가(How We Built It)” 패턴으로 이어집니다.
+ 
+# 2.2.13 과거의 예측 되돌아보기
+ 
+매년 반복되는 기술 예측 프로젝트가 진부해 보일 수도 있지만, 미래에 대한 과거의 예측을 되돌아보는 것은 회고와 활발한 토론을 불러일으킵니다. 여러분의 예측이 터무니없이 틀렸어도 괜찮습니다. 사실, 예측이 빗나갔을수록 더 좋은 블로그 포스트가 된다는 것이 일반적인 상식입니다!
+ 
+저자가 10년 전에 옳았다는 사실에 집중하는 아티클은 대개 자랑만 늘어놓는 지루한 글이 되기 십상입니다. 사람들은 그것이 순전히 우연이었을 것이라고 지적하지 않을 수 없을 것입니다 (그사이에 여러분은 아마 수백 가지 다른 일들을 틀렸을 테니까요). 하지만 예측이 당황스러울 정도로 틀렸다면, “나 정말 어리고 순진했네”라는 분위기와 함께 글이 훨씬 재미있어질 가능성이 큽니다.
+ 
+이 트리거는 과거에 아티클이나 소셜 미디어 포스트에 올린 예측을 참조할 수 있을 때 가장 잘 작동합니다. 과거에 연재물로 예측을 했다면, 이제 전체 분석 포스트 시리즈를 위한 소재가 생긴 셈입니다. 매년 연례 예측을 계속 발행하세요. 그러면 5주년, 10주년, 20주년 같은 특별한 시점의 특집 포스트를 포함해 이 주기를 영원히 지속할 수 있습니다.
+ 
+과거에 직접 예측한 적이 없으신가요? 우연히 발견한, 누군가의 놀랍도록 선견지명 있는—혹은 터무니없는—예측에 대해 여러분의 소신껏 의견을 남겨보세요. 만약 여러분이 기술 업계의 '인플루언서'급 인물이 내놓은 과거 예측에 대해 논평하는 중이라면, 주목도 높고 (어쩌면 적대적일 수도 있는) 독자들을 맞이할 준비를 하세요.
+ 
+이 주제 아이디어는 12장에서 다루는 “트렌드에 대한 생각(Thoughts on Trends)” 패턴으로 이어질 가능성이 큽니다.
+ 
+# 2.2.14 기능에 대한 명확한 설명 (Clarification)
+ 
+여러분은 수일 혹은 수년의 시간을 들여 (앞서 언급한 밀레니엄 상을 안겨준 것 같은) 획기적인 제품 기능을 정성스럽게 구현했습니다. 그런데 그 기능에 대해 잘못된 설명이 떠돌아다니는 것을 우연히 보게 됩니다. 사용자일 수도 있고, 회사 내부의 지원팀이나 영업팀일 수도 있습니다. 어쩌면 빨리 작업을 마무리하고 싶은 마음에 여러분 자신이 서둘러 작성한 문서가 원인일 수도 있습니다.
+ 
+먼저 심호흡하세요. 그리고 이를 그 기능이 제대로 설명될 수 있도록 조금 더 시간을 투자해야 한다는 신호로 받아들이세요. 특정 분야의 특정 기능을 개발하는 데 너무 많은 시간을 쏟다 보면 편향될 수 있다는 점을 기억하세요.
+ 
+교차 엔트로피(cross-entropy)나 ReLU가 무엇인지, 왜 그것이 여러분의 멋진 새로운 인공지능 모델에 중요한 부분인지가 여러분에게는 당연해 보일 수도 있습니다. 하지만 평범한 독자는 여러분이 하는 말의 단어 하나하나를 먼저 찾아봐야 할 수도 있습니다. 그러니 나중에 그들이 오해하고 잘못 사용하는 것도 당연한 일이죠!
+ 
+여러분의 사용자는 동료 엔지니어들이 관심을 가지는 것과는 다른 것에 관심을 둔다는 점을 주의하세요. 똑같은 기능이라도 서로 다른 두 독자층을 위해 두 개의 블로그 포스트를 쓰는 것은 전적으로 유효한 방식입니다: 하나는 동료들에게 여러분의 공학적 통찰력을 뽐내는 글이고, 다른 하나는 사용자들에게 이 기능이 자신들에게 어떤 이득을 주는지 이해하도록 돕는 글입니다. 또한 무언가를 소개하거나 다르게 설명하는 데 너무 늦은 때란 없다는 점을 잊지 마세요. 대부분의 독자는 여러분이 그 기능을 예전에 구현했는지 여부는 신경 쓰지 않습니다. 그들은 주로 자신의 구체적인 기술적 요구 사항과 과제를 고려할 때, 이것이 자신의 삶을 더 편하게 만들어줄지에 궁금해합니다. 만약 여전히 '새로움'이 필수적이라고 생각하신다면, 적어도 매주 한 번은 Hacker News 트렌드에 오르는 수십 년 된 아티클들을 살펴보세요.
+ 
+많은 엔지니어는 특히 조직 내에 릴리스 소개와 기능 홍보를 전담하는 제품 팀이 있는 경우, 사용자를 타겟으로 한 블로그 포스트 쓰기를 망설입니다. 하지만 안팎으로 이 기능을 속속들이 알고 있는 엔지니어인 여러분이야말로 사용자가 진정으로 원하는 깊이 있고 꾸밈없는 정보의 핵심을 쥐고 있습니다. 특히 개발자 커뮤니티를 위한 제품을 만들고 있다면 더욱 그렇습니다. 흔히 엔지니어는 마케팅에 젬병이라고들 하죠 (오죽하면 엔지니어에게 맡기면 스시를 "차갑게 죽은 생선"이라고 부를 것이라는 우스갯소리가 있겠습니까?). 하지만 바로 그런 이유 때문에 회의적인 사용자들은 제품 기능에 대한 여러분의 기술적 해석을 읽고 싶어 할 것입니다!
+ 
+이 주제 아이디어는 13장에서 다루는 “마케팅 냄새 없는 제품 관점(Non-markety Product Perspectives)” 패턴으로 이어집니다.
+
+# 2.2.15 Capability comparison
+
+You probably won’t just wake up one day wanting to write “How the XYZ I worked on compares to some other product’s ZYX.” But you’ll likely be forced into it sooner or later. Why? Users like to compare features as they comparison shop. To better understand the differences, they might seek information from the following:
+
+¡ Online forums, where anyone seeking attention might share their infinite wisdom on how what you implemented compares to what someone else implemented.   
+¡ Your sales team, who then taps your product marketing team for their best guess at why yours is the best ever, for anyone and everyone.   
+¡ The other company’s sales team, which leads to the same thing with a different bias.   
+¡ Generative AI, which will spew a few banal paragraphs about each, then politely state, “It’s important to note that the choice between XYZ and ZYX depends on your specific use cases and requirements.”
+
+As you can imagine, none of these end well. Once this causes your organization enough pain, it will become your own personal pain. You’ll get some urgent request for a blog post or presentation, likely as you’re struggling to complete your latest project, take
+
+time off, or at some other inconvenient time. Why not get ahead of it? Just crank out one of these blog posts each time you implement a capability that might be perceived as similar to something else.
+
+Even if you’re not the expert on how every product addresses this somewhat similar thing, you are the world’s top expert on how you did it. That puts you far ahead of all the previously referenced people who have no clue what any of the developers did (but are confidently explaining it anyway). A blog post based on this trigger could start with a quick overview of what you and your teammates already know about the other imple-mentations (or learn after some swift research). Then, it might go deep into why you took your chosen path, why it matters, and what types of technical requirements your approach is best suited for.
+
+This topic idea feeds the “Non-markety Product Perspectives” pattern, which is the subject of chapter 13. It could also feed the “Benchmarks and Test Results” pattern, which is covered in chapter 14.
+
+# 2.2.16 Footgun prevention
+
+You don’t love getting interrupted to field yet another incident of users shooting themselves in the foot with some capability you worked on? Perhaps they keep asking for the whole database contents in one piece, even though it’s clearly documented as an antipattern. Or maybe users sometimes experience mysterious database concurrency spikes even though the client side has nicely fixed concurrency. After yet another latenight diagnosis, you discover that, yet again, it’s because someone “optimized” the default driver configuration that you carefully crafted when you designed the driver— to the point where it ends up resending requests before the original ones were confirmed to have failed.
+
+Next time, jot it down as a blog post idea. Then write it up, once and for all, so you never have to deal with it again. Maybe you can start off with a brief overview of why you implemented that capability in the first place and some of the key assumptions and decisions made as you built it. Then, you can take a detailed look at some of the misuses, abuses, and mistakes that are making your life miserable. Finally, tell them what you’ll be doing with all the time you’ve now saved yourself (or maybe just gloat silently).
+
+This topic idea feeds the “Non-markety Product Perspectives” pattern, which is the subject of chapter 13.
+
+# 2.2.17 Why you’re building something
+
+The nature and scope of this trigger varies as wildly as the things you might be building. If you’re a junior engineer working on a stable product, it might involve something as granular as detailing why you’re extending the query language with a new filtering option. If you’ve been voluntold to lead a next-generation-of-some-core-component project, write to share the rationale with the users who will ultimately be affected. Bonus: you might also catch the interest of some enthusiastic community contributors who offer their feedback and assistance. Or, if you’re a founder or founding engineer, you could line up a series of blog posts that explain the very reason for your company’s
+
+existence, placing it on the radar of potential users, employees, investors, media, and influencers well before you have a product to show.
+
+In any case, the same core questions should get the blog post ideas flowing:
+
+¡ What’s wrong with the status quo?   
+¡ What elements are working well and should be preserved?   
+¡ What other attempts have been made to address this problem?   
+Did something change recently to make the previous approach less viable?   
+¡ What would the ideal approach look like, and what would it enable people to do?   
+What are your technical goals and guiding principles?   
+How will you implement it?   
+¡ Who should be most interested in it?   
+¡ How might users apply it?   
+¡ How will you measure its improvement over the alternative thing?
+
+Answers to just one of these questions might be fodder for multiple blog posts!
+
+This topic idea feeds the “Non-markety Product Perspectives” pattern, which is the subject of chapter 13.
+
+# 2.3 Increasing your trigger exposure
+
+People go to great lengths to avoid asthma and allergy triggers. But blog post triggers are things to be embraced, not evaded.
+
+It’s important to keep tabs on what’s new and what people are already talking about in your specific area of interest. This is how you can spot emerging trends and be among the first to start thinking and writing about them. And by keeping your finger on the pulse of a discussion, you can make sure that your take on it actually advances the conversation in some interesting way. Addressing the existing dialogue head-on will win you more friends and upvotes than unintentionally repeating it out of ignorance.
+
+This section provides tips for exposing your brain to a steady stream of blog post topic triggers. Before we get into specific ways to unearth diamonds in the rough across social media, RSS feeds, and the like, here are two overarching recommendations:
+
+¡ Make sure you have a centralized place to save your ideas! This can be a simple text file or an app designed to save articles and/or social posts across platforms. Scribble them in a physical notepad if you wish! It doesn’t matter how you do it; just find some system that works for you.   
+¡ Set up reminders to browse these areas at some interval that makes sense for you. Also, timebox this browsing so you avoid getting sucked too deep down the rabbit hole.
+
+# 2.3.1 Social media
+
+We know, this realm is riddled with problems. But you need to hold your nose and find some tolerable path forward if you want to stay on top of what people are talking about
+
+and connect with potential readers. We discuss the connecting angle in chapter 15. Here, let’s look specifically at monitoring social media discussions.
+
+The following sections offer a few ideas for making social media more productive (from a blog post topic trigger perspective, at least).
+
+# TAKe CONTROl
+
+Figure out how to get ahead of the recommendation algorithms. Does your platform of choice allow you to build and monitor lists of accounts you trust? Can you craft some nice searches (maybe using quotation marks to target precise terms) and bookmark the resulting URLs? Can you use or create tools that yield better results by going through the platform’s API? Whatever it takes! You’re an engineer; you can certainly figure out clever ways to gain more control over what you see.
+
+# CURATE A CIRCLE OF TRUST
+
+Start following a carefully selected group of accounts (perhaps as a list; see the previous section), then expand cautiously from there. It’s better to create a list of two people who post a few interesting things per month than get a constant barrage of posts you don’t care about. If someone in that initial “circle of trust” reposts something interesting, peruse that other account and add it if it looks promising. Don’t hesitate to cut your ties if an account you’re following does not understand the concept of TMI (oversharing too much personal information). Carefully monitor what you’re fed, especially at first, then prune and shape as needed. Aim for a bonsai tree, not a wilderness.
+
+# Venture out into the wild (occasionally)
+
+If you’re ever feeling particularly brave or just have a little time to kill before (during?) a meeting, take a look at what the algorithms recommend for you. Maybe you’ll discover something unexpectedly interesting. If nothing else, you can validate your decision to generally avoid algorithm-driven “for you” feeds.
+
+# 2.3.2 Virtual communities
+
+Your best bet here is to find specialized, well-moderated communities that are valuable (or the closest approximation you can find, at least). For help hunting them down, ask around (maybe in that circle of trust you've set up on some social media platform). Or use the broader platform search to see what groups are talking about your topics of interest, and look at the discussion quality, frequency, and civility before you consider tracking it.
+
+Again, it's best to start small and expand cautiously. If you stumble upon a particularly insightful user in one group, do a little detective work and track down other communities they're active in. Maybe some of those are worth your (timeboxed) time as well.
+
+What about the orange elephant in the room (Hacker News)? For better or for worse, this is a highly unfocused discussion where anything could rise to the front page, and a top-notch engineering blog post might be sandwiched between an obituary and a rant about some weird element of popular culture (see figure 2.2). But there's one saving grace here: robust search functionality. Be sure to learn the advanced search syntax and do a little searching across the internet for undocumented Hacker News features.
+
+```txt
+10. Scheduling Internals (tontinton.com) 99 points by signa11 10 hours ago | hide | 9 comments   
+11. Scientists find genetic signature of Down syndrome in ancient bones (nytimes.com) 111 points by bookofjoe 14 hours ago | hide | 59 comments   
+12. Talc - A fast and flexible allocator for no_std and WebAssembly (github.com/sfbdragon) 83 points by excsn 10 hours ago | hide | 20 comments   
+13. Children need risk, fear, and excitement in play (afterbabel.com) 206 points by paulpauper 14 hours ago | hide | 158 comments   
+14. I keep making things out of checkboxes (2021) (bryanbraun.com) 88 points by surprisetalk 7 hours ago | hide | 17 comments   
+15. Ask HN: Why is HN so often down? 107 points by neverroot 1 hour ago | hide | 72 comments   
+16. A Social History of Jell-O Salad (2023) (seriousseats.com) 8 points by EndxA 5 hours ago | hide | 4 comments   
+17. The floppy disk music scene (theverge.com) 67 points by marban 11 hours ago | hide | 25 comments   
+18. The Claro Programming Language (clarolang.com) 90 points by signa11 11 hours ago | hide | 32 comments   
+19. Common Mistakes in Modularisation (two-wrongs.com) 13 points by thunderbong 5 hours ago | hide | discuss   
+20. CT scans show how Heinz's new ketchup cap depends on shear-thinning principles (lumafield.com) 105 points by viasfo 5 hours ago | hide | 127 comments 
+```
+
+Figure 2.2 An example of the range of topics that might be covered on the front page of Hacker News
+
+# 2.3.3 Feeds and subscriptions
+
+Once you identify reliably solid idea sources through the previously mentioned means, go ahead and follow them directly. Using your aggregation tool of choice, slurp in the source’s updates (by means of RSS feeds, ActivityPub, or the AT protocol) and voilà— you get some centralized page or inbox chock full of articles to scan, and maybe even read. Depending on the tool, you might also gain ways to fine-tune your feed, track read versus unread items, take notes, and so on.
+
+And then there’s newsletter subscriptions. The very thought of an engineer willfully opting into an email newsletter would have seemed outrageous a few years ago. However, you can now find quite a few high-quality newsletters on dev and tech topics. Some of them are even so valuable that people are willing to pay for them (e.g., The Pragmatic Engineer and Software Design: Tidy First?). How do you find these newsletters? Ask your peers and keep your eyes and ears open in the previously mentioned areas.
+
+# 2.3.4 Team chat apps
+
+If you don’t already have one, create a channel in your team messaging app for sharing interesting (not necessarily “good”) articles and social posts. The internal comment threads will likely be much spicier than whatever was originally shared. Beyond being a good source of blog post ideas, these discussions are also helpful for reading the room. If you decide to write a heated retort to some “future of whatever” blog post that everyone else on your team thinks is the smartest thing ever, it’s probably wise to know what you’re getting into before you decide to click Publish.
+
+To put this into action, just create a #blog channel and invite everyone to join. That creates mild social pressure on your colleagues to participate. Some people will start
+
+slow and only engage in discussions of whether a suggested blog post is a good idea. Others will take the bait and suggest their own ideas right away.
+
+Messages with the potential to become full-blown articles might look like
+
+¡ “Hey, somebody posted that he’s frustrated because there’s no decent open source tool for stress-testing GraphQL databases, and we developed one last week.”   
+¡ “I reverse-engineered my infrared sauna last week—I can post some tech details if anyone’s interested.”   
+¡ “I described our distributed architecture at a local meetup last week, and like 200 people asked me for a write-up.”
+
+An increasing number of companies are (still) hiring remote engineers, and chat apps have become the natural successor to coffee breaks in the kitchen. They are also the perfect refuge for programmers who have an otherwise unproductive day (happens to all of us, don’t worry). A quick round of email $^ +$ chat app $^ +$ GitHub issue tracker checks makes you feel as if you did something important for the company. While lurking for new dad jokes in the #random channel isn’t very productive, brainstorming ideas in #blog is!
+
+Additionally, chat apps often allow addressing everyone with an equivalent of Slack’s \@here, which helps get more attention for the most recent blog post ideas. A chatbot that pings a random user every other week and gently urges them to share a blog post idea is also a good stimulus for keeping the channel alive (and lively).
+
+# Summary
+
+¡ Selecting a promising topic is the single most important task for creating an engineering blog post that gets read.   
+¡ The best topic ideas are those that 1) are rooted in your own experiences and 2) you are proud of, pained by, or passionate about.   
+¡ You probably already have a ton of blog post content in your head, even if you don’t recognize it as such yet.   
+¡ Beyond that cool thing you implemented, blog post idea inspiration can come from epic failures, bug hunts, fun weekend projects, difficult design decisions, footgun prevention, and much more.   
+¡ A carefully controlled approach to tracking social media, virtual communities, and feeds can yield a steady stream of blog post idea triggers.
+
+

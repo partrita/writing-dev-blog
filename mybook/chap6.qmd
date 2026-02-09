@@ -1,0 +1,267 @@
+# This chapter covers
+
+¡ Comparing the code review and article review processes   
+¡ Determining who should review your work and when to start the process   
+¡ Preparing your reviewers   
+¡ Responding to comments
+
+Let’s be honest: when you ask your peers to review something, your code or your writing, the only response you really want is “Wow, this is absolutely perfect—ship it!” Critical feedback inevitably stings, at least at first. But if you’re not sold on its value, think back to just a few of the many times a peer code review comment saved you from a much worse fate than that initial humbling. It’s no different with writing. Just do it. Your bruised ego will recover, your blog post will be better, and you’ll likely learn a few things in the process.
+
+This chapter provides tips on how to make the article review process more valuable for you, as well as more straightforward for your reviewers. We’ll explore how
+
+article review compares to code review and then get into the logistics of applying the “four eyes” principle to your blog posts. Who should be reviewing your blog post, when, and how? How can you set the stage for more valuable feedback? And how do you handle tricky situations such as when you disagree with a reviewer’s suggestions?
+
+NOTE If you’re writing for a company blog and your organization has an established article review process, follow that by all means! Hopefully, this chapter provides some additional tips for making that process faster and more valuable.
+
+# 6.1 Focus and challenges
+
+A review process can turn into a massive source of frustration if you and your reviewer aren’t fully aligned. A simple “Hey can you look at this” might be fine if your reviewer is a close teammate who has been involved from the start of this blog post’s lifecycle. But otherwise, you might end up with headaches as the reviewer is
+
+Trying to remold your entire article to reflect their vision   
+¡ Obsessing over details that are no longer up for debate   
+Just nitpicking grammar when you really want a technical review   
+Procrastinating because they feel overwhelmed by the task
+
+And that leads to the greatest challenge: getting valuable feedback promptly. Put yourself in the reviewer’s shoes. They probably weren’t planning to review a blog post you wrote. Now that you’ve asked them to be “the reviewer,” they might feel responsible for finding and fixing everything they consider wrong. If the article is a success, you get all (or at least most) of the credit. But if a major problem slipped through to publication, they’re likely to feel remiss for not noticing and flagging it. It’s not a glorious task.
+
+As we’ll explain shortly, overcommunication can address these challenges. By spending maybe 5 extra minutes defining the scope of what you expect, you lighten the load on your reviewer and absolve them of full responsibility for everything wrong with the article. Moreover, by declaring certain things (such as the topic angle itself or the specific tests that were run) “off limits,” you further reduce the scope of things the reviewer has to worry about. You also reduce your chances of getting feedback that’s not valuable to you at this stage of the writing process.
+
+# 6.2 Comparing writing review with code review
+
+Having your blog post reviewed is in some ways similar to receiving code review:
+
+Feedback from another person familiar with the topic is very useful.   
+¡ Typos are pointed out mercilessly.   
+Lots of the review comments are purely stylistic:
+
+– “Looks good, but please split this function into three.”   
+– “Looks good, but please split this paragraph into three.”
+
+¡ Different opinions on how something should be designed lead to long discussions.   
+Negative feedback can be taken a little too personally at times.
+
+Blog post reviewing is also distinctly different in a few respects:
+
+¡ Feedback from someone not even remotely familiar with the topic can be extremely useful for a blog post, but not that often for code.   
+¡ When there are long discussions on how something should be written, they often settle on the author’s original approach, especially when the author’s subjective opinion is a vital part of the blog post. For code, what’s often discussed is “the ultimate truth,” ideally proven with formulas. That means the discussions tend to be longer and might even involve arbiters when no consensus is in sight.
+
+Many code review practices carry over to article review, so code review best practices are the perfect place to start when thinking about how to introduce the article to your reviewer and how to interact with them. In both cases, clearly describing your intent when you submit a pull request or article review request helps the reviewer get into your head. That, in turn, helps you get more valuable feedback. For example, in both cases, it’s helpful to cover
+
+The underlying rationale   
+¡ The alternatives   
+¡ Why the alternative you selected is best
+
+When it comes to interacting with the reviewer, the recommended protocol is exactly the same with article and code reviews. You don’t need to timidly cave in to every request and suggestion. If you disagree with something a reviewer seems to be insisting on, feel free to start a discussion and share more details about why you took your approach and/or why you disagree with what’s suggested. Maybe the reviewer is actually right. Or maybe you are. Either way, someone learns something in the process.
+
+But some code review practices don’t carry over to articles:
+
+¡ With code review, you can usually placate a reviewer by promising to implement a nonessential suggestion later. With writing, the article most likely won’t be continuously evolving like a code base does, so that’s usually not a viable option here.   
+¡ With code review, it’s nicest to work with small, self-contained changes. That’s not feasible with an article, which should generally be reviewed as a whole, from start to finish.   
+¡ With code review, it’s risky to make even a tiny change after the review is complete—even fixing a typo or moving a block around. But with articles, a small tweak isn’t going to break the build. Postreview optimizing here is totally fine.
+
+# 6.3 Selecting your reviewer(s)
+
+The first decision to make is who should be reviewing your article. Ideally, you want two different reviewers:
+
+Technical reviewer —Someone close to the topic, perhaps a teammate or a peer who works on similar projects and technologies. They can point out inadequate detail, factual errors, omissions, irrelevant technical digressions, and similar.   
+¡ Clarity reviewer —Someone who is not deep in the weeds of your project and can play the role of the curious target reader. They can point out places where addi-tional context is needed, the flow seems to take giant leaps or go in circles, or sentences just don’t make sense. Even better, maybe they are willing to perform some editing for you.
+
+TIP If someone is editing the text of the article, make sure the changes are tracked (or you view them via version history). That way, you can review the changes carefully, check that they didn’t change your meaning, and just generally ensure that you’re comfortable with any proposed changes. Otherwise, it’s like trying to review code updates without access to diffs.
+
+As you choose, consider who can give you the most brutal feedback (we promise, you’ll appreciate it after the sting wears off). This is likely someone you know fairly well. If you’ve already endured late-night debugging sessions, team offsites, and all other sorts of actual or forced fun with someone, chances are they won’t be afraid to tell you what they really think. But don’t limit yourself. There might be others in your company, community, or network who are fully willing to share honest feedback. If you’re a senior or staff engineer and really want to torment a junior new hire, you might even consider asking them under the condition that they shouldn’t hold anything back.
+
+Once you select a reviewer, let them know immediately. Consider this a “save the date” type of thing: you don’t need to give them all the details yet. But letting them know in advance is a nice touch. That way, you don’t surprise them with an urgent review request at a time when they might be overwhelmed with other projects.
+
+Not sure what to say? For a teammate, it could be as simple as this:
+
+I’m working on a blog post about {topic} and would really appreciate your feedback on it when it’s a little further along, maybe in {some general timeframe}. No action required now—I just wanted to get it on your radar.
+
+Or for someone you’re not as familiar with (perhaps someone on a different team), you could say:
+
+I’m working on a blog post about {topic}. I heard {namedrop if appropriate} that you’ve done a lot of work on {blah}, so I would really appreciate your perspective on the article. Do you think you could spare 30 minutes or so to provide feedback when it’s a little further along, maybe in {some general timeframe}?
+
+# 6.4 Deciding when to start
+
+There’s no standard best time for getting a draft in front of a reviewer. Start too early, and reviewers might feel like you’re wasting their time. Start too late, and it might not
+
+be feasible to fix any fundamental problems raised by reviewers. And what’s perfect for one blog post might be disastrous for another.
+
+Here are some things to consider as you determine when to start the review process.
+
+# 6.4.1 How important and/or controversial is the topic?
+
+Are you writing something that’s likely to generate a lot of debate, either internally or externally? “How We Built It” articles, benchmarks, and controversial “Thoughts on Trends” articles definitely fall into this category. Others might as well; in some companies, even innocuous-seeming ideas end up being contentious. In these cases, you might want to begin the review process even before the first draft. Make sure you have a decent outline, and share it with key stakeholders as well as your technical reviewer before you start fleshing out the actual article.
+
+The reviewers can’t nitpick over low-level details because none exist yet. They’re forced to focus on the high-level content and flow, which is great to have early feedback on. As with software defects, the earlier you expose a critical issue in an article, the faster and easier it is to fix. You don’t want to get to the point where you’ve tidied up all your clunkiest sentences and then find out that your boss hates the fundamental idea of the article.
+
+When the actual draft of this blog post is ready, consider sending it off for technical review as soon as you feel the core (focus, flow, facts—see chapter 5) is solid. There’s no point in spending too much time worrying about specific sentences when your reviewers might ask you to scrap entire sections and add different ones.
+
+Also, plan extra time for clarity review here. Maybe even have a few different people read it with clarity in mind. Although readers might easily excuse small imperfections in the quick blog you wrote sharing your weekend project, high-profile blog posts will be held to a higher standard. You don’t want the blog announcing your company’s greatest engineering achievement ever to contain even a single sentence that the target audience can’t easily parse.
+
+# 6.4.2 Do you have a true “blocker” question?
+
+Sometimes you can’t move forward with the draft until you get the answer to a critical question. For example,
+
+¡ Are we happy with the results of these tests, or do we need to try something different?   
+Do you think I should also include a section on the details of {blah} or continue without it?   
+Are the details introduced in the best order for the average reader, or should I restructure the article?   
+¡ Are we really going to deliver on what this section promises in the next few months, or should I rethink that whole part to avoid empty promises?   
+¡ Do you think the target reader can follow this tutorial without getting stuck somewhere?
+
+In these cases, it’s time for at least a preliminary review. When you request a review (described in section 6.5), include some verbiage like this: “I’m not yet done with the article: I still plan to {do X, Y, and Z}. But I’d like you to take a quick look at what I have so far and lmk if {big question}.”
+
+# 6.4.3 Do you feel like you’ve done what you intended to do?
+
+As soon as you feel like you’ve completed everything you intended to do for this dear draft, send it off on the review process! Don’t wait for the point where you feel every sentence is positively poetic. Instead, aim for the point of having done your due diligence:
+
+You feel everything that was in your head is reflected in the draft.   
+You’ve thought about core concerns (focus, flow, facts).   
+You’re confident your sentences are reasonably clear.   
+You gave your title and introduction some tender loving care.   
+¡ You revisited the goal you defined for this blog and feel that you’ve achieved it.   
+¡ You revisited the reason why your take on this topic is compelling, and you feel it’s reflected in the article.
+
+If you’ve checked all those boxes, the draft is definitely ready for more eyeballs.
+
+# 6.4.4 Will there be time for another review cycle after your tech reviewer finishes?
+
+Ideally, you’d send the draft for technical review, revise it accordingly, and then have your clarity reviewer take a look. But that’s not always practical. Sometimes you need to speedrun the whole process, or sometimes the technical review takes longer than expected.
+
+If you anticipate publishing quite soon after you receive the tech review feedback, go ahead and see if someone can read it for clarity now (in parallel). Then, if you need to change anything after the tech review, be sure to track your changes. Maybe a final round of clarity review is possible. If not, be sure to give those revised bits some extra scrutiny yourself.
+
+# 6.5 Preparing your reviewers
+
+Once you’ve identified some reviewers, and you’re ready to throw your draft over the wall for review, what do you do? “Email it to them with a note like ‘Please review this blog post draft’” is the most common response but also the wrong one.
+
+As we mentioned earlier in this chapter, just about 5 minutes spent on preparation can make the review process significantly less daunting for your reviewer and much more valuable for you. Here are a few tips followed by an example of how you can put them into practice.
+
+# 6.5.1 Providing background
+
+By now, you’re probably sick of looking at your blog post draft. But remember that it’s quite new to your reviewer. Tell your reviewer the essentials about what you’re writing, why, and where you are in the writing process. That includes
+
+What’s the goal and who’s the target audience   
+¡ Where it is in the process   
+¡ What’s nonnegotiable
+
+Let’s look at each in turn.
+
+# WHAT'S THE GOAL AND WHO IS THE TARGET AUDIENCE
+
+Think back to your planning work from chapter 4. Share that one-sentence statement of the article’s goal with your reviewer, and if the audience isn’t already clearly highlighted in that goal statement, add it here. Telling the reviewer what you’re trying to accomplish should guide them to provide feedback accordingly. For example, they might offer totally different comments if they know you’re trying to help an end-user understand why your product works the way it does than if the article is intended to share your design decisions with fellow infrastructure engineers.
+
+# WHERE IT IS IN THE PROCESS
+
+Are you sending them a rough draft for technical review, which will be followed by revision and then a clarity review and edit? If your technical reviewer knows that, they’re less likely to worry about missing words, rephrasing things for you, and so on. Are you sending out a super early draft for feedback on the fundamentals? Or have five people already read it, including your direct boss and the CTO, and said they love the overall direction but want actual engineers to double-check the technical details? Be transparent and let your reviewer know.
+
+# WHAT'S NONNEGOTIABLE
+
+Did your boss declare that no more benchmarks should be run? Did a partner sponsoring the project require tests to be run in a certain way? Did you already ask for permission to include code examples, only to be denied? Mention it here and save your reviewer the grief of writing a detailed comment on something that doesn’t matter because it’s just not up for debate.
+
+# 6.5.2 Specifying what you want
+
+What do you really want to learn from this reviewer for this particular article? You might not always get what you wish for, but you're more likely to get it if you ask than if you don't.
+
+# HIGH-LEVEL REQUEST
+
+The message where you send them the doc for review should include a high-level request explaining the scope of what you're looking for. For technical reviewers, the standard request could be something like "Please keep an eye out for technical issues such as inadequate detail, factual errors, omissions, irrelevant technical digressions, etc."
+
+You might also ask specific questions that apply to the whole article. For example: "Is there anything we can't include in the blog post because it's not officially released yet?" For clarity reviewers, you might ask "Please note places where you think the target reader {specify} might want additional context, where the flow seems to take giant leaps or go in circles, where sentences don't make sense, etc."
+
+NOTE When you write your request, avoid asking in a way that stifles feedback. For example, we’ve seen review requests come in with comments like “How do you like it?” or “I think this is ready to go—let me know what you think.” That puts the reviewer in an awkward position and makes them feel bad for giving you constructive criticism. If you write a message as we recommended previously, such comments would likely seem out of place. Still, we wanted to mention it because it’s a common way to start the review process off on the wrong foot.
+
+# SPECIFIC QUESTIONS AND REQUESTS
+
+Additionally, feel free to feed your reviewers some specific questions that you want answered. If your questions refer to the article in general (e.g., “Do you think I need more technical detail throughout?”), mention that in your review message. Whenever you have questions related to a specific part of the article, add them as comments in the doc. In-doc comments are perfect for questions and comments like`
+
+¡ I know we’re planning a dedicated blog on this. Should I hold off on mentioning it here?   
+I debated also mentioning the {blah} here. WDYT?   
+¡ I’m worried that this point might be unclear. WDYT?   
+¡ Can you double-check that this code sample is free of features we deprecated in the last release?   
+I added this “details” section when I thought I wasn’t going to have enough to write about, but the article actually landed pretty long. I’m absolutely fine with nuking the whole section. Do you think I should keep it or cut it?   
+I feel like having six straight throughput graphs is probably overkill here, but they each show something interesting, so I’m not sure which to cut. Which one or two do you think are most intriguing?   
+¡ Do you know of any good resources I can link out to on this?   
+¡ You implemented this feature—did I capture its description right?   
+¡ Can you rerun this example on your Mac? I want to make sure it runs fine on more operating systems.
+
+# TIMING
+
+A task without a deadline is usually the first one to get pushed back (and rightfully so). Even if there’s no hard and fast deadline for when you need the feedback, go ahead and specify when you’d like to receive the feedback. For example, “I’m looking to get this published by {some date}—do you think you could get me feedback by {another date}?”
+
+What if you hit the very common scenario where you don’t receive a response by that date? Time for the “friendly reminder.” For example: “I’d still really appreciate your feedback on the {topic} blog post. Any questions I can answer at this point?”
+
+# Example 6.1
+
+Here’s a message that PretendPiotr might send to his technical reviewer when he shares the fake Zig blog for review:
+
+Hi, can you take a look at my blog draft about writing fancymigratorname in Zig?
+
+The goals were 1) convince FakeDB users to try out the Postgres migration tool, and 2) show that it’s possible to create something useful with Zig.
+
+You’re perfect audience material since it’s likely the first time you’ve seen Zig code, and at the same time you’re a Postgres pro. Please let me know if anything looks unclear. No rush per se, but Big Boss will obliterate me if it’s not shipped by the end of next week (:
+
+And here are a few comments that the reviewer might make:
+
+In “The good parts,” you mention “Postgres” official C headers,” but that’s ambiguous. All Postgres codebase is in C. Maybe just add a link to the extension API or mention that you mean the header for writing extensions in C.   
+¡	Nitpick: s/it’s patience/its patience/ in “The not-so-good parts.”   
+Since you so gracefully mentioned I never read Zig code, I feel obliged to inform you that I still haven’t seen any after looking at the draft. A snippet or two wouldn’t hurt.
+
+# 6.6 Responding to reviewer comments
+
+Your reviewers finally responded! It’s exciting that the process is moving forward, but how do you deal with their feedback?
+
+Try to resist diving right in, ready to defend your article to the death. Find some time when you can thoughtfully review the comments. If you can stand it, read all the comments before you respond to a single comment. It’s not uncommon to fall into despair reading a seemingly endless onslaught of comments, then reach some final comment like “This is great—I really enjoyed it and think it’s a valuable resource!” Do everyone a favor and at least skim through all the comments before you respond to any of the comments.
+
+Now take a deep breath and start responding. You don’t need to make every change the reviewer suggested, but you should at least consider and acknowledge them all. Review them with curiosity, not combativeness. Perhaps the reviewer is saving you from public embarrassment or at least helping you sharpen your argument in ways that prevent a few snarky comments.
+
+TIP What if a reviewer’s comment overlooks the “constructive” part of the “constructive criticism” term? If you truly want to learn what he was hoping for, try responding with something like a nonconfrontational “Okay, what changes do you think would be helpful here?”
+
+As noted in the discussion of code review best practices (section 6.2), feel free to respectfully disagree with an article reviewer, just as you might with a code reviewer. The same general principles apply:
+
+¡ For each suggestion, either a) implement a change and note that in the response, b) promise to do it later, c) explain why you don’t think a change is required, or d) at least acknowledge it with something like “comment noted.”   
+¡ Don’t just give in if you believe your approach is correct. Initiate a discussion, and at least one of you will learn something.   
+¡ Be open to the fact that your approach might not be correct. Someone with fresh eyes and a totally different set of experiences might notice different problems and opportunities. That’s the whole point of the review, after all.
+
+Also, if you don’t understand something, say so. The reviewer would much rather clarify what they meant than have you ignore the feedback they spent time thinking about and communicating.
+
+What if your reviewer went above and beyond, providing you more feedback than you asked for (e.g., a technical reviewer pointing out ways to improve sentence clarity)? Thank them and be extremely grateful! Take all of their feedback seriously; consider every comment an opportunity to improve or harden the article.
+
+# 6.7 Special steps for special cases
+
+But as with programming, edge cases occur. Finally, let’s look at additional steps you might consider in special situations.
+
+# 6.7.1 Nonnative English speakers
+
+We’ve stressed that your technical readers will likely forgive some grammatical imperfections. And if someone reviewed your draft for clarity, your article should be in pretty decent shape by now. But if you want to be extra sure that it sounds right, feel free to tap a native English speaker who’s willing to perform a light edit for you.
+
+Ideally, you can find someone in your company or social network who has at least some basic understanding of a) the general topic and b) what you sound like. Most likely, they’ll do this for free as long as you’ve been moderately nice to them (or at least have earned a reputation as a decent human being). You could also consider hiring an editor on a site like Fiverr, but the quality could vary, especially for technical topics.
+
+Another option: ask your colleagues and network for recommendations.
+
+# 6.7.2 Don’t know who to ask
+
+If you’re writing about an independent project or just want to keep your blog post writing separate from your work life, finding reviewers might require a little extra creativity. Feel free to throw the request out on social media or pop a note in an appropriately themed discussion forum. For example: “Hey, I’m writing an article on {your specific topic} and would really appreciate feedback from some {the general topic} experts. Any volunteers? :-)”
+
+There’s no guarantee, of course. But you might get some independent feedback and make a few connections along the way.
+
+# 6.7.3 Other organizations involved
+
+Does your blog post feature a specific tool or project managed by another organization? If so, consider running it by that other organization before you publish. Even if you’re not required to get their approval, they might provide helpful feedback (e.g., something you overlooked with respect to the tool/project that they’re the experts on). Plus, this puts your blog post on their radar. If they’re interested, they can prepare to share it on their social media handles, perhaps republish it on their blog, include it in their newsletter, and so forth.
+
+# 6.8 If you do nothing else
+
+Here is the absolute least that you should do for the review process:
+
+Check any applicable company review protocols.   
+¡ Prepare a brief message summarizing your goal for the article, where it is in the process, and what you want from the reviewer.   
+Flag any specific sections or sentences you have specific questions or doubts about.   
+Find at least one trusted person to give it a look.
+
+# Summary
+
+¡ Constructive criticism might sting at first, but it’s a valuable tool for optimizing and “hardening” your article.   
+¡ You can and should apply some code review best practices to the article review process (e.g., clearly describing your intent and using comments you disagree with as a springboard for discussion and learning).   
+¡ In the ideal world, you’ll have one reviewer (close to your subject) who can point out technical flaws and another (further from your subject) who can be the reader advocate and point out what requires additional context or clarification.   
+¡ The best time to start the review varies; sometimes you even want to have the outline reviewed; other times you can wait until you feel “it’s ready.”   
+¡ A few minutes spent upfront providing reviewers with background and specifying what you want will pay off in better feedback and less frustration all around.   
+¡ Be open-minded and curious when responding to reviewer comments, and never shy away from initiating a discussion.
+

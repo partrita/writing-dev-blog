@@ -1,0 +1,61 @@
+# afterword
+
+In 2012, I wrote a blog post called “Your blog is the engine of community.” I’ve used and revised some of the blog post below to reflect on knowledge contained within the excellent book you’re holding in your (possibly digital) hand.
+
+Today, as we move toward and beyond 2025, we are entering a possible era of AI-generated content. You may ask yourself, why bother? It matters. Your word matters, your knowledge matters, and we must continue to push back against the entropy and bit rot of the internet.
+
+In a time where there is much gnashing of teeth around the meaning of community, what being on the “inside” versus the “outside” means, I want to take a moment to remind my fellow blog writers, blog readers, and blog commenters what makes it all work.
+
+You.
+
+Not a secret society, not a select few or someone knighted by royalty. It’s the nameless, faceless web search result that makes community work.
+
+I search all the time for help on the internet. I find blogs, tweets, Stack Overflow answers, and more. Often when I find the answer I seek, it’s on YOUR blog, not mine. Often, it’s not on a big company employee’s blog or that of the chosen few. The answer was put out on a blog, without ask of payment or recognition, by a 25-year-old student, or a 60-year-old retiree exploring C#, or a high school student with a passion for open source writing their first “Hello, World!”
+
+I and my blog are also that random search result. Someone searches for help and finds my little corner of the internet. Write a few blog posts a week, with useful content, consistently, forever. Then write some more. Share your knowledge. If you help one person who is not you, you’ve doubled your readership.
+
+I would encourage you all to blog more. Tweet less. Blogs are owned by you. They are easily found, easily linked to, and great conversations happen with great blog posts. The river of social media rushes on and those conversations are long forgotten. A great blog post is forever. Today’s real-time social media is quickly forgotten.
+
+Don’t be a meme, but a movement.
+
+Blog your opinions. Blog your cool project, or your latest useful function or library. Don’t blog if it feels like work. Blog and get excited when someone comments. Often the comments are more fun and more useful than the post itself. Be passionate, but not rude. Point out failings but suggest solutions. Organize. Invent.
+
+Be constructive, be helpful, be kind. Make your blog posts not too long, not too short, not too stream-of-consciousness, and not too terse. Remember your elementary writing classes. Have a thesis, make your argument, restate your thesis.
+
+Share because you want to. Share because you want to help, but also because you want to help yourself. Share not for the recognition but for the love of teaching.
+
+> It takes a village, dear reader, to be a community. It’s you, and me, and no one in between. Now, go create, commit and write blogs that get read. —Scott Hanselman VP Developer Community, Microsoft
+
+# Crunch time cheat sheet
+
+# Before you start, think about
+
+● Why your perspective on the topic is so interesting (your differentiator)   
+● Who should read it—why they care about the topic and what they already know (your target reader)   
+● What you want the reader to do or think differently after reading (your goal)
+
+# Once you have a draft,
+
+● Read it from the perspective of your target reader.   
+● Assess if the draft communicates your differentiator, seems tailored for your target reader, and provides the technical details needed to achieve your goal.   
+● Identify any specific statements your target reader might challenge and then bolster those statements with additional facts.   
+● Try to explain how the article flows, and adjust/reorder/cut until the flow makes sense.   
+● Ensure there’s at least one heading per page and that the headings help the reader understand the flow.   
+● Think about the title. Will it intrigue your target reader? Does it highlight the key technologies, trends, and/or challenges that the article covers?   
+● Think about the introduction. Does it help the reader decide if they want to proceed? Does it entice the target reader to continue?   
+● Think about the end. Does it tie the threads together nicely? Provide any appropriate next steps?   
+● Look for walls of uninterrupted text and break them up into shorter paragraphs, bullets, tables, visualizations, and similar.   
+● Add hyperlinks to provide additional context or explanation.   
+● Find someone to review the article for technical accuracy and clarity.   
+● Read it out loud, emphatically, to identify clunky sentences; then optimize them using your intuition, our recommended method, or suggestions from generative AI tools.   
+● Run it through at least one automated grammar check (ideally two).
+
+# Once it’s on staging or published,
+
+● Check how it looks in the template—on a desktop browser and on mobile.   
+● Pay special attention to code, images, tables, and videos.   
+● Ensure images are described with helpful ALT tags.   
+● Ensure hyperlinks work and have meaningful hypertext.   
+● Select categories and tags, balancing relevance (the best fit) and reach (a chance for more exposure).   
+● Ensure that the meta description and thumbnail are fit for social sharing (do a test post or use the LinkedIn post inspector).
+

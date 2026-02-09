@@ -1,0 +1,307 @@
+# Captivating readers
+
+# This chapter covers
+
+¡	The difficulties of—and opportunities in—reaching interested readers   
+¡	The critical characteristics of blog posts that readers open, read, share, and remember   
+¡	How popular blog posts from the past year exemplify these critical characteristics
+
+The previous chapter presented ideas on what to write. Now let’s shift focus to what engineers and other technical readers want to read. A compelling topic is essential for getting that initial click. But what will compel people to actually read the complete article, consider it valuable, and hopefully even share it with their colleagues and peers across social media and virtual communities?
+
+A captivating bug hunt article will vary dramatically from an article where a wellknown industry expert roasts a highly hyped technology, or one that shares how a team implemented an industry-changing algorithm. That’s why this book provides
+
+in-depth analysis of these and other blog post patterns, sharing examples, characteristics, as well as specific dos and don’ts for writing your own blog posts in those patterns. We’ll launch into those pattern-specific deep dives in part 3 of this book.
+
+But across patterns, several core characteristics are shared by the blog posts that stand out: the articles that engineers talk about and that ultimately become part of the industry’s knowledge base. That’s what we explore in this chapter.
+
+We don’t pretend to know some secret n-step formula for guaranteed success, and this certainly is not an attempt at (yet another) spammy “Definitive Guide to Trending on Hacker News.” But we did spend quite a lot of time looking at what tends to trend,monitoring industry discussions, and debating this with our engineering peers. Based on that, we’re sharing the three core things we believe are essential. We hope our hum-ble proposal gets more people thinking about this topic and ultimately sparks a produc-tive discussion.
+
+NOTE This chapter focuses on what makes an article stand out. The remainder of this book (particularly parts 2 and 3) looks at pragmatic ways to ensure your own blog posts embody these characteristics.
+
+# 3.1 Standing out
+
+Consider the following:
+
+¡ Around 1300 articles are submitted to Hacker News every day (https://news .ycombinator.com/item?id=33454140; “dang” is a Hacker News moderator).   
+¡ Anyone can now automatically generate an article on any topic and in any writing style using free generative AI chatbots.   
+¡ Any company or individual willing to pay for AI writing platforms can automatically spew thousands of uninspired formulaic articles in an attempt to capture search traffic.
+
+But despite all the noise, engineers with insatiable curiosity still take the time to discover, read, share, and discuss deeply technical articles. And now that everyone has seen the alternative (articles created with generative AI), truly insightful articles are appreciated even more. Reading such blog posts is a primary means of tracking what’s new, solving problems, and deepening domain expertise. According to recent estimates, around 10M people visit Hacker News each day, curious to see what’s trending (and especially what’s controversial, with popcorn in hand). Beyond that, people are also seeking and discovering articles across
+
+The evolving landscape of social media platforms and other virtual communities   
+¡ Various newsletters that share recommended articles   
+¡ #techchat-like channels on internal messaging apps   
+¡ RSS and Atom feeds they have set up
+
+The opportunity to reach interested readers is definitely there for the taking. So, how do you tap it?
+
+# 3.2 Critical characteristics
+
+We propose that standout articles share the following characteristics:
+
+Intriguing topic   
+Distinctive educational core   
+Smooth delivery
+
+Let’s examine each characteristic in turn. Then we’ll explore how they’re carried out in five real-world examples.
+
+# 3.2.1 Intriguing topic
+
+An interesting topic is imperative for readers to notice your article. When browsing for their next thing to read, readers look at the title and estimate whether the topic is intriguing enough to engage. In those few precious seconds before switching to another title, they judge whether the topic is valuable, that is, educational, controversial, and/or in line with their field expertise.
+
+# DISRUPTIVE
+
+One way to make your engineering blog post stand out is to challenge the status quo. Taking a controversial stand on a widely assumed truth is likely to spark interesting discussions and lure readers in. Even people not generally interested in the topic will be tempted to read it for fear of missing out on the latest global flame war. For example, claiming that async Rust sucks secured a Hacker News front page spot for many blog posts.
+
+# EYE-OPENING
+
+While disruptive articles often burn bright and then die out, articles that broaden a reader’s perspective tend to snowball in effect. Eye-opening articles might
+
+¡ Add novel insight into a well-known subject (e.g., a new approach to testing distributed systems)   
+¡ Introduce a whole new intriguing topic that the reader never even considered before but now desperately wants to learn about (thanks to your irresistible blog post title)
+
+Both of those approaches invite the readers to explore new territories, a treat no engineer can resist.
+
+# RELEVANT
+
+Readers of engineering blogs like to deep dive into their niche. If the topic touches challenges similar to the ones they work with day to day, they’re likely to at least skim through it. An article that deepens readers’ understanding of a technology they’re interested in, or shows an interesting alternative to what they are currently working with, has a good chance of getting read and discussed.
+
+Describing a general problem makes the article relevant to a broader audience, but it’s also less relevant to any single reader than a more specific piece. There’s a tradeoff. If you want to hedge your bets, consider writing both kinds of blog posts: some touching
+
+general subjects (e.g., a programming language) and some very specific to a technical niche (e.g., firmware for smart fridges). Also, try writing some posts geared to experts as well as others that help beginners get started with your area of expertise (especially if it’s a growing domain).
+
+# 3.2.2 Distinctive educational core
+
+A good engineering blog post leaves readers with the satisfaction of having learned something new. Readers tend to remember this feeling and will often become loyal readers once you’ve proven that you have valuable insights to share.
+
+The learned information should be useful, genuine, and transparent. The most grievous mistake is to try and slip in a pure marketing ploy disguised as an informative post. Readers will sense it, publicly shame you for it, and be justified in doing so. Good posts come from authors’ genuine motivation to share knowledge. It’s fine if that shared knowledge relates to your new product, but there’s no place for ulterior motives to mislead.
+
+# ExcLusive
+
+Imagine one of those generic articles that’s so obviously AI generated you can feel it from the first paragraph. A good engineering blog post should be the exact opposite. Bring some unique value that readers can’t easily find, or ask perplexity.ai about: your experience, a controversial opinion, an unorthodox way of accomplishing something technical. A quality engineering blog post should be (much) more than glorified documentation sprinkled with one or two references to Wikipedia articles.
+
+# DEEP
+
+Not every reader is interested in complicated technical details (not all the time, at least). And yet, they always appreciate it when authors clearly possess deep knowledge in the area they’re writing about. The best articles include insights that stem from a deep understanding of the subject, fun facts, explaining common misunderstandings, and so on. It’s fine for an author to be extremely opinionated in a field as long as it’s also clear that they’re highly experienced in it.
+
+At the same time, great blog posts give readers enough information to form their own views and draw their own conclusions rather than blindly accept the author’s. That’s why it’s so important to provide counterweight—for example, in the form of detailing drawbacks, pitfalls, and antipatterns alongside advantages and recommendations.
+
+# PRAGMATIC
+
+Engineers are pragmatic beings. While they love reading purely theoretical academic papers, they love hands-on knowledge even more. This could come in the form of
+
+A useful script making everyday hacking easier   
+¡ A nice open source library   
+¡ A list of good practices before releasing software   
+A book recommendation   
+A list of steps on how to reproduce interesting results at home
+
+If something can be applied immediately after reading the blog post, it’s likely to be appreciated by the audience.
+
+# 3.2.3 Smooth delivery
+
+Reading articles is supposed to be educational, but it’s also a form of entertainment. An article shouldn’t be boring, painful, excruciatingly long, or otherwise cringeworthy. The audience tends to expect an up-to-date, engaging, and light read.
+
+# ENGAGING WRITING
+
+Assuming that your intriguing topic and title lured a reader in, the job is only half done. Before they can learn something, readers need to read the article, and an engaging writing style is key here. A peer-to-peer conversational tone generally works better than being overly formal. Be authentic, and add side notes and personal comments wherever applicable. Last but not least, do not force the jokes; the forced ones are not funny by definition.
+
+If you can find a way to connect with the reader, go for it! Readers appreciate a personal perspective they can relate to (and maybe commiserate with). Clear language, organized structure, and a logical flow also help keep the reader’s attention. If the reader gets lost in a chaotic narrative, they might just give up on the article.
+
+# APPEALING DESIGN
+
+Aesthetics are important in engineering blog posts. Some might claim that engineers only care about good content and only read blog posts straight from RSS feeds delivered straight to their terminals anyway. In practice, a nicely stylized blog post is more likely to be read to completion and remembered. How do you make it nice?
+
+Use white space to logically split the paragraphs and sections.   
+¡ Ensure that section headers stand out so that readers can quickly scan through the article or navigate to a section they want to read (or reread).   
+Make sure the graphics are high resolution, readable, not blurred.   
+¡ Use a consistent theme for charts whenever possible.
+
+Some articles are purposely stylized as a single block of text. While cool in theory, that usually just annoys readers, particularly those searching for a specific section. On the other side of the spectrum, an overload of brightly colored charts will make the blog post resemble one of those scammy websites that try to convince you to enter a lottery to win a “guaranteed” iPhone. And if the article, including code samples, isn’t readable both in light and dark mode (looking at you, Medium), technical readers will not be pleased.
+
+# UP-TO-DATE
+
+Reading blog posts from 2010 is tricky. On the one hand, they are often full of interesting discoveries, still surprisingly applicable to current technologies. On the other hand, half of the hyperlinks are likely to be long dead, and there’s no comparison with newer technology. It doesn’t have to be like that though! Blog posts can, and should, be updated.
+
+The update could occur as a new section labeled “June 2057 Update,” a link to a follow-up article, or just a revival of dead links (e.g., by replacing the bygone ones with their eternal web.archive.org mirrors.) It’s also customary for blog posts to retroactively include links to online discussions about them, allowing new readers to join (or at least skim through) the Q and A.
+
+Keeping old articles alive and up-to-date is definitely valuable if they still receive any real traffic. As a bonus, those updates can conveniently lead readers to your newer blog posts related to that same topic.
+
+# HANDS-ON ELEMENTS
+
+Judging from online comments, interactivity is highly valued. Clickable charts with customizable parameters, 3D visualizations, step-by-step guides, and games all contribute to your article being truly consumed, shared, and remembered. Readers appreciate when they can engage with the content, zoom into interesting bits, and observe how the results change when they tinker with the parameters. It makes reading the article feel like playing a video game, and it’s fair to assume engineers can’t resist clicking through it to see what happens.
+
+Bartosz Ciechanowski’s blog (https://ciechanow.ski/) is an absolute masterpiece in that respect, with interesting physical phenomena visualized in an interactive way. And Sam Rose (https://samwho.dev/) takes this same spirit of interactive visualization and applies it to foundational programming concepts (e.g., load balancing, memory allocation, hashing).
+
+# 3.3 Examples
+
+To explore how these characteristics converge, let’s look at how popular blog posts check all three boxes in one compelling article. We’ve selected the following five examples from the top 25 engineering blog posts on Hacker News (according to points) in the past year. The wild variation across these examples highlights that there are many possible ways to achieve these critical characteristics. Your own approach will differ based on your purpose for writing, topic, experiences, and personality.
+
+# 3.3.1 A Search Engine in 80 Lines of Python
+
+Author: Alex Molas
+
+Source: Alex Molas' Blog (https://mng.bz/500q)
+
+This article is a walkthrough of implementing microsearch, a minimal text search engine written in Python. It describes the theory behind search engines, as well as concrete code implementing all the required features. It's a tutorial on how to write a simple search engine from scratch.
+
+# INTRIGUING TOPIC?
+
+The title is already intriguing because it mentions writing something reasonable in 80 lines of code. Combined with "a search engine," which is a rather complicated system, that title becomes irresistibly intriguing, regardless of whether the audience has any pre -vious experience with this niche. The content is especially eye-opening for people who
+
+are intrigued by search engines, but never dove into specifics. Terms such as “rank” and “inverted index” are patiently explained with examples.
+
+# DISTINCTIVE EDUCATIONAL CORE?
+
+This article oozes educational value—it’s basically a step-by-step guide on how to implement a search engine, intertwined with theory. The theoretical part is explained in an approachable manner, even for search engine newbies. Code samples are priceless, especially because they aren’t just samples; combined, they form a complete implementation of a usable search engine.
+
+# SMOOTH DELIVERY?
+
+Clean, clear, and straight to the point. This blog post’s appearance and writing style are exactly what you would expect from someone who implemented a functional search engine in 80 lines of code. Within less than 10 centimeters from the top of the page, you can read or access the following:
+
+¡ What drove the author to start this project and write this post   
+The related Hacker News discussion   
+The author’s background, services, and other writing   
+The blog’s word count and estimated reading time
+
+The minimalist feel continues throughout the article, which is no small feat given that it’s $4 , 0 0 0 +$ words long. Lengthier code samples are tucked away into expandable elements, making it simple for the reader to quickly parse the article. A quick scan suggests that the article was carefully crafted with the reader experience in mind: crisp headings, short paragraphs, syntax-highlighted code, and even MathJax-embedded formulas that are accessible to screen readers. The author also spares the readers from all the details that didn’t make it into the final implementation: all the mistakes, dead ends, and the usual trial-and-error casualties. There’s no superfluous information here.
+
+From the first sentence, it’s clear that this is not ChatGPT. A real person who seems like a rather pleasant human being wrote this. There’s no ulterior motive: he was curious, wanted to learn, and decided to share. Even better, he decided to learn by initiating a project that helps the underdog: smaller websites. Throughout, the language is concise yet conversational. It’s direct, honest, and confident—walking the reader through the impressive implementation without sounding the slightest bit boastful.
+
+Moreover, the post was apparently updated at least twice in the past few months. It was updated once with a Hacker News discussion link, then updated again to reference a similar implementation that the author discovered after the initial publication.
+
+# 3.3.2 Async Rust is a Bad Language
+
+# Author: Matt Kline
+
+Source: Matt Kline’s Bit Bashing Blog (https://bitbashing.io/async-rust.html)
+
+This article is a rant (in a purely positive sense) on asynchronous programming in Rust being notoriously unergonomic. It includes a detailed introduction to why asynchronous
+
+programming is useful and how it’s designed in Rust as well as other languages. It follows with a list of well-known problems faced by developers who use async Rust.
+
+# INTRIGUING TOPIC?
+
+Rant is by definition a disruptive artistic form. The title immediately draws attention as a simple, but heavily opinionated accusation. Rust itself is a polarizing factor in the software engineering community; some people passionately love it, and others passionately dismiss it as too fancy and complex. Thus, a blog post sharing a negative opinion on a whole aspect of the language is automatically intriguing for lots of readers.
+
+# DISTINCTIVE EDUCATIONAL CORE?
+
+The first part of the post is an excellent primer on parallelism and concurrency. The post is also full of links to relevant documentation, recommended blog posts (and a book!) about async Rust, and code examples. The author shares his unique perspective as a Rust fan, but not so much an async Rust fan.
+
+# SMOOTH DELIVERY?
+
+In stark contrast to the previous example, this article takes a bold and dramatic approach. But it’s as perfectly suited for a Rust rant as the previous minimalist article was for a minimalist search engine implementation.
+
+This article is irreverent, through and through. That’s clear from the unconventional choice to make the title serve double duty as the first sentence of the article. The headings are consistently (and sneakily) clever—for example, “pain.await.” Offbeat images abound, ranging from the always impudent Monty Python, to Mel Brooks’ satirical Spaceballs, to CubeDrone comics, and even a child’s crayon drawing. The language is colloquial, even saucy at times.
+
+With so much going on, there’s a huge risk of it all becoming an annoying distraction. But that never happens. Every element helps the author to make his point—and to do so in a memorable way. The author’s personality is front and center, as it should be in an article in the “Thoughts on Trends” blog post pattern that’s covered in chapter 12. Still, he uses “we” throughout to emphasize that we’re all in the same (sinking) boat with async Rust.
+
+Even if you don’t care one bit about async Rust, you might be compelled to read this article. It’s hard to imagine any reader who would not be curious to see where the bold assertion leads and discover how all these crazy images play out in a deeply technical article.
+
+# 3.3.3 Python 3.13 Gets a JIT
+
+Author: Anthony Shaw
+
+Source: Anthony Shaw's blog (https://mng.bz/6YK5)
+
+The article is both an announcement that the next version of Python comes with a JIT and an introduction to what it means (just-in-time compilation) and how it can be implemented.
+
+# INTRIGUING TOPIC?
+
+The title is intriguing enough just by mentioning a major feature in a new Python release. Python is one of the most popular languages in the world, and JIT is universally
+
+recognized as “a thingy that makes programs faster,” even by people who aren’t deeply interested in compiler internals. The author also argues with “what people tend to think” JIT is, which may be an eye-opening moment for readers.
+
+# DISTINCTIVE EDUCATIONAL CORE?
+
+This article is a comprehensible introduction to JIT as a general technique, as well as a specific variant of it: a copy-and-patch JIT. Code samples are clear even though they explain compiling Python programs to bytecode, which is a fairly low-level concept. There are lots of useful links pointing to open source projects (including a Python disassembler implemented by the author), documentation, and academic papers.
+
+# SMOOTH DELIVERY?
+
+This one’s for you, the reader. The author is serving as the humble interpreter here, working hard to help readers across the massive Python community understand the significance of something they might have never heard of until now.
+
+The headings anticipate the readers’ likely questions, and the sections provide clear answers. Acronyms are explained and historical background is recapped. Carefully selected hyperlinks allow readers to go as deep down the rabbit hole as they wish. Readers who pay attention will note a link to a live compiler UI where they can go hands-on and “run all sorts of fun optimizations on the code, like constant propagation and loop hoisting.”
+
+The author’s deep involvement in the project shines through in his language, as does his optimism about what this means for the Python community. He seems genuinely passionate about this project and eager to help others get the most out of this new development.
+
+A bonus here: the author notes that the pull request for this change was committed on Christmas. If you follow that hyperlink, you’ll find what is likely the world’s first “‘Twas the Night Before Christmas”-themed pull request comment.
+
+# 3.3.4 I Have Written a JVM in Rust
+
+Author: Andrea Bergia
+
+Source: Andrea Bergia’s Blog (https://mng.bz/o0yj)
+
+This article describes the process of implementing a Java Virtual Machine (JVM) in Rust. It explains the general architecture of the project, as well as specific implementation details.
+
+# INTRIGUING TOPIC?
+
+Back in the day, publishing an “I wrote <anything> in Rust” post was already intriguing enough to hit the front page of all the engineering news aggregators. In this case, it’s doubly intriguing because implementing a JVM from scratch is quite a complex task. It promises a deep dive into Java language internals, but does it deliver on its promise?
+
+# DISTINCTIVE EDUCATIONAL CORE?
+
+Yep. This article is actually just a prologue to a series of eight posts. But even on its own, it explains the basics of how Java works, and how one can implement a fully functional
+
+virtual machine for it. Code samples are all over the place, and there’s a nice visualization of how a simple garbage collection algorithm works. The project is open source, and the post takes advantage of that fact by linking to specific implementations in relevant places. And it’s all based on the author’s personal project, drawing on his rather unique experience writing a JVM in Rust as a way to learn the language.
+
+# SMOOTH DELIVERY?
+
+The playful opening immediately reveals two things:
+
+The author has pulled off something rather ambitious.   
+He’s going to be describing it in a fun, somewhat self-deprecating tone.
+
+Who could resist?
+
+The author shares what ran through his mind as he tackled various parts of this task. He provides full transparency into what he did and why, including what didn’t work out as expected. The article is nicely organized, with a clean look, clear writing that’s informal and conversational, effective visualizations of the GC algorithm, and really sharp-looking code examples.
+
+Even though the article introduces an eight-part blog series, it’s not just a tease. Readers leave with a fundamental understanding of all the key elements and also have the chance to zoom in more closely on whatever elements intrigue them most. All articles in the series clearly link back to the series’ Table of Contents page. Another nice touch: prominent tags at the top of each article provide easy access to more content on related topics.
+
+# 3.3.5 The Return of the Frame Pointers
+
+Author: Brendan Gregg
+
+Source: Brendan Gregg's blog (https://mng.bz/n0X8)
+
+This article is an odyssey of frame pointers being compiled out of and subsequently restored in Linux libraries and tools.
+
+# INTRIGUING TOPIC?
+
+The title is stylized as an operating-system-themed fantasy novel. Like anything that Brendan Gregg publishes, it's full of interesting details. This time, it's even more intriguing than usual because it exposes a timeline of events that not everyone is aware of. (I wasn't aware of these events, even though the details are very much relevant to my experience.)
+
+# DISTINCTIVE EDUCATIONAL CORE?
+
+The educational value of this post is (at least) twofold. First of all, it's a lesson on what frame pointers are and why they are useful. Second, it's a history class on design decisions taken in large open source projects. Technical details are, as usual for Gregg, an order of magnitude deeper than an average deeply technical blog post. It's infused with perspective and insight from the author's rather distinctive personal experience. You definitely can't access this elsewhere.
+
+# SMOOTH DELIVERY?
+
+This is story time at its finest. The depth of stories behind and within this post truly set it apart from any blog post that any other human could write on this topic. The first sentence, “Sometimes debuggers and profilers are obviously broken, sometimes it’s subtle and hard to spot,” hints that some interesting story awaits. It does. But first, a Gregg specialty: a flame graph. Two flame graphs, actually. The first one is nicely annotated, calling the reader’s attention to the problem that stems from libc compilation without frame pointers. Click that annotated image, and you get an interactive flame graph. Expand the “longer explanation” link for even more details. And this is all just halfway through the article’s introduction!
+
+By the time you complete the introduction, you know the crux of the story: frame pointers are back, (re)solving flame graph problems and helping continuous profilers, too. Readers don’t have to continue, but they want to. Eyes are instantly pulled down the page by two side-by-side stack-trace-walking images from Gregg’s famous BPF book.
+
+Then the stories continue; for example,
+
+¡ Quotes and commits that explain why gcc was changed to stop generating frame pointers back in 2004   
+¡ His (at the time) colleague’s 2004 perspective on why applying this change to x86-64 (64-bit) was a bad idea   
+¡ How Java’s lack of frame pointer support affected Netflix’s performance analysis in the 2010s, as well as workarounds that Gregg created to compensate   
+¡ How a seemingly straightforward proposal to bring back frame pointers in 2022 unexpectedly led to a heated debate with 116 discussion threads
+
+Gregg shares each story succinctly yet personably. It feels like a TED-talk-length fireside chat (get comfortable but not too cozy). You can sense the frustration in his narrative, as well as his deep involvement in over 20 years of frame pointer discussions and repercussions.
+
+At the end, Gregg offers an appendix: his detailed writeup trying to persuade Fedora to restore frame pointers. There’s also an integrated comments section with uncommonly civil and productive discussion, including some comments that led to post updates. And if you poke around the navigation, you can binge-read his blog posts dating back to 2005. All the posts, old and new, share this same classic layout that perfectly complements Gregg’s reputation as a long-standing industry expert.
+
+# Summary
+
+¡ With the onslaught of AI-generated slop, it’s harder than ever to get your article noticed, but truly thoughtful posts are even more valued and appreciated.   
+¡ Engineering blog posts that get noticed, read, shared, and remembered feature the following critical characteristics:
+
+– Intriguing topic   
+– Distinctive educational core   
+– Smooth delivery
+
+¡ An intriguing topic can be disruptive, eye-opening, or highly relevant to the reader’s interests.   
+¡ A distinctive educational core provides exclusive, deep, and pragmatic knowledge that readers can’t easily access elsewhere.   
+¡ Smooth delivery involves engaging writing, appealing design, up-to-date information, and interactive elements when possible.   
+Five popular engineering blog posts demonstrate the many possible ways that authors might achieve these critical characteristics.
+
+

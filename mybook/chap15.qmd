@@ -1,0 +1,568 @@
+# This chapter covers
+
+¡	Getting more eyes (and ears) on your ideas after the blog post is published   
+¡	Sharing your blog post across social media and virtual communities   
+Using your blog post as a stepping stone to additional opportunities (articles, guest posts, podcasts, and so on)   
+¡	Tracking how people are reaching, reading, and reacting to your blog post
+
+Once your blog post is published, yay! Nice work, pat yourself on the back and enjoy a celebratory beverage of choice. But don’t consider your work here done. You wouldn’t just drop your most impressive project on GitHub in silence and then never think about it or touch it again. Don’t abandon your newly published blog post either. You’ve already invested a good amount of thought and time into it. Spending just a little more to give it a good start in the world can help you and the community get much more out of it.
+
+Think of it this way: would you rather
+
+Do a few things to increase the reach of your blog post (say, threefold), or   
+¡ Plan, draft, optimize, review, proofread, and publish three times as many blog posts?
+
+Of course, it’s always tempting to move on to the next shiny object. But strongly consider doing what you can with that existing blog post while it’s still fresh in your mind.
+
+This chapter covers a broad spectrum of ways to get your work in front of more people in your target audience, whether you’re the stereotypical introverted programmer, someone who thrives on human interaction, or somewhere in between. Here, we cover
+
+¡ Sharing across social media platforms and virtual communities —You want to distribute your post across (and beyond) your network, spark discussion, and give it a chance to trend or go viral.   
+¡ Getting it published in a selective tech publication —You want to draft off their reputation, which brings prestige, draws discerning readers, and could get your article on Google News.   
+¡ Guest blogging on another community’s blog —You want to reach the community behind some technology or project you referenced in your blog.   
+¡ Cross-posting copies of your article on blog post aggregators —You want to see what additional exposure you can gain from (usually) just 5 minutes of brainless copy/ pasting.   
+Participating in conferences, podcasts, and livestreams —You want to talk about your article topic in a way that can quickly elevate your brand and reputation as an expert.
+
+At the end, we’ll also review different metrics you can review to understand how your work was received and get you thinking about what you might do differently the next time.
+
+As you consider and prioritize options, think back to the goals that you defined when planning the article (chapter 4). For example, if you’re looking to spark deep engagement with experts in a highly specialized field, maybe Hacker News is not a top priority. However, presenting a related talk at a niche conference could be a worthwhile next step.
+
+WARNING Be sure to check company protocol related to social media, community engagement, and all the other promotion opportunities outlined here before you dive in.
+
+# 15.1 Choose your own adventure
+
+Your blog post won't magically find its own way to readers. But there are many different options for helping it along. Before we get into specific tactics, let's take a high-level look at what might work best across various comfort zones.
+
+If you're an extreme introvert, don't despair. Async remote communication lets you interact with people on your own terms. Many social media platforms and virtual communities enable near real-time interaction, but you don't have to participate in that way. If you make even a minor effort to become a contributing community member, that
+
+will help you extend your blog post’s reach. And perhaps you have the patience to spin off customized versions of your article for publication on other sites. Your extroverted peers likely do not.
+
+On the other hand, extreme extroverts who actually want to interact with humans in real time should find no shortage of opportunities for doing so. There are countless podcasting and streaming options that cover the programming space. And they’re all hunting for the rare species of programmer who checks all of the following boxes:
+
+They’re experienced with popular or trending technologies.   
+They’re good verbal communicators.   
+They’re willing to carve out some time to participate.
+
+If you’re a member of this select group, strongly consider looking for podcasts or livestreams where you can talk more about the topic you covered in your blog post.
+
+What about conferences? Extroverts will feel right at home here, but introverts shouldn’t instantly rule it out. While the thought of presenting live in front of an audience of thousands could terrify an introvert, a smaller specialized session might work. And virtual conferences can lower anxiety even more. Some even let you prerecord your session so you can become a public speaker without actually speaking live or in public.
+
+The bottom line is that there’s something for everyone. Given that, let’s look at what’s involved in the various blog post promotion and extension options.
+
+# 15.2 Sharing across social and virtual communities
+
+This option isn’t really optional. If you want your peers to read your blog post, you really need to share it personally. But you can certainly do so as a good community member, with modesty and precision. The spray-and-pray approach (just indiscriminately posting the same thing in as many places as possible) likely won’t yield favorable short-term results, and it definitely won’t help you foster community goodwill over the long term.
+
+If your post was published on your company’s blog, they will likely take the lead on some level of promotion. Considering all the company’s official accounts and marketing efforts, they might have access to more people than you do. But given how developers generally dislike engaging with company accounts, don’t rely on that promotion. Authentic sharing from your own accounts is often the perfect non-markety marketing strategy for getting your blog post in front of your technical peers.
+
+In this section, we’ll cover a phased approach for ramping up your community engagement, dos and don’ts for sharing your blog post when it’s first published, and non-spammy ways to keep it alive (e.g., by seeding it into relevant discussions). Spoiler: We’re not offering yet another “N tips guaranteed to get your article trending on Hacker News!” article. You’re welcome to search the internet for such, but we don’t believe you can (or should) game the system with tricks. Write a solid technical article, engage with relevant communities in a transparent and authentic manner, and your luck surface area will increase immensely.
+
+NOTE We’re trying to keep this discussion as platform-agnostic as possible, focusing on strategies that are applicable across the constantly shifting world of social media and virtual communities. However, we do discuss Hacker News specifically since it’s such a unique beast.
+
+Even if you’re not a super social person, push yourself to engage with the online community in some capacity starting now. It doesn’t have to be time-consuming, fake, or otherwise painful. And you might actually find it valuable, even beyond your ulterior motive of getting your blog posts noticed and read.
+
+# Piotr’s story: Why I stopped avoiding social media
+
+I haven’t exactly been an avid fan of social media, and I’m still not. Let me just self-quote part of my goodbye message before leaving ScyllaDB:
+
+I’m also leaving my contact details, should anyone want to stay in touch:
+
+email: <redacted>
+
+phone: <redacted> (please don’t call if you just want to sell me solar panels, I already have a set)
+
+twitter: not going to happen (take reading this note as an opportunity to ditch social media)
+
+And yet here I am, broadcasting daily messages on various social media.
+
+Fortunately, Elon Musk helped me keep my promise not to use Twitter by rebranding the company to X. Otherwise, my integrity would have been compromised.
+
+My breakthrough moment came when I joined an even earlier stage startup. Here, engineers sharing interesting articles they read or wrote was the primary means for getting the project noticed in the engineering world. Creating and actually using an X account was unavoidable. But it also was tolerable.
+
+Don’t get me wrong. I still hate social media and blame social media for the ever-shortening attention span worldwide. The difference is that I used to passionately hate it, and now the emotion is strictly passive.
+
+Social media is just a means to an end: sharing slightly opinionated knowledge with peers and getting in contact with like-minded individuals. Social media is undoubtedly useful, both for beginner writers to bootstrap their initial audience and for experienced writers to easily share and discuss their articles with interested peers. For me, the turning point was realizing there’s more to gain from using social media for professional purposes than from just hating it from the sidelines.
+
+# 15.2.1 Connecting with the community
+
+NOTE If you’re already happily engaging with the community, skip ahead to section 15.2.3, which covers some commonly overlooked strategies for keeping the blog post momentum going. The next two sections are both targeted to social-media-averse engineers—like Piotr used to be!
+
+If you plan to discuss your blog post on social media and virtual communities (and you should!), start by becoming a good citizen. If humans or algorithms notice that you’re there solely to promote links to one site (coincidentally, the one hosting your own blog posts), it won’t go over well. You will be the equivalent of that relative who doesn’t acknowledge you exist until they want something. Moreover, if you don’t “warm up” your account, you might not even be allowed to share your blog post when the time comes. In some communities, account posting privileges are restricted until you’ve established yourself as a trustworthy community member (e.g., by commenting on others’ discussions).
+
+If you’re reluctant to participate, consider the following approach to easing in—just dipping your toes in the water to start and then going progressively deeper as you get acclimated.
+
+# PHASE 1: OBSERVING
+
+At first, just sit on the sidelines, look around, and try to get a feel for what’s going on. Make it a habit to spend a little time exploring on a regular basis. Also use the strategies covered in section 2.3 (about exposing yourself to blog topic triggers) to direct what you’re looking at. Let’s quickly recap. For social media,
+
+¡ Get ahead of the recommendation algorithms by curating lists or other feeds of people you trust.   
+Start by tracking a small set of trusted accounts, then expand cautiously.   
+¡ Occasionally glimpse at what the algorithms recommend to see if you’re missing anything interesting.
+
+For virtual communities,
+
+Find a few specialized, well-moderated communities relevant to the topics you write about.   
+¡ Again, start small and expand cautiously.   
+For Hacker News, become familiar with the site’s rich search functionality.
+
+And above all, actually set reminders to start checking on a regular basis as well as timers to stop checking after a few minutes. Timeboxing it this way prevents you from wandering off in intriguing yet often unproductive directions.
+
+# PHase 2: REActING
+
+Now ease in by simply liking, upvoting, or boosting posts that you found interesting. It’s a polite way to tell the person behind the post that you found their contribution valuable. You’re also helping to shape the community at large by weighing in on what posts should be elevated by the algorithms and/or rankings. In some communities, post visibility depends solely on the number of upvotes.
+
+Also consider following the accounts behind social media posts that you like. And don’t be surprised if they end up following you back. Maybe they will return the favor and like one of your blog posts someday.
+
+# PHASE 3: RESPONDING
+
+The next level of engagement is to actually share some words about other people’s social posts. Remember that the simple one-click reactions already indicate something like “interesting,” so if you’re going to add words, you should go a step beyond that. For example, you could respond with
+
+Something you found particularly interesting about what they shared   
+A question you had about what they shared   
+Your own experiences with that topic   
+¡ A helpful resource that’s relevant to the discussion
+
+The most valuable comments add new information and/or advance the discussion in some productive way. It never hurts to kick off your comment with something nice, especially if you’re ultimately requesting clarification or sharing a different experience. For example: “Great read, really interesting point about {blah}. Curious if {whatever}.” Even a simple “Thanks for sharing!” preface could work. Just make the extra effort to set the tone as conversational, not confrontational.
+
+# PHASE 4: CREATING YOUR OWN SOCIAL POSTS (BUT NOT YET SHARING YOUR BLOG POSTS)
+
+Finally, take the plunge and start creating your own social posts. Not sure what to say? Consider
+
+¡ Some cool trick, tool, or repo you just stumbled on and why you think it’s so cool   
+A question for the community (“Has anyone else ever encountered…”)   
+¡ An article, book, or video that intrigued you and why   
+A lesson learned the hard way   
+¡ A seed idea for a future blog post
+
+TIP You don’t need to $1 0 0 \%$ agree with every word in a resource that you want to share. Feel free to say something like: “Great read! While I don’t agree with everything in this article, it’s interesting to see…”
+
+Before you start composing anything, check all the rules of engagement, particularly for virtual communities. What’s forbidden, do you need to tag things in a certain way (e.g., on subreddits), do you need to be extremely careful about the title of your submission (e.g., on Hacker News), and so on. Just like every family has its weird rituals, every virtual community has its own protocol and guidelines. Learn them now and practice them before you share your own blog posts!
+
+# 15.2.2 Sharing (and discussing) your blog post
+
+Let’s assume that you’ve already become a contributing member of some social media platforms and virtual communities, and now you’ve got a shiny new blog post to share. What now? We recommend the following staggered plan of attack.
+
+TIP Once you start sharing your own blog posts, remember to continue contributing to virtual communities in other ways as well! As the Lobsters community (https://lobste.rs/about) put it: “It’s great to have authors participate in the community, but not to exploit it as a write-only tool for product announcements or driving traffic to their work. As a rule of thumb, self-promo should be less than a quarter of one’s stories and comments.” This is a reasonable guideline to follow everywhere.
+
+# STEP 1: SHARE IT FROM YOUR SOCIAL MEDIA HANDLES
+
+Your own social media handles are the natural place to start. Anyone following you there expressed some interest in you and/or your work. Telling them about a blog post you just wrote is totally in scope!
+
+Moreover, the fact that you’ll be broadcasting to (at least some) people you actually know makes this a great place to begin. Some of your connections will like and reshare it, their connections might see it and comment—rinse and repeat. Since many of the people seeing your post have some traceable connection back to you, any discussion here is likely to be more constructive and civil than in a fully anonymous comments section full of concealed accounts.
+
+Try to publish your post when the people you expect to respond are actually awake. A post that gets an initial boost will typically be recommended more than one that lies untouched for half a day. And consider starting with a social media platform where posts have a short life span—an X-like platform where new posts burn bright for a matter of minutes, then fade away. This makes for great proving grounds. Try something here, get some rapid feedback (hopefully), and apply any lessons learned before you share your blog post somewhere else.
+
+What should you say in the actual social post? Here are some ideas in case you’re not otherwise inspired:
+
+New blog post on {topic}, covering…   
+{Interesting_takeaway}. Full discussion in…   
+¡ {Something_about_the_challenge_discussed}. I decided to tackle that here…   
+{Some_background_on_why_you_wrote}. Here’s what I came up with…   
+Blogged: {title}
+
+Also, feel free to acknowledge anyone who contributed to, reviewed, or inspired your article, especially if they’re active on the social media platform you’re using.
+
+Be sure to apply hashtags and reference $@$ handles as appropriate. A rule of thumb: use a handle if you want someone to get a notification (and ideally react or reshare); use a hashtag if you want to get on the radar of people who are following a certain technology or trend. Also note that some bots retweet posts that use a particular hashtag, and hashtags are sometimes used to collect candidates for various newsletters.
+
+For example, a social post announcing the fake Zig blog post from chapter 4 should include \@FakeDB (in hopes that they reshare it to their community) as well as #Postgres (to get on the radar of the many humans and bots that track Postgres developments).
+
+What about Zig? We’d suggest mentioning $@$ ziglang prominently in the post, then tacking on a #ziglang hashtag at the end. It would be amazing if the official Zig language account shared the article, but it would also be helpful to get on the radar of newsletters that pick up stories mentioning #ziglang.
+
+TIP Before you use a hashtag, search for it and check that 1) it’s used fairly often and 2) it’s not also used for something totally different and possibly sketchy. The latter could result in a lot of followers of dubious intent.
+
+# STEP 2: MONITOR OBSESSIVELY AND RESPOND RAPIDLY
+
+The second your social post goes live, inspect it to ensure everything is as expected. Confirm that the thumbnail image you hopefully already set in the metadata (see chapter 7) isn’t awkwardly cropped, the accounts you referenced are properly hyperlinked, and so forth. Maybe alert some of your close peers so they can give it an instant boost. Then, wait patiently (or not) to see if there’s a response.
+
+As you move on with your life, check in frequently to see if there are any notifications. If you followed our advice to share it on one platform at a time, it’s much easier to monitor.
+
+If people do comment, respond as rapidly as your other commitments permit. Here are a few tips:
+
+¡ One to many—Don’t just respond to the individual who commented; respond with everyone scanning the comments in mind. For every person who is actively engaging, there are likely many more lurkers following the conversation silently. Even if you can’t change the mind of a combative jerk, it’s still worthwhile to provide additional details and explanations for the sake of the silent majority.   
+Thanks giving —Assume a positive intention and behave as if anyone who comments is doing you a favor (they might be!). Explicitly or implicitly thank anyone who engages. This could range from “Thanks for pointing that out—I’m rerunning the tests now and will report back (as well as update the blog post)” to “Appreciate the feedback— interesting observation.”   
+¡ Focus on facts —A discussion sharing facts like your experiences, test results, or accepted industry knowledge will inevitably be more productive than one based on opinion. Feature facts versus opinions in your own responses; hopefully others will follow your lead.   
+¡ Know what you don’t know —If you don’t know something, “great question” is a perfectly acceptable response and preferable to trying to guess. If you’re lucky, someone else will jump in with the answer. If not, you have your homework cut out for you. And if you discover something interesting, feel free to merge it into the current blog post or start planning a new one to share what you learned.   
+¡ Be curious —As we recommended for the review process, be curious rather than defensive when you start engaging with someone who questions an aspect of your work. Try to understand where they’re coming from. Maybe they misunderstood
+
+something (which is a sign that you should clarify something in your article). Maybe you overlooked something (which is a sign that you should extend or rewrite some part of your article, and thank them for pointing it out). Or perhaps they’re just a jerk (which is simply a sign that some people are jerks).
+
+Speaking of jerks: What if someone is argumentative to the point where the conversation is not productive? One approach is to totally ignore it. Another is to agree to disagree, then ignore the individual. A simple “Okay” or “Comment noted” response can not-so-subtly signal that you’re moving on. And if you have the power to delete (e.g., if the discussion is embedded within your own blog), feel free to wield that power as needed. Your (serious) readers will thank you.
+
+But not everyone is a jerk! If you cross paths with some interesting people commenting on your post, consider following them. You might also want to add them to one of the lists or other mechanisms you created to discover interesting discussions without relying on the algorithms.
+
+Finally, remember that your article is out in the wild now, so people might be talking about it in places where you never shared it. If you want to obsessively monitor the conversation, search for the name of your article (try searching for the article title with quotes and without), then sorting by “new” or “latest” to see if anything turns up. This won’t catch everything, but it might uncover some relevant conversations that you’ll want to be a part of.
+
+TIP What if your post goes unnoticed? Maybe your target audience was focused on a major world event or simply distracted by the latest meme. Or perhaps the wording of your post didn’t catch people’s attention. Feel free to try another variation after a little time has passed. But first, check the blog post views and other metrics (discussed at the end of this chapter). Maybe people are reading and appreciating the blog post without engaging with the social media post.
+
+# STEP 3: SHARE IT IN FOCUSED VIRTUAL COMMUNITIES
+
+After you’ve witnessed the initial response to both your social post and your blog post, revise both if needed; then start on the next wave: posting across focused virtual communities. Target the specific subreddits, Discord servers, and other communities where experts (or aficionados at least) discuss the specific technologies and topics covered in your blog post. These should all be communities that you’ve been participating in for a little while now.
+
+Why go in this order of social media platforms first, then these targeted communities next, and finally Hacker News last? If all the planets align,
+
+¡ The initial vetting on social media will help you uncover any major points of contention in what’s likely the friendliest of these three options. You can then update your blog post or have your responses prepared before you broaden your reach.   
+¡ The discussion in focused virtual communities could get experts talking about your article. Again, it’s another chance for feedback, which might help you
+
+harden your article even further. And getting traction here is likely your best chance at having someone other than you or your teammates post the article on Hacker News.
+
+To increase your chances of success, start by re-reading all the rules of engagement (yes, again) and ensuring that you’re following the protocol exactly. Then spend a few moments writing a message that’s geared specifically to using this blog post as a conversation starter in this particular community.
+
+For example, let’s return to the fake Zig blog post. One possible message for a FakeDB-focused subreddit could be:
+
+My team and I were struggling with migrating data from Postgres into FakeDB clusters. TurtleMigrator was just too slow and painful. We ended up creating a new migrator tool and open sourced it. I wrote up more details in this blog post: {link}. Would love to hear your thoughts and happy to answer any questions.
+
+But sharing it on a Zig Discord server would call for a totally different approach, something like
+
+My team and I just used Zig to implement a data migration tool for a critical project. This was our first experience with Zig (we all come from C, $C { + + } ,$ and Rust backgrounds). I shared our experience in this blog post: {link}. We also open sourced the project. All feedback appreciated—and we welcome project contributors, too!
+
+When you’re ready, share your message, maybe one community at a time just in case someone points out something you want to change. Then track activity, respond as described in Step 2, and repeat as desired across relevant communities. Also, periodically search other relevant virtual communities to discover any additional discussions.
+
+TIP In virtual communities where everyone’s identity is highly obfuscated, it’s especially polite to add a comment announcing yourself as the author of the post. A simple comment like “Hi, author of the article here—happy to answer any questions” will do the trick.
+
+# StEp 4: Try Hacker News
+
+So you’ve shared the blog post on all your social media accounts and all the focused virtual communities that you want to engage with and still nobody has posted it on Hacker News? Okay, see if a colleague with reasonable karma will submit it. As a last resort, do it yourself. Then dust off your good luck charm and be prepared to engage.
+
+WARNING If you’re not yet aware of the vitriol that’s endemic to Hacker News, do yourself a huge favor and take a look around before you engage. Pay particularly close attention to the notorious comment sections. The criticism can be crazy and brutal. Many feel that it’s worth it because trending on Hacker News can generate so much attention. But remember that Hacker News is read by a broad swath of technologists as well as professional internet critics. A smaller bump on a more focused virtual community could very likely lead to more meaningful engagements than a spike on Hacker News. Still, “trending on
+
+Hacker News” is treated as a badge of honor across the tech community. If you’re tempted by the promise of that fleeting fame, submit your article fully aware of what you’re getting yourself into (and perhaps dragging your entire blog site/project/company into).
+
+TIP To quickly surface the most recent submissions for your site, filter Hacker News posts by domain. For example, if you wanted to search for articles from the domain example.com, you would use https://news.ycombinator.com/ from?site=example.com.
+
+On some other platforms, a coordinated effort could help a solid submission gain traction with the algorithms. On Hacker News, too much coordination is likely to hurt more than it helps. If you really want to try, ensure that all associated activity is as organic and natural as possible. That includes
+
+¡ Working with a group of people who normally browse, upvote, and comment on articles and have all accumulated respectable karma.   
+¡ Having those people engage like they normally do, naturally browsing and engaging with a variety of main page and/or new links, before clicking and upvoting your link.   
+¡ Not having the exact same set of people engage every time there’s an article from your blog post’s domain.
+
+Also, know that attempts to game the system could be dangerous, to the point where the offending accounts and/or domains could be penalized or “shadowbanned” (meaning they’re instantly [dead] and cannot receive votes/comments). See “A List of Hacker News’s Undocumented Features and Behaviors” (https://mng.bz/1aPR) for more details on shadowbanning, as well as all sorts of other Hacker News trivia and technicalities.
+
+Here is a handpicked collection of little-known details:
+
+¡ Users can flag submissions as inappropriate.   
+¡ Efforts to evade voting manipulation detection mechanisms must be more elaborate than “point users to the front page (or new page) and ask them to find and upvote your submission.” This trick does not actually work at all.   
+Posting with a link and then adding text as the first comment is recommended.   
+¡ Moderators will give warnings to prominent users prior to shadowbanning.
+
+Finally, there are two important tips from moderator “dang”:
+
+¡ “HN readers want the inside view. Introduce yourself, tell how you came to work on this and what’s different about it, and give interesting details about the problem, the project, the implementation. Don’t just say what you’ve made. Include the how and why. Those two are actually the more interesting to this community.”   
+¡ “Don’t talk to HN like a company (‘Team Oneshop’) or other abstraction. That creates a feeling of separation from the community. Instead participate as
+
+yourself (or yourselves) in a community of fellow builders and entrepreneurs. Then it will feel like you’re approaching the community as one of them.”
+
+# 15.2.3 Keeping it alive
+
+Don’t let your article fade away after the initial buzz dies down. Consider these options for keeping the momentum going:
+
+¡ Pin —Pin the related social post to the top of your social profile until you publish your next (and even more impressive) blog post, at least.   
+¡ Hunt —Continue to hunt down any mentions of your blog post across social media platforms and virtual communities. Then, engage with the discussions and follow any valuable contributors you cross paths with.   
+Seed —Embed the blog post into relevant discussions across the platforms and communities you regularly monitor. For example, “{comment_on_their_article}. I explored this topic from the {whatever} angle and found that…” Take advantage of each platform’s search functionality and look for relevant discussions every few weeks or so.   
+¡ Trace —Check for backlinks to your article. You can use https://ahrefs.com/ backlink-checker/ for a limited view that doesn’t require any registration. If you’re willing to register, Neil Patel’s Ubersuggest provides an extensive list (https://neilpatel.com/backlinks/). If you find some backlinks, share your thoughts on those articles across your social network. For example: “Ah, nice to see my article on {topic} featured in {place}. {link_to_your_article} {link_to_the_ referring_article}.” Note that we discuss backlinks and other analytics, like referral sources, at the end of this chapter.   
+¡ Include —Link to a lively Hacker News discussion at the top of your blog post and/or embed your social post announcing it at the end of your blog post. That way, anyone who comes late to the party can easily find and review the discussion.
+
+# 15.3 Publishing in selective tech publications
+
+Now, let’s shift focus to truly optional amplification options, starting with publishing in selective tech publications. First, a little backstory to better understand what you’re working with.
+
+Once upon a time, blogs did not exist. Instead, engineers looking to share technical articles had to do so in printed tech magazines and journals which were—believe it or not—mailed to people’s homes or workplaces! In addition to peer-reviewed journals run by IEEE and ACM (e.g., IEEE Software, ACM Queue), there were for-profit publications with journal-y names, like Dr. Dobb’s Journal, $C / C { + + }$ Users Journal, and Linux Journal. Each issue had a limited number of pages, likely determined by balancing print and mailing costs versus any advertising dollars available to offset those costs. If you wanted your article to occupy one or more of those finite pages, you had to convince the gatekeepers—the editors—that your article was worthy.
+
+Fast forward to today. Anyone can publish anything online at any time. And anything published anywhere can trend in Hacker News or go viral on social media. But a modern version of these classic journals still exist: editor-driven digital publications such as The New Stack and InfoQ. And the IEEE and ACM publications have survived and gone digital.
+
+# What are we even talking about here?
+
+This section focuses on publishing your article in a publication with an established editorial team that actively curates content. Let’s break that down:
+
+Publication—It has a stated mission and selectively publishes content that helps achieve that mission.   
+Established editorial team— It’s led by a team of named professional editors who are experienced across the publication’s technology focus, publishing, or both.   
+Actively controls content—Those editors actively manage and control what’s published. Authors propose article ideas, and the editors determine which ones are actually published (and when). The publication’s staff reviews, proofreads, and posts each article.
+
+This is opposed to aggregators where authors create accounts and directly submit articles that are generally published—unless they contain red flags like excessive product promotion or offensive content.
+
+Across these publications, there’s a formal article selection and publication process:
+
+1 Authors submit an article, outline, or abstract for consideration.   
+2 The submission is reviewed by an editorial team.   
+3 If accepted, the completed article is reviewed, sometimes peer-reviewed for technical integrity.   
+4 The article is copyedited to meet the publication’s standards.   
+5 The article is published (finally!)
+
+This process requires considerable resources, which means the publications can’t publish every compelling submission. As a result, the articles selected for publication gain a certain air of prestige. The more selective the publication, the greater the prestige.
+
+# 15.3.1 Why bother?
+
+Consider submitting your article to such publications if you’re interested in that prestige, or at least the fringe benefits it can provide. Those potential benefits include
+
+¡ A chance to win the lottery —Your article could be featured in Google News, which is one of the world’s top 10 news sources. Articles from tech publications are com-monly shown in the “For You” section, where algorithms select recently published articles on topics that Google creepily knows the reader is interested in. If your article mentions a technology with a large following (e.g., Linux, Python, Kafka),you could reach a massive amount of interested readers over the course of several days, likely more than you could with a fleeting stint at the top of Hacker News.
+
+¡ A professional content distribution machine —You tap into their community of readers and professionally developed distribution channels. If it’s a for-profit organization, they make money by luring people in with compelling content. You can bet that they have invested in sleek ways to catch readers’ attention and keep them binge-reading across the site as long as possible.   
+¡ Good company —Your article could be listed alongside articles by other industry experts and recommended to readers browsing similar articles. This might be especially attractive if you’re looking to become known as an expert in one of the publication’s signature topics.   
+¡ Referenceability —Articles published in “reliable sources” such as selective tech pubs can be used as references in Wikipedia and other publications that scrutinize the authority of citations. Self-published articles, including articles published on company blogs, are not acceptable references in many contexts.   
+Free review and editing —Your article will be professionally vetted and copyedited. Some publications might also run it through technical reviewers on staff or coordinate a peer review process. This free external feedback could help you strengthen the article before it’s published.   
+¡ Badge of honor —You can add something like “published in ImpressivePress-Journal” to your bio/resume. This might help you stand out in highly competitive hiring or conference selection processes. It’s also a differentiating brag point for the dreaded performance reviews. Someone outside of your field might not be able to judge whether your article is impressive. The fact that a professional publication decided to publish it can be a convincing endorsement of its quality.
+
+# 15.3.2 Why not?
+
+There are two main reasons to skip this option: time and control. If the publication requires original content (and most do), you will need to delay publishing your article elsewhere. Some publications can get the article published within a couple weeks. Other times, the wait is well over a month. Also, you might need to spend some time adapting the article’s focus and style for that specific publication. Publication here might require reducing or increasing the word count, adjusting images, or adding references to support your statements. In addition, you should set aside time to respond to editorial review comments.
+
+You also cede some level of control when you take this path. You typically give up your right to update the article as you see fit, influence how it’s promoted, and control what other content is displayed next to it. Plus, the editors might ask you to add/ remove/rewrite entire sections, retitle the article, and so on. It’s their publication. They set the rules, and you need to play along.
+
+# 15.3.3 Considerations
+
+If you’re considering submitting your article to one of these publications, here are some things to investigate and/or think about as you decide if it’s worth the effort:
+
+¡ Is the publication respected in the communities you wish to permeate?   
+Do people you respect ever share links from this publication?   
+¡ Is there a paywall or registration wall, maybe after a certain scroll depth or number of page views?   
+What do they focus on? What’s their mission, and what articles seem to trend?   
+Would your article fit nicely into one of their existing categories?   
+¡ How many readers do they have? What does their social following look like?   
+Who are their readers (job titles, level of experience, company size, etc.)?   
+Who are their authors?   
+What’s their process for submission, review, and editing?   
+¡ How do they promote similar articles (number of social posts, newsletter references, etc.)?   
+¡ Do they accept previously published content? If not, how much would you need to modify an existing article for them to consider it original content?   
+¡ Can you republish a version of this article elsewhere? After how long?
+
+NOTE Look for an “Advertiser Guide” or “Media Kit” somewhere on the publication's site. These often feature all sorts of (self-reported) reader details and stats.
+
+# 15.3.4 Tips
+
+Here are some tips for getting your article accepted by selective tech publications:
+
+¡ Focus on a tailored fit for one, not a baggy fit for many. See what kind of articles the different publications you’re considering feature and determine which publication is most promising for your topic and approach. Then, contact them with a proposal that’s angled to their specific focus and style. One size never fits all. One publication might consider your edgy “Thoughts on Trends” article to be an adorable diversion that’s totally unfit for their esteemed publication. Another might be honored to feature it prominently on their front page. And the 3000- word technical deep dive that would be considered overkill in one publication could find a perfect home in another.   
+¡ Do your homework. First, take the time to carefully read their author guidelines and understand exactly what they require for the initial review (An abstract? An outline? A full article with a specific word count minimum or maximum?) Look at their “About Us” page, read their mission statement, and consider how you might angle your article to better align with that. Then read a few articles in the category that your article would fall under. What related topics have other authors covered and how does your article build upon them? Can you weave them into your discussion? Publishers love links across their existing content. Also see if they have an editorial calendar of topics published (e.g., September is all about security). You will want to note if your article fits into their featured themes and timings.
+
+¡ Play by the rules. If they want original content, give them original content. If you haven’t already published your article, hold off until you hear whether or not the publication is interested in it. If you have already published it, be transparent about that. Propose (or write and share) a somewhat different variation for this publication, perhaps expanding the scope a bit or maybe narrowing it to take a deeper look at the aspect that’s most intriguing to this publication’s readers.
+
+# The gray zone: DZone, HackerNoon, and others
+
+There are a few interesting publishing options that fall somewhere between selective tech publications and self-publishing sites (such as Medium and dev.to). HackerNoon, ITNext, and DZone are prime examples.
+
+Unlike pure self-publishing sites like Medium and dev.to, they provide a level of human editorial oversight and frequently reject articles that don’t meet their focus and guidelines. But they don’t have the same level of editorial oversight that you would find at, say, InfoQ or The New Stack. That makes them easier to get into, but it also means being published here doesn’t carry the same level of prestige. Also, they are less likely to reach Google News or be considered reliable sources that can be cited as proper references.
+
+As far as considerations and tips, take a look at the ones for the previous section and those in the next section. Elements of both apply. Mix and match as you see fit.
+
+# 15.4 Syndicating simulacra
+
+Many blog syndication sites let you republish a word-for-word replica of your existing blog post for a chance at a new audience, and you can do this without penalizing your original blog post in terms of search engine rankings. This option is a no-brainer as long as it takes only about 5 minutes of work (copy/paste and settings configuration).
+
+For example, assuming that PretendPiotr’s fake Zig blog post was originally published on his company blog site, he might also pop it onto Medium and dev.to. There, it might make its way to some additional FakeDB, Postgres, and Zig enthusiasts.
+
+# 15.4.1 Why bother?
+
+The blog posts that tend to shine in syndication are the ones that are well-aligned with popular topics or tags (terms vary across platforms; Medium uses “topic”). That’s because topics/tags factor heavily into what articles are recommended to readers. As a result, a mediocre article on some aspect of MongoDB, DynamoDB, or Postgres would probably gain many more views than a show-stoppingly awesome article related to TigerBeetle or RisingWave.
+
+An extra bonus: another URL for your blog post means you get additional chances at Hacker News traction. However, be aware that URLs from some platforms known for having dubious quality might be penalized by the Hacker News algorithm or deemed dead upon arrival.
+
+Moreover, if your original blog post didn’t perform as well as you hoped, you could try changing the title for the repost. It’s not really A/B testing since you’re changing two variables at once. But it’s a chance to see if the new angle resonates and also an excuse to try another (also slightly different) social media post as well. If you want to invest a few more minutes into this, you could even try a slightly different introduction to the article.
+
+# 15.4.2 Why not?
+
+You probably want to skip this option if republishing requires any substantial effort. If your blog post contains interactive elements or relies on special plugins or libraries, it might not be worth the extra time required to get it re-created in a new environment.
+
+Another reason: you’re just not comfortable with the site. Maybe it opens a paywall after $n$ views, maybe it has a strong beginner vibe that makes you feel like you’re an adult seated at the kids’ table. If it doesn’t seem right for you, skip it.
+
+Finally, if you tend to update blog posts after they’re published, having multiple versions could lead to versioning problems (or a maintenance mess).
+
+# 15.4.3 Considerations
+
+If you’re thinking of cross-posting your article on a self-publishing platform, the main consideration is how much time it will require, as discussed above. If you can publish it rapidly (maybe to keep yourself awake during that boring meeting), it’s probably worth a try.
+
+The other consideration is past performance. If you’ve posted multiple articles here in the past and the reads and engagement were never impressive, you might want to skip it. Maybe there just aren’t a lot of people reading about your topic on this site right now.
+
+# 15.4.4 Tips
+
+Here are some tips for getting the best results when you republish your blog post on syndication sites:
+
+¡ Canonical is king. Absolutely positively do not forget to set the canonical URL to your original article. This tells search engines to prioritize your original article in their search results, so the other version (which might feature ads, links to random other articles, etc.) does not outrank the one on your blog site or your company blog site. The option for setting this could be buried in the depths of“Advanced Settings” (that’s where it’s currently located on Medium ). If you don’t see it in the main options, keep looking. Note that it might be named something slightly different, such as “Original Source.”   
+¡ Consider staggering publication. Some platforms will automatically share your pub -lished article on social media. Sometimes you’ll luck out: a reader will stumble upon it (maybe via the platform’s recommendations), read it, and decide to share it. If you publish this version of your article at least a week or so after your original version, it could spark a second wave of social media promotion.
+
+Take care with taxonomies. Think carefully about the topics/tags that you apply to the article. An article with limited or poorly selected topics/tags is unlikely to reach additional readers. This is covered in chapter 7. Summary: balance relevance and reach. Definitely don’t skip the ones that are the best fit, but also try your luck with some broader ones, too. Some platforms allow no more than five tags; that’s a good cap for keeping it focused and avoiding the tag sprawl that makes it look spammy.   
+¡ Provide real contact information. Unless you decided to publish under a pseudonym, use your real name for the platform and give readers a way to contact you: a social account with open DMs, a LinkedIn profile link, or similar. It’s frustrating for conference organizers, tech book publishers, and other talent scouts to stumble upon a great Medium article but not find any way to contact the author.
+
+# 15.5 Guest blogging
+
+Guest blogging is simply having your blog post published on someone else’s site. It’s not all that common, to be honest. But in the few situations where it makes sense, it’s truly a win-win for both parties. You get more exposure within a relevant community of readers. And the blog editor gets a new article from a fresh perspective.
+
+Guest blogging might be an option if
+
+¡ There’s a blog behind a product, project, or technology you featured in your blog post.   
+¡ There’s a blog behind a conference or event you’re participating in.
+
+For example, a variation of the fake Zig blog post would be a natural candidate for a guest post on the FakeDB blog site.
+
+# 15.5.1 Why bother?
+
+Guest blogging for a highly relevant blog site is generally a great way to reach your target audience. It’s not going to garner as many views as, say, trending on Hacker News. But a high percentage of the people who see your blog post here are likely to be interested in your topic. With this tactic, it’s all about quality, not quantity.
+
+Guest blogging on a conference-hosted blog offers another benefit, too: it could attract more people to your session. Just don’t leak the core of your talk in advance. Consider sharing an article excerpt that you won’t be covering in detail during the talk. Or, provide them a related article that’s aligned with your talk and/or the broader conference theme.
+
+# 15.5.2 Why not?
+
+If you really want to capture the interest of this community, the article should be highly focused on the product/project/theme they care most about. If your existing post is a perfect fit as is, great. Send it over! But if you need to adjust the focus, consider whether the opportunity seems valuable enough to justify the extra time required to revise or extend the article.
+
+# 15.5.3 Considerations
+
+As you debate whether a guest blog will pay off, think about the following:
+
+How do they typically alert their community about new blog posts?   
+¡ Is there any sign that their community really engages with the blog (e.g., social media engagement)? Will the blog editor share any metrics?   
+¡ Does the other blog look clean and impressive?   
+If your blog post is code-heavy, how nicely do they display code on their blog?
+
+# 15.5.4 Tips
+
+Here are some tips for getting your blog post cross-published on someone else’s site:
+
+¡ Ensure it fits their audience. Focus on what this specific audience cares about most. For example, the fake Zig blog post would be a perfect candidate for the FakeDB blog. However, the Fake DB audience would care more about how the Postgres to FakeDB migrator works and less about PretendPiotr’s thoughts on Zig. It could also be a nice fit for some still-fictional Zig blog. In that case, it would make sense to minimize the discussion of the team’s previous data migration woes and focus almost exclusively on the Zig-related learnings.   
+¡ Consider companies associated with open source projects. If your blog post features an open source project, also think about the various companies that have productized it in some way (e.g., offering it as a service). They likely run company blogs and their users might be highly intrigued by your lessons learned working with that technology or your thoughts on its promising future. For example, if you wrote something intriguing about Apache Pinot, StarTree’s blog might be a perfect publishing platform.   
+Ask for a link. You’re donating free content, saving this other blog editor from having to write or source a story to fill their editorial calendar. The least they could do is give you a link or two to promote your personal blog, project, company—whatever is important to you. And if the article is a close copy of your original post, request that they set the canonical URL to the original post.
+
+# 15.6 Participating in podcasts and livestreams
+
+Podcasts and livestreams offer a way to reach people who enjoy watching and listening to educational content. Some people strongly prefer reading and they cringe when a link leads to a video or audio recording. Others would rather listen to a 1-hour podcast than devote 8 minutes to concentrated article reading. Many people like to mix it up, depending on their mood and multitasking activities (e.g., commuting, walking, cooking).
+
+Having a successful blog post can help you break into the world of podcasts and livestreams, or finally earn a spot on ones that were previously beyond your reach. You’re unlikely to find a program that wants to spend 30 minutes talking specifically about your blog post. But having a successful blog post is a perfect excuse for contacting the
+
+host. Sharing your blog post helps the host 1) determine if your take on the topic is a good fit for the program, and 2) prepare thoughtful questions for the discussion.
+
+For example, assume that one of PretendPiotr’s favorite podcasts was planning to have programmers discuss their first experiences with Zig. He could contact that host to express interest and share a link to his Zig blog post to show that he’s qualified to speak on the topic.
+
+# 15.6.1 Why bother?
+
+The immediate payoff depends on how many people tune in to the session (live or on-demand). But just being able to mention that you’ve been on a podcast or a livestream (especially an expert panel) is a notable achievement, and it can be a stepping stone to more/bigger/better speaking opportunities. Consider it brand promotion versus blog post promotion.
+
+For people who are comfortable speaking on the spot, not much preparation is required. If you find that the opportunity has a good reach and you can pull it off without too much planning or perspiration, it could very likely be worth it.
+
+Another potential benefit: if you’re in a group discussion, you might get to meet and interact with experts in the field. That’s often fun in and of itself. Moreover, it could open the door to additional collaboration with these experts, as well as elevate your profile by being featured alongside them.
+
+# 15.6.2 Why not?
+
+Opportunities can vary dramatically in quality. Don’t consider or commit to anything without researching it first.
+
+One thing that’s pretty constant is that you’ll likely have limited control over the direction of the conversation. If you decide to participate, you will be a guest on someone else’s program, so you need to be respectful and follow their lead.
+
+Moreover, if the thought of unscripted public speaking sends you into anaphylactic shock (and you’re not feeling compelled to get over that), this might not be the best option for you. But maybe you’re willing to leave your comfort zone and challenge yourself?
+
+# 15.6.3 Considerations
+
+If you’re considering participating in a podcast or livestream, think about the following:
+
+How many people generally tune in live and/or on-demand?   
+¡ If it’s live, when does it occur (e.g., will your CET-calibrated brain need to be responsive and clever at 2 am to accommodate a PST afternoon time slot)?   
+If it’s prerecorded, are there opportunities for retakes or cuts?   
+How is the audio/visual quality of other episodes?   
+¡ Can you influence the questions at all (e.g., can you review and comment on the question list in advance, or offer canned “seed” questions that you want to answer)?
+
+Is the livestream chat generally smart and civil? Do guests engage with it?   
+¡ If it’s a panel, how does the moderator typically manage the discussion, rein in digressions, and keep it balanced? What types of guests does the host attract?
+
+# 15.6.4 Tips
+
+Here are some tips for breaking into the podcast/livestream realm:
+
+¡ Be selective. Don’t approach every tech podcaster/streamer you can find with the same generic message. Take the time to make a list of candidates, watch/listen to multiple episodes of each (skim them at least), then craft a custom message for the few that look most intriguing. It’s nice to mention what you like about that particular program and how you fit into their themes.   
+¡ Predict questions. If you’re nervous about how you’ll respond when you’re put on the spot, think about the questions that could arise and how you might approach them. Maybe even look at the latest Hacker News and other discussions related to your topic.   
+¡ Rehearse likely tidbits. It’s safe to assume that the host will ask you to introduce yourself, share what you’re currently working on, and maybe say something about the biggest challenges and opportunities related to your topic. You might as well prepare your answers in advance and rehearse them with your rubber ducky.   
+¡ Invest in decent equipment. You don’t need to have the equivalent of a Hollywood sound stage, but do invest in a reliable (wired!) mic as well as adjustable lighting when video is involved. Muffled, staticky, or inconsistent sound will cause some listeners to drop, shift the chat/comments discussion to complaining about the sound, and could prevent the episode from being featured on demand. To be safe, do a test recording then check how it looks and sounds from the audience perspective (volume, static, where your eyes are focused, etc.)
+
+# 15.7 Sharing at conferences
+
+A blog post offers a smooth glide path into conference speaking opportunities:
+
+You already have a topic that you’ve thought about quite a lot.   
+Your post provides a convenient head start for creating a deck and talk track.   
+¡ It’s considerably less risky for organizers to accept a topic when they can see how it’s covered in a complete blog (versus just a short abstract).
+
+It does require an investment of time: thoroughly vetting the conference, proposing a compelling abstract, preparing the deck and speaker notes, rehearsing, actually delivering the talk, and maybe even traveling somewhere in the process. But the payoff can also be significant in terms of elevating your profile, connecting with experts on your topic, growing your following, and so on.
+
+This is an expansive topic with many considerations throughout different phases of the process. That’s why we’re covering it in detail in chapter 16.
+
+# 15.8 Measuring the effects
+
+How does all this amplification affect your blog post as well as your brand? Let’s close out this chapter with a high-level rundown of the types of metrics that could be helpful to measure. Your access to metrics depends on where your article is published (table 15.1).
+
+Table 15.1 How to access metrics depending on where your article is published   
+
+<table><tr><td>Publication site</td><td>How to access metrics</td></tr><tr><td>Your own blog site</td><td>Geek out over metrics to your heart&#x27;s content via Google Analytics, Google Search Console, or similar tools.</td></tr><tr><td>Your company&#x27;s blog</td><td>Someone, somewhere (Marketing?) certainly has access to these metrics and can share the stats you&#x27;re interested in.</td></tr><tr><td>Another blog or a tech publication</td><td>Ask your main contact for a report. Note that they might not be at liberty to share this information externally.</td></tr><tr><td>A self-publishing platform like Medium or dev.to</td><td>You&#x27;re limited to the (frequently changing) glimpse of metrics they choose to share.</td></tr></table>
+
+WARNING Technical readers are notoriously obsessed with evading tracking. As a result, behavior tracking metrics such as new visitors versus existing visitors could likely be skewed. Still, flying with limited vision is better than flying totally blind.
+
+# 15.8.1 The blog post
+
+The following metrics provide insight into blog post reading:
+
+¡ Views and users —Views is the total number of blog post page accesses, including repeated views by the same user. Users is the total number of unique people who viewed that post.   
+¡ Scrolled users —A user is considered “scrolled” if they read through at least $9 0 \%$ of the page. This should provide a good assessment of how many readers reached the end of the article. On Medium, “reads” is the rough equivalent of scrolled users.   
+¡ Average engagement time —Engagement time is the average time your blog post was in focus on the user’s browser and potentially being read. Bot traffic can make this number much lower than expected.   
+¡ Bounce rate —Bounce rate indicates the percentage of sessions where users did not engage (by having the page in focus for at least 10 seconds or interacting with the page in some manner).
+
+# What could cause low engagement time and/or high bounce rate?
+
+If these metrics seem off, especially relative to other blog posts on the same site, it could be due to bot traffic or an influx of general traffic (e.g., from Hacker News). Slow page load or technical problems could also be to blame. Or, it might be a signal that
+
+The blog post is attracting the wrong readers. To investigate, look at organic search details, traffic sources, and backlinks to see how people are getting there.   
+The readers didn’t find what they were hoping to see. Maybe your introduction did not meet the expectations set by the title, a social media post, or a virtual community discussion.
+
+Actual responses —Public or private comments like “Thanks for writing this, it really helped me” are often the most rewarding indicator of how your blog post affected readers. They can’t be tracked automatically but do take the time to save those comments in a file for future reference. Also, revisit them if you ever want motivation while working on some future blog post.   
+¡ Conversions —If custom conversion tracking is set up, it can indicate how many of the people who entered the site via your blog post later signed up for some free trial, “book a demo” offer, or another offer that requires registration. Even if this isn’t your top concern, this could be a nice data point to mention when it’s time for the dreaded performance review. Alternatively, you might also (or rather) want to track GitHub metrics, such as stars, watches, and forks.   
+¡ Views/users plotted over time —Looking at how blog post views/users ebb and flow over time can help you see the effects of known influences (e.g., the day an impressive influencer shared it). If you notice any unexpected spikes (e.g., in figure 15.1), this is your cue to start investigating the cause. Was there some heated discussion on Reddit? Was it mentioned in a popular newsletter? The items in the next section can help you track down the source.
+
+Views by page path and screen class over time
+
+![](images/db8c40210eb9f00011a6fb95b5375370870e718586cfb03bb2cc4ecd95c1d0f0.jpg)  
+Figure 15.1 The report shows an unexpected spike in interest long after a blog post was published. This particular spike stemmed from a tech influencer stumbling upon the blog post from a search engine, then sharing it on his social media account.
+
+# 15.8.2 How people are finding the blog post
+
+The following metrics provide insight into how people are finding your blog post:
+
+Traffic sources —Looking at the core blog post stats by acquisition source helps you determine just how big that Hacker News boost is (or isn’t). Go into source/ medium for the details you care about (e.g., see figure 15.2). You can learn all about how organic (non-paid) social, search, and different referring sites are driving traffic to your blog post.   
+¡ Organic search details —This includes details like what user queries are surfacing your blog post, how you’re ranking on each query, and how many people actually click this blog post from those search results. You might want to consider these search terms as you plan additional blog posts. And if you discover that users are reaching your blog post from an odd search term (perhaps “Zig Zimbabwe currency”), you might want to investigate further, then adjust the article’s title and metadata accordingly.   
+¡ Ranking on anticipated search terms —Remember the keywords we talked about in chapter 7? Unless you have access to an SEO tool, just search them in a browser (in Incognito mode or equivalent) and see where your blog post ranks. If it ranks nicely, this could provide a sustainable source of steady traffic. If not, you might want to consider subtle title or metadata changes—but never undermine the integrity of the article for the sake of search rankings.   
+¡ Backlinks —Are people linking to your blog post from other sites: related blogs, newsletters, lists of resources, and so on? You can get a limited view from free
+
+![](images/ea4764a3dbfb45372963ca0f097e55a5bbf456e2cb0dfd6efb6f1245a3508fb8.jpg)  
+Figure 15.2 A look at blog post traffic from sources such as Hacker News and the This Week in Rust newsletter, as well as direct traffic and organic search results
+
+backlink checkers (e.g., Ahrefs [https://ahrefs.com/backlink-checker/] or Ubersuggest [https://neilpatel.com/backlinks/]—requires registration). If you uncover an impressive backlink, consider sharing that article as referenced in section 15.2.3.
+
+# 15.8.3 Who’s reading and how
+
+The following metrics provide insight into who is reading your blog post:
+
+¡ New users —Knowing if a blog post is attracting new readers or mostly appealing to your existing community could be a good way to gauge outreach attempts like sharing it on social media and virtual communities. But beware. Although Google defines new users as people who interacted with your site for the first time, it’s actually people who do not have a previously saved cookie from that website. This means the new users might be artificially skewed a bit high with tracking-evading tech readers.   
+¡ Demographics —Knowing what country your readers are in can help you time your social media postings. For example, if most of your readers are in India, don’t publish your social media post at midnight India time.   
+¡ Technology —Knowing users’ browsers, operating systems, device types, and screen resolutions can help you determine what to optimize your blog post for and what to test it on. If most people are reading on mobile, for example, you’d want to be extra vigilant about having short paragraphs, smartly cropped images, and so forth.
+
+# 15.8.4 Social and community engagements
+
+The following metrics provide insight into your promotion efforts and their effects on your brand:
+
+Your follower count —This tells you how many people have opted in to your updates. The more qualified people that follow you, the greater the chance that people will see, share, and like your social posts—which gives them a boost in the eye of the almighty algorithms. Your follower count should rise as you share compelling content (including your blog posts!), as well as engage in discussions and follow new people.   
+Impressions —This is the number of times your social post was seen by users on that platform. If someone with a huge following reshares your post, this will bump up impressions fast. More impressions equals more readers. That could translate to more clicks into your blog post. If nothing else, it could help build your brand awareness (e.g., “that PretendPiotr guy knows about Zig and FakeDB”).   
+¡ Engagements —Engagements (likes, shares, replies, clicks, etc.) can expand your impressions. Although you might be satisfied with fewer general engagements and more clicks into your blog post, the algorithms reward broader engagement. Strangely, many users will like or share a social post about a blog post they’ve never read.
+
+¡ Clicks —Clicks tell you how many people actually clicked the URL in the social post and opened the associated blog post. Tracking clicks is especially valuable if you shared the same blog post in multiple different social posts (maybe one with an image of the article text, another with a flame graph, etc.). In that case, click metrics might help you assess which angle worked better. Beware, though: there are many other factors at play. Perhaps one social post triggered more clicks because the stars were just better aligned with respect to timing, competing events, who happened to reshare it, and so on.   
+¡ Upvotes —Upvotes help your community post climb up lists. Having a healthy amount of upvotes also secures you a better position in perpetuity. Each time a user searches for something related to your blog post and sorts results by popularity, upvotes help you commandeer valuable real estate on the list.   
+¡ Comments—Community posts with a high number of comments do tend to attract more views. If a good fight is going on, readers naturally want to watch from the sidelines, or perhaps even jump into the ring themselves. But having more comments is not necessarily favorable. A community post might have more comments because the associated blog post is riddled with coding errors, biased benchmarketing, unfounded assumptions, markety product perspectives, and so on. Having more comments than upvotes can trigger flame war detectors.   
+¡ Profile views —If you’re active on LinkedIn, you might also want to see who’s looking at you, especially while your blog post is actively being discussed in various places. You could discover a nice spike in overall profile views, as well as interest from specific peers or leaders with intriguing profiles. Note that you might be seeing just the tip of the iceberg though; many browse LinkedIn using private mode.
+
+# Summary
+
+After publishing your blog post, there are many ways to amplify its reach and effects, including sharing on social media and in virtual communities, getting it published in tech publications, syndicating it on other blog platforms, participating in podcasts/livestreams, and speaking at conferences.   
+¡ Tailor your amplification strategy based on your personality: introverts likely prefer more async efforts, while extroverts can embrace more real-time interactions.   
+¡ Even if you’re not super social, start contributing to social media and virtual communities then share your blog post there:
+
+– Before you share your own blog posts, get a good feel for the vibe of the community and contribute to it in nonselfish ways.   
+– Take a phased approach to posting across different platforms, starting with the most ephemeral social media platforms and leading up to Hacker News.   
+– Engage in the discussion, but feel free to walk away from unproductive attacks.   
+– Don’t abandon your post after the initial promotion; look for ways to work it into new discussions and keep looking for other people mentioning it.
+
+¡ For increased reach with a level of prestige, look into getting your article published in selective tech publications.   
+¡ For a potential extra boost with (usually) minimal effort, syndicate your post on sites like Medium.   
+¡ Use your blog post to help secure podcast/livestream guest spots where you can expand on the topic and promote your expertise.   
+¡ Similarly, pitch your blog post topic as a potential conference talk to elevate your profile and connect with others in the field.   
+¡ Measure the success of your amplification efforts by tracking metrics such as views, engagement, traffic sources, shares/comments, follower growth, and backlinks.
+
+

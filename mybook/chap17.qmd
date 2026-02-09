@@ -1,0 +1,363 @@
+# This chapter covers
+
+¡	The benefits of moving from writing blog posts to writing books   
+¡	When you should (and shouldn’t) consider writing a book   
+¡	Alternative ways to share and shape big ideas   
+Commonly overlooked considerations in the “publisher versus self-publish” decision   
+¡	Navigating the book proposal process
+
+After you’ve written several successful blog posts and maybe have a conference talk or two under your belt, you might start wondering, “Should I write a book?” You might start thinking about this because you have a burning book idea—and you have a bad habit of burdening your future self with ambitious commitments. Or maybe it wasn’t even your idea at all. Maybe an acquisitions editor (a.k.a. a publisher talent scout) was impressed by some of your blog posts, reached out to you, and planted the seed in your brain.
+
+Either way, writing your own book can be a tempting idea. But it’s also a massive commitment. The book will affect your life (and your family’s life) for months or years. But all the effort could yield significant long-term rewards.
+
+This chapter helps you think through key decisions and tradeoffs you’ll likely face if you want to write a book. As with any major project, there are all sorts of non-obvious factors to consider. We share what we’ve learned working with several different publishers, as well as self-publishing, to give you a better idea of what to expect and what to look out for. We take you through the book proposal process, then conveniently leave “how to write the book” as an exercise for the reader. (It deserves its own dedicated book, honestly.)
+
+Book writing can be a wild ride; we hope this chapter makes your own path to book writing—should you choose to pursue it—more straightforward, rewarding, and enjoyable.
+
+# 17.1 Why write a book?
+
+To be clear, writing a book is rewarding—both professionally and personally, if not (typically) financially. Otherwise, you wouldn’t see so many seemingly rational people succumb to this strangely addictive hobby. Here are specific reasons why you might decide to invest all the time and effort that writing a book requires:
+
+You have a vision for a book that begs to be written.   
+You want to anchor yourself as an expert.   
+You want an excuse to immerse yourself in a topic.   
+You want to level up your writing.   
+You have an innate urge to share and teach.
+
+# 17.1.1 You have a vision for a book that begs to be written
+
+Book projects tend to arise from the following perfect storm:
+
+A void —There’s a void in the industry knowledge base. Maybe that’s because the technology or topic is new or just now gaining traction. Maybe the techniques and tools are known only as tribal knowledge across certain communities. Or maybe there are so many aspects and angles to the topic that the current resources don’t do it justice.   
+A hunger —There’s a critical mass of people who care about this void, to the point that they’re willing to purchase and read a whole book on it.   
+Expertise —You’re a valuable source of expertise on the topic of the void.
+
+In many cases, a publisher will notice the void and the hunger, then approach blog post authors to provide the expertise. Or it could happen altogether organically. Perhaps one day, you randomly realize that what you consider to be common sense is not actually common at all—and that sharing this knowledge broadly could really benefit some significant segment of the community.
+
+The origin of the book idea isn’t critical. What matters is whether
+
+¡ You have an interesting vision for how to address the void   
+¡ You personally possess (or have ready access to) the expertise needed to execute on that vision   
+¡ You’re already picturing a print version of that book sitting on your desk, bookshelf, or coffee table
+
+If you’ve reached that point, “the book idea” becomes your book, and you’re probably already infected by the irresistible urge to write it.
+
+# 17.1.2 You want to anchor yourself as an expert
+
+Want to secure your spot as an expert on a topic? Be the one who “wrote the book on it,” literally. That expression came about for a reason. Although book quality varies, it’s fairly well accepted that someone who has written a book has a deep understanding of its topic.
+
+After all, writing a book is not an easy endeavor. It demonstrates that you have
+
+Thought deeply about this topic for quite some time   
+Developed the domain expertise required to create a sizable book   
+¡ Spent tremendous time structuring and refining your thoughts on this matter for the sake of educating others   
+¡ Communicated expertise that was validated by publishers and reviewers
+
+Those are just some of the many reasons why being a published author provides a near-instant infusion of prestige and credibility. Even people who don’t read a single page of your book will likely be impressed by the fact that you wrote it. It’s the ultimate portfolio piece: a carefully crafted and professionally produced work that captures your best thinking on a given topic at a given time. And you can just drop it on someone’s desk.
+
+If you’re ever looking to stand out in a crowded field of applicants, having written a book should serve as a clear differentiator! It’s also the perfect mark of distinction if you’re running your own business or consulting as a side project.
+
+# 17.1.3 You want an excuse to immerse yourself in a topic
+
+If you’re so passionate about a topic that you want to think about it every day for a year or so, commit to writing a book on it. That gives you the perfect excuse to prioritize rigorous study of the subject. Normally, it’s way too easy to delay reading all those bookmarked articles and writing up all those things you meant to share. There’s nothing like a legal contract specifying exact due dates to finally get you motivated!
+
+When you write a book, you will need (and want) to spend considerable time thinking about your topic. When you write a blog post, you can conveniently frame the article to avoid things you don’t know as well. However, when you write something as comprehensive as a book, it’s likely going to expose some gaps or weak spots in your mastery of the topic. In addition to the things you know you don’t know, you will also stumble upon
+
+“unknown unknowns” as you write. The very act of capturing your thoughts in structured writing forces you to think much more carefully about
+
+¡ How you know what you know   
+How it’s all related   
+What matters most   
+How to explain it to others   
+¡ How to get others excited about it
+
+Your understanding of the topic will be further tested by your technical editor (if you work with a publisher), other reviewers, your readers, and anyone who happens to be talking about the book in the infamous comment sections. If you get something wrong, it won’t go unnoticed.
+
+By the time you emerge from the journey, book in hand, you will likely be one of the world’s most knowledgeable people in your specific niche.
+
+# 17.1.4 You want to level up your writing
+
+Writing a book is a boot camp experience—even for professional writers, even for those who have written books before. You will naturally refine your craft by
+
+¡ Writing so much, so rapidly   
+¡ Forcing yourself to present your thoughts in the book/chapter structure that’s set by your publisher   
+¡ Constantly rewriting when the words don’t effectively capture the ideas in your brain   
+¡ Receiving and responding to feedback from development editors, technical editors, copy editors, and real-world readers/reviewers   
+¡ Accommodating difficult requests: adding sections that you never intended to write, rewriting a chapter from scratch, pivoting part of the book in a totally different direction, and so forth
+
+Just like preparing for and ultimately completing a marathon will take your athleticism to new levels, writing a book will take your writing to new levels.
+
+# 17.1.5 You have an innate urge to share and teach
+
+If you’re an open source contributor, a team leader, or have ever been a teacher, you’re probably driven by the urge to share your expertise for the benefit of others. Books, like blog posts, help you scale your knowledge far and wide. But books let you share a massive amount of knowledge in a single convenient package. And that can have a massive influence on your readers, as well as your domain.
+
+# 17.2 Why not?
+
+Committing to a book project when the stars aren’t perfectly aligned is a surefire way to make your life miserable for at least a year. Here are two key reasons why you shouldn ’t write a book:
+
+¡ The topic isn’t well-suited to a book.   
+It’s just not a great fit for you—at least not right now.
+
+# 17.2.1 The topic isn’t well-suited to a book
+
+The publication cycle of books is dramatically different than that of blog posts. With a blog post, you can move from idea to published article in a matter of minutes. With a substantial book, it would be rare to go from idea to printed book in less than a year. Books are more difficult to update as well. Even with self-publishing, you can’t just change a few words or lines of code in a book as easily as you can in a blog post.
+
+Given all the time and work required to get a book published, we recommend that you focus on a topic with an expected “shelf life” of at least a couple of years, preferably more. For example, you don’t want to end up
+
+Writing a detailed “how to” book about a product that’s poised for a major change   
+¡ Trying to pin down the nuances of a new programming language as it’s rapidly evolving   
+¡ Obsessing over being first to write about a shiny new technology rather than creating something that will stand out for years to come
+
+Also, do your research and check that potential readers can’t already get a “good enough” resource on your topic for free (or close) on the internet. Unless you are truly confident that your approach will stand out and that readers will recognize the value of your approach, you might want to refrain from entering this potentially devalued market.
+
+# 17.2.2 It’s just not a great fit for you—at least not right now
+
+Books consume a ton of time. If your work, family, and other personal priorities are already consuming all your time, don’t take on a book project unless you are willing to give something up. You can’t miraculously find more time. You will need a realistic plan for where you will free up existing time on a consistent and long-term basis. Otherwise, the book commitment will ultimately feel like the sword of Damocles hanging over your head.
+
+Moreover, book projects suit some personalities better than others. Table 17.1 lists some points to help you assess where you fall on the “will I love it or hate it” spectrum.
+
+Writing a book is a strange process. You need to be relentless about pushing through challenges for months upon months. Then, as the deadline approaches, it’s time for a hard mental shift: you need to draw a line and let it go. As Brian Sletten, author of WebAssembly: The Definitive Guide, so aptly put it in a personal conversation: “Books aren’t published when they are done. They are done when they’re published.”
+
+# 17.3 Alternatives to consider
+
+Maybe writing your own book is not the right project for you (at least not right now). But if you still have a burning desire to tackle a big idea and share your knowledge with the community, consider other options:
+
+¡ Collaborate with co-authors   
+Drip it out through blog posts   
+Become a technical reviewer
+
+Table 17.1 Is your personality amenable to book writing?   
+
+<table><tr><td>Likely to love it</td><td>Likely to hate it</td></tr><tr><td>You enjoy tackling massive ambiguous projects with no precedent and minimal guidance.
+You thrive on torturing yourself with long-term physical and mental challenges.
+You create high-level visionary ideas as well as low-level plans to carry them out.
+You’re insanely self-disciplined.
+You can crank out acceptable drafts relatively fast, even under pressure.
+You can tear your writing to shreds.</td><td>You thrive on clear project direction and structure.
+You often get enthralled by a new hobby or other obsession, then soon get bored and move on to the next.
+You’re quite comfortable being comfortable.
+You have trouble accepting things as “good enough” and calling them done.
+You’re not (yet) great at reviewing your writing from your reader’s perspective and anticipating where they could be confused, skeptical, or lost.</td></tr></table>
+
+# 17.3.1 Collaborate with co-authors
+
+When we start discussing this book, particularly this chapter of this book, with our book author colleagues, it tends to go as shown in figure 17.1.
+
+![](images/7e099cb86cf573ce970ae892716322e45e96bc4b7a2e32b35ef71c0047cbe31e.jpg)  
+Figure 17.1 What happens when book authors talk about writing books
+
+Joking/not joking. Writing a book is ultimately a rewarding process. But we’d be remiss to sugarcoat it—it can be difficult. Martin Kleppmann, author of the top O’Reilly bestseller to date, shared: “Writing a book is really hard, at least if you want to do it well. For
+
+me it was about the same level of difficulty as building and selling a startup (YMMV), that is to say, involving multiple existential crises” (see https://mng.bz/RNna).
+
+Why are we talking about this in a chapter section that’s supposed to be about co-authors? Because co-author collaboration can change the whole dynamic of a book project. It’s not just that each person has fewer words to write (though that certainly helps!). Other benefits include:
+
+¡ With more expertise and strengths to draw from, you don’t need to personally master every aspect of the topic, as well as all parts of the writing process.   
+¡ More perspectives translates to deeper as well as broader insight into the topic, and this benefits both you and your reader.   
+¡ The weight of the book no longer rests solely on your shoulders; if you need a little break, you can take one knowing that others are still moving the project forward.   
+¡ On the other hand, knowing that your colleagues are working away on this shared project is perfect motivation when you’re tempted to leave that next task for another day.   
+¡ You have ready access to an incredibly informed (and passionate) sounding board for all the questions and doubts that cross your mind.
+
+Plus, misery loves company! When you need to rewrite that chapter from scratch, scramble to deliver drafts within minutes of the deadline, review hundreds of pages of copyediting revisions over a weekend, and so on, it really does help to have an impromptu group venting session.
+
+Quite seriously though: having co-authors you enjoy working with can make a book project truly fun. We’ve worked on a handful of book projects with different collaborators involved in various capacities. In all cases, the overall experience and quality of the final product ultimately boiled down to the chemistry between the co-authors.
+
+# 17.3.2 Drip it out through blog posts
+
+Call this approach “Just start writing it with zero book pressure.” Think about what your book would look like, then plan to publish at least the first part of that book as blog posts. Begin with an introductory post that shares why you’re writing the series and what to expect. Then drip out what you envision as the first few chapters on your own schedule. Each time you publish a new post, be sure to link back to that introductory post (and vice versa).
+
+If you work in this serial publishing manner, you can get a feel for what it’s like to write this book. It will soon become apparent how much time each piece will require to research and write. And you will get an immediate gut check on how much you enjoy working on this topic. Do you actually look forward to tackling the next section on your mental list? Or are you already getting bored with the whole idea?
+
+Working in this manner is also a great proving ground for your idea. Is there truly an audience interested in learning about your take on this specific topic? Blogging a
+
+preview of the book content is the perfect way to find out! If your first few chapters-masquerading-as-articles are all Hacker News sensations, you can bet that the book proposal process will go much more smoothly. Or maybe you want to self-publish the book so you can retain a larger percentage of the potential bestseller’s profits (more on that later). However, if the idea doesn’t immediately resonate, don’t give up right away. It could be that you’re just not connecting with the right readers. Maybe a publisher could help you reach the target audience.
+
+You might also discover that you’re perfectly satisfied covering this subject via blog posts! In this case, just continue with what’s working until you feel some compelling urge to change.
+
+TIP Will Larson wrote a book blog-by-blog, then later had it published by a publisher. He shares his experience in “Self-publishing Staff Engineer” (https://lethain.com/self-publishing-staff-engineer/). Other examples are“Joel On Software” by Joel Spolsky (from https://www.joelonsoftware.com/) and “The Old New Thing” by Raymond Chen (https://devblogs.microsoft .com/oldnewthing/).
+
+# 17.3.3 Become a technical reviewer
+
+Becoming a technical reviewer lets you influence a book in your area of expertise and also gain an inside look at how the book-writing process really works. Technical reviewing a book is not nearly as time-consuming as writing one. It’s a streamlined process, with the editor pinging you each time a new chapter is ready to be reviewed. It can take anywhere from days to months, depending on the author’s ergonomics and laziness (also known in the book industry as “being preoccupied with more important business”). Technical review usually takes the form of light online discussion with the author: pointing out glaring (to you) omissions, asking for clarification on some points, and suggesting a rephrase here and there.
+
+How can you become a technical reviewer to learn more about writing a book? It’s a Catch-22. If you’ve already written a book on the topic, your editor will likely contact you when they need technical reviewers. But how do you break into the cycle? You could always volunteer your services to any peers who enthusiastically announce “I’m writing a book!” Alternatively, you could hunt down the acquisitions editors in your domain: look at a book you admire, see who the author thanks in the preface, and ping that person on LinkedIn or other platforms.
+
+# 17.4 Publishing considerations
+
+If you decide to write a book, what path do you want to take? Working with a publisher, a company that has perfected the art of developing and selling technical books, can provide a number of advantages: valuable feedback, extended reach, and taking care of all matters required for high-quality production, to name a few. But self-publishing also brings a different set of benefits: more freedom on your topic (well on everything, really), no real deadlines, and the potential to update the book faster.
+
+There are already many great resources where authors share their personal experiences working with publishers as well as self-publishing. In particular, Will Larson’s perspectives on working with publishers as well as self-publishing stand out as must-reads. See “What I Learned Writing a Book” (https://lethain.com/learned -writing-book/), “Self-Publishing Staff Engineer” (https://mng.bz/ZVg9), and “More (self-)publishing thoughts” [https://lethain.com/more-publshing-thoughts/]). Moreover, Gregor Hohpe’s “The Economics of Writing Technical Books” (https://mng.bz/ AawQ) provides exceptional insight into the realities of the self-publishing process. And Rob Fitzpatrick’s book, Write Useful Books, offers good advice for self-publishing nonfiction books in general.
+
+Table 17.2 provides a brief overview of the reasons most commonly cited for choosing one option over another.
+
+Table 17.2 Common reasons for choosing to work with a publisher or self-publish   
+
+<table><tr><td>Work with a publisher</td><td>Self-publish</td></tr><tr><td>Prestige and validation</td><td>Complete control over your content</td></tr><tr><td>Pressure (and help) to get it done</td><td>Ability to update (nearly) on-demand</td></tr><tr><td>Professional production/ and distribution</td><td>Full ownership and rights</td></tr><tr><td>Editorial review and guidance</td><td>Higher royalty rate</td></tr><tr><td>Professional promotion</td><td>Flexible schedule</td></tr></table>
+
+We’ve worked with both publishing models and with several different tech publishers. In this section, we’ll share some commonly overlooked publishing considerations based on what we learned.
+
+# 17.4.1 Not all publishers are created equal
+
+First, talking about the generic term “publishers” is like making blanket statements about “hotels,” “food,” or “animals.” There is a dramatic range.
+
+Every publishing company has its own mission, processes, and business model. With one, you might expect to interact with various staff members each week; collaborating on marketing efforts, brainstorming something with editors, and so on. With others, you might have just two or three interactions with the publisher’s staff throughout the entire process (and you might need to send 31 emails to order additional books at your author discount—real story).
+
+Some publishers add more friction than value, especially for an experienced author. The fact that they handle the hassles of the book production and distribution process might be their biggest benefit. But other publishers add distinct value—even to experienced book authors. And that leads to the next section.
+
+# 17.4.2 Publishers bring an impressive team of experts
+
+If the publisher is committed to your book’s success and also funded and staffed at a level to help advance it, here are some of the things you might encounter:
+
+¡ A network of top-notch industry experts who might be tapped for vetting your abstract, technical reviewing your book, and perhaps writing the foreword. For this book, our publisher involved some intimidatingly impressive people.   
+An acquisitions editor who helps you shape the overall direction of the book based on feedback from the previously mentioned experts. Setting that well-crafted plan from the start saves significant rework (and frustration) later on.   
+A developmental editor who is tasked with helping you execute on that vision: interacting with you regularly, guiding you through the process, and calling you out whenever they believe that your well-intended approach just isn’t hitting the mark.   
+¡ A technical editor who goes far beyond pointing out factual errors. This person also opens your eyes to considerations previously in your blind spot. They provide an early look at how your target readers will react and what’s needed to win them over.   
+¡ A team coordinating rigorous review processes at key book draft milestones: sharing the in-progress drafts with readers in your target audience, prompting them with questions, asking them to rate each part of each chapter, and compiling all the results for your review.   
+¡ A copyeditor who will root out whatever grammatical mistakes, missing words, and inconsistencies slipped through the various reviews and revisions.   
+¡ A design staff that takes care of cover design, improving your (attempts at) illustrations, page layout, typography, margins, and so forth for print as well as ebooks.   
+¡ A production crew that automagically (to you at least) takes the final draft and transforms it into print and digital files that can show up on devices and doorsteps worldwide.   
+¡ A marketing team that tries to learn the nuances of your particular domain so they can tune their well-oiled marketing machine to entice your target readers.   
+¡ A legal team that stands by ready to combat unauthorized reproductions, plagiarism, and other legal infringements.
+
+# Misconception: “The Editor”
+
+Myth: There’s a common misconception that when you work with a publisher, you will be assigned “an editor” with two main jobs: 1) nagging you to get chapters completed, and 2) finding and correcting low-level mistakes like misplaced commas.
+
+Reality: With some publishers, you won’t even get that much attention! With others, you will get multiple layers of editors whose feedback not only helps you improve the book, but also transforms the way you write (and think about writing). Even if you’re an experienced writer, don’t dismiss editorial assistance as not valuable until you get a better idea of what to expect in your particular situation.
+
+# 17.4.3 Working with publishers is a multithreaded process
+
+Again, this really depends on the publisher. But when all the various people and teams mentioned previously are involved with your book, work is inevitably being done in parallel. And given that every team and every individual is likely responsible for multiple books, you want to be quick to respond when they have a question, review request, or other need.
+
+This can lead to some days where your book “side project” becomes a lot to handle. For example, there were a few days when we were juggling all of the following (on top of our actual jobs):
+
+¡ Extending a previously completed chapter to accommodate a publisher-level request   
+Templating a recently completed chapter in preparation for review   
+¡ Responding to comments and making revisions in response to the just-completed reviews for two earlier chapters   
+¡ Suggesting edits for the book description page   
+¡ Completing a nine-page marketing questionnaire that required considerable thought and research   
+Attempting to write the next two chapters so we wouldn’t get behind on the deadlines we previously committed to (not knowing that we’d be attending to all these other tasks at the same time)
+
+If you take the self-publishing route, you can work in a manner that’s as focused and linear as your brain prefers. But the tradeoff is that you lack access to the experts generating these various tasks. If you self-publish, it’s all on you!
+
+# 17.4.4 If you work with a publisher, it’s not just “your” book
+
+When you work with a publisher, many different people contribute to many different aspects of the book (see the previous sections). We’ve touched on the benefits of this. But this has other effects to consider, too. With so many different professionals working toward the success of this book, it takes on a life of its own. If you neglect it, you’re not only hurting yourself; you’re letting everyone down.
+
+If you fail to meet deadlines for draft milestones or for various marketing projects, you trigger a domino effect that affects many people investing their time and expertise in this project. It’s polite to be aware of this when deadlines loom and one-off requests pop into your inbox.
+
+You will also need to align with the publisher’s brand. To protect the style and reputation they have established over the years, publishers expect authors to create books using the processes they have designed and optimized. That means you need to cede a certain level of control. At a high level, this means you will need to address all the deeper technical, logical, and structural concerns raised by your editors. You won’t necessarily need to agree with their every suggestion, but you will need to acknowledge,
+
+discuss, and find a path to a mutually agreeable resolution. This could mean compromising on details such as
+
+Phrasing and terminology that doesn’t align with their style guide   
+The level of explanation required for certain terms   
+Image size, format, labeling, and captioning   
+Chapter structure and elements such as introductions and summaries   
+¡ Text styles, bullet levels, and so on that don’t have a home in their template   
+¡ Footnote usage
+
+Addressing editor concerns and pushing yourself to write chapters in the prescribed manner will ultimately make you a stronger writer. But it can be frustrating at times, like when you are writing your millionth (or so it seems) chapter or section introduction “because that’s what’s needed.”
+
+Moreover, to support the publisher’s brand, you will need to use one of their sanctioned authoring tools. Do you write in LaTeX, AsciiDoc, Google Docs, or Microsoft Word? Do you save files in a GitHub repo, Box, or Google Drive? How can you see what your text looks like in their template? Given all the time that you’ll spend writing, the supported authoring environments have an outsized effect on your overall book writing experience. Compromising on how your code examples are labeled is one thing. Being forced to work in an authoring environment that disrupts your flow or just generally frustrates you is a much more serious concern.
+
+Finally, the fact that the book is a joint effort affects your bottom line. Publishers understandably want to earn back the time and effort they invest in your book, and that’s factored into your compensation. They offer authors a percentage of the book profits and they also (typically) pay out a part of those projected earnings as an “advance.” In some cases, those percentages vary depending on factors like print versus digital, book versus platform subscription, educational discounts, foreign publishing rights, and so on. Other times the same percentage applies to all revenue—period. Per what authors have shared confidentially and publicly, it’s relatively rare for technical books to sell enough copies to receive royalties beyond the advance.
+
+Regardless, the percentages you earn with a publisher will invariably be lower than those you receive if you self-publish. That doesn’t mean that your total book profits will be lower though. Think of it this way: Do you want a smaller slice of a potentially larger pie (given the value added by their team) or a larger slice of a potentially smaller pie?
+
+# 17.4.5 Highly specialized topics lend themselves to self-publishing
+
+Given that publishers ultimately survive by producing enough profitable b ooks t o make up for their nonprofitable books, it makes sense that they don’t want to add more nonprofitable books to their portfolio. This means that you might have a difficult time finding support for a highly specialized topic, especially if the size of the potential reader base is small or unknown relative to other tech topics.
+
+Even if you have a great idea for a breakthrough book in a particular niche, and you are recognized as the world’s top expert on the topic, it might not be in the publisher’s best interest to publish it. It would cost them just as much (if not more) to publish this book as it would for them to publish a book that provides a new angle on a proven topic, like Go or Rust. However, the niche book’s payback potential might fall short of what the others could yield.
+
+Self-publishing shines in these situations, especially if you are already well-known within your niche. Instead of wasting your energy trying to convince publishers that it’s a good business move (it might not be), just start planning and writing! And it’s also possible that publishers will notice the quality and success of your self-published book and then reach out to you with a tempting publishing offer.
+
+# 17.4.6 Self-publishing thrives when supported by a brand
+
+If you add a self-published book to Amazon, will anyone read it? Not if the target audience doesn’t know it exists.
+
+If your book is backed by a known brand (a popular newsletter, project, company, etc.) or if you yourself are a known brand, you can likely gain significant traction with a self-published book. Simply tell the brand’s core followers “We wrote a book,” and you’ll have a ready-built initial audience. Once they start reading and talking about it, you can expect “word-of-mouth marketing” to keep the buzz going and promote it beyond your immediate community. This could be just as effective, if not more effective, than a publisher’s standard marketing motions.
+
+If you’re not associated with such a brand, the path to self-publishing success will likely be more difficult. You will need to rely on some strategic kindling to get the fire started. If you’re well-connected, persuasive, or just lucky, your book might catch the attention of an influencer in the book’s domain. That person might then set off a chain reaction on social media and potentially the orange site.
+
+# 17.4.7 Different options, different considerations
+
+No matter what path you choose, there are a lot of little details that will likely catch you by surprise. And what’s critically important to one person might be trivial to another. Table 17.3 highlights a few things you might want to consider researching based on the publishing option that you ultimately choose.
+
+If you’re comparing different publishers or different self-publishing options, search the internet for something like “Publishing a book with {company_name}.” In most cases, that will surface a few stories providing insight into the process. Also, feel free to reach out to those authors directly. The fact that they captured and shared their experiences indicates that they’re eager to help others make an informed decision.
+
+# 17.5 Navigating the proposal process
+
+If you want to take the “traditional publisher” path, you will need to complete a proposal. This is unavoidable, even if their editor actively recruited you to write a book on
+
+Table 17.3 Questions to consider with your publishing option   
+
+<table><tr><td>Working with a publisher</td><td>Self-publishing</td></tr><tr><td>What is the editor-to-author ratio?Who would you interact with, how frequently, and in what capacity?How do they market books?Can your book benefit from their market reach?Does their library include books that pair well with yours?Do they focus more on print or digital? Books or platforms?Do they offer DRM-free books?Will your book be used to train their large language model and support their AI platform?In what regions do they market and distribute books?Do you need to find your own technical reviewer?How do they make decisions on audiobooks and translations?What tools would you need to use for writing and reviewing?How does your anticipated timeline align with their process and production cycles?Is there an option (or requirement) to release early access versions?</td><td>Does the self-publishing platform offer any templates or other layout assistance?What&#x27;s required to create and sell a print book?What&#x27;s required to create and sell a digital book?How would readers discover your book?How much will it cost for designers, cover artists, and proofreaders?Can you offer DRM-free books?Do they sell and ship books to the geographies you want to target?What analytics and tracking options do they offer?How difficult is it to reach a human and get questions answered?Can they split revenue across multiple co-authors?Do reviews of popular self-published books from this platform mention production quality problems (look at the negative reviews)?What&#x27;s the minimum price you can set for a book with your page count, size, and options (e.g., color or not)?Is there a fee to use the publishing platform?</td></tr></table>
+
+a topic that they dreamed up. Completing a proposal forces you to think through a lot of the hard questions related to the proposed book. Most pointedly,
+
+Why should it be written?   
+Who would want to purchase it?   
+¡ Why should you, in particular, write it?   
+¡ How deeply have you thought about this topic?   
+How would you approach the topic?   
+¡ Is it worth publishing?
+
+Those aren’t the exact questions, but that’s ultimately what they’re trying to figure out.
+
+Even if you’re not planning to work with a publisher, it’s valuable to look at a few publishers’ proposal templates and complete one. This exercise is helpful for
+
+Clarifying your vision for the book   
+Attempting to estimate the market for such a book
+
+¡ Establishing a clear roadmap for the writing process   
+Sharing your idea with potential co-authors   
+Getting early feedback from your peers and experts in the domain
+
+If you are trying to persuade a publisher to publish your book, here are our top two tips for completing proposals.
+
+# 17.5.1 Get down to business
+
+As we’ve been harping on heavily throughout this chapter, publishing is a business. Your proposal must demonstrate a distinctive, compelling book idea, or else the acquisitions editor won’t think twice about it. But that alone isn’t sufficient.
+
+You also need to sell yourself as someone with the expertise and ability to get it done. And you need to convince the publisher that there’s a reasonable market for this book (refer back to section 17.4.5 for a little more color on this).
+
+To increase your chances of success, approach your book proposal as a business proposal. For example,
+
+¡ Research the size of your target audience and highlight why those people would want to buy your book. Impressive stats could include GitHub stars, community size, attendance stats for a related conference, Google Trends charts, and so on.   
+¡ Find related books with strong sales (look at Amazon rankings) and see if you can legitimately show that your book is well-poised to draft off of their success. Purchasing and reading (or at least scanning) the other books will help you build a compelling case that yours is similar enough to repeat the others’ success, yet different enough to warrant its existence. You could differentiate by topic focus, author experience, target audience, technical depth, etc.
+
+However, remember that you’re an engineer, not a salesperson. Now might be a good time to touch base with your business-minded or marketing friends and cash in any favors owed.
+
+# 17.5.2 Details, detail, details
+
+Some proposal templates require much more detail than others, especially when it comes to the book outline. Strongly consider providing a granular level of detail even if it’s not required: not just chapter titles, but also one-sentence chapter descriptions and a guess at all the main sections within each chapter.
+
+This will force you to really think through what you need to cover. That, in turn, helps you better assess how long it might take to write and which co-authors would be helpful. When you start writing, you will thank your previous self for providing this roadmap. It’s unlikely that you’ll follow the precise path you mapped out, but it will absolutely eliminate much analysis paralysis and rework later.
+
+Moreover, the outline, along with the rest of the proposal, typically becomes part of the book contract. Once that contract is signed and countersigned, this outline goes on the record as the description of the book that you committed to write and that your
+
+publisher committed to publish. If any disputes arise later, this outline will likely come up. The more detailed the original outline, the lower the risk of misinterpretations and misunderstandings.
+
+# 17.6 Go forth and write
+
+If you decide to move forward, with a publisher or on your own, that’s where your book begins and also where ours ends. Let’s wrap with a few parting tips:
+
+¡ Do something every day. Keep the momentum going by getting into the habit of doing something—anything—to advance your book every single day. Write a paragraph. Read something related. Think through how to approach that one tricky section (and jot down some notes so you don’t forget). Create a diagram. There’s a huge variety of tasks that need to be completed as you write a book. Surely you can find just one little thing to tackle so you can tell yourself that you made some progress on your book today!   
+Think of it as a series of blog posts. Writing a book chapter sounds overwhelming, right? But by now, you’re comfortable writing blog posts. Just think of each chapter as a series of related blog posts. Write one after another, and before you know it, a chapter has magically materialized. Conveniently, all the article writing strategies covered throughout this book can help you in this context, too!   
+¡ Be stubborn about the vision, flexible on the execution. As you start extracting ideas from your mind, you’ll find that you don’t always end up covering every topic exactly as you had originally planned. That’s fine. After all the thinking and research you’ve likely performed by this point, your newer ideas are probably better than your original ones. But remain fixated on your original vision for the book. That should be your north star, guiding you through all the revisions and indecisions along the journey.
+
+# Summary
+
+¡ Writing a book is a massive undertaking that requires significant time and effort—but it can be rewarding, especially if you’re a glutton for self-inflicted pain.   
+¡ Writing a book not only helps you share knowledge with your peers; it also forces you to deepen, synthesize, and structure your domain expertise.   
+¡ Don’t write a book if you don’t have a vision for the topic, the topic isn’t really suitable for a book, you lack the bandwidth, or it’s just not a good fit for your work style and personality.   
+Co-authoring can be a game changer, turning a lonely and burdensome experience into a collaborative and enjoyable one.   
+¡ If you’re not ready to commit to writing a book, you could get a feel for it by writing the first chapters as a series of blogs or by becoming a technical reviewer.
+
+¡ Publishers offer benefits like prestige, editorial guidance, professional production, and marketing, but give you less control and lower royalty percentages.   
+Self-publishing allows more control, higher royalty percentages, and greater schedule flexibility, but you need to manage many tedious details and bring (or create) your own audience.   
+¡ Complete a book proposal even if you’re not seeking a publisher.   
+¡ If you are seeking a publisher, treat the book proposal like a business proposal and try to convince the publisher that your great book idea is really worth their investment.
+

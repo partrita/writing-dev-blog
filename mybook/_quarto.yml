@@ -3,14 +3,42 @@ project:
   output-dir: docs
 
 book:
-  title: "mybook"
-  author: "Norah Jones"
+  title: "Writing for Developers"
+  author: "Piotr Sarna, Cynthia Dunlop"
+  description: "A well-crafted technical article can spark a new idea, demystify a technology, expand your perspective, or save you from going down a disastrous path. Even if you don’t consider yourself a “good writer,” you can make a difference by sharing insights and advancing the community. This practical guide shows you how to create blogs, articles, and other content your fellow developers will want to read and share. Writing for Developers introduces seven popular patterns for modern engineering blogs—such as “The Bug Hunt,” “We Rewrote It in X,” and “How We Built It”—and helps you match these patterns with your ideas. This book covers the entire writing process, from brainstorming, planning, and revising, to promoting your blog in ways that build reputation and generate further opportunities."
   date: "1/24/2026"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - part: "1부 기초 (Fundamentals)"
+      chapters:
+        - chap1.qmd
+        - chap2.qmd
+        - chap3.qmd
+    - part: "2부 글쓰기 과정의 완성 (Nailing the writing process)"
+      chapters:
+        - chap4.qmd
+        - chap5.qmd
+        - chap6.qmd
+        - chap7.qmd
+    - part: "3부 블로그 포스트 패턴 적용 (Applying blog post patterns)"
+      chapters:
+        - chap8.qmd
+        - chap9.qmd
+        - chap10.qmd
+        - chap11.qmd
+        - chap12.qmd
+        - chap13.qmd
+        - chap14.qmd
+    - part: "4부 홍보, 각색 및 확장 (Promotion, adaptation, and expansion)"
+      chapters:
+        - chap15.qmd
+        - chap16.qmd
+        - chap17.qmd
+    - part: "부록 (Appendices)"
+      chapters:
+        - appendix_a.qmd
+        - appendix_b.qmd
+    - backmatter.qmd
 
 bibliography: references.bib
 

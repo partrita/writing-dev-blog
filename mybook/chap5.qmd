@@ -1,0 +1,1004 @@
+# This chapter covers
+
+Shifting from capturing what’s in your brain to communicating with your reader   
+Catching your target readers’ interest and guiding them to the end   
+Prioritizing optimizations that matter the most for technical audiences   
+¡	Helping your reader better understand what you’re trying to communicate
+
+At this point, you’re past the hard part: the creation. Most people breathe a sigh of relief, maybe use a grammar checker to resolve egregious errors, and call it done. But you’re currently reading a book on writing blog posts, so you’re clearly not most people.
+
+This chapter outlines ways to make your blog post more compelling, whether you have just 5 minutes or more than 5 hours to spend whipping it into shape. We tried to capture the essence of the internal monologue that comes naturally after writing and reviewing a healthy amount of engineering blog posts and other forms of technical writing.
+
+Ultimately, it all comes down to taking the brain dump you created in the previous chapter and making it seem custom crafted for your target reader. You want to present your reader with something that fills in any knowledge gaps between what the two of you know, satisfies their curiosity, and makes it simple (hopefully even enjoyable) for them to grasp what they were hoping to learn when they clicked your article.
+
+This chapter is extensive, but don’t worry. We don’t expect you to consciously think about all these optimizations for any given blog post. When you read the chapter, aim for a general understanding of what’s possible. As you’re actively optimizing a blog post, return to this chapter and decide what you want to focus on. Over time, you won’t need to refer to this chapter at all. You will have developed an annoying critical voice in your head, pointing out problems with all the enthusiasm and snarkiness of those who frequent comment sections—or at least of that annoying teammate who can be a real pain but is usually right. And what you learn is applicable far beyond blogs. For example, it will help you communicate more clearly and concisely as you’re
+
+¡ Interacting with teammates, users, and others across your community   
+Sharing your opinions via proposals, reports, or code review comments   
+Promoting yourself in performance reviews and hiring processes
+
+To make the discussion concrete, we’ll draw on the fake Zig blog draft introduced in chapter 4 (section 4.5) plus reference additional examples as appropriate. And to help you focus your limited time, we’re classifying the optimizations into four groups, starting with those we believe have the greatest effect on the typical engineering blog post reader:
+
+¡ Core —Given your goal and target reader, is your draft appropriately focused, logically organized, and sufficiently supported with technical details?   
+Clarity —Are your sentences clearly and efficiently communicating your ideas to your target reader? And are your paragraphs focused and digestible (tight paragraphs with one idea per paragraph)?   
+¡ Components —Do the different structural parts do what they need to do? For example, does the title attract the right reader, does the introduction entice them to read on, and does the end tie it up nicely while providing a clear path forward?   
+Consumability —Does your article sound like a living, breathing human being in conversation with another human being? How can you help the reader better parse the article as 1) they scan it to assess whether they really want to read it; 2) they’re actively reading it amid constant threats to their attention; and 3) they return to it later, searching for some interesting tidbit to apply or share?
+
+# 5.1 Focus and challenges
+
+In chapter 4, we urged you to hold back your criticism so you could focus on rapid creation. Now you can finally unleash your inner critic, but please promise to put it to good use: creating a better experience for your readers!
+
+It’s easy to deconstruct and doubt every thought, sentence phrasing, and detail to the point where you just get frustrated and give up. Don’t. If you’ve got a working draft of
+
+a blog post sharing your distinctive thoughts and experiences on an interesting topic, you’re quite likely sitting on a resource that someone, somewhere would love to read and learn from. Instead of indiscriminately tearing down your work to the point where you feel it’s not good enough, try to put yourself in the shoes of your target reader. What will help them find your blog post, understand it, and hopefully appreciate it enough to share it? Questioning and criticizing your draft from that perspective will make it even better.
+
+That focus leads all too naturally to the first challenge: there’s a pretty sizable gap between you and your reader at this point. If you selected a topic carefully, you’re the world’s top expert on the specific information that you’re conveying to the reader. That means you’re quite qualified to explain it but also that it’s easy to forget what the reader doesn’t (yet) know. Keeping this gap in mind is critical when assessing whether an introduction is compelling, a statement is sufficiently explained and supported, a sentence is clear, and so on. You will get the best return on your blog writing investment if you make the blog-reading experience easier for your reader. But making something simple for a reader requires some thought and effort on your part. Cue the famous quote by Blaise Pascal: “If I had more time, I would have written a shorter letter.”
+
+And that leads to the second challenge of this phase—time management. Given the myriad possibilities for every sentence, indecision and perfectionism can easily suck you into a revision vortex. Even if you somehow have the luxury of time, don’t spend weeks or months revising a blog post. It’s just not necessary. You will hit the point of diminishing returns soon enough. It’s the same as with code: once you make it correct and clear, obsessive refactoring probably won’t pay off well enough to justify the opportunity cost.
+
+If you prioritize the types of optimizations that matter most for an engineering blog (for example, supporting your points with interesting technical tidbits versus worrying about split infinitives such as “to boldly go”), you can get it done and move on to the next thing. There’s no value in letting a technical article age in a dark cellar. If it’s this close, just get it published before some industry shift makes it less interesting or relevant.
+
+# 5.2 Core (facts, focus, flow)
+
+Roleplaying game time! Remember that target reader you envisioned when planning the blog post? Put yourself in their shoes. You’re now that target reader, reading this blog post for the reasons you anticipated earlier. Imagine all the things that might make you
+
+¡ Doubt that you’ll learn what you were hoping to learn   
+Suspect that the author is somehow trying to trick you   
+Need to reread parts in confusion and/or frustration   
+Decide to take “just a quick break” from reading   
+¡ Generally think that the author is a rambling, ranting fool
+
+This section is all about prompting you to spot these core issues so that you can improve the reader experience. We’ll cover
+
+¡ Facts—Supporting your points with technical details from your own experience, experiments, and trusted industry knowledge   
+¡ Focus—Concentrating on the material that truly advances your goal and cutting the rest   
+Flow—Ensuring there’s a logical, easy-to-follow path through the parts
+
+# 5.2.1 Facts
+
+If your technical blog post lacks the necessary technical details, that’s the first thing you should address. We’re using the term “facts” as shorthand for pretty much anything that a reasonable person in your target audience would accept as true: your experiences, code examples, test results, respected research, and other trusted industry knowledge.
+
+As you probably already know, readers of technical articles are rather snarky and skeptical. You can safely assume that your reader won’t trust you. Don’t take it personally; they don’t trust anyone. But do be proactive and write with this skepticism in mind. That means including an appropriate amount and variety of facts to combat target readers’ cries of “That’s not true!” and “How do you really know that?”
+
+# Ensure that each arguable statement is supported by facts
+
+If you try to tell technical readers what to think, they’ll roast you. Instead, focus on providing enough facts for them to make their own decisions. How does this play out in a blog post? Table 5.1 lists some examples.
+
+Table 5.1 Supporting arguable statements with facts   
+
+<table><tr><td>Instead of just stating</td><td>Do this instead (or in addition)</td></tr><tr><td>“This optimization yielded an impressive performance boost.”</td><td>Share the results of fair benchmark tests (before and after).</td></tr><tr><td>“NewLanguage is more intuitive than OldLanguage.”</td><td>Share NewLanguage vs. OldLanguage code examples.</td></tr><tr><td>“ShinyNewThing is worth a try.”</td><td>State: “Our experiences with ShinyNewThing showed that ...”</td></tr><tr><td>“It&#x27;s difficult to do [this thing].”</td><td>Explain: “Doing [this thing] requires you to deal with [all these other things],” or “We really struggled with [these hard details].”</td></tr><tr><td>“Migration is simple and seamless.”</td><td>Detail the steps required and also call out any conditions that could introduce complexity.</td></tr><tr><td>“The code clearly smells.”</td><td>Highlight the problematic parts of the code and explain why it can be considered an antipattern.</td></tr></table>
+
+With that in mind, rescan your working draft and look for any arguable statements that aren’t sufficiently supported by facts. Specifically, find and review any statement that expresses an opinion or communicates something that a reasonable person in your target audience might doubt or disagree with. Next, ensure that each of those statements
+
+is followed by details that could feasibly convince a reasonable person to reach the same conclusion. Grill yourself with a few rounds of why to get the juices flowing.
+
+TIP Want the AI perspective? Prompt it with something like “Are there any statements in this engineering blog post that do not seem adequately supported by facts?”
+
+If you find any points that need additional support, there are several options:
+
+¡ Think about what additional details you can share from your own experience. What specific things occurred that led you to think and write that? While others might have different experiences, nobody can deny the validity of your experi -ences. Weave them into your article as you see it.   
+¡ Consider adding code examples, test results, or whatever else could earn the trust of your skeptical target readers.   
+¡ Track down external sources that could help: solid research, good explanations of why something is how it is, blog posts that share similar experiences, and so forth.   
+¡ Admit defeat and cut it from the article. With a harsh audience, your article is only as strong as its weakest link. Give them just one small thing to attack, and they will move in for the kill, even if the rest of your article is absolutely bulletproof. If you really can’t find facts to defend one of your points, delete that point so that it doesn’t undermine the credibility of your entire article.
+
+TIP See chapter 14 for details on communicating results from benchmarks and tests.
+
+What about the fake Zig blog post? Does it need any additional facts? Perhaps it would benefit from
+
+¡ A screenshot with metrics showing how slow the migration used to be with the old tooling   
+¡ Code snippets highlighting where Zig worked well   
+¡ Code examples of bad Zig produced by the compiler when translating from C   
+¡ Another screenshot with metrics showing the improvement brought by the new C
+
+# INVEST IN SHARING FACTS THAT MAKE YOUR ARTICLE STAND OUT
+
+Infusing an article with supporting technical details that are carefully crafted, instructive, and somewhat amusing (if appropriate) is a great way to make it stand out. If you have extra time to invest in your article, spending it here should yield a nice return. Interesting details and examples not only capture peoples' attention, but they also prompt people to remember and share a blog post. Here are a couple examples:
+
+# How DiscorD Stores Trillions of MessAGEs
+
+In the Discord blog post "How Discord Stores Trillions of Messages" (https://mng .bz/QVee), Bo Ingram didn't simply state that their database migration solved their
+
+problem of unpredictable latencies. He showed this in the context of the 2022 World Cup finals, where Argentina, with Lionel Messi, took on France. Ingram decided to capture monitoring graphs showing 1) the massive spikes in the number of Discord messages sent during each key moment of the game, and 2) how their database handled it all without breaking a sweat. These graphs and the surrounding story were featured in the clutch moment of Ingram’s blog post. Since the article was published, there have been countless third-party videos retelling Discord’s database migration experience, and that story about the World Cup latencies is referenced in each and every spinoff!
+
+# WE PUT A DistRiBuTED DatABAsE IN THE BROWsER — AND MaDE A GAME oF It!
+
+The TigerBeetle blog post “We Put a Distributed Database in the Browser—And Made a Game of It!” (by Phil Eaton and Joran Dirk Greef; https://mng.bz/XVKM) is $1 0 0 \%$ focused on an interactive example they built to demonstrate how powerful deterministic simulation is for testing distributed systems. The authors brilliantly figured out that since their system is built to allow simulating time and events for testing, the same rules of simulation can be applied to present the tests as an interactive game. It’s obviously engaging for readers (duh, it’s a game!), but it also sneakily helps people develop an intuition on how deterministic simulation tests work. It’s educational content at its finest because lots of readers prefer to play a game with funny beetles rather than read (and try to actually understand) a few long academic papers on simulation testing.
+
+NOTE We analyze this blog post further in chapter 13.
+
+# 5.2.2 Focus
+
+The next thing to focus on: focus. Bloated code could affect performance, but the computer will trudge on. Humans aren’t that patient. They started reading based on what your title and introduction promised. Every time you seem to be taking a scenic side trip—or totally bypassing something they wanted to see—you’re giving the reader an excuse to lose faith and give up.
+
+# CUT WHAT DOESN'T CLEARLY ADVANCE YOUR GOAL
+
+It’s fine if you veered off in unexpected directions while you were writing your draft. That’s a common part of the creative process, and it often yields better outcomes. But for your reader’s sake, please tie in (or cut out) any meandering side paths before you proceed.
+
+Return to that simple one-sentence goal you stated in chapter 4, and make sure it’s in your line of vision. Make it nice and big on one of your monitors or scribble it on a separate piece of paper if you like. Also, in case it’s not explicitly expressed in your goal, think about the audience you had in mind when planning this article and why they would want to read it. What’s in focus for one audience could be entirely superfluous for another.
+
+Now skim the draft section by section, paragraph by paragraph, and hunt down anything that doesn’t clearly and logically relate to that goal. Of course, you can make up
+
+some crazy connection for almost anything. But if you were forced to justify that connection in front of a jury of your skeptical peers, would you be able to convince them?
+
+TIP Want the AI perspective? Prompt it with something like “Can you identify any parts of this article that seem less relevant to its main goal of [your goal]?”
+
+In some cases, adding a few words or a new sentence can tie diversions into the core of the article. But if it’s too much of a stretch for the specific audience you’re targeting, the diversion needs to go. Sorry.
+
+Maybe you’re really proud of something you wrote, but it doesn’t fit well in this article? Consider repurposing it then. The paragraph that was a distraction in your blog post could have a nice life of its own as a social media post, as a discussion thread, or even grow into its own follow-up blog post. If you truly can’t bear the thought of removing some tangential material from your blog post, at least set it apart from the main text (e.g., in a “note” box).
+
+Here are some examples of side paths that could have made it into the fake blog post and how we might have dealt with each:
+
+¡ An anecdote about our debugging session —If we had a specific fun tidbit that was directly related to Zig versus C debugging, we might share it in a separate boxedoff sidebar.   
+¡ More details on our adoption of FakeDB —If there was already a dedicated article on this, it would be great to just link to it. Otherwise, we would skip these details.   
+¡ A quick tutorial on how to use the new migrator tool —This extra detail would throw the article out of balance. However, it would be nice to have the conclusion link to a separate page with an easy-to-follow quickstart guide. We already link to the source code, but this would be a nice addition.
+
+# PROVIDE AN APPROPRIATE LEVEL OF CONTEXT
+
+Providing a glimpse into your specific project and challenges is a great way to connect with readers. People flock to engineering blog posts to hear first-hand real-world perspectives. Readers with similar backgrounds can’t resist comparing notes, and readers from totally different worlds are likely curious about what’s going on outside of their daily tasks. Providing an ample amount of context early on in the blog post helps readers decide if they’re interested. It’s also key for the scene setting that’s sometimes required to understand the full significance of the achievement you’re sharing.
+
+Does your draft hit the Goldilocks zone of just enough context but not too much? Figuring that out requires remembering who your intended audience is and what they already know about your topic (we talked about defining this in chapter 4).
+
+As the author of the blog post, you’re in an odd spot. You probably know more about this particular topic than anyone else alive. This could hurt you in two totally different ways:
+
+1 It could lead you to omit critical information because you forget how little the target reader really knows.
+
+2 It could lead you to overload the poor reader with too much information because you assume they are as enthusiastic about the topic as you are.
+
+As you scan your draft from your readers’ perspective, first see whether you’ve included any background information that your target reader a) would already know or b) might not care about. In either case, hyperlinks are often a good compromise, allowing those who need or want more details to drill down, while keeping the article succinct and focused.
+
+Returning to the fake Zig blog post, things that would qualify as too much context might include:
+
+Details on why the team moved from Postgres to FakeDB   
+¡ An explanation of FakeDB (assuming it truly is as popular as the article claims) and Postgres   
+A comparison of database migration strategies (online or offline)
+
+Next, think hard about what background information you’re missing. We performed a broad and very rudimentary “what’s missing” exercise like this at the end of chapter 4 with the help of AI. Here, think specifically about what background is really required to help your target audience understand and appreciate your article. For example, would the reader benefit from more background on
+
+¡ The project you’re working on, such as who uses the project and what sets it apart from alternatives?   
+¡ Your tech stack, maybe with an architectural diagram or two?   
+¡ Some hint of who you are, and why your perspective on this topic is worth reading?   
+¡ Somewhat esoteric tools, technologies, and concepts they must understand to get your article’s main point?
+
+Again, feel free to tap hyperlinks whenever possible to keep the context-setting concise.
+
+TIP Want the AI perspective? Prompt it with something like “Are there any parts of this engineering blog post that could benefit from more context or perhaps some hyperlinks for additional information? The target reader is [your target reader].”
+
+Looking back at the fake blog post, one major oversight stands out: the article never defined who “we” are. Who developed this migration tool? Trusted industry veterans or some newbies playing around? Data migrations are stressful business-critical projects. The blog post wants to convince readers to adopt this tool for their own data migrations, but the readers will probably be hungry for some background on who wrote the tool. Assuming that “we” actually refers to a small team of well-known engineers, fresh off some famous exit, this can be resolved pretty easily. We could change the first sentence to something like “The team at AwesomeNewCo, a spin-off from NowRichyRich, has been happily using…” Then, we could hyperlink “team at AwesomeNewCo” to the web page that showcases the team’s true awesomeness.
+
+# CONSIDER CROPPING TO HIGHLIGHT THE MOST INTERESTING PART
+
+Shift your focus to photography for just a moment. Sometimes, upon reviewing your photos, you notice that one detail is particularly interesting, and you want to feature it more prominently. Other times, some tourist photobombed your once-in-a-lifetime shot, and you need to salvage it somehow. Cropping is your friend.
+
+This applies to writing, too. After a blog post is drafted, the writing equivalent of some quick photo cropping might help make your original take more eye-catching and compelling. Feel free to do a little cropping around the edges to focus your readers’ attention on the details that will be most interesting to them.
+
+For example, the fake Zig blog post could be cropped in a few different ways:
+
+Crop out most of the Zig material and focus solely on the data migration tool.   
+¡ Crop out most of the database migration tool material and focus on lessons learned during that first foray into Zig.   
+¡ Crop that Zig-focused version even further and make the post all about working with Zig’s strict type system (this would require substantial expansion of that topic as well as cropping out the unrelated material).
+
+# 5.2.3 Flow
+
+Finally, consider flow: how the different parts of your article are ordered and appear to relate to one another. Your reader will certainly appreciate your work on improving the focus—that’s like reviewing your standard “cool local things to do” recommendation list and customizing it for your weekend guest’s interests and abilities. By also optimizing the flow, you ensure that everything is logically organized and ordered. Continuing the analogy, that’s like crafting a step-by-step itinerary that covers all of your guest’s interests, while making the best use of their limited time. But enough analogies—let’s get into it.
+
+# MAKE SURE YOU CAN EXPLAIN THE ORDER
+
+Here’s the first and most fundamental test of whether your reader will understand the article’s flow: Can you explain it? If you, the mastermind behind this article, can ’t clearly articulate how it moves from one part to the next, it’s highly unlikely that the reader could possibly figure it out.
+
+Try to walk your anticipated target reader through the flow at a high level. Speak through it or write it down—it doesn’t matter. Cover details such as
+
+¡ Why you’re starting where you start   
+What you cover first and why   
+¡ What you shift to next, and how that relates to the previous thing
+
+And then continue until you reach the end.
+
+For example, "The fake Zig blog post begins by presenting the problem that drove us to this Zig project: we were frustrated with the available options for migrating data, so we decided to build our own tool. We share that we decided to build that tool in Zig, and then we present the good and bad parts of working with Zig. We present a verdict that
+
+considers the Zig pros and cons we encountered, and then we wrap up by inviting our readers to try out the tool we built in Zig.”
+
+If that was easy for you, fantastic. Now you just need to ensure the reader can understand the underlying flow (as discussed in the next section). If not, you might be able to address the problems by
+
+Shuffling some parts around   
+¡ Thinking more about the connections and adding some sentences (or even paragraphs) to clarify   
+¡ Eliminating any sections that don’t really connect (as covered in the focus discussion from the previous section)
+
+# Prov ide clear signposts to the reader
+
+Once you’re at a point where the flow makes sense to you, ensure that the connections in your head are coming across to the reader. The best place to start is the start.
+
+When a reader clicks your article, it’s as if they stepped off the subway in a new location. They’re not certain this is where they want to be, and they’re unsure of the path forward. If you really want them to proceed through your post, orient them a bit in your introductory paragraphs. Help them immediately understand where they’ve landed, where they’re going, and what they’re going to experience along the way.
+
+The fake Zig blog post doesn’t orient readers at all. It jumps right into a database discussion without any mention of Zig. The readers who clicked the article solely because they saw Zig in the title might initially wonder if they landed in the right place.
+
+In contrast, Gwen Shapira does a superb job of orienting the reader in this introduction-ending paragraph from her blog post, “Transaction Isolation in Postgres, explained” (https://mng.bz/yo0E). She writes, “I’m going to start by explaining what problem transaction isolation is even trying to solve. Then I’ll explain the standard isolation levels as they appear in the SQL92 standard and are still mostly used today. Then we’ll talk about the problems with SQL92 levels and how Postgres handles isolation and these problems today. Grab some tea and we’ll start.”
+
+Next, check if your headings give the reader a good sense of the flow you just explained to yourself in the previous section. They should call out the different parts of the article in terms that make sense to the reader. Headings that are heavy on terms the readers don’t yet understand won’t help your readers orient themselves. When in doubt, try to anticipate what question is running through your reader’s head at that point in the article and work that into a heading (see table 5.2 for examples).
+
+Table 5.2 Helpful vs. unhelpful headings   
+
+<table><tr><td>Unhelpful heading</td><td>Better option</td></tr><tr><td>pg_fakedb</td><td>Why we built a FakeDB &lt;&gt; Postgres migration tool in Zig</td></tr><tr><td>\@climport and translate-c</td><td>How we achieved C interoperability</td></tr><tr><td>catch unreachable</td><td>Comparing Zig&#x27;s error handling to Rust&#x27;s</td></tr></table>
+
+Here are a few starters you can use for heading inspiration if you’re stuck:
+
+¡ A brief primer on…   
+Why we decided to…   
+Earlier evolutions of our…   
+How we previously…   
+The problem(s) with…   
+How we’re approaching…   
+¡ So why…   
+¡ What we learned from…   
+What’s next for…
+
+The fake Zig blog post does a nice job of using helpful headings. Perhaps the heading “The Verdict” could be revised to “The Verdict: $1 0 0 \%$ Worth It” to provide a lot more information with just a few more words.
+
+Finally, within the paragraphs and sentences of your article, be sure to overcommunicate how each new idea relates to what came before it. Every part and every sentence should be clearly connected if you want the reader to follow along to the end. This can be a lifeline for a reader who gets distracted or lost. Connect the dots for them.
+
+TIP Want the AI perspective? Prompt it with something like “Are there any awkward transitions” or “Do you see any places where the target reader, ([your target reader]), might get lost?”
+
+Here are some examples of ways that you can connect new ideas to what you were talking about before (we’ll abbreviate this as $WYWTAB):
+
+¡ To achieve $\$ 1$ WYWTAB, we had to…   
+¡ By implementing $WYWTAB, we…   
+$WYWTAB allowed us to…   
+But there was a problem with $WYWTAB…   
+The hardest part of $WYWTAB was…   
+¡ After $WYWTAB, we decided it was time for…
+
+It can also be helpful to link individual sentences together using transitional words and phrases. They help the reader quickly assess where you’re going next. While phrases such as “moreover” or “as expected” indicate that everything is unfolding without drama, phrases such as “remarkably” or “interestingly” alert the reader that they should pay (even closer) attention to what follows. It’s like when you’re watching a horror movie, and the ominous music starts to play.
+
+Here are some words you could use to help your perpetually distracted readers prepare for the next idea:
+
+again / as expected / certainly / consequently / essentially / evidently / fortunately / furthermore / interestingly / moreover / naturally / nevertheless / regrettably /
+
+remarkably / significantly / similarly / surprisingly / typically / ultimately / undeniably / understandably
+
+The fake Zig blog post connects sentences together quite smoothly. Each sentence flows naturally from the previous one. This is apparent right from the first paragraph. We’ve bolded the transitions here for emphasis:
+
+We’ve been happily using FakeDB for all of our services way before it was cool—some of our early pipelines even ran pre-release versions in production, because we trusted FakeDB’s development team so much. Thankfully, the risk of being early adopters paid off, as FakeDB is now the de-facto standard for highly concurrent workloads. There’s just one problem though, and it stems from the fact we sometimes need to move data from our legacy Postgres clusters: migrating all data back to FakeDB is S-L-O-W.
+
+# FRONTLOAD AS MUCH AS REASONABLE
+
+If you’re writing the movie script for a summer blockbuster, you can get away with saving the big reveal or plot twist for the very end. Once your audience has paid whoknows-how-much for a ticket and popcorn, they’re most likely going to be sitting there until the credits roll.
+
+You shouldn’t assume such a captive audience for your blog post though. Even if you set up nice guideposts to lead readers through, some people will inevitably click away or just lose your post in a sea of open tabs. That’s why it’s so essential to place critical information at the start of your blog post (i.e., to “frontload” it). This is also known as using an “inverted pyramid” structure. For more on the inverted pyramid approach, see Amy Schade’s “Inverted Pyramid: Writing for Comprehension” article for the Nielsen Norman Group (https://mng.bz/aVBY).
+
+NOTE Bug-hunting blog posts are an exception to this rule (as discussed in chapter 8). Don’t prematurely reveal the culprit; it deprives the reader from experiencing the thrill of the hunt!
+
+At the very least, you want your readers to grasp what your blog post is about and whether it’s interesting and useful to them. Ultimately, you want to make sure it registers in their brain as something worth reading now or revisiting later. Don’t make them read through 2000 words to realize that you accomplished something truly amazing. Every detail shouldn’t be revealed upfront, but do try to offer tidbits that entice the reader to continue.
+
+Somewhere in the introduction, be sure to touch upon the two critical questions you answered in chapter 4:
+
+¡ What’s the goal of this blog post? Your introduction should clearly restate your goal in terms of the reader. What’s in it for them? What will they get out of reading this?   
+Why is your perspective on this topic interesting? Again, restate this in terms that the reader cares about. For example, maybe you could work it into an explanation of why you’re writing this article.
+
+There are usually ample opportunities to mention details about who you are and what you’ve been working on in the course of a natural introduction. For example, consider
+
+the following excerpt from Liz Fong-Jones’s blog post, “Scaling Kafka at Honeycomb” (https://mng.bz/M1ym). Liz is a well-known engineer, currently Field CTO at Honeycomb, so her byline alone already piques the interest of many readers. She also shares some specific technical details on why her perspective on scaling Kafka is so interesting:
+
+When you send telemetry into Honeycomb, our infrastructure needs to buffer your data before processing it in our “retriever” columnar storage database. For the entirety of Honeycomb’s existence, we have used Apache Kafka to perform this buffering function in our observability pipeline. In this post, we’ll review the history of how we got here, why we’re so picky about Kafka software and hardware, and how we qualified and adopted the new AWS Graviton2-based storage instances. Lastly, at the end of this post, we’ll discuss the decrease in price per megabyte of throughput after the cumulative optimizations we’ve made in the past two years. Let’s dive in.
+
+Note that her introduction concludes with a nice preview of what’s ahead, similar to the one in the Gwen Shapira blog post referenced earlier.
+
+Also, if part of the reason why your perspective is interesting comes from the fact that you’re working at ReallyCoolStartup that’s known for XYZ, don’t assume that everyone who reads your blog post will know about ReallyCoolStartup, even if your blog post is published on the ReallyCoolStartup company blog. If your article happens to take off on social media or Hacker News, it’s likely to be read by many people who have no clue what ReallyCoolStartup is or does (and few will take the time to learn before they start commenting). Strongly consider providing a super short overview of what’s so cool about ReallyCoolStartup, even if it’s just an aside within a broader sentence. For example, you could write something like “At ReallyCoolStartup, which focuses on XYZ, we recently…”
+
+TIP Want the AI perspective? Prompt it with something like “Do you think the introduction of this article would motivate [your target reader] to read this engineering blog post? Why?”
+
+How did the fake Zig blog post perform with respect to frontloading? Not so well. This article is backloaded more than frontloaded. It doesn’t
+
+¡ Tell the reader what’s in it for them   
+Mention Zig, which is a primary focus of the article   
+¡ Provide any context about who is writing it   
+¡ Share any differentiators whatsoever
+
+Based on that introduction, the reader can only glean that this article will cover something about a faster way to migrate data from Postgres to FakeDB.
+
+# 5.3 Clarity
+
+Your sentences are how you achieve the goal that you set for this article. You need to express your ideas and experiences in sentences that the reader can understand. Oth-erwise, the ideas from your brain aren't going to make it all the way over to your read-er's brain. Consider the coding equivalent. You can have the most impressive idea,but
+
+if you can’t implement it in code that the compiler understands, you won’t be able to make that idea a reality.
+
+When you wrote your working draft, you captured your thoughts in sentences on the page. Great, that was a critical first step. Now it’s time to reread those sentences with your reader in mind and tighten them up as needed to ensure that your meaning isn’t muddled.
+
+You don’t need to spend tons of time revising every sentence to the point where it’s so eloquent you’d want to print and frame it. But your reader will appreciate any time you spend making sure that your ideas are communicated clearly and concisely. It will make their reading experience faster, simpler, and more enjoyable. For example, consider the difference between reading the original and revised examples that follow. (The original is extreme, but it’s actually a real excerpt from a draft we came across).
+
+Original: To overcome the scaling challenges we were facing, such as the lack of a centralized system interface for keeping and managing the growing number of business rules, as well as a previously loosely coupled infrastructure of third-party services whose many failures were impacting our sales process, around two years ago we decided to create a single platform to manage all aspects of our process for selling directly to consumers.
+
+Revised: Two years ago, we decided to build a centralized B2C sales platform. As the business scaled, we wanted to centrally manage the growing number of business rules and cut the dependencies on unreliable third-party services.
+
+The original was difficult to process—but it captured his ideas and led the way to a clearer statement later on. It provided something we could debug.
+
+Think of your dear readers. If you can convert clunky sentences into clear ones, your readers can understand your thoughts better and reach the end of your article faster. And this scales. Assume that with 15 minutes of sentence tuneup, you can save each reader 1 minute of reading time. Now assume a blog post that attracts 1,000 readers (or over 20,000, if it trends on Hacker News). The 1,000 to ${ 2 0 , 0 0 0 + }$ minutes (over 333 hours!) you’ve saved your global engineering peers is a nice return on investment from your 15-minute sentence tuneup.
+
+After you read this section, you should be able to quickly improve sentence clarity by
+
+¡ Reading sentences out loud, with the takeaways from this section in your head   
+¡ Applying the method we introduce for improving the clarity of the clunkiest sentences   
+¡ Using a tool such as Grammarly to spot any mechanical problems you’ve overlooked
+
+Before you begin, remember that sentences, like code, can easily be overengineered past the point of diminishing returns. Don’t overdo it. You could spend hours or days rewriting every sentence, but you have other things to do, and perfect is the enemy of good. Focus on making fast fixes to the following categories of sentences, and move on:
+
+Most prominent (e.g., the introduction)
+
+¡ Most important (e.g., key findings and takeaways)   
+¡ Most muddled (e.g., whatever came out embarrassingly awful the first time)
+
+# 5.3.1 Targeting unclear bulky sentences
+
+Let’s start by talking about unclear bulky sentences: the written equivalent of code bloat. It’s all too easy to write convoluted sentences. When you’re writing your draft, the words don’t always pop into your brain in the ideal order, and sometimes, they’re not even the right words at all. But as long as you end up with some words, any words to remind you of what you were thinking, you achieved your initial goal of extracting your thoughts from your brain. You still need to clarify your thoughts for your reader, though.
+
+Before you can improve the article’s overall clarity, you need a good grasp of what types of sentences are the top candidates for optimization. Here are some high-level traits to look out for:
+
+¡ Overly long sentences (e.g., any sentence you can’t read out loud, start to finish, without wanting to take a second breath)   
+¡ Sentences with multiple prepositional phrases (e.g., “We were collaborating on integration across environments from the start of our project…”)   
+¡ Bureaucratic-sounding sentences built around a weak, passive verb (e.g., “The bug was then located.” versus “We found the bug!”)   
+¡ Any other time the action (the verb) and the actor (the subject performing that action) are unclear, too far from one another, or revealed too late in the sentence (e.g., “Ultimately the problem, which we later realized was actually a great opportunity for improving our process, was that coding standards were neither defined nor followed.”)
+
+Some sentences might check multiple boxes!
+
+# 5.3.2 Optimizing unclear bulky sentences
+
+Now comes the fun part: optimizing your clunkiest sentences. Think of it as a sentence engineering challenge, and there’s even a process you can apply to do this methodically. That process is based on the Paramedic Method introduced by Richard Lanham, a professor at UCLA.
+
+We wanted some nicely convoluted sentences to workshop throughout these steps, so we asked ChatGPT to badly rework a paragraph from the fake Zig blog post. It did not disappoint! Here’s the AI-“enhanced” example that we’ll use:
+
+An additional drawback with Zig is the young state of the ecosystem, though we hope that this is not going to continue over the long term. Juxtaposed with Rust or compared against $C { + } { + } ,$ there is a conspicuous dearth of libraries and tools that would be very helpful to programmers. It is great that it provides HTTP support within its standard library. However, with all the SOC2 requirements, it needed to be secured by means of a thin custom encryption layer. In the end, it was decided that the best solution was implementing it by means of a link to an existing Rust implementation.
+
+NOTE Don’t plan to perform these steps for every sentence in your article! It’s most likely overkill. Use this strategy as a tool to tighten your most important sentences (e.g., your introduction, and the paragraph stating your findings).
+
+# Step 1: Bold the prepositions
+
+Looking at excessive prepositions and “to be” verbs (the focus of step 2) is a great way to identify unclear bulky sentences. It’s also your best source of clues on how to improve them.
+
+Prepositions are connector words that tie an object to the rest of the sentence. Each preposition precedes the object that it’s talking about. But this isn’t a grammar book. Here’s what’s important: clusters of prepositions and prepositional phrases inevitably make sentences difficult to read. They’re often a sign that you’re trying to tack too many things onto one poor sentence (aim for one sentence, one idea, period). It gets monotonous, and it adds dead weight that buries the sentence’s main point. Sentences with lots of prepositions sound like they were written by committee, with everyone tacking on some part just to show that they contributed.
+
+NOTE If you can say “[the_word] my desk” or “[the_word] the meeting,” then [the_word] is probably a preposition!
+
+To complete step 1, find the prepositions in a sentence or paragraph you want to optimize, then bold them. Just guess—you don’t have to be $1 0 0 \%$ accurate.
+
+Here’s an example of bolding the prepositions, using the ChatGPT-“enhanced” excerpt:
+
+An additional drawback with Zig is the young state of the ecosystem, though we hope that this is not going to continue over the long term. Juxtaposed with Rust or compared against $C { + } { + } _ { \mathrm { { ; } } }$ , there is a conspicuous dearth of libraries and tools that would be very helpful to programmers. It is great that it provides HTTP support within its standard library. However, with all the SOC2 requirements, it needed to be secured by means of a thin custom encryption layer. In the end, it was decided that the best solution was implementing it by means of a link to an existing Rust implementation.
+
+Now read that aloud, overemphasizing each of the bolded words. Do this a few times with a few different examples, and you won’t be able to unhear it. Then don’t be surprised if you instinctively start using fewer prepositions as you write.
+
+# Common prepositions
+
+Not sure what’s a preposition? Here’s a list of common ones for fast reference:
+
+about / above / across / after / against / along / among / around / as / at / before / behind / beneath / beside / between / by / during / for / from / in / into / like / near / of / off / on / out / over / through / to / toward / under / upon / with / within / without
+
+Even a single preposition can muddle the meaning. For example, a phrase such as “a careless way of coding” could be stated much more directly as “careless coding.” “Is
+
+indicative of” could become “indicates.” Prepositions are not evil per se. But in excess, they’re often a symptom of a larger problem.
+
+# Step 2: Highlight the “to be” v erbs
+
+Like excessive prepositions, “to be” verbs commonly figure into unclear bulky sentences. They often perform the inglorious task of burying the sentence’s real action and actor (the person or thing performing that action).
+
+“To be” verbs (e.g., is, was, has, had) vaguely highlight a state of existence rather than express a real action. Sentences that revolve around such verbs often use passive instead of active voice, which shifts the focus from the subject performing the action to the thing receiving the action. It sounds suspiciously like it’s trying to hide something or avoid assigning blame (which it often is). Here’s the difference:
+
+Passive—“The bug was then located.”   
+Active —“We found the bug!”
+
+NOTE Another fun rule of thumb: if you can add “by zombies” to the end of a sentence and it still makes sense, then your sentence uses passive voice. For example, “The bug was then located by zombies.”
+
+There’s nothing wrong with using passive “to be” verbs in moderation. In fact, it’s the preferred option when you don’t know who did something or you don’t want to mention who did it (e.g., “The build was broken, so we started to investigate why.”) Just don’t overuse and abuse them. You can often find a better alternative: a stronger verb that shares more information, more concisely and directly.
+
+To complete step 2, identify and highlight the forms of “to be.” Use color highlighting if you’re working in an editor that allows it, or just use italics if you prefer.
+
+# “To be” verbs
+
+Not sure what a “to be” verb looks like? Here’s a quick reference: am / is / are / was / were / be / being / been
+
+Here’s that same ChatGPT-“enhanced” excerpt with “to be” verbs underlined:
+
+An additional drawback with Zig is the young state of the ecosystem, though we hope that this is not going to continue over the long term. Juxtaposed with Rust or compared against $C { + + } ,$ there is a conspicuous dearth of libraries and tools that would be very helpful to programmers. It is great that it provides HTTP support within its standard library. However, with all the SOC2 requirements, it needed to be secured by means of a thin custom encryption layer. In the end, it was decided that the best solution was implementing it by means of a link to an existing Rust implementation.
+
+We could certainly make this paragraph more direct and readable by tackling some of those “to be” verbs. Read the sentence aloud again, lingering and cringing on each of the underlined verbs (as well as the prepositions). Do it a few times, and this will be
+
+stuck in your head forever, too. If all goes well, you will naturally catch yourself when you find yourself leaning on a lazy “to be” verb when there are much better alternatives.
+
+NOTE You don’t need to change anything in your sentences (yet). This step, and the previous one, are designed to help you target sentences that could benefit from optimization, provide clues on how to fix them, and make you start wincing whenever you read a sentence that abuses prepositions and “to be” verbs.
+
+# STEP 3: FIND THE ACTOR AND THE ACTION
+
+Now it’s time to rein in those sentences. At its core, a sentence communicates some action: a subject did a thing. If your reader can’t immediately tell who/what is performing some action and what action they’re performing, then you’re burdening them with extra work to unravel what you really meant. This won’t be appreciated.
+
+To complete step 3, think about the actor and the action in your flagged (and now marked-up) sentences. Then find a verb that concisely captures the actor’s action. Try to look beyond the weak “to be” verbs and find something more precise and powerful.
+
+For example, let’s look at the first sentence in the ChatGPT-“enhanced” excerpt: “An additional drawback with Zig is the young state of the ecosystem, though we hope that this is not going to continue over the long term.” Who or what is the subject? Some candidates are
+
+The drawback   
+¡ Zig   
+¡ The ecosystem   
+The author’s team (the “we”)
+
+After thinking about it, it seems like it’s really about “Zig’s young ecosystem.” So what is that young ecosystem doing? Based on the context, it seems like it might be “complicating adoption.” Now let’s put it together using an active verb. That yields:
+
+“Zig’s young ecosystem complicates adoption”
+
+For another example, consider the final sentence: “In the end, it was decided that the best solution was implementing it by means of a link to an existing Rust implementation.” Where’s the actor and action here? Hidden. With all the prepositions and “to be” verbs, we have a lot of words but no stated actor and a buried action. It seems the actor is actually “we” (the author’s team) and the action is “implementing it by means of a link,” which could be expressed simply as “linked.” That gives us a new core of
+
+“We linked to an existing Rust implementation.”
+
+# STEP 4: REBUILD THE SENTENCE AROUND THE ACTOR AND THE ACTION
+
+Now expand on that core and reintroduce any remaining essential elements from the original sentence. Try to avoid adding too many words at the start of the sentence; generally, the faster the reader reaches the subject and verb, the better. And while you’re tacking the original bits back on, you might as well try to simplify them, particularly by eliminating excessive prepositions and rethinking “to be” verbs.
+
+In our first example, we might end up with, “Another drawback: Zig’s young ecosystem complicates adoption. We hope this improves.” In the second one, we might end up with, “Ultimately, we implemented that encryption layer by linking to an existing Rust implementation.”
+
+# Step 5: Cut (or replace) the remaining useless words
+
+Finally, think hard about what else you might cut. Are there any words that aren’t adding value—either enhancing the readers’ understanding of the subject or making the article more pleasant to read? If so, strongly consider cutting them.
+
+NOTE Sometimes, there’s a tradeoff between being ultra concise and achieving the desired authentic tone. As we cover in section 5.5.1, a conversational tone makes the article much more consumable than some bland impersonal article would be. If words add value in that respect, they’re not “useless,” and you shouldn’t feel compelled to cut them.
+
+In our first example, we ended up with “Another drawback: Zig’s young ecosystem complicates adoption. We hope this improves.” Does it add any value to share that the team hopes this improves? Not really. It would be more interesting if it were supported with some facts, like the project’s GitHub star history showing a nice trend up and to the right (see figure 5.1). For example, we could incorporate that detail as follows: “Another drawback: Zig’s young ecosystem complicates adoption. But this could change soon given the surging interest in Zig.”
+
+![](images/d3bd006e13ca03c1e13717a5d702a490aad2d629b2b73643f3902bfdaaff08d1.jpg)
+
+Revisiting the second example, there’s not too much to cut in “Ultimately, we implemented that encryption layer by linking to an existing Rust implementation.” “Ultimately” is not essential, but it’s a nice linking word that indicates the team considered multiple options first and determined this was the best approach. We’ll keep it.
+
+But we could safely kill “existing.” After all, the team couldn’t just link to something that did not exist. However, it might be more interesting to replace “existing” with the name of the specific implementation that was used, plus a link. For example: “Ultimately, we implemented that encryption layer by linking to the RustyEncryption Rust implementation.” Now, readers considering similar projects have a starting point for their own encryption library research. But wait: Do we really need to say “the RustyEncryption Rust implementation”? “Rust implementation” can be inferred from the context, and if readers want to know more, they can click the hyperlink we’re adding. Let’s simplify it: “Ultimately, we implemented that encryption layer by linking to RustyEncryption.” Table 5.3 recaps how those two sentences have evolved.
+
+Table 5.3 Original vs. revised sentences   
+
+<table><tr><td>Before</td><td>After</td></tr><tr><td>An additional drawback with Zig is the young state of the ecosystem, though we hope that this is not going to continue over the long term.</td><td>Another drawback: Zig&#x27;s young ecosystem compli-cates adoption. But this could change soon given the surging interest in Zig. [Star History image]</td></tr><tr><td>In the end, it was decided that the best solution was implementing it by means of a link to an exist-ing Rust implementation.</td><td>Ultimately, we implemented that encryption layer by linking to RustyEncryption.</td></tr></table>
+
+And for fun, let’s tackle a couple other unwieldy sentences from the fake blog post, too, as shown in table 5.4:
+
+Table 5.4 More original vs. revised sentences   
+
+<table><tr><td>Before</td><td>After</td></tr><tr><td>Zig is not Rust, and it happily lets you dereference null pointers (although its type system tries to prevent obvious cases of that), and use previously freed memory, so we had a dubious pleasure of long debugging sessions, just us, gdb, and the ninth cup of coffee – but it was comforting to see all the existing tools just work.</td><td>Unlike Rust, Zig happily lets you dereference null pointers (but its type system tries to prevent egregious offenses). It also lets you use previously freed memory. We abused these freedoms, which led to the dubious pleasure of long debugging sessions: just us, gdb, and the ninth cup of coffee. At least all the existing tools still just work.</td></tr><tr><td>One of the mind-blowing things about Zig is that cross compilation (ergo compiling the code to target CPU architecture and operating system different than the setup the compiler runs on) is also a core feature of the language.</td><td>Zig&#x27;s cross compilation is mind-blowing. You can compile code to a target CPU architecture and operating system different than the setup your compiler runs on.</td></tr></table>
+
+Note that we didn’t remove every “to be” verb or preposition, and you don’t need to either. Taking a hard look at them is a means to an end (sentence clarity), not a goal in and of itself. Also note that we left a few nonessential words because we very deliberately wanted to preserve the author’s friendly and personable voice rather than make the article seem too detached and dull. The discussion of why and how to make it sound human continues in section 5.5.1.
+
+# Calculating the lard factor
+
+Richard Lanham uses the “lard factor” to measure success in revision with the Paramedic Method. To calculate it, take the word reduction you achieved and divide it by the original number of words. In the case of the second example (linking to RustyEncryption), we get a lard factor of $5 7 \%$ :
+
+$$
+23 - 10 = 13 / 23 = .5652 \text{or} 57 \%
+$$
+
+Plus, we ended up adding a link that readers might find useful!
+
+Don’t cut words for the sake of brevity. Just ensure that every word is justified and pulling its own weight.
+
+When you’re hunting down words to eliminate or replace, pay special attention to the following:
+
+The “blah blah is that” opening —This is also known as “throat clearing” or “the slow windup.” It’s just extra words that you’re forcing the reader to read before reaching your point. It manifests itself in sentences such as “the fact of the matter is that…” and “what is most notable here is that…”   
+Redundancies —Don’t use two words when one can achieve the same effect (e.g., basic fundamentals, end result, merge together, past history, new innovations).   
+¡ Very + word —Given the hundreds of thousands of words (at least) in the English language, there is likely one that’s a better match to whatever you’re trying to express than “very $^ +$ whatever.” This is one place where generative AI excels. Just prompt it with something like “Please suggest 30 words that mean ‘very strange’” and select the one you like.   
+¡ The phrase that should have been a word —Why force your reader to read three or four words when one would do the trick? For example,
+
+– In light of the fact that $>$ Since   
+– Despite the fact that $>$ Although   
+– In the event that > If
+
+Double negatives —Double negatives require twice as much brain power to process than the alternative. Moreover, it’s generally easier for the brain to process something in the affirmative. For example,
+
+– It’s not impossible for… $>$ It’s possible that… (or Possibly)   
+– No tests without failures… $>$ Only failing tests…
+
+¡ Superlatives and extremes —Never use superlatives or extremes; it’s always the worst approach. But seriously, it’s usually difficult to prove that you are indeed the only, best, fastest, or easiest whatever or that you always or never do something. And if you can’t prove it, you will lose your readers’ trust. Plus, you’re likely to incite the comment section vitriol that we’ve mentioned many times by now. If you do
+
+choose to use superlatives, know that they will be perceived as “fighting words,” so be prepared for the fight that follows.
+
+# STEP 6: WATCH OUT FOR OTHER CLARITY KILLERS
+
+Even after all of that, there are still a million more things you could fine-tune. But what else should you focus on? If you have the time and desire, we recommend looking for the following clarity killers that are common in engineering blog posts.
+
+¡ Muddled modifiers —Clarify what modifiers are modifying. Otherwise, the reader might misinterpret your meaning. For example,
+
+– Debugging the code, the error became clear. (The error was debugging the code for you? Great!)   
+– Coding quickly makes you a better programmer. (Do you need to code with blazing fast speed to become a better programmer? Or will any pace of coding make you a better programmer before long?)   
+– I’ll read the proposal and schedule your presentation tomorrow. (What’s happening tomorrow? The reading? Or should you be ready to present tomorrow?)
+
+¡ Disconnects —If you start saying something, finish it before you move on to the next idea. Don’t leave your reader hanging. Keep your subject close to your verb and your verb close to its object. For example,
+
+– We weren’t entirely shocked that John, after six months of frustration with endless feature creep, changing deadlines, and stakeholder turnover, quit.   
+– The new algorithm, which can significantly reduce the computational complexity and memory footprint of deep learning models by surgically removing redundant connections, had a serious bug.
+
+¡ Vague/incorrect it/that references —Unless the context makes it totally clear what each “it” or “that” refers to, you might want to specify. For example,
+
+– It’s somewhere in the repo but it’s broken. (What’s broken? The thing someone is looking for or the repo itself?)   
+– The report mentioned a major issue, but it lacked a resolution (Did the report fail to include a resolution? Or was the major issue unresolved?)
+
+¡ Punctuation overload —A sentence that’s technically correct could be made intimidating by the sheer amount and variety of punctuation. For example,
+
+– Push more logic into the database itself: letting it process as much as possible locally—which is (usually) great for “performance”—and then return the results to the users... or some middleware.   
+– Some databases (e.g., PostgreSQL) implement their own binary format on top of the TCP/IP stack; others (e.g., Amazon DynamoDB) build theirs on top of HTTP—that’s a bit more verbose, but also more versatile (as well as more compatible with browsers).
+
+¡ Startling shifts —Choose your verb tense and how you’re addressing the user, then keep it consistent throughout the article. For example,
+
+– Starting with “This provides you with” then shifting to “Users gain the ability to”   
+– Starting with “We were in the middle of a meeting” then shifting to “And then everything suddenly stops”
+
+¡ Inconsistent tech terms —If something is known by multiple terms, by all means include them all in the article, ideally when you introduce the thing. This helps the readers determine if you’re really talking about the same thing if you say “po-tay-to” and they “say po-tah-to.” But don’t arbitrarily change terms throughout the article. For example,
+
+– Define it upfront as “The blah (also known as blahblah and blahblahblah).”   
+– Don’t randomly switch around by calling it “the blah” in one sentence and “the blahblahblah” in another.
+
+¡ Perplexed paragraphs —One paragraph, one idea. If you can’t clearly state the point of a paragraph, you can’t expect your reader to grasp it. A paragraph could have one big idea with supporting facts and details. Or it could unite several closely related ideas that build on one another. But if a paragraph randomly wanders off into an orthogonal idea, start a new paragraph so the shift is clear to the reader.
+
+# Common errors in English
+
+Every language has its quirks. English certainly has its fair share of similar words with distinctly different meanings. Fortunately, there’s a great reference you can tap if you want quick clarification: Paul Brians’ Common Errors in English Usage (https://brians.wsu .edu/common-errors/). Can’t remember the difference between adverse and averse? It’s and its? Less and fewer? This site explains all that and much more.
+
+# Give AI A CHANCE?
+
+Now for fun, let’s take a look at how AI would revise the entire convoluted paragraph that we started with. When prompted “Make this more direct and clearer,” it did a fairly decent job. It got us from this
+
+An additional drawback with Zig is the young state of the ecosystem, though we hope that this is not going to continue over the long term. Juxtaposed with Rust or compared against $C { + } { + } ,$ there is a conspicuous dearth of libraries and tools that would be very helpful to programmers. It is great that it provides HTTP support within its standard library. However, with all the SOC2 requirements, it needed to be secured by means of a thin custom encryption layer. In the end, it was decided that the best solution was implementing it by means of a link to an existing Rust implementation.
+
+to
+
+Zig’s ecosystem is still young, lacking compared to Rust or C++. The shortage of libraries and tools is noticeable, though we hope this changes in the long run. While it does
+
+offer HTTP support in its standard library, we needed to add a custom encryption layer to meet SOC2 requirements. After evaluating options, linking to an existing Rust implementation emerged as the most effective solution.
+
+It didn’t introduce the two more substantial improvements that we made (replacing the “we hope” bit with the GitHub star history and providing a link to the specific Rust implementation used). A human brain is required to realize that those additional details might be interesting—and weave them in. Still, the improvement is decent given the low effort required. We certainly don’t recommend that you feed your work to AI and then blindly copy in the revision. But if you’re stuck, you might want to see what AI suggests. Even if it doesn’t suggest something better, seeing some potential revisions might trick your brain into generating more of its own ideas.
+
+In appendix B, we’ll have a little more fun with using generative AI for revision.
+
+# 5.3.3 Grappling with grammar
+
+Your grammar does not need to be perfect, but it certainly helps to have a good reference handy in case you want to check something—especially if you’re not a native English speaker. One that we recommend is A Writer’s Reference by Diana Hacker (no Hacker News pun intended). It’s available as a nice spiral-bound book with tabs and indexes to help you quickly answer whatever question you have. It’s a classic, and any used edition should work fine for your writing purposes. Once you see how the book is organized, it will be faster to find your answer here than by searching the internet.
+
+What about writing tools like Grammarly and lesser-known alternatives (we provide a rundown in appendix A)? They don’t find everything. Sometimes they even suggest the wrong thing and then tell you to change it back, sending you in an infinite loop. But you’d be remiss not to use one. They do catch many mistakes (particularly incorrect punctuation, misspelled words, and missing words) faster and more accurately than most humans could.
+
+![](images/2ccd63a8c9230aa6169fda4339a9d2c30d6bc1da0614aa7538a0361a89374486.jpg)  
+Figure 5.2 In the fake Zig blog post, Grammarly instantly caught two things we would correct: incorrect article usage and a simple mixup between it’s and its.
+
+Consider whatever option you select as an essential but fallible tool. Like a static analysis checker that’s not yet tuned for your needs and preferences, it will report problems you don’t care about, and it’s dangerous to assume that the absence of reported problems means everything is just perfect. Always scan the findings to see if it caught something interesting. But certainly question anything that seems fishy, and know that it will inevitably miss things.
+
+Another option is to tap generative AI. You can ask an AI chatbot to clarify specific grammatical points (e.g., “Please explain the rule for when to use an article.”) This is usually spot on. Also, you can feed it a sentence or even your entire article and ask it to point out grammatical errors. But beware; based on our experiences
+
+¡ It likely won’t report everything in one try. You might need to go through a few iterations of finding and fixing, or use a very carefully worded prompt, before it reveals everything it noticed.   
+¡ The recommendations are sometimes nonsense and implementing them would actually make the sentences worse.
+
+Our take: it’s worth seeing what AI reports, just in case it happens to catch something that’s clearly valid. As long as you can quickly spot the real problems among the noise, it’s a means of free checking that might quickly surface something you missed. But always review the results with suspicion. We’ll discuss this more, with examples, in appendix B.
+
+Honestly, the best way to find missing words and other awkwardness is to read your draft out loud. If that’s too embarrassing or impractical, at least whisper it audibly to yourself. You might feel silly doing a dramatic reading of your own blog post. But you’d be surprised by how many things you catch when you mouth it and hear it out loud versus when it’s just a voice in your head. Keep your trusty grammar guide nearby in case something sounds weird and you want to investigate further.
+
+# 5.3.4 Putting it all together in a process
+
+Throughout this section, we discussed a lot of things to look for, as well as a variety of ways to find and fix them. Here’s how we recommend putting it all together:
+
+1 Review the targeting criteria in section 5.3.1.   
+2 With those criteria in mind, read your draft out loud (really!) and flag any sentences that could obviously benefit from revision. If you have trouble reading a sentence naturally, in a single breath, you should flag it.   
+3 Of all the flagged sentences, determine which ones are most critical (e.g., sentences from your intro or the paragraph revealing your most impressive findings).   
+4 Use the process described in 5.3.2 to optimize those target sentences. Timebox it to a reasonable amount of time and stick to it.   
+5 Look at the problems your grammar-checking tool reports and fix what makes sense. Consider asking generative AI for a grammar check, too.
+
+6 Read the blog post out loud again, as slowly and dramatically as you can bear. If anything else critical jumps out at you, pause to fix it, and then proceed with your soliloquy.
+
+Congratulations, you’ve done your due diligence! Now onto the next.
+
+# 5.4 Components
+
+Zooming out a bit, let’s look at the various components of the blog post: the higherlevel components that either include or enhance the sentences we just looked at are
+
+¡ Titles   
+¡ Introductions   
+Endings   
+¡ Headings   
+Visuals   
+¡ Code
+
+As with sentences, you could go down the rabbit hole overengineering these components well past the point of diminishing returns. Instead of trying to make them perfect, aim to make them effective. To get you there, let’s focus on what each component should achieve, then look at some tips for accomplishing that goal.
+
+# 5.4.1 Titles
+
+Titles need to draw in your target readers. If your title doesn’t catch the reader’s attention, pique their curiosity, and intrigue them enough to click, then your blog post won’t get read, no matter how great it is.
+
+There are exceptions, of course. If an industry luminary happens to share your article in a social media post that’s something like “This is the most important thing on BLAH that I’ve ever read—check it out: LINK,” then your title matters much less. But it’s generally safe to assume that the weight of the world rests on your title.
+
+Let’s be realistic. Sometimes you’ll feel that your working draft ended up “good enough” based on your intuition, and you’ll skip all the review/optimization steps for core and clarity. That’s fine. In fact, that’s great—with enough practice, that will all come naturally. But don’t ever publish without spending at least a few minutes thinking about the title. It’s too important, and it’s also a very fast and easy way to make a big difference.
+
+Try to force yourself to create a long list of title variations, at least 10 or so. Don’t keep overwriting the same title; you risk losing good ideas that you might want to mix and match into a final title. In some separate area in the same doc, a different one, or on a good old piece of paper, just try to crank out title variations that follow these recommendations (which we will explore in turn next):
+
+¡ Intrigue your target readers without misleading them.   
+¡ Would catch your target readers’ attention in a random list of blog post titles (think Hacker News).   
+Feature at least one term that your target readers might be looking for.
+
+Before we dive into the details, note the focus on target readers. Chapter 4 prompted you to consider and define who you expected to read the article. This should be a primary consideration for your title. If your target audience is truly “anyone on Hacker News,” you’d want to go with a broad, maybe somewhat mysterious title. But if you’re writing specifically for readers who obsess over the nuances of consensus algorithms in the context of database internals, you’re going to need a rather specific terminology-laced title. A title misfire will prevent you from reaching the right readers, and attracting the wrong readers is a surefire way to stir up negative comments.
+
+# INTRIGUE YOUR TARGET READERS WITHOUT MISLEADING THEM
+
+When technical readers judge the article by its title, they consider whether they believe the article will help them learn about a topic that interests them. Otherwise, they won’t bother spending their time on it.
+
+For your title, aim to highlight a challenge, pain, technology, or engineering feat that lies at the intersection of 1) what your target readers care about and 2) what your article addresses. Remember how the last chapter urged you to define what’s so special about your take on your selected topic and why your reader would be interested in your perspective on it? That should be your guide for what to feature in your title.
+
+Don’t bury your differentiators. If your article presents something surprising or counterintuitive, a unique perspective, a contrarian opinion, or a new way to approach a longstanding problem, then definitely mention that in the title! There’s no shame in enticing people to read by highlighting what’s special about your article.
+
+However, never tease something that you don’t ultimately deliver on. For instance, if you promise a result like “Read This Post to Learn a Shocking Truth About A/B Testing” and your blog post doesn’t actually include any groundbreaking information, people will notice. You’ll not only lose readers for this blog post. You’ll get snarky comments referencing clickbait. And you’ll breed distrust that could very likely deter people from reading your subsequent blog posts.
+
+Consider ad blockers too. You’re targeting a technical audience, experienced in creative ways of avoiding ads when they browse the internet. The following qualities can get your title filtered out (for a good reason!):
+
+Profanity   
+WORDS IN ALL CAPS   
+Excessive exclamation marks!!!!!!!   
+Emojis ??✈️??  
+Words with erotic or obscene connotations   
+Hyperlinks directly in the title (yes, it happens)
+
+The above traits also make the title seem clickbaity to a human. If you use them in your title, ad blockers are actually doing you a favor by preventing you from getting purely negative online feedback. The bottom line: don’t do it.
+
+What should you do instead? The most intriguing titles tend to be
+
+¡ Short and crisp —No “fluff” words that don’t pull their own weight.   
+¡ Playful, provocative, or mysterious —If you enjoy wordplay, this is your chance.   
+¡ Technical and targeted —Something a broader audience would never “get.”
+
+Here are a few examples of particularly intriguing titles:
+
+¡ “Moore’s Scofflaws” by Bryan Cantrill (https://oxide.computer/blog/moores -scofflaws)   
+¡ “Ship Shape” by Kerry Halupka and Rowan Katekar (https://mng.bz/gA5n)   
+¡ “Is Something Bugging You?” by Will Wilson (https://mng.bz/eVxZ)   
+“Dumpster Diving the Go Garbage Collector” by Natalie Serrino (https://blog .px.dev/go-garbage-collector/)   
+¡ “Lies We Tell Ourselves to Keep Using Golang” by Amos Wenger (https://mng .bz/pxm0)
+
+Another strategy is to use a multipart title—a short catchy phrase and a more descriptive phrase, separated by a colon. For example, “Herding elephants: Lessons learned from sharding Postgres at Notion” (which we’ll discuss in chapter 11). The initial part, on its own, would attract people looking to herd large animals—presumably not the target reader. The analogy is a fun introduction to the descriptive title that follows the colon.
+
+# ENSURE THE TITLE CAN StAND ALONE
+
+Once your blog post is published, you can’t control where it shows up and with what information. The only thing you can control is that its title will (most likely) be shown.
+
+Read your title with that in mind. If your target reader sees your title, without any context in some random list or feed, would that title alone get them to click?
+
+If your article happens to hit the front page of Hacker News, readers will decide to click—or not—based only on your title and the domain of where it’s hosted. No cool image, no description, nothing. And it’s the same in many other news aggregators and newsletters, at least the ones that attract the technical audience you’re presumably trying to reach. Some popular lists (e.g., This Week in Rust) don’t even display a domain.
+
+If you’re working for a household-name tech leader, you can probably publish a post titled “How [BigTech] [anything],” and people will be curious enough to click. Not so if you’re at a little-known startup. In that case, you probably need to add more descriptive and/or intriguing words.
+
+# THINK ABOUT WHAT YOUR TARGET READER MIGHT BE LOOKING FOR
+
+Blog posts have a predictable life cycle. Upon publication, they’re shared across aggregator and social sites, where they take off (or not) based on upvotes and endorsements. In this arena, having a catchy, somewhat mysterious title might help you stand out within a sea of options.
+
+Once the newness wears off, your blog post likely won’t be featured on lists or feeds. Still, any time someone searches for a matching term, it could have a chance to draw attention.
+
+Highlighting appropriate search terms (a.k.a. keywords) in the title is especially important at this point of the blog post’s lifecycle. If you want your blog post to live a long and healthy life, keywords matter. You don’t need to resort to the tricky search engine optimization (SEO) strategies that, along with AI-generated content, are responsible for most of the junk you receive in search results. But you really should
+
+¡ Think about what terms your target readers might be searching when they’re exploring a question or problem that your blog post addresses   
+¡ Consider featuring at least one of those terms in your title (and the others in your introduction and headings)
+
+TIP If you feel strongly about using a catchy title without a recognizable keyword, you could try launching with that catchy title, then retitling the article later.
+
+Don’t pander to machines. But if your article covers topics that people are searching for or talking about, be sure to highlight that so it can be found by interested humans and the machines they use to surface information. For example, if you’re writing about something many developers are following (say, Rust), don’t forget to include that technology in your title.
+
+A quick search will yield many SEO-optimized listings for many SEO optimization tools—all promising to guide you to the precise winning combination and placement of keywords you need to win the SEO game. If you have a solid article, you shouldn’t need them. Just make sure your title highlights the most critical term(s) and the others are featured prominently (maybe in your headings).
+
+NOTE We’ll cover keywords a bit more in chapter 7. Skip ahead if you’re really not sure what to highlight in your title.
+
+# Example 5.1
+
+There are many specific title compliments and critiques throughout the example blog posts we’ll be discussing for each pattern. Here’s a quick preview of a few title-related comments:
+
+How a Single Line of Code Made a 24-core Server Slower Than a Laptop—It seemed a bit clickbatity at first, but the article delivered on its promise.   
+How Prime Video Updates its App for More Than 8,000 Device Types—It mentions “over 8,000 device types,” introducing an impressive level of awe.   
+Rust After the Honeymoon—Intriguing in its technical ambiguity as well as emotional connotation (honeymoon).   
+How We Built Scalable Spatial Data and Spatial Indexing in CockroachDB— It wouldn’t jump out at the average reader, but it is well-suited for the target audience.
+
+Let’s also return to the fake Zig blog post. In the initial draft, the title was “Zig helped us migrate our data efficiently.” Zig was a key focus, so it’s good to have that featured quite prominently. Making it the first word gives it extra emphasis.
+
+But who is “us”? Do many people care about Zig helping the unknown “us” migrate data? (Well, since it’s Zig, maybe.) Fans of this “us” might not notice the article unless they also see and recognize the domain. And didn’t the author (PretendPiotr) want users of FakeDB and Postgres to read this blog post? They’re unlikely to notice or find this blog post unless FakeDB and Postgres are included somewhere in the headline.
+
+With that in mind, here are some alternate title ideas:
+
+¡ Zig Helped Us Migrate to FakeDB Efficiently   
+¡ Zig Helped Us Finally Migrate Off Postgres   
+How to Migrate Data from Postgres to FakeDB…with Zig!
+
+TIP You could ask AI to generate some additional title options for you. It most likely won’t spit out the perfect title, but it might get you thinking about different approaches and spark some new ideas in your own human brain.
+
+# 5.4.2 Introductions
+
+Once readers are lured in by your title, they’ll likely scan your introduction to assess whether the article delivers on the title’s promise. Is it worth reading now (or at least saving for later)? At this point, they’re wondering
+
+What exactly they’ll get from reading this article   
+¡ What angle you’re taking on this topic   
+How it compares to everything else they’ve read on the topic   
+¡ If you seem qualified to address this topic   
+If it’s really worth their time
+
+Don’t be shy—tell them! Provide the information they want and let them decide if they wish to continue. Technical readers never want to feel tricked. If you’re upfront and transparent about your angle and intentions, readers who aren’t interested can just leave now and move on with their lives. They’ll appreciate that you saved them some time, and you’ll appreciate that they didn’t end up flaming you for wasting their time on something that didn’t meet their expectations. Win-win!
+
+NOTE Introductions are also discussed in section 5.2.3, particularly the part about frontloading your article. And section 5.2.2 covered the importance of providing context, which is critical in an introduction.
+
+Also, plan to think hard about every sentence (ideally, every single word) in your introduction. We’ve said quite a few times that you don’t want or need to overengineer every sentence in the article. Ensuring that the introduction is clear and concise,
+
+however, should pay off immensely in catching the target readers' attention and motivating them to continue. The introduction is the perfect place to put all the sentence-tightening lessons you learned from section 5.3 into action. Here are our recommendations for a solid introduction, tying together some earlier threads on context and frontloading, and introducing some additional tips.
+
+# UNLESS YOU HAVE ANOTHER IDEA, JUST START WITH THE BACKSTORY
+
+Don't fret over coming up with some famous first line. If you have some electrifying hook in mind, use it. If you want to try something intriguing, you could start off with a startling fact or outcome, a provocative statement, or an anecdote. But really, if you're not so inspired (like most of us, most of the time), just start at how it all began.
+
+Something happened to prompt you to do (or think) this thing and write about it. Begin your article by sharing what that was and why it drove you down this path. This immediately starts to close the gap between you and your reader. It offers a great opportunity for you to share a bit about why you're qualified to speak about this topic and what's so unique about your perspective on it. Plus, it saves you from the frustration of trying to write some clever opening under pressure. If you're feeling particularly creative, first channel it toward writing a catchy title. It will have a much larger effect there. Plus, it's a lot fewer words to worry about.
+
+# TELL THE READER WHAT TO EXPECT AND WHAT'S IN IT FOR THEM
+
+Remember the goal you stated for your article, the one sentence you defined in chapter 4? The introduction is a great place to let the reader in on what you're trying to accomplish here. That way, they can either click away or set aside time to dive in.
+
+But remember that everything is now about your reader, not about you. Your reader cares mostly about what's in it for them, so restate your goal in terms of them. Will they discover a new technique for alleviating a key pain point? Gain the wisdom of your lessons learned without having to endure the pain you suffered? Vicariously experience the fun of your latest weekend project? Don't force them to guess; just be open and share.
+
+Also, it's a nice gesture to tell them what they'll experience along the way, like a proper tour guide. For example, if you're talking about how you built something cool, will you also be providing source code and explanations so they can later experiment on their own? That might factor heavily into someone's decision to read your article. If you want to build trust and avoid (at least some) nasty comments, transparency is the best policy.
+
+# MAKE SURE YOU'VE INDICATED WHY YOUR TAKE ON THIS TOPIC IS INTERESTING
+
+In chapter 4, we also urged you to write down why your perspective on this topic is so interesting to your target audience. That's likely the second thing that your reader wants to know before deciding whether to read your article. Don't force them to scan the whole article and guess. Just reveal it in the introduction.
+
+Is your take interesting because you're writing about something you personally designed and/or implemented? Because you ran an extreme scale scenario that nobody else dared to run? Because you have extensive experience working with something in
+
+production and want to share the reality versus the hype? Whatever sets your take on this topic apart, don’t let the reader leave the introduction without knowing it.
+
+# Be highly aware of what your target reader does and doesn’t know
+
+Think about the range of people who might stumble onto your blog post:
+
+They might not know anything about you, your company, or your project.   
+They might not know much about your topic.   
+They might already know way more about your topic than you expect, maybe even more than you know.
+
+You can’t please everyone. And if you try, you end up pleasing no one. So who do you write for? It $1 0 0 \%$ depends on who your target audience is. Who did you have in mind when you wrote it? That’s the person you should cater to. This is important throughout the article, but it’s especially important at the beginning. If the target reader finds that the first few paragraphs are too overwhelming or too basic for them, they’re likely to leave before they read the rest.
+
+Provide whatever context is required to give the target reader a soft landing. Even a short (several words) description of your project when you first introduce it could really help orient a reader. And avoid explaining things that your target reader should already know. Hyperlinks are your friend here. They let you abstract away details that would turn off the advanced reader, while still offering learning options for those who would appreciate a little more background. Don’t go into hyperlink overload, though. That looks immediately unappealing and gets distracting fast. Use your best judgment on what’s most helpful for your target reader.
+
+# Example 5.2
+
+How did the fake Zig blog post stack up on the criteria we set forth here? Not well, as shown in the table. As we briefly mentioned in section 5.2.2, PretendPiotr went straight into the meat of the article, without really considering what the reader knows or cares about.
+
+<table><tr><td>Criteria</td><td>Verdict</td></tr><tr><td>Provide the context required to help the reader understand where they’ve landed</td><td>No, it jumps right into the middle of the story.</td></tr><tr><td>Help the reader understand your goal, stated in terms of what’s in it for them</td><td>There were two stated goals: 1) convince database users to try out the migration tool, and 2) show that it’s possible to create something useful with Zig. Neither is reflected in this introduction. Still, the reader can probably guess that they’ll learn a faster way to move data from Postgres to FakeDB.</td></tr><tr><td>Give the reader a taste of what they’ll experience along the way</td><td>Not at all. The title mentions Zig and the bulk of the article is about Zig, but the introduction doesn’t mention Zig once.</td></tr><tr><td>Share why your perspective on this topic is interesting</td><td>Nope. It doesn’t even provide any context on who “we” is.</td></tr></table>
+
+# (continued)
+
+If this were a real article, we’d recommend adding a paragraph or two before the current start; that new intro could then cover the key points.
+
+TIP Section 5.2 shared excerpts from a couple rather effective introductions by Gwen Shapira and Liz Fong-Jones.
+
+# 5.4.3 Endings
+
+Many readers will drop off before the end—they lose interest, or life happens. But those who stuck it out should be rewarded for their perseverance. Here are some parting gifts you can leave them with.
+
+# summary/takeaways
+
+Even if the reader has been following along, it’s nice to offer them a concise summary, tying it all together for them. In the ideal world, every reader would read every word carefully, then write down their own summary/takeaways in some notes file. That way, they could force themselves to synthesize everything they learned and restate it in their own words for better absorption and retention.
+
+But in reality, that doesn’t always (or ever?) happen. So help out the reader and do it for them. Don’t repeat every key point; instead, synthesize the main ideas and touch on why it all matters. Bonus: it makes it very easy for the reader to share your key points with their colleagues or social network, potentially giving you additional readers later on. Also, look back at your introduction and see if it makes sense to revisit any of those threads in the conclusion. It could be a nice way to close the loop for the reader.
+
+# implications/extrapolation
+
+Try and place your experiences and findings in the context of the broader industry, beyond your project and company. In other words, directly address the “so what” question. Thinking about how your specific work ties into the broader tech world is always interesting; it could be inspiring, humbling, rewarding, or all that at the same time.
+
+Moreover, it’s a conversation starter. It could spark a discussion in the comment section, and maybe some small percentage of those comments lead to a thoughtful discussion. Maybe someone will write a follow-up article focused on one of those threads and link back to your article as their inspiration.
+
+# what’s next (for you)
+
+Many blog post patterns covered in the next part of this book wrap by discussing what’s next for the project. This is especially common in posts that follow the “How We Built It” and “We Rewrote It in X” patterns. Projects rarely have a clear-cut ending; there’s almost always more work to be done. Giving your reader insight into this is a nice transparency touch. And if something significant is planned, mentioning it here can help build anticipation for the next blog post that you’ll write when that aspect of the product is ready to share.
+
+# Next steps (for them)
+
+Do you have an ask or invitation for the highly interested reader who reached the end of your article? Would you like them to provide you feedback on something, maybe contribute to a project? Or can you give them a way to apply what they learned or learn even more? Ending by giving them something, as well as asking for something, is a mutually beneficial way to wrap it up.
+
+# Example 5.3
+
+The example blog posts in our pattern chapters showcase many different approaches to endings. One of the most fun ones is the Discord post “Why Discord Is Switching From Go to Rust,” which will be featured in chapter 9. In closing, the author
+
+¡	Links to another blog post about Discord’s use of Rust   
+¡	Shares how Discord’s dev process has changed as a result of this project   
+¡	Invites Rust devotees to consider joining the Discord engineering team   
+Reveals that while Discord relies on Rust, the Rust community relies on Discord as their primary communication channel   
+¡ Provides a direct link to the Rust Programming Language Discord Server
+
+Although the fake Zig blog post really missed the mark on the introduction, it wrapped with a satisfying conclusion. It tied together all the various threads: the Postgres to FakeDB data migration, the new data migrator, and the adventures in Zig. It also offered easy access to the new tool and invited users to share their feedback.
+
+# 5.4.4 Headings
+
+Your headings are signposts that help the reader scan and navigate your article. They should call out the different parts of the article in terms that make sense to the reader. We covered this, with some examples of hits and misses, in section 5.2.3 (on flow). To summarize the key takeaways from that discussion
+
+Make sure the headings focus on terms that the reader understands.   
+¡ Strongly consider crafting headings that answer the questions that are likely in the reader’s head at that point in the article.
+
+Here are a few additional tips for helpful headings.
+
+# LesS IS MORE
+
+Aim for the shortest possible set of words that will help orient your reader. Headlines should break up the paragraphs. If you have super long headings, in big bold fonts, it’s likely to overwhelm the reader more than help them.
+
+# PLACE THE CRITICAL WORDS AT THE START
+
+Readers scan from left to right. Don’t force the reader to read through a lot of filler words to reach the important ones. For example, assume you’re writing up a benchmark and you have a few sections on how configuration A compares to configuration
+
+B: one covering throughput, the other covering latency. Don’t use headings like “Configuration A vs. Configuration B: Throughput,” “Configuration A vs. Configuration B: Latency.” Instead, go with “Throughput Results,” “Latency Results.”
+
+# AVOID UNNECESSARY COMPLEXITY
+
+Sometimes you really need multiple layers of headings to convey the structure of an article. But often, the complexity ends up disorienting the reader, especially if it’s hard to visually distinguish one level of the hierarchy from another. You don’t need to avoid it; just be very deliberate about it. And consider numbering sections if it would help readers understand where they are in the hierarchy.
+
+TIP Want the AI perspective? Try prompting a few different chatbots with something like “Can you recommend ways to improve the existing headings in this article?” Note that some provided much more helpful feedback than others at the time of writing. If you really want recommendations and feel like the feedback you’re getting is inadequate, it might be worth trying another chatbot.
+
+# 5.4.5 Visuals
+
+The visuals you add can be just as important as your words, sometimes even more so. Images such as architectural diagrams, graphs quantifying your optimizations, and screenshots of the clues you encountered along your bug hunt can make or break the article for some readers. Done well, they convey complex information with impressive efficiency.
+
+Engineering blog posts commonly use visuals to tell stories about data. Exploring data visualization best practices is well beyond the scope of a section in a chapter of a book. In fact, there are entire books written on data visualization. Two recent examples include Everyday Data Visualization by Desireé Abbott and Fundamentals of Data Visualization by Claus O. Wilke. Also, the series of books by Edward Tufte are classics in that respect. If you're going to be designing your own images, we strongly recommend that you consider learning from those experts.
+
+Even if you're just grabbing screenshots or integrating basic charts from a spreadsheet, there are a few basic considerations to keep in mind with visuals.
+
+# THINK ABOUT HOW THE READER WILL EXPERIENCE IT ON THE PAGE
+
+A screenshot of a full-screen dark mode dashboard isn't going to convey much information to a reader viewing it in a typical web template. You can probably have the image explode into the full size (we'll cover options like this in chapter 7). But it might be better to create an image that shows the exact part of the dashboard you're talking about, at an instantly readable size. You will focus your reader's attention and also save them a couple clicks.
+
+# CAPTION CAREFULLY
+
+If you decided to spend time creating and adding an image, just spend another minute writing a caption that tells readers why it's there and what they should be focusing on.
+
+It’s an easy way to help readers get the most out of it. It also makes the meaning clear to readers with visual impairments, or whenever the image is not loading.
+
+# CONSIDER COLOR-BLIND READERS
+
+If your image conveys meaning through colors, consider if color-blind readers can still grasp the meaning (you can find free color-blind simulators online). Colorblindness is much more common in men than women ( $8 \%$ versus $0 . 4 \%$ ). Given the tech field demographics, your article is likely to reach a lot of male readers, and thus a fair amount of color-blind readers.
+
+# TAKE COPYRIGHTS SERIOUSLY
+
+This is another case of ask for permission, not forgiveness. It’s the right thing to do, and even an innocuous mistake could be tremendously costly. We once had a teammate unknowingly use a copyrighted image in a blog post. The copyright holder discovered that and contacted the company. Our company immediately took it down, but we also had to pay damages in the amount of tens of thousands of dollars. Lesson learned.
+
+TIP Want ideas on what visuals to add? Prompt AI with something like “Can you think of any visuals to add to this article?”
+
+# 5.4.6 Code
+
+Last and certainly not least, code examples. Code examples should be used strategically to show how something works, why something has improved, why an optimization is necessary, and so on. We’ll talk about how code excerpts are displayed in chapter 7. For now, let’s focus on the code itself.
+
+If you’re including code examples, ensure that they are
+
+¡ Shareable —If your project isn’t open source, make sure you have clearance to share any real code examples. We’ve said this a few times by now, but it’s important. If there’s any doubt as to whether you can share closed source code, ask for permission, not forgiveness.   
+Well-vetted—Few things are more embarrassing than sharing a blog post and having the comment section take you to task for a careless coding mistake. Even if the code is already in production, give it a careful look and get another pair of eyes on it as well.   
+¡ Realistic —If you’re making up code for the sake of an example, ensure that the examples are realistic and secure even if they’re not real (people will copy/ paste). They should be syntactically correct and compile—you can check that with one of those online language playgrounds, if your language has one. Better yet, share the link to the playground snippet so that readers can easily play with the code.   
+¡ Concise —If you’re showing code that you don’t expect anyone to run, consider if you can omit any parts that just aren’t relevant to what you’re discussing. If you take that path, use ellipses (…) to indicate where code was omitted.
+
+# 5.5 Consumability
+
+Finally, consider the overall experience of what it’s like to be a reader sitting down and reading your article. What else can you do to draw them closer into your world? To connect with them at a human-to-human level and evoke emotion? To motivate them to continue even if they’re getting tired? And to help them dive back in if they get torn away and really do want to pick up where they left off? That’s what we cover in this section, the last of things to consider when optimizing your working draft.
+
+# 5.5.1 Keeping it human
+
+Show your reader that you’re human; not by demonstrating that you can select all the traffic lights in an image grid, but by being authentic and relatable in your writing.
+
+Blog posts are not research papers. Shunning that austere formality is not only acceptable in this context—it’s expected. As shown in many of the example blog posts we’ve referenced in this book, some of the most educational blog posts are friendly and also a bit fun. Would you rather learn from friends sharing their personal trials and tribulations over lunch—or from a suit-and-tie professor delivering a scripted lecture to a room of 500 people? Keep that in mind as you write and review your blog post. Here are some tips for keeping it human.
+
+# BE OPEN
+
+Emotion equals engagement. If you can connect with a reader in a way that makes them feel curious, inspired, excited, nostalgic, or empathetic, chances are they will be more likely to complete, share, and remember your article.
+
+But how do you do that? Forced attempts to evoke emotion will be detected as such (and likely ridiculed). Instead, just be real. Ensure that you’re not eliminating or downplaying authentic elements that could help your reader connect with you. More specifically, don’t be afraid to
+
+Share a little about your background when relevant to the discussion   
+¡ Reveal what was going through your head throughout your triumphs and tribulations   
+Admit your worries, frustrations, mistakes, and imperfections   
+¡ Be open about what you don’t (yet) know   
+Poke fun at yourself
+
+These are the things that will keep your reader engaged and also clearly distinguish you from a machine.
+
+# WRITE IN YOUR AUTHENTIC CONVERSATIONAL VOICE
+
+Your writing should sound like some version of you. How do you sound while chatting with familiar work colleagues over lunch? That’s a good tone to aim for. Also, feel free to incorporate elements of your text-chatting persona or even your interior monologue.
+
+Your written words should mimic this voice with respect to things such as
+
+¡ Word choice —Use words that you’d normally use. Don’t raid the thesaurus and select words that you’ve never actually uttered.   
+¡ Sentence length and complexity —If you’re a very direct person who naturally speaks in short sentences, great. Those are typically easy to read. If you tend to speak in longer and more complex sentences, you still want to capture that style—but be extra vigilant to ensure that it’s clear and consumable for the reader.   
+¡ Tone —If you’re enthusiastic, sarcastic, snarky, irreverent, serious, reserved, playful, witty, whatever in reality, your writing should reflect this. If one of your close friends were to read your article, would they recognize your personality or think “who is this person?”   
+¡ Formality —Authors of engineering blog posts commonly use contractions and colloquialisms. They take liberty with grammatical rules because that’s how they sound in casual situations. However, if that’s not how you speak, don’t force yourself to be informal. Do what’s authentic, whatever that means for you.
+
+TIP Without training, AI can’t detect if your article sounds like you. But you could get some feedback on tone by prompting a chatbot with questions like “How would you describe the author’s voice in this article?” and “Does it sound like it came from a human?”
+
+If a sentence doesn’t sound like you, try explaining what you really meant out loud, imagining your target reader sitting in front of you. And keep a voice recorder running in case you utter the perfect phrasing.
+
+# ADDRESS THE READER DIRECTLY
+
+Envision your blog post as a conversation between you (or your team) and the reader. The author is either “I” or “we,” and the reader is “you.” Referring to them as “people,” “users,” or some other impersonal entity creates an invisible barrier between you and the reader. And given that you are already trying to communicate deeply technical information to some unknown person somewhere around the world, you don’t need any more barriers.
+
+You could even engage with the reader during the article, asking them to analyze a problem or consider what they would have done at a given point. This faux dialog is especially common in the “Bug Hunt” pattern (see chapter 8), where it’s used to prompt readers to consider the evidence before them and draw their own conclusions. It can be a fun way to pull the reader into the scene.
+
+# SPEAK THE READER'S LANGUAGE
+
+You’re naturally going to describe the same thing using different language if you’re messaging one of your teammates, presenting to experts in your field, or attempting to explain your work to your family. For example, you vary your
+
+Formality and tone   
+¡ Level of explanation   
+¡ Use of technical terms
+
+¡ Cultural references and inside jokes   
+¡ Comparisons and analogies
+
+This adaptability should also carry over to your writing.
+
+In chapter 4, we prompted you to think about your audience: who you are writing for, what they already know, and why they care about what you’re writing. Remember all this as you review your language!
+
+For example, when you’re writing primarily to users in your community, you’re likely to be friendly, fully transparent, and highly technical. But if you’re targeting potential investors, you might use language that’s more crafted, value oriented, and aspirational.
+
+# 5.5.2 Making it scannable by humans
+
+If your blog post makes the readers’ eyes hurt, only the most committed readers are likely to trudge through it. In contrast, if it’s a clean balance of text, headings, and white space, with a nice spattering of thoughtful visuals, your reader can immediately recognize that you’ve thought about their experience. This might earn you a few minutes of their time, a chance to convince them that the article is indeed worth a read.
+
+Think of the difference that unreadable code makes. If the function definition spans six whole screens, it’s a red flag. Simple things like inconsistent indentation or very long lines of code never fail to make reviewers frown. Modern graphical IDEs (integrated development environments) often show a preview of the whole file for easy scrolling; this makes it readily apparent whether the code is in nice, human-readable shape, or quite the opposite. When it’s the former, the associated code is invariably easier to reason about, spot errors in, and modify.
+
+Scannability is equally important in your reader’s interactions with your blog post, but for somewhat different reasons:
+
+¡ When they first encounter your blog post, they likely scan it to determine if they want to read it.   
+¡ As they read it, they scan guideposts like headings to understand where they are and to check if they’re understanding it correctly.   
+¡ If they get distracted, they use those same guideposts to try to pick up where they left off.   
+If they later decide to revisit some fact or finding in your article, they want to rapidly relocate whatever it is they were looking for.
+
+How can you help the reader better parse the article in these situations? Here are a few tips.
+
+# REVIEW THE ARTICLE AT THE MACRO LEVEL
+
+Don't worry about the words for a moment. Just think about the balance of headings, visuals, and sentences on the page. Does it look enticing or intimidating? What can you do to change that?
+
+# TEAR DOWN WALLS OF TEXT
+
+Making the article easier to parse almost always boils down to some angle on breaking up walls of text. Toward the end of chapter 4, we offered a quick fIx: FInd the longest
+
+paragraphs and hit Return/Enter at the most logical point in the middle. That’s actually one of the fastest and easiest ways to help your reader better process your article. The rule of thumb here: each paragraph should feature one main idea, no more. In chapter 4, we also suggested that you consider having at least a couple of headings per page.
+
+But don’t stop there. Also consider
+
+¡ Converting paragraphs to lists—If you have a paragraph that’s essentially gluing together a set of related items, consider making it a list. Use numbered lists if ordering matters (e.g., steps that must be processed sequentially or a prioritized list). Otherwise, use bulleted lists. Apply a parallel structure to the items in your list to facilitate human parsing and processing. That really just means “start them off in the same way.” For example, look at the first word in each bullet within this list (e.g., converting, using, adding). Decide how you want your lists to be structured, then stick with it.   
+¡ Converting paragraphs to tables—This is a great option if you’re comparing things (different options, before and after). It’s much simpler for the reader’s brain to note the similarities and differences when the items being compared are sitting beside one another in a highly structured table.   
+¡ Using boxes for extra information—In section 5.2, we urged you to eliminate information that detracts from your focus. But maybe a few tidbits didn’t quite fit into the article’s natural flow, and you couldn’t bear the thought of eliminating them? Fine. Set them aside in a box (could be a single-cell table) so that the readers can tell that it’s somewhat orthogonal to the core text.   
+¡ Adding decorative images, maybe even memes—Sometimes the brain can only take so much text. If you still have a lot of text, consider breaking it up with one or two additional images: maybe something you created with generative AI or a relevant meme. Don’t go overboard with gratuitous graphics, of course. But a carefully crafted image that evokes a little smile offers a nice brain break in a deeply technical article.
+
+# BOLD KEY POINTS
+
+Finally, consider bolding key points within the remaining paragraphs. This is a great tool for focusing the reader’s attention, as long as you use it deliberately and judiciously. It’s better to have a few key phrases or complete (short) sentences highlighted than to have isolated bolded words scattered throughout. For example, consider the difference in figure 5.3.
+
+# 5.6 If you do nothing else
+
+We’ve covered quite a lot in this chapter. But our recommendation for the absolute least you should do if you’re experienced, or just crazy short on time, is a fairly simple six-step process:
+
+Debugging Zig is also a treat, i you'e already used o ebugig C. Eveh still works - gdb, perf, you name it. On top of that, Zig has a more elaborate system for asserting preconditions and invariants, which makes the debugging process a little bit smoother than C used to be. Zig is not Rust, and it happily lets you dereference null pointers (although its type system tries to prevent obvious cases of that), and use previously freed memory, so we had a dubious pleasure of long debugging sessions, just us, gdb, and the ninth cup of coffee - but it was comforting to see all the existing tools just work.
+
+Debugging Zig is also a treat, if you're already used to debugging C. Everything still works - gdb, perf, you name it. On top of that, Zig has a more elaborate system for asserting preconditions and invariants, which makes the debugging process a little bit smoother than C used to be. Zig is not Rust, and it happily lets you dereference null pointers (although its type system tries to prevent obvious cases of that), and use previously freed memory, so we had a dubious pleasure of long debugging sessions, u it   e l tools just work.
+
+Figure 5.3 In the first paragraph, the clean bolding focuses the reader’s eyes. In the second paragraph, it’s overkill and becomes an annoying distraction.
+
+1 Read the article in your head with a focus on how the reader will perceive the content. Imagine that the most critical person in your target audience is sitting in front of you staring at you:
+
+– What are they most skeptical about?   
+– Where do they want more context, detail, or supporting facts?   
+– Where might they get lost, distracted, or disoriented?
+
+2 Spend a few minutes thinking about the title.
+
+3 Spend a few minutes ensuring that your introduction clearly conveys what your target reader will get out of your article and why they would care about your take on this topic.   
+4 Make sure you have enough headings and not too many long paragraphs.   
+5 Read it out loud with a focus on how it sounds. Think about sentence clarity:
+
+– What sentences are so long that you need to take another breath?   
+– What sentences stand out as being clunky or unclear?   
+– What sentences just don’t sound like you?   
+– Are any words missing?
+
+6 See if your grammar-checking tool notices anything you immediately recognize as a real problem.
+
+# Summary
+
+¡ Your ultimate goal is to make the target reader feel like the article was written with them in mind.   
+¡ Be obsessive about considering what your target reader already knows, doesn’t know, and wants to know.   
+¡ Your top priority should be providing the target reader the facts required to earn their trust.
+
+¡ When you rework sentences, think about making it more convenient and pleasant for your reader to understand your thoughts.   
+¡ Target the clunkiest sentences in your most prominent paragraphs for revision.   
+¡ Highlighting weak “to be” verbs and prepositions can help you find and fix suboptimal sentences.   
+¡ Aim for writing that’s clear and concise, but still personable and conversational.   
+¡ Your writing should sound like how you speak or chat with colleagues.   
+¡ Spend a few minutes crafting an intriguing title.   
+¡ Ensure that your introduction is upfront about your goal (in terms of what’s in it for your reader) and what’s so special about your take on the topic.   
+¡ Break up big blocks of text to make the article more scannable.   
+Reading your draft out loud is a great way to spot problems.
+
