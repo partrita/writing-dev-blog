@@ -1,66 +1,57 @@
-# Quarto Book Template
+# 개발자를 위한 글쓰기 가이드 (Writing for Developers)
 
-This repository is a template for creating a Quarto book hosted on GitHub Pages, with dependencies managed by [Pixi](https://prefix.dev/).
+이 저장소는 **"개발자를 위한 글쓰기 가이드"** 책의 소스 코드를 담고 있습니다. 이 책은 동료 개발자들이 읽고 싶어 하고 공유하고 싶어 하는 엔지니어링 블로그와 아티클을 작성하는 실용적인 가이드를 제공합니다.
 
-## Project Structure
+## 책 소개
 
-- `mybook/`: Contains the Quarto book source files (`.qmd`).
-- `pixi.toml`: Manages dependencies (Quarto, Python/R libraries).
-- `.github/workflows/publish.yml`: GitHub Action to automatically build and publish the book.
+잘 작성된 기술 아티클은 새로운 아이디어를 자극하고, 기술을 명확하게 설명하며, 시야를 넓혀주거나 잘못된 선택을 예방할 수 있습니다. 스스로를 '글솜씨가 부족한 사람'이라 생각하더라도, 통찰을 공유함으로써 커뮤니티에 기여할 수 있습니다.
 
-## Usage
+이 책은 '버그 찾기', 'X로 다시 썼다', '우리는 어떻게 만들었는가' 등 현대 엔지니어링 블로그의 7가지 주요 패턴을 소개하고, 브레인스토밍부터 기획, 수정, 홍보에 이르는 전체 과정을 다룹니다.
 
-### Prerequisites
+### 저자 소개
 
-- [Pixi](https://prefix.dev/) installed on your machine.
+* **표트르 사르나 (Piotr Sarna)**: ScyllaDB 등 다양한 프로젝트에 기여한 엔지니어이자 경험 많은 저자입니다.
+* **신시아 던롭 (Cynthia Dunlop)**: 20년 이상 개발자들과 협업해 온 기술 전문 작가입니다.
 
-### Local Development
+## 책의 구성
 
-1.  **Clone the repository:**
+이 책은 4부 17장으로 구성되어 있습니다.
 
-    ```bash
-    git clone https://github.com/your-username/quarto-book-template.git
-    cd quarto-book-template
-    ```
+* **1부 기초**: 엔지니어링 블로그의 이점, 주제 선정 방법, 매력적인 글의 특성을 다룹니다.
+* **2부 글쓰기 과정의 완성**: 초안 작성, 최적화, 피드백 수용, 발행까지의 단계를 안내합니다.
+* **3부 블로그 포스트 패턴 적용**: 버그 찾기, 재작성, 성과 공유 등 7가지 핵심 블로그 패턴을 심층 분석합니다.
+* **4부 홍보, 각색 및 확장**: 블로그 포스트를 활용한 홍보, 컨퍼런스 발표, 책 집필 등 확장 전략을 제시합니다.
 
-2.  **Preview the book:**
+---
 
-    Run the following command to install Quarto (if not already cached) and start a live preview server:
+## 로컬 개발 및 빌드
 
-    ```bash
-    pixi run quarto preview mybook
-    ```
+이 프로젝트는 [Quarto](https://quarto.org/)를 사용하며, 의존성은 [Pixi](https://prefix.dev/)로 관리됩니다.
 
-    Or if you just want to run the quarto command directly:
+### 사전 준비
 
-    ```bash
-    pixi run quarto render mybook
-    ```
+- [Pixi](https://prefix.dev/)가 설치되어 있어야 합니다.
 
-### Dependencies
+### 로컬 실행
 
-This project uses `pixi` to manage dependencies. The default `pixi.toml` includes `quarto`.
+1. **저장소 클론:**
+   ```bash
+   git clone https://github.com/your-username/Writing4Developer-blog.git
+   cd Writing4Developer-blog
+   ```
 
-To add Python or R dependencies:
+2. **도서 미리보기:**
+   실시간 미리보기 서버를 시작하려면 다음 명령을 실행하세요:
+   ```bash
+   pixi run quarto preview mybook
+   ```
 
-```bash
-pixi add python pandas  # Example for Python
-# or
-pixi add r-base r-tidyverse  # Example for R
-```
+3. **렌더링:**
+   HTML 결과물을 생성하려면 다음 명령을 실행하세요:
+   ```bash
+   pixi run quarto render mybook
+   ```
 
-## Deployment
+## 배포
 
-This repository is configured to automatically publish the book to GitHub Pages using GitHub Actions.
-
-1.  **GitHub Settings:**
-    *   Go to your repository **Settings** > **Pages**.
-    *   Under **Build and deployment**, usually you can leave it as "Deploy from a branch".
-    *   After the first successful run of the action, a `gh-pages` branch will be created.
-    *   Ensure the **Branch** is set to `gh-pages` and folder to `/(root)`.
-
-2.  **Triggering the Build:**
-    *   Pushing to the `main` branch will trigger the workflow.
-    *   You can also manually trigger it from the **Actions** tab.
-
-The workflow is defined in `.github/workflows/publish.yml`. It uses the `quarto-dev/quarto-actions/publish` action to build the project in the `mybook` directory and push the result to the `gh-pages` branch.
+GitHub Actions를 통해 GitHub Pages에 자동으로 배포되도록 설정되어 있습니다. `main` 브랜치에 푸시하면 `.github/workflows/publish.yml` 워크플로우가 트리거되어 `docs/` 폴더의 내용이 `gh-pages` 브랜치로 배포됩니다.
