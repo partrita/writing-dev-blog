@@ -9,18 +9,18 @@ book:
   date: "1/24/2026"
   chapters:
     - index.qmd
-    - part: "1부 기초 (Fundamentals)"
+    - part: "1부 기초"
       chapters:
         - chap1.qmd
         - chap2.qmd
         - chap3.qmd
-    - part: "2부 글쓰기 과정의 완성 (Nailing the writing process)"
+    - part: "2부 글쓰기 과정의 완성"
       chapters:
         - chap4.qmd
         - chap5.qmd
         - chap6.qmd
         - chap7.qmd
-    - part: "3부 블로그 포스트 패턴 적용 (Applying blog post patterns)"
+    - part: "3부 블로그 포스트 패턴 적용"
       chapters:
         - chap8.qmd
         - chap9.qmd
@@ -29,12 +29,12 @@ book:
         - chap12.qmd
         - chap13.qmd
         - chap14.qmd
-    - part: "4부 홍보, 각색 및 확장 (Promotion, adaptation, and expansion)"
+    - part: "4부 홍보, 각색 및 확장"
       chapters:
         - chap15.qmd
         - chap16.qmd
         - chap17.qmd
-    - part: "부록 (Appendices)"
+    - part: "부록"
       chapters:
         - appendix_a.qmd
         - appendix_b.qmd
@@ -47,6 +47,7 @@ format:
     theme:
       - default
       - brand
+    number-sections: false
 
 execute:
   freeze: auto
