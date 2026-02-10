@@ -45,7 +45,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - default
+      - cosmo
       - brand
     number-sections: false
 
